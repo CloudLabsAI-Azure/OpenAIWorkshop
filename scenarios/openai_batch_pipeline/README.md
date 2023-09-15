@@ -48,7 +48,8 @@ Call logs are uploaded to a designated location in Blob Storage. This upload wil
 1. Follow the below-mentioned instructions and click on **Create Storage (5)**.
 
     - Subscription: Select the subscription **(1)**
-    - Resource group: Select **Use existing (2)** and select the resource group.
+    - Cloud Shell region: Make sure you are in **East US** region.
+    - Resource group: Select **Use existing (2)** and select the **openai-XXXXX resource group.
     - Storage account: Select **openaistorage<inject key="DeploymentID" enableCopy="false"/> (3)**
     - File Share: Enter **blob (4)**
 
