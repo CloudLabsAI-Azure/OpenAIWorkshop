@@ -46,16 +46,16 @@
 
       ![](./images/flow-on.png)
 
-14. Click on **Edit (2)** for **Openaisummarization**.
+14. Select **Flows (2)** and click on **Edit (2)** for **Openaisummarization**.
 
       ![](./images/open-ai-flows-1.png)
 
-14. Edit the Power Automate Flow HTTP step by entering your own Azure OpenAI API  **Endpoint (1)** ensure to replace **deployment-id** with `demomodel` and **Key (2)** and click on **Save**.
+15. Edit the Power Automate Flow HTTP step by entering your own Azure OpenAI API  **Endpoint (1)** ensure to replace **deployment-id** with `demomodel` and **Key (2)** and click on **Save**.
 
       ![](./images/endpoint-key-1.png)
    
     > **Note**: Enter the **Open AI endpoint** and **key** that you copied in **Exercise-1 Task-1 Step-8**.
 
-15. From the **Apps (1)** page click on the **OpenAI Playground (2)** app to run the app.
+16. From the **Apps (1)** page click on the **OpenAI Playground (2)** app to run the app.
 
      ![](./images/runpowerapp-1.png)
