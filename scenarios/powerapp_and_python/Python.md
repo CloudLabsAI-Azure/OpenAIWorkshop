@@ -1,4 +1,4 @@
-## Exercise 4b: Build Open AI application with Python
+## Exercise 3b: Build an Open AI application with Python
 
 1. Search and select **Azure Synapse Analytics** in the Azure portal.
 
@@ -20,19 +20,13 @@
 
     ![](images/openai-sparkpool.png)
 
-1. Run the notebook step by step to complete this exercise. Click on **Run** button next to the cell. 
+1. Run the notebook step by step to complete this exercise. Click on the **Run** button next to the cell. 
 
      ![](images/run.png)
 
 1. In **1. Install OpenAI**, click on the **Run** button next to the first cells, and click on the **stop session** please wait till **Apache Spark pools** turn to stop state. 
 
      ![](images/run-python1.png)
-
-      > **Note**: you may need to restart the kernel to use updated packages
-
-1. In **1. Install OpenAI**, click on the **Run** button next to the second cells, and click on the **stop session** please wait till **Apache Spark pools** turn to stop state. 
-
-     ![](images/run-python.png)
 
       > **Note**: you may need to restart the kernel to use updated packages
 
