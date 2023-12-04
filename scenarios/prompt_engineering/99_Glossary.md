@@ -1,8 +1,8 @@
-# Exercise 5E: Glossary (Read-Only)
+# Exercise 4E: Glossary (Read-Only)
 
 *language model (LM)*
 ```
-A probability distribution over sequences of words.
+A probability distribution over sequences of words
 ```
 
 *large language model (LLM)*
@@ -37,7 +37,7 @@ and large language models (LLMs).
 
 *token(s)*
 ```
-Token is an abstraction that is defined by external rules in order to identify the unit of processing in a NLP task.
-A token may be a word, part of a word or just characters like punctuation. (e.g. 'abc ', 'abc.', ' st', etc)
+A token is an abstraction that is defined by external rules in order to identify the unit of processing in an NLP task.
+A token may be a word, part of a word, or just characters like punctuation. (e.g. 'abc ', 'abc.', ' st', etc)
 ```
 
