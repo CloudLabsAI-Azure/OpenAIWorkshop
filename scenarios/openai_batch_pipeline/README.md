@@ -41,7 +41,7 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
 
     ![](images/E2T1S2.png)
     
-1. Now that you have no storage mounted, click on Mount Storage in the dialog box and click on Apply, click on **Show advanced settings** or if the dialog box appears below to provide the storage details without clicking on advaned setting.
+1. Now that you have no storage mounted, click on Mount Storage in the dialog box and click on Apply, click on **Show advanced settings** or if the dialog box appears below to provide the storage details without clicking on advaned setting follow the below instructions.
 
 1. Follow the below-mentioned instructions and click on **Create Storage (5)**.
 
