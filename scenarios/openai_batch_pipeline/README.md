@@ -257,10 +257,13 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
      - **CustomerSentiment**: `sentiment` **(3)**
 
         ![](images/select-1.png)
+       
     
 1. If we return to our **Sink (1)** tile and under **Data preview (2)** click **Refresh (3)**, we will now see our expected 5 columns of output.
 
     ![](images/refresh-sink-1.png)
+
+   - **Note**: If you faced any issues in not getting interaction_summary and sentiment as displayed in above screenshot, it takes time to reflect please feel free to perform the next step in the guide.
 
 1. Once you have reviewed the data and are satisfied that all columns are mapped successfully (you should have 5 columns total, all showing data in a string format), we can press **Publish all** at the top to save our current configuration. A window will open on the right side of the screen; press the blue **Publish** button at the bottom left of it to save your changes.
 
