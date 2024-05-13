@@ -41,10 +41,8 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
 
     ![](images/E2T1S2.png)
     
-1. Now that you have no storage mounted, in the dialog box, click on **Show advanced settings**.
+1. Now that you have no storage mounted, click on Mount Storage in the dialog box and click on Apply, click on **Show advanced settings** or if the dialog box appears below to provide the storage details without clicking on advaned setting.
 
-   ![](images/scenario2-02.png)
-   
 1. Follow the below-mentioned instructions and click on **Create Storage (5)**.
 
     - Subscription: Select the subscription **(1)**
@@ -53,7 +51,7 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
     - Storage account: Select **openaistorage<inject key="DeploymentID" enableCopy="false"/> (3)**
     - File Share: Enter **blob (4)**
 
-        ![](images/openai4-new.png)
+    ![](images/openai4-new.png)
 
 1.  Once the storage account is created, you will be prompted with the Bash window, as shown in the below screenshot.
     
@@ -78,7 +76,7 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
 
 1. Type **yes** and hit **enter** to accept the agreement, and then hit enter to install on the default path.
 
-   ![](images/cloudshell-accept.png)
+   ![](images/condadonwload_new.png)
 
 1. Type **yes** and hit **enter** to initialize the conda environment.
 
