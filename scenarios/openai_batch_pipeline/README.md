@@ -210,7 +210,7 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
    ![](images/synapse16.png)   
 
-1. Enable the toggle **data flow debug** session located at the top menu bar adjacent to the validate button, and click on **OK** on the *Turn on data flow debug* pop-up window.
+1. Enable the toggle **data flow debug** session located at the top menu bar adjacent to the validate button leave the settings default, and click on **OK** on the *Turn on data flow debug* pop-up window.
 
     >**Note:** It will take a minute or two for the **data flow debug** session to get enabled.
 
