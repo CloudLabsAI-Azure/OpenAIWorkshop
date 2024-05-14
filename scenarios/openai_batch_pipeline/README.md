@@ -41,10 +41,8 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
 
     ![](images/E2T1S2.png)
     
-1. Now that you have no storage mounted, in the dialog box, click on **Show advanced settings**.
+1. Now that you have no storage mounted, click on Mount Storage in the dialog box and click on Apply, click on **Show advanced settings** or if the dialog box appears below to provide the storage details without clicking on advaned setting follow the below instructions.
 
-   ![](images/scenario2-02.png)
-   
 1. Follow the below-mentioned instructions and click on **Create Storage (5)**.
 
     - Subscription: Select the subscription **(1)**
@@ -53,7 +51,7 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
     - Storage account: Select **openaistorage<inject key="DeploymentID" enableCopy="false"/> (3)**
     - File Share: Enter **blob (4)**
 
-        ![](images/openai4-new.png)
+    ![](images/openai4-new.png)
 
 1.  Once the storage account is created, you will be prompted with the Bash window, as shown in the below screenshot.
     
@@ -78,7 +76,7 @@ Call logs are uploaded to a designated location in blob storage. This upload wil
 
 1. Type **yes** and hit **enter** to accept the agreement, and then hit enter to install on the default path.
 
-   ![](images/cloudshell-accept.png)
+   ![](images/condadonwload_new.png)
 
 1. Type **yes** and hit **enter** to initialize the conda environment.
 
@@ -212,7 +210,7 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
    ![](images/synapse16.png)   
 
-1. Enable the toggle **data flow debug** session located at the top menu bar adjacent to the validate button, and click on **OK** on the *Turn on data flow debug* pop-up window.
+1. Enable the toggle **data flow debug** session located at the top menu bar adjacent to the validate button leave the settings default, and click on **OK** on the *Turn on data flow debug* pop-up window.
 
     >**Note:** It will take a minute or two for the **data flow debug** session to get enabled.
 
@@ -259,10 +257,13 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
      - **CustomerSentiment**: `sentiment` **(3)**
 
         ![](images/select-1.png)
+       
     
 1. If we return to our **Sink (1)** tile and under **Data preview (2)** click **Refresh (3)**, we will now see our expected 5 columns of output.
 
     ![](images/refresh-sink-1.png)
+
+   - **Note**: If you faced any issues in not getting interaction_summary and sentiment as displayed in above screenshot, it takes time to reflect please feel free to perform the next step in the guide.
 
 1. Once you have reviewed the data and are satisfied that all columns are mapped successfully (you should have 5 columns total, all showing data in a string format), we can press **Publish all** at the top to save our current configuration. A window will open on the right side of the screen; press the blue **Publish** button at the bottom left of it to save your changes.
 
@@ -318,6 +319,6 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
     ORDER BY count(*) desc     
      ```
 
-   - Your query results, if you are using the files uploaded as part of this repository or the workshop, you should see similar **Results (6)** to those below.
+   - Your query results, if you are using the files uploaded as part of this repository or the workshop, you should see similar **Results (6)** to those below but the options of sentiment and Sum of Sentiment can be changed to up or down.
 
       ![](images/lastpic.png)
