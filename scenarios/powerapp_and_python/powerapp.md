@@ -30,7 +30,7 @@
 
    ![](./images/import-openai-package.png)
 
-9. Once the import is completed, click on **Apps (1)**, then click on `...` **(2)** next to **OpenAI Playground**, and click on **Edit (3)**.
+9. Once the import is completed, click on **Apps (1)**, then click on `...` **(2)** next to **OpenAI Playground**, and click on **Edit (3)**. if any pop up appears please click on **Skip**.
 
       ![](./images/powerapps-apps-edit.png)
 
@@ -66,6 +66,6 @@
 
      ![](./images/canves-output.png)
 
-    > **Note**: You can try the other available options in the portal, i.e., **SQL**, **ClassifyText**, **Parse**, and **Classify**.
+    > **Note**: The summary might vary from the output shown in the above screenshot because GPT itself gets trained every day to improve, enhance, and optimize its responses, but you might find a similar meaning output summary. You can also try the other available options in the portal, i.e., **SQL**, **ClassifyText**, **Parse**, and **Classify**.
 
     
