@@ -73,3 +73,5 @@
 1. Then click on **Publish** to save the changes. 
 
     ![](images/publish-1.png)
+
+   <validation step="25c1c315-a610-4974-ae83-c5b3983d798e" />
