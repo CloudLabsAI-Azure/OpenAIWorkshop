@@ -131,6 +131,8 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
    ![](images/batch_file_upload-1.png)
 
+    <validation step="611472e6-8445-4bf8-8c3d-8fae9fdb9fe5" />
+
 ## Tarefa 2: Configurar o Synapse Workspace
 
 ### **A. Criar tabela SQL de destino**
@@ -303,6 +305,8 @@ Em seguida, expanda a seção **Staging (3)** na parte inferior das configuraç�
 2. Para ver a execução do pipeline, navegue até o lado esquerdo da tela e escolha a opção **Monitor (1)**. Em seguida, selecione a opção **Pipeline runs (2)** na seção **Integration**. Em seguida, você verá a execução do pipeline que você acionou na seção **Triggered (3)** como **pipeline 1 (4)**.  Este pipeline deve levar aproximadamente 4 minutos (se você estiver usando os dados carregados para o workshop).
 
    ![](images/pipeline-run-1-1.png)
+
+    <validation step="5655b8a2-1369-4aa6-a8bb-38969fd6c516" />
 
 ## Task 3: Resultados da Consulta na Nossa Tabela SQL
 
