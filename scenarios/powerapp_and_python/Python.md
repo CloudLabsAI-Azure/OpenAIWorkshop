@@ -74,4 +74,4 @@
 
     ![](images/publish-1.png)
 
-     <validation step="e600e575-997c-4806-82d2-b8f8c4a220a2" />
+   <validation step="25c1c315-a610-4974-ae83-c5b3983d798e" />
