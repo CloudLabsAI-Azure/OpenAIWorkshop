@@ -138,30 +138,30 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
 1. No [Portal de Azure](https://portal.azure.com), navegue até ao synapse workspace **asaworkspace<inject key="DeploymentID" enableCopy="false"/>**  no resource group **openai-<inject key="DeploymentID" enableCopy="false"/>**. Na aba **Overview**, clique em **Open** para iniciar o Synapse workspace.
 
-    ![](images/openai-5-1.png)
+   ![](images/openai-5-1.png)
 
 1. Clique na secção **Develop (1)** no Synapse Studio, clique em **+ (2)** sign in no topo esquerdo, e selecione **SQL script (3)**. Isto abrirá uma nova janela com um editor de script SQL. 
 
-    ![](images/synapse3-1.png)
+   ![](images/synapse3-1.png)
 
 1. Copie e cole o seguinte script no editor **(1)**, em seguida, altere o valor **Connect to** selecionando **openaisql (2)** a partir da lista suspensa, e para **Use database**, confirme que **openaisql (3)** está selecionado, e clique no botão **Run (4)** no canto superior esquerdo, como mostra a imagem abaixo. Conclua esta etapa pressionando **Publish all (5)** logo acima do botão **Run** para publicar nosso trabalho até agora.
 
-    ```SQL 
-    CREATE TABLE [dbo].[cs_detail]
-    (
-    interaction_summary varchar(8000),
-    sentiment varchar(500),
-    topic varchar(500),
-    product varchar(500),
-    filename varchar(500)
-    )
-    ```
+   ```SQL 
+   CREATE TABLE [dbo].[cs_detail]
+   (
+   interaction_summary varchar(8000),
+   sentiment varchar(500),
+   topic varchar(500),
+   product varchar(500),
+   filename varchar(500)
+   )
+   ```
     
-    ![](images/openai-6-1.png)
+   ![](images/openai-6-1.png)
     
 1. Em seguida, clique em **Publish** para publicar o script SQL.
 
-    ![](images/publish-sqlscript-1.png)
+   ![](images/publish-sqlscript-1.png)
 
 ### **B. Criar a Origem e Destino em Linked Services**
 
@@ -179,13 +179,13 @@ Em seguida, precisaremos criar dois linked services: um para nossa origem (os ar
 
    ![](images/img-6-1.png)
 
-1.  Clique em **+ New** no canto superior esquerdo. Procure **Synapse (1)**, selecione **Azure Synapse Analytics (2)**, e clique em **Continue (3)**.
+1. Clique em **+ New** no canto superior esquerdo. Procure **Synapse (1)**, selecione **Azure Synapse Analytics (2)**, e clique em **Continue (3)**.
 
-     ![](images/synapse8-1.png)
+   ![](images/synapse8-1.png)
 
 1. Na janela *New linked service* que se abre, preencha um nome para o target linked service como **synapselinkedservice** **(1)**. Selecione a **Azure subscription (2)**  na qual você tem trabalhado. Selecione **asaworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para **Server name** e **openaisql (4)** como o **Database name**. Certifique-se de alterar o **Authentication type** para **System Assigned Managed Identity (5)**, depois clique em **Test connection (6)** e clique em **Create (7)**.
 
-    ![](images/synapse-1_1.png)
+   ![](images/synapse-1_1.png)
 
 1. Depois de criar os dois linked services, certifique-se de pressionar o botão **Publish all** na parte superior para publicar o nosso trabalho. Finalize a criação dos linked services e clique em **Publish**.
 
@@ -221,13 +221,13 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Data flow** para i
 
 1. Ativar a opção **data flow debug** localizada na barra de menu superior adjacente ao botão validar e clique em **OK** na janela pop-up *Turn on data flow debug*.
 
-    >**Nota:** Levará um ou dois minutos para que a sessão **data flow debug** seja ativada.
+   >**Nota:** Levará um ou dois minutos para que a sessão **data flow debug** seja ativada.
 
 1. Navegue até ao separador **Data preview** e execute uma visualização para verificar seu trabalho até agora.
     
-    ![](images/dataflow-datapreview-1.png)
+   ![](images/dataflow-datapreview-1.png)
 
-    >**Nota**: Se não conseguir visualizar os dados no separador Data Preview, clique no botão Atualizar até os dados aparecerem.
+   >**Nota**: Se não conseguir visualizar os dados no separador Data Preview, clique no botão Atualizar até os dados aparecerem.
    
 1. Em seguida, podemos adicionar no nosso bloco **Select** e fazer nossas pequenas alterações antes de gravar os dados na tabela Synapse SQL. Para começar, clique no pequeno sinal **+ (1)** ao lado do nosso bloco de ingestão e escolha a opção **Select (2)**.
 
@@ -253,30 +253,30 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Data flow** para i
 
 1. Em seguida, precisaremos ir para o separador **Settings (1)** e ajustar o **Schema name** e **Table name**. Se você utilizou o script fornecido anteriormente para criar a tabela de destino, o nome do esquema é **dbo (1)** e o nome da tabela é **cs_detail (2)**.
 
-    ![](images/synapse20-1.png)
+   ![](images/synapse20-1.png)
 
 1. Antes de terminarmos nosso trabalho sobre o data flow, devemos visualizar nossos dados. A pré-visualização dos nossos dados revela que só temos 3 colunas quando esperamos um total de 5. Perdemos as nossas colunas Summary e Sentiment.
 
-    ![](images/data-preview.png)
+   ![](images/data-preview.png)
 
 1. Para corrigir isso, vamos usar nosso bloco **Select (1)** para alterar os nomes da seguinte forma para obter os valores de saída esperados:
 
-     - **Summary**: `interaction_summary` **(2)**
-     - **CustomerSentiment**: `sentiment` **(3)**
+    - **Summary**: `interaction_summary` **(2)**
+    - **CustomerSentiment**: `sentiment` **(3)**
 
-        ![](images/select-1.png)
+      ![](images/select-1.png)
     
 1. Retornando ao bloco **Sink (1)** por baixo de **Data preview (2)** clique **Refresh (3)**, vamos agora ver as 5 colunas que são esperadas.
 
-    ![](images/refresh-sink-1-1.png)
+   ![](images/refresh-sink-1-1.png)
 
 1. Depois de revisar os dados e estar satisfeito que todas as colunas foram mapeadas com êxito (você deve ter 5 colunas no total, todas mostrando dados em um formato tipo string), podemos selecionar **Publish all** na parte superior para salvar nossa configuração atual. Uma janela será aberta no lado direito da tela; pressione o botão azul **Publish** na parte inferior esquerda para salvar suas alterações.
 
-    ![](images/publish-dataflow.png)
+   ![](images/publish-dataflow.png)
 
 1. O seu Data flow  concluído e salvo terá a seguinte aparência:
 
-    ![](images/completed-dataflow.png)
+   ![](images/completed-dataflow.png)
 
 ### **D. Criar um Pipeline em Synapse**
 
@@ -299,7 +299,7 @@ Em seguida, expanda a seção **Staging (3)** na parte inferior das configuraç�
 
 1. Depois de publicar com sucesso o seu trabalho, precisamos iniciar o nosso pipeline. Para fazer isso, logo abaixo dos separadores na parte superior do Studio, há um ícone de *raio* que diz **Add trigger (1)**. Clique para adicionar um trigger e selecione **Trigger now (2)** para iniciar uma execução de pipeline e, quando a janela abrir, clique em **OK**.
 
-    ![](images/trigger-1-1.png)
+   ![](images/trigger-1-1.png)
     
 2. Para ver a execução do pipeline, navegue até o lado esquerdo da tela e escolha a opção **Monitor (1)**. Em seguida, selecione a opção **Pipeline runs (2)** na seção **Integration**. Em seguida, você verá a execução do pipeline que você acionou na seção **Triggered (3)** como **pipeline 1 (4)**.  Este pipeline deve levar aproximadamente 4 minutos (se você estiver usando os dados carregados para o workshop).
 
@@ -311,18 +311,18 @@ Em seguida, expanda a seção **Staging (3)** na parte inferior das configuraç�
 
 1. Certifique-se de que o status de execução do pipeline tenha **Succeeded**.
 
-    ![](images/pipline-succeeded-1.png)
+   ![](images/pipline-succeeded-1.png)
 
 2. Agora que os dados estão na tabela de destino, eles estão disponíveis para uso executando consultas SQL em relação a eles ou conectando o PowerBI e criando visualizações. A Azure Function também está em execução, portanto, tente carregar alguns dos arquivos de transcrição para a pasta generated_documents em seu container e veja como a função a processa e cria um novo arquivo na pasta cleansed_documents.
 
 3. Para consultar os novos dados, navegue até o menu do lado esquerdo e escolha **Develop (1)**. Clique no **SQL Script (2)** existente e substitua o conteúdo pelo **SQL Code (3)** abaixo. Em seguida, selecione **openaisql (4)** pool **Run (5)**. 
 
-     ```SQL 
-    SELECT sentiment, count(*) as "Sum of Sentiment"
-    FROM [dbo].[cs_detail]
-    GROUP BY sentiment
-    ORDER BY count(*) desc     
-     ```
+   ```SQL 
+   SELECT sentiment, count(*) as "Sum of Sentiment"
+   FROM [dbo].[cs_detail]
+   GROUP BY sentiment
+   ORDER BY count(*) desc     
+   ```
 
    - Os resultados da sua consulta, se você estiver usando os arquivos carregados como parte deste repositório ou do workshop, você verá **Results (6)** semelhantes aos abaixo.
 
