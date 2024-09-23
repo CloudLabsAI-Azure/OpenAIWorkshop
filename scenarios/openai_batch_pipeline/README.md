@@ -327,3 +327,9 @@ Em seguida, expanda a seção **Staging (3)** na parte inferior das configuraç�
    - Os resultados da sua consulta, se você estiver usando os arquivos carregados como parte deste repositório ou do workshop, você verá **Results (6)** semelhantes aos abaixo.
 
         ![](images/lastpic.png)
+
+## Resumo
+
+Este cenário permite a utilização do OpenAI para resumir e analisar os registos de chamadas de atendimento ao cliente da empresa fictícia Contoso. Os dados são ingeridos numa conta de armazenamento de blobs e depois processados ​​por uma função do Azure. A Função Azure irá devolver o sentimento do cliente, o produto sobre o qual a conversa foi oferecida, o tema da chamada, bem como um resumo da chamada. Estes resultados são gravados num local designado separado no armazenamento de blobs. A partir daí, o Synapse Analytics é utilizado para extrair os dados recém-limpos para criar uma tabela que pode ser consultada para obter mais insights.
+
+### Concluiu o laboratório com sucesso
