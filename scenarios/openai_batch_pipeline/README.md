@@ -257,7 +257,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Data flow** para i
 
 1. Antes de terminarmos nosso trabalho sobre o data flow, devemos visualizar nossos dados. A pré-visualização dos nossos dados revela que só temos 3 colunas quando esperamos um total de 5. Perdemos as nossas colunas Summary e Sentiment.
 
-   ![](images/data-preview.png)
+      ![](images/data-preview.png)
 
 1. Para corrigir isso, vamos usar nosso bloco **Select (1)** para alterar os nomes da seguinte forma para obter os valores de saída esperados:
 
