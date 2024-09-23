@@ -128,7 +128,7 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
 1. Depois de fazer o upload dos arquivos JSON para a storage account com sucesso, pode navegar até a storage account no portal de Azure e verificar se os arquivos foram carregados.   
 
-   ![](images/batch_file_upload.png)
+   ![](images/batch_file_upload-1.png)
 
    <validation step="611472e6-8445-4bf8-8c3d-8fae9fdb9fe5" />
 
@@ -138,11 +138,11 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
 1. No [Portal de Azure](https://portal.azure.com), navegue até ao synapse workspace **asaworkspace<inject key="DeploymentID" enableCopy="false"/>**  no resource group **openai-<inject key="DeploymentID" enableCopy="false"/>**. Na aba **Overview**, clique em **Open** para iniciar o Synapse workspace.
 
-      ![](images/openai-5.png)
+      ![](images/openai-5-1.png)
 
 1. Clique na secção **Develop (1)** no Synapse Studio, clique em **+ (2)** sign in no topo esquerdo, e selecione **SQL script (3)**. Isto abrirá uma nova janela com um editor de script SQL. 
 
-      ![](images/synapse3.png)
+      ![](images/synapse3-1.png)
 
 1. Copie e cole o seguinte script no editor **(1)**, em seguida, altere o valor **Connect to** selecionando **openaisql (2)** a partir da lista suspensa, e para **Use database**, confirme que **openaisql (3)** está selecionado, e clique no botão **Run (4)** no canto superior esquerdo, como mostra a imagem abaixo. Conclua esta etapa pressionando **Publish all (5)** logo acima do botão **Run** para publicar nosso trabalho até agora.
 
