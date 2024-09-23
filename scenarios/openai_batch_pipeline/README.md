@@ -22,7 +22,6 @@ Esse cenário permite o uso do OpenAI para resumir e analisar os logs de chamada
         - [g. Executar um Pipeline em Synapse](#g-trigger-synapse-pipeline)
     - [Tarefa 3. Resultados da Consulta na Nossa Tabela SQL ](#step-4-query-results-in-our-sql-table)
 
-
 # Diagrama de Arquitetura
 
    ![](images/batcharch.png)
@@ -131,7 +130,7 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
    ![](images/batch_file_upload-1.png)
 
-    <validation step="611472e6-8445-4bf8-8c3d-8fae9fdb9fe5" />
+   <validation step="611472e6-8445-4bf8-8c3d-8fae9fdb9fe5" />
 
 ## Tarefa 2: Configurar o Synapse Workspace
 
