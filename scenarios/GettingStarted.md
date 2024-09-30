@@ -42,4 +42,17 @@
 
     ![](media/openai-1.png "Resource groups")
    
-1. Now, click on Next from the lower right corner to move to the next page.
+1. Clique em "Próximo" no canto inferior direito para começar sua jornada no laboratório!
+
+## Contato de Suporte
+
+A equipe de suporte da CloudLabs está disponível 24/7, 365 dias por ano, via e-mail e chat para garantir assistência contínua a qualquer momento. Oferecemos canais de suporte dedicados especificamente para alunos e instrutores, garantindo que todas as suas necessidades sejam prontamente e eficientemente atendidas.
+
+Contatos de Suporte para Alunos:
+
+- Suporte por E-mail: cloudlabs-support@spektrasystems.com
+- Suporte por Chat ao Vivo: https://cloudlabs.ai/labs-support
+
+Agora, clique em Próximo no canto inferior direito para passar para a próxima página.
+
+## Votos de bom treinamento!
