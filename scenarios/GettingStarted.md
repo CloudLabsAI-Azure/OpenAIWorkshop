@@ -4,11 +4,11 @@
 
    ![](media/img-1.png "Lab Environment")
 
-1. Para obter os detalhes do ambiente de laboratório pode selecionar o separador **Environment Details**. Além disso, as credenciais também foram enviadas por e-mail para o endereço de e-mail fornecido durante o registro. Também poderá abrir o Guia do laboratório numa janela separada selecionando **Split Window** no canto inferior direito. Por fim, pode iniciar, parar e reiniciar máquinas virtuais no separador **Resources**.
+1. Para obter os detalhes do ambiente de laboratório pode selecionar o separador **Ambiente**. Além disso, as credenciais também foram enviadas por e-mail para o endereço de e-mail fornecido durante o registro. Também poderá abrir o Guia do laboratório numa janela separada selecionando **Janela dividida** no canto inferior direito. Por fim, pode iniciar, parar e reiniciar máquinas virtuais no separador **Recursos**.
 
-   ![](media/img-2.png "Lab Environment")
+   ![](media/18-10-24.png "Lab Environment")
  
-    > No separador **Environment Details** pode ver o valor SUFFIX. Use-o sempre que vir SUFFIX ou Deployment ID nos passos do laboratório.
+    > No separador **Ambiente** pode ver o valor SUFFIX. Use-o sempre que vir SUFFIX ou Deployment ID nos passos do laboratório.
 
 ## Login no portal de Azure
 
