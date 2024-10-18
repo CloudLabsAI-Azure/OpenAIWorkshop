@@ -4,7 +4,6 @@
 
 Esse cenário permite o uso do OpenAI para resumir e analisar os logs de chamadas de atendimento ao cliente para a empresa fictícia - Contoso. Os dados são inseridos numa blob storage account e, em seguida, processados por uma Azure Function. Baseado no texto do log das chamadas, a Azure Function retornará o sentimento do cliente, o produto sobre o qual a conversa foi abordada, o tópico da chamada, bem como um resumo da chamada. Esses resultados são gravados em um local separado em blob storage. A partir daí, o Synapse Analytics é utilizado para extrair os dados e para criar uma tabela que pode ser consultada para obter mais informações.
 
----
 # Índice
 - [Usar Open AI para Inserir dados em Bulk, Executar Operações Inteligentes, e Analisar Dados com Synapse](#build-an-open-ai-pipeline-to-ingest-batch-data-perform-intelligent-operations-and-analyze-in-synapse)
 - [Sumário](#summary)
@@ -34,30 +33,32 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
 1. No [Portal de Azure](https://portal.azure.com?azure-portal=true), selecione o botão **[>_]** (*Cloud Shell*) que se encontra no topo da página a direita da pesquisa. O painel do Cloud Shell irá abrir na parte inferior do portal.
 
-    ![](images/E2I1S1-1.png)
+   ![](images/E2I1S1-1.png)
 
 2. Na primeira vez que abrir o Cloud Shell, pode ser solicitado que escolha o tipo de shell que deseja usar (*Bash* ou *PowerShell*). Selecione **Bash**. Se esta opção não abrir pode avançar para o próximo passo.
 
-3. No painel Getting Started, selecione **Mount storage account (1)**, selecione **Storage account subscription (2)** na lista de opções e selecione **Apply (3)**.
+   ![](images/18-10-24(8).png)
 
-   ![](images/10-06-2024(1).png)
+3. No painel Getting Started, selecione **Montar conta de armazenamento (1)**, selecione **Assinatura de conta de armazenamento (2)** na lista de opções e selecione **Aplicar (3)**.
 
-4. No painel **Mount storage account**, selecione **Select existing storage account (1)** e clique **Next (2)**.
+   ![](images/18-10-24(9).png)
 
-   ![](images/10-06-2024(2).png)
+4. No painel **Montar conta de armazenamento**, selecione **Selecione uma conta de armazenamento existente (1)** e clique **Avancar (2)**.
 
-5. No painel **Advanced settings**, introduza os seguintes detalhes:
+   ![](images/18-10-24(10).png)
 
-    - **Subscription**: Default- Escolha a única assinatura existente atribuída para este laboratório. (1).
-    - **Resource group**: Selecione **Use existing** **(2)**
+5. No painel **Configurações avançadas**, introduza os seguintes detalhes:
+
+    - **Subscrição**: Default- Escolha a única assinatura existente atribuída para este laboratório. **(1)**.
+    - **Grupo de recursos**: Selecione **Usar existente** **(2)**
       - openai-<inject key="DeploymentID" enableCopy="false"></inject>
-    - **Storage account**: Selecione **Use existing** **(3)**
+    - **Conta de armazenamento**: Selecione **Usar existente** **(3)**
       - openaistorage<inject key="DeploymentID" enableCopy="false"></inject>
-    - **File share**: Create a new file share **(4)**
+    - **Compartilhamento de arquivos**: Criar um novo compartilhamento de arquivo **(4)**
 
       ![](images/10-06-2024(3)-1.png)
 
-1. Introduza o nome para a file share **blob (1)**, e selecione **Select (2)**.
+1. Introduzir o nome do compartilhamento de arquivos **(Novo) blob (1)**, e selecione **Selecione (2)**.
 
     ![](images/10-06-2024(4)-1.png)
 
@@ -104,15 +105,15 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
     pip install --upgrade pip
     pip install -r reqs.txt
     ```
-    > **Nota**: se receber o erro **"Conda: command not found"**, feche a sessão de CloudShell e abra uma nova sessão para continuar.
+    > **Nota**: se receber o erro **"Conda: comando não encontrado"**, feche a sessão do CloudShell e abra uma nova sessão para continuar.
     
 1. Digite **y** e pressione enter para prosseguir.
 
-1. No [Portal de Azure](https://portal.azure.com), navegue para a Storage Account com o sufixo `functions` selecionando o **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group e selecione a Storage Account da lista de recursos.
+1. No [Portal do Azure](https://portal.azure.com), navegue para a Conta de Armazenamento com o sufixo `functions` selecionando o **openai-<inject key="DeploymentID" enableCopy="false"/>* * grupo de recursos e selecione a conta de armazenamento da lista de recursos.
 
     ![](images/storage-functions-1.png)
     
-1. Mude para a janela **Access keys (1)** e selecione **Show (2)**, que está ao lado do valor da Connection String. Selecione o botão de copiar para a primeira **connection string (3)**. Cole o valor em um editor de texto, como o Notepad.exe, para referência futura."
+1. Mude para a janela **Chaves de acesso (1)** e selecione **Mostrar (2)**, que está ao lado do valor da Connection String. Selecione o botão de copiar para a primeira **Cadeia de conexão (3)**. Cole o valor em um editor de texto, como o Notepad.exe, para referência futura."
 
    ![](images/storage-fuctions2-1.png)
 
@@ -126,7 +127,7 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
    > **Nota**: Execute "cd OpenAIWorkshop scenarios/openai_batch_pipeline/document_generation" se não estiver na pasta OpenAIWorkshop/scenarios/openai_batch_pipeline/document_generation.
 
-1. Depois de fazer o upload dos arquivos JSON para a storage account com sucesso, pode navegar até a storage account no portal de Azure e verificar se os arquivos foram carregados.   
+1. Depois de fazer o upload dos arquivos JSON para uma conta de armazenamento com sucesso, você pode navegar até uma conta de armazenamento no portal do Azure e verificar se os arquivos foram carregados.  
 
    ![](images/batch_file_upload-1.png)
 
@@ -136,15 +137,15 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
 ### **A. Criar tabela SQL de destino**
 
-1. No [Portal de Azure](https://portal.azure.com), navegue até ao synapse workspace **asaworkspace<inject key="DeploymentID" enableCopy="false"/>**  no resource group **openai-<inject key="DeploymentID" enableCopy="false"/>**. Na aba **Overview**, clique em **Open** para iniciar o Synapse workspace.
+1. No [Portal de Azure](https://portal.azure.com), navegue até ao synapse workspace **asaworkspace<inject key="DeploymentID" enableCopy="false"/>** no resource group **openai-<inject key="DeploymentID" enableCopy="false"/>**. Na aba **Visão geral**, clique em **Abrir** para iniciar o Synapse workspace.
 
       ![](images/openai-5-1.png)
 
-1. Clique na secção **Develop (1)** no Synapse Studio, clique em **+ (2)** sign in no topo esquerdo, e selecione **SQL script (3)**. Isto abrirá uma nova janela com um editor de script SQL. 
+1. Clique na seção **Develop (1)** no Synapse Studio, clique em **+ (2)** faça login no topo esquerdo e selecione **SQL script (3)**. Isso abrirá uma nova janela com um editor de script SQL.
 
       ![](images/synapse3-1.png)
 
-1. Copie e cole o seguinte script no editor **(1)**, em seguida, altere o valor **Connect to** selecionando **openaisql (2)** a partir da lista suspensa, e para **Use database**, confirme que **openaisql (3)** está selecionado, e clique no botão **Run (4)** no canto superior esquerdo, como mostra a imagem abaixo. Conclua esta etapa pressionando **Publish all (5)** logo acima do botão **Run** para publicar nosso trabalho até agora.
+1. Copie e cole o seguinte script no editor **(1)**, em seguida, altere o valor **Conectar-se com** selecionando **openaisql (2)** a partir da lista suspensa, e para **Usar banco de dados**, confirme que **openaisql (3)** está selecionado, e clique no botão **Executar (4)** no canto superior esquerdo, como mostra a imagem abaixo. Conclua esta etapa pressionando **Publicar tudo (5)** logo acima do botão **Correr** para publicar nosso trabalho até agora.
 
     ```SQL 
     CREATE TABLE [dbo].[cs_detail]
@@ -157,9 +158,9 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
     )
     ```
     
-      ![](images/openai-6-1.png)
+   ![](images/openai-6-1.png)
     
-1. Em seguida, clique em **Publish** para publicar o script SQL.
+1. Em seguida, clique em **Publicar** para publicar o script SQL.
 
       ![](images/publish-sqlscript-1.png)
 
@@ -167,77 +168,77 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
 Em seguida, precisaremos criar dois linked services: um para nossa origem (os arquivos JSON no Data Lake) e outro para o Banco de Dados SQL Synapse que contem a tabela que criamos na etapa anterior.
 
-1. Clique novamente na seção **Manage (1)** do Synapse Studio e clique na opção **Linked services (2)** na seção **External connections**. Em seguida, clique em **+ New (3)** no canto superior esquerdo.
+1. Clique novamente na seção **Manage (1)** do Synapse Studio e clique na opção **Linked services (2)** na seção **External connections**. Em seguida, clique em **+ Novo (3)** no canto superior esquerdo.
 
       ![](images/synapse5-1.png)
    
-1. Somece criando os linked services para a nossa fonte de dados, usando os arquivos JSON alojados no armazenamento ADLS Gen2 que criamos com nosso modelo inicial. Na barra de pesquisa que é aberta depois de clicar em Novo, procure **blob (1)**, selecione **Azure Blob Storage (2)** conforme descrito abaixo e clique em **Continue (3)**.
+1. Somece criando os linked services para a nossa fonte de dados, usando os arquivos JSON alojados no armazenamento ADLS Gen2 que criamos com nosso modelo inicial. Na barra de pesquisa que é aberta depois de clicar em Novo, procure **blob (1)**, selecione **Armazenamento de Blobs do Azure (2)** conforme descrito abaixo e clique em **Continuar (3)**.
 
       ![](images/synapse6-1.png)
 
-1. Forneça o nome do seu linked service como **openailinkedservice (1)**. Altere o **Authentication type** para **Account key (2)**. Em seguida, selecione a **subscription (3)** em que você está trabalhando e, finalmente, selecione a storage account com o sufixo **functions (4)** que você criou no modelo inicial e carregou os arquivos JSON em seguida, clique em **Test connection (5)**. Quando a conexão for bem-sucedida, clique no botão **Create (6)** em azul no canto inferior esquerdo da janela novo linked service.
+1. Forneça o nome do seu linked service como **openailinkedservice (1)**. Altere o **Tipo de autenticação** para **Account key (2)**. Em seguida, selecione a **subscrição (3)** em que você está trabalhando e, finalmente, selecione a storage account com o sufixo **funções (4)** que você criou no modelo inicial e carregou os arquivos JSON em seguida, clique em **Testar conexão (5)**. Quando a conexão for bem-sucedida, clique no botão **Criar (6)** em azul no canto inferior esquerdo da janela novo linked service.
 
       ![](images/img-6-1.png)
 
-1. Clique em **+ New** no canto superior esquerdo. Procure **Synapse (1)**, selecione **Azure Synapse Analytics (2)**, e clique em **Continue (3)**.
+1. Clique em **+ Novo** no canto superior esquerdo. Procure **Synapse (1)**, selecione **Azure Synapse Analytics (2)**, e clique em **Continuar (3)**.
 
       ![](images/synapse8-1.png)
 
-1. Na janela *New linked service* que se abre, preencha um nome para o target linked service como **synapselinkedservice** **(1)**. Selecione a **Azure subscription (2)**  na qual você tem trabalhado. Selecione **asaworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para **Server name** e **openaisql (4)** como o **Database name**. Certifique-se de alterar o **Authentication type** para **System Assigned Managed Identity (5)**, depois clique em **Test connection (6)** e clique em **Create (7)**.
+1. Na janela *New linked service* que se abre, preencha um nome para o target linked service como **synapselinkedservice** **(1)**. Selecione a **Assinatura do Azure (2)**  na qual você tem trabalhado. Selecione **asaworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para **Nome do servidor** e **openaisql (4)** como o **Nome do banco de dados**. Certifique-se de alterar o **Tipo de autenticação** para **Identidade gerenciada atribuída pelo sistema (5)**, depois clique em **Testar conexão (6)** e clique em **Criar (7)**.
 
       ![](images/synapse-1_1.png)
 
-1. Depois de criar os dois linked services, certifique-se de pressionar o botão **Publish all** na parte superior para publicar o nosso trabalho. Finalize a criação dos linked services e clique em **Publish**.
+1. Depois de criar os dois linked services, certifique-se de pressionar o botão **Publicar tudo** na parte superior para publicar o nosso trabalho. Finalize a criação dos linked services e clique em **Publicar**.
 
       ![](images/publish-linked-1.png)
    
 ### **C. Create Synapse Data Flow**
 
-Ainda dentro do Synapse Studio, agora precisaremos criar um **Data flow** para inserir os nossos dados JSON e gravá-los em nosso banco de dados SQL. Para este workshop, este será um fluxo de dados muito simples que insere os dados, renomeia algumas colunas e os grava de volta na tabela de destino.
+Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** para inserir os nossos dados JSON e gravá-los em nosso banco de dados SQL. Para este workshop, este será um fluxo de dados muito simples que insere os dados, renomeia algumas colunas e os grava de volta na tabela de destino.
 
-1. Primeiro, vamos querer voltar para o separador **Develop (1)**, selecionar **+ (2)**, e depois **Data flow (3)**.
+1. Primeiro, vamos querer voltar para o separador **Develop (1)**, selecionar **+ (2)**, e depois **Fluxo de dados (3)**.
 
       ![](images/synapse11-1.png)
    
-1. Quando o editor de fluxo de dados abrir, clique em **Add Source**. Uma nova janela será aberta na parte inferior da tela. Selecione **+ New** na linha **Dataset** deixando as outras opções como padrão.
+1. Quando o editor de fluxo de dados abrir, clique em **Adicionar fonte**. Uma nova janela será aberta na parte inferior da tela. Selecione **+ Novo** na linha **Conjunto de dados** deixando as outras opções como padrão.
 
       ![](images/synapse12-1.png)
 
-1. Uma nova janela deve ser aberta no lado direito da tela. Em seguida, procure por **Azure Blob Storage (1)**, selecione **Azure Blob Storage (2)**, e clique em **Continue (3)**.
+1. Uma nova janela deve ser aberta no lado direito da tela. Em seguida, procure por **Armazenamento de Blobs do Azure (1)**, selecione **Armazenamento de Blobs do Azure (2)**, e clique em **Continuar (3)**.
    
       ![](images/synapse13-1-1.png)
 
-1. Em seguida, selecione a opção **JSON (1)** pois os nossos dados de entrada estão no formato JSON e clique em **Continue (2)**.
+1. Em seguida, selecione a opção **JSON (1)** pois os nossos dados de entrada estão no formato JSON e clique em **Continuar (2)**.
 
       ![](images/synapse14-1-1.png)
 
-1. Selecione o Linked Service com o nome **openailinkedservice (1)** que acabamos de configurar nas etapas acima. Você precisará selecionar a **File path** para escolher o diretório onde nossos arquivos JSON estão armazenados. Deve ser algo semelhante a **workshop-data / cleansed_documents (2)**. Clique no botão **OK** para fechar a janela.
+1. Selecione o Linked Service com o nome **openailinkedservice (1)** que acabamos de configurar nas etapas acima. Você precisará selecionar a **File path** para escolher o diretório onde nossos arquivos JSON estão armazenados. Deve ser algo semelhante a **workshop-data / cleansed_documents (2)**. Clique no botão **OK (3)** para fechar a janela.
 
       ![](images/synapse15-1.png)
    
-1. Em seguida, precisaremos ir para o painel **Source options (1)** e listar as opções **JSON settings (2)**. Precisamos alterar a opção **Document form** para a configuração **Array of documents (3)**. Isso permite que nosso fluxo leia cada arquivo JSON como uma entrada separada em nosso banco de dados.
+1. Em seguida, precisaremos ir para o painel **Opções de origem (1)** e listar as opções **Configurações JSON (2)**. Precisamos alterar a opção **Document form** para a configuração **Array of documents (3)**. Isso permite que nosso fluxo leia cada arquivo JSON como uma entrada separada em nosso banco de dados.
 
       ![](images/synapse16-1.png)   
 
-1. Ativar a opção **data flow debug** localizada na barra de menu superior adjacente ao botão validar e clique em **OK** na janela pop-up *Turn on data flow debug*.
+1. Ativar a opção **Depuração de fluxo de dados** localizada na barra de menu superior adjacente ao botão validar e clique em **OK** na janela pop-up *Turn on data flow debug*.
 
-      >**Nota:** Levará um ou dois minutos para que a sessão **data flow debug** seja ativada.
+      >**Nota:** Levará um ou dois minutos para que a sessão **Depuração de fluxo de dados** seja ativada.
 
-1. Navegue até ao separador **Data preview** e execute uma visualização para verificar seu trabalho até agora.
+1. Navegue até ao separador **Pré-visualização de dados** e execute uma visualização para verificar seu trabalho até agora.
     
       ![](images/dataflow-datapreview-1.png)
 
       >**Nota**: Se não conseguir visualizar os dados no separador Data Preview, clique no botão Atualizar até os dados aparecerem.
    
-1. Em seguida, podemos adicionar no nosso bloco **Select** e fazer nossas pequenas alterações antes de gravar os dados na tabela Synapse SQL. Para começar, clique no pequeno sinal **+ (1)** ao lado do nosso bloco de ingestão e escolha a opção **Select (2)**.
+1. Em seguida, podemos adicionar no nosso bloco **Selecione** e fazer nossas pequenas alterações antes de gravar os dados na tabela Synapse SQL. Para começar, clique no pequeno sinal **+ (1)** ao lado do nosso bloco de ingestão e escolha a opção **Selecione (2)**.
 
       ![](images/synapse17-1.png)
 
-1. Podemos deixar todas as configurações como padrão. Em seguida, adicionaremos nosso bloco **Sink**. sta é a etapa que gravará nossos dados em nosso banco de dados Synapse SQL. Clique no pequeno sinal **+ (1)** o lado do nosso bloco **Select**. até a parte inferior do menu de opções e selecione a opção **Sink (2)**.
+1. Podemos deixar todas as configurações como padrão. Em seguida, adicionaremos nosso bloco **Afundar**. sta é a etapa que gravará nossos dados em nosso banco de dados Synapse SQL. Clique no pequeno sinal **+ (1)** o lado do nosso bloco **Selecione**. até a parte inferior do menu de opções e selecione a opção **Afundar (2)**.
 
       ![](images/synapse18-1.png)
 
-1. Quando o bloco **Sink (1)** abrir, escolha **Inline (2)** para o *Sink type*. Em seguida, selecione **Azure Synapse Analytics (3)** para o *Inline dataset type*, e para o **Linked service**, selecione **Synapselinkedservice (4)**, que foi criado na etapa anterior. Certifique-se de executar **Test connection (5)** para o linked service.
+1. Quando o bloco **Coletor (1)** abrir, escolha **Embutido (2)** para o *Sink type*. Em seguida, selecione **Azure Synapse Analytics (3)** para o *Inline dataset type*, e para o **Serviço vinculado**, selecione **Synapselinkedservice (4)**, que foi criado na etapa anterior. Certifique-se de executar **Testar conexão (5)** para o linked service.
 
       ![](images/sink-1-1.png)
 
@@ -247,11 +248,11 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Data flow** para i
 
            ![](images/p18.png)    
 
-      - Na janela Editar linked service que é aberta, selecione o método de seleção do Azure como **From Azure subscription** **(1)**. Selecione a **Azure subscription (2)** para a qual você tem trabalhado. Selecione **asaworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para **Server name** e **openaisql (4)** como o **Database name**, clique em **Test connection (5)** e clique em **Save (6)**.
+      - Na janela Editar linked service que é aberta, selecione o método de seleção do Azure como **From Azure subscription** **(1)**. Selecione a **Assinatura do Azure (2)** para a qual você tem trabalhado. Selecione **asaworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para **Nome do servidor** e **openaisql (4)** como o **Nome do banco de dados**, clique em **Testar conexão (5)** e clique em **Salvar (6)**.
 
            ![](images/p19-1.png)
 
-1. Em seguida, precisaremos ir para o separador **Settings (1)** e ajustar o **Schema name** e **Table name**. Se você utilizou o script fornecido anteriormente para criar a tabela de destino, o nome do esquema é **dbo (1)** e o nome da tabela é **cs_detail (2)**.
+1. Em seguida, precisaremos ir para o separador **Configurações (1)** e ajustar o **Nome do esquema** e **Nome da tabela**. Se você utilizou o script fornecido anteriormente para criar a tabela de destino, o nome do esquema é **dbo (1)** e o nome da tabela é **cs_detail (2)**.
 
       ![](images/synapse20-1.png)
 
@@ -266,7 +267,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Data flow** para i
 
           ![](images/select-1.png)
     
-1. Retornando ao bloco **Sink (1)** por baixo de **Data preview (2)** clique **Refresh (3)**, vamos agora ver as 5 colunas que são esperadas.
+1. Retornando ao bloco **Sink (1)** por baixo de **Pré-visualização de dados (2)** clique **Atualizar (3)**, vamos agora ver as 5 colunas que são esperadas.
 
       ![](images/refresh-sink-1-1.png)
 
@@ -274,30 +275,29 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Data flow** para i
 
       ![](images/publish-dataflow.png)
 
-1. O seu Data flow  concluído e salvo terá a seguinte aparência:
+1. O seu Data flow concluído e salvo terá a seguinte aparência:
 
       ![](images/completed-dataflow.png)
 
 ### **D. Criar um Pipeline em Synapse**
 
-1. Depois de criarmos o nosso **Data flow**, precisaremos configurar um **Pipeline** para alojar o Data Flow. Para criar um **Pipeline**,  navegue até a barra de menu à esquerda e escolha a opção **Integrate (1)**. Em seguida, clique no botão **+ (2)** a parte superior do menu Integrate para **Add a new resource** e escolha **Pipeline (3)**.
+1. Depois de criarmos o nosso **Data flow**, precisaremos configurar um **Pipeline** para alojar o Data Flow. Para criar um **Pipeline**,  navegue até a barra de menu à esquerda e escolha a opção **Integrate (1)**. Em seguida, clique no botão **+ (2)** a parte superior do menu Integrate para **Adicionar um novo recurso** e escolha **Pipeline (3)**.
 
       ![](images/new-pipeline-1-1.png)
 
-2. Em seguida, precisamos adicionar um **Data flow** ao nosso Pipeline. Com o novo separador **Pipeline tab (1)** aberto, vá para a seção **Activities** e procure por `data` **(2)** e selecione a atividade **Data flow (3)** e **drag-and-drop (4)** no seu Pipeline.
+2. Em seguida, precisamos adicionar um **Fluxo de dados** ao nosso Pipeline. Com o novo separador **Pipeline tab (1)** aberto, vá para a seção **Atividades** e procure por `data` **(2)** e selecione a atividade **Fluxo de dados (3)** e **arrastar e soltar (4)** no seu Pipeline.
 
       ![](images/data-drag-1-1.png)
 
-3. No separador **Settings (1)** do **Data flow**, selecione o menu **Data flow (2)** e selecione o nome do fluxo de dados criado na etapa anterior. 
-Em seguida, expanda a seção **Staging (3)** na parte inferior das configurações e utilize o menu suspenso para o **Staging linked service**. Escolha o linked service que você criou **openailinkedservice (4)** para garantir a **Test connection (5)**. Em seguida, defina uma **Staging storage folder** na parte inferior e digite **workshop-data/Staging** **(6)**.
+3. No separador **Configurações (1)** do **Fluxo de dados**, selecione o menu **Fluxo de dados (2)** e selecione o nome do fluxo de dados criado na etapa anterior. Em seguida, expanda a seção **Encenação (3)** na parte inferior das configurações e utilize o menu suspenso para o **Serviço vinculado de preparação**. Escolha o linked service que você criou **openailinkedservice (4)** para garantir a **Testar conexão (5)**. Em seguida, defina uma **Pasta de armazenamento de preparação** na parte inferior e digite **workshop-data/Staging** **(6)**.
 
       ![](images/staging-1-1.png)
 
-4. Em seguida, clique em **Publish all** para publicar as alterações efetuadas e salvar o seu progresso.
+4. Em seguida, clique em **Publicar tudo** para publicar as alterações efetuadas e salvar o seu progresso.
 
 ### **E. Executar um Pipeline em Synapse**
 
-1. Depois de publicar com sucesso o seu trabalho, precisamos iniciar o nosso pipeline. Para fazer isso, logo abaixo dos separadores na parte superior do Studio, há um ícone de *raio* que diz **Add trigger (1)**. Clique para adicionar um trigger e selecione **Trigger now (2)** para iniciar uma execução de pipeline e, quando a janela abrir, clique em **OK**.
+1. Depois de publicar com sucesso o seu trabalho, precisamos iniciar o nosso pipeline. Para fazer isso, logo abaixo dos separadores na parte superior do Studio, há um ícone de *raio* que diz **Adicionar gatilho (1)**. Clique para adicionar um trigger e selecione **Disparar agora (2)** para iniciar uma execução de pipeline e, quando a janela abrir, clique em **OK**.
 
       ![](images/trigger-1-1.png)
     
@@ -309,7 +309,7 @@ Em seguida, expanda a seção **Staging (3)** na parte inferior das configuraç�
 
 ## Task 3: Resultados da Consulta na Nossa Tabela SQL
 
-1. Certifique-se de que o status de execução do pipeline tenha **Succeeded**.
+1. Certifique-se de que o status de execução do pipeline tenha **Bem-sucedido**.
 
       ![](images/pipline-succeeded-1.png)
 
