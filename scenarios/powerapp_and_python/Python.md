@@ -1,76 +1,76 @@
 # Exercise 3: Build an Open AI application with Python
 
-1. Search and select **Azure Synapse Analytics** in the Azure portal.
+1. Pesquise e selecione **Azure Synapse Analytics** no portal do Azure.
 
       ![](images/p2-1.png)
 
-1. On **Azure Synapse Analytics** window select **asaworkspace<inject key="DeploymentID" enableCopy="false"/>**.   
+1. Na janela **Azure Synapse Analytics** selecione **asaworkspace<inject key="DeploymentID" enableCopy="false"/>**.   
 
-1. On the **Overview** blade under the **Getting started** section, click **Open** to open Synapse Studio.
+1. Na lâmina **Visão geral** na seção **Começando**, clique em **Abrir** para abrir o Synapse Studio.
      
      ![](images/open-workspace-1.png)
     
-1. Click on **Develop (1)**, then click on **+ (2)**, and select **Import**.
+1. Clique em **Desenvolver (1)**, depois clique em **+ (2)** e selecione **Importar**.
 
     ![](images/import-note-1.png)
 
-1. Navigate to the `C:\labfile\OpenAIWorkshop\scenarios\powerapp_and_python\python` location and select `OpenAI_notebook.ipynb`, then click on **Open**.
+1. Navegue até o local `C:\labfile\OpenAIWorkshop\scenarios\powerapp_and_python\python` e selecione `OpenAI_notebook.ipynb` e clique em **Abrir**.
 
      ![](images/notebook.png)
 
-1. Select **openaisparkpool** from the drop-down menu of **Attach to**.
+1. Selecione **openaisparkpool** no menu suspenso de **Anexar a**.
 
     ![](images/openai-sparkpool.png)
 
-1. Run the notebook step-by-step to complete this exercise. Click on the **Run** button next to the cell.
+1. Execute o notebook passo a passo para concluir este exercício. Clique no botão **Run** ao lado da célula.
 
      ![](images/run.png)
 
-1. In **1. Install OpenAI**, click on the **Run** button next to the first cells, and click on the **stop session**. Please wait till **Apache Spark pools** turn to stop state. 
+1. Em **1. Instalar OpenAI**, clique no botão **Executar** ao lado das primeiras células e clique em **parar sessão**. Aguarde até que os **pools Apache Spark** passem para o estado de parada. 
 
      ![](images/run-python1.png)
 
-      > **Note**: you may need to restart the kernel to use updated packages
+      > **Note**: Pode ser necessário reiniciar o kernel para usar os pacotes atualizados
 
-1. In **2. Import helper libraries and instantiate credentials**, and replace the **AZURE_OPENAI_API_KEY** and **AZURE_OPENAI_ENDPOINT** with your API key and endpoint URL.
+1. Em **2. Importe bibliotecas auxiliares e instancie as credenciais** e substitua **AZURE_OPENAI_API_KEY** e **AZURE_OPENAI_ENDPOINT** pela sua chave de API e URL do endpoint.
 
      ![](images/key-endpoint.png)
    
-1. From Azure Portal, navigate to the **openaicustom-<inject key="DeploymentID" enableCopy="false"/>** resource group, and select the **openai-<inject key="DeploymentID" enableCopy="false"/>** Azure OpenAI resource.
+1. No Portal do Azure, navegue até o grupo de recursos **openaicustom-<inject key="DeploymentID" enableCopy="false"/>** e selecione o recurso **openai-<inject key="DeploymentID" enableCopy="false"/>** do Azure OpenAI.
 
-    ![](images/Ex4b-S7.1-1.png)
+    ![](images/18-10-24(11).png)
 
-1. Under Resource Management, select **Keys and Endpoint (1)**, and click **Show Keys (2)**. Copy **Key 1 (3)** and **Endpoint (4)**, and replace the **AZURE_OPENAI_API_KEY** and **AZURE_OPENAI_ENDPOINT** with your API key and Endpoint URL in the script.
+1. Em Gerenciamento de Recursos, selecione **Chaves e Endpoint (1)** e clique em **Mostrar Chaves (2)**. Copie **Chave 1 (3)** e **Ponto final (4)** e substitua **AZURE_OPENAI_API_KEY** e **AZURE_OPENAI_ENDPOINT** pela sua chave de API e URL do Endpoint no script.
 
-   ![](images/p22-1.png)
+   ![](images/18-10-24(12).png)
      
-    > **Note:** If you encounter an error "Openai module not found", enter `%` in before the **pip install** in the Install OpenAI cell and re-run the notebook again.
+    > **Note:** Se você encontrar o erro "Módulo Openai não encontrado", digite `%` antes de **pip install** na célula Instalar OpenAI e execute o notebook novamente.
 
-1. For **2. Choose a Model**, and replace the **model** value from **text-curie-001** to **demomodel**.
+1. Para **2. Escolha um modelo** e substitua o valor do **modelo** de **text-curie-001** para **demomodel**.
 
     ![](images/choosemodel.png)
 
-1. In **temperature**, replace **engine** value from **text-curie-001** to **demomodel**.
+1. Em **temperatura**, substitua o valor **motor** de **text-curie-001** para **demomodel**.
 
      ![](images/temp.png)
 
-1. In **top_p**, replace **engine** value from **text-curie-001** to **demomodel**.
+1. Em **top_p**, substitua o valor **engine** de **text-curie-001** para **demomodel**.
 
      ![](images/top-p.png)
 
-1. For **n**, replace **engine** value from **text-curie-001** to **demomodel**.
+1. Para **n**, substitua o valor **engine** de **text-curie-001** para **demomodel**.
 
      ![](images/n.png)
 
-1. In **logprobs**, replace **engine** value from **text-curie-001** to **demomodel**.
+1. Em **logprobs**, substitua o valor **engine** de **text-curie-001** para **demomodel**.
 
      ![](images/logprobs.png)
 
-1. After running the notebook successfully, click on **Publish all**.
+1. Depois de executar o notebook com sucesso, clique em **Publicar tudo**.
 
      ![](images/publish.png)
 
-1. Then click on **Publish** to save the changes. 
+1. Em seguida, clique em **Publicar** para salvar as alterações.
 
     ![](images/publish-1.png)
 

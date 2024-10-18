@@ -4,7 +4,7 @@
 
    ![](./images/welcome-1.png)
      
-2. Selecione **aplicações** na navegação à esquerda e clique em **Importar aplicações de tela**. 
+2. Selecione **Aplicações** na navegação à esquerda e clique em **Importar aplicações de tela**. 
 
     ![](./images/powerapps-import-1.png)
 
