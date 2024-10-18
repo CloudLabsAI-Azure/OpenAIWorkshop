@@ -109,7 +109,7 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
     
 1. Digite **y** e pressione enter para prosseguir.
 
-1. No [Portal do Azure](https://portal.azure.com), navegue para a Conta de Armazenamento com o sufixo `functions` selecionando o **openai-<inject key="DeploymentID" enableCopy="false"/>* * grupo de recursos e selecione a conta de armazenamento da lista de recursos.
+1. No [Portal do Azure](https://portal.azure.com), navegue para a Conta de Armazenamento com o sufixo `functions` selecionando o **openai-<inject key="DeploymentID" enableCopy="false"/>** grupo de recursos e selecione a conta de armazenamento da lista de recursos.
 
     ![](images/storage-functions-1.png)
     
@@ -117,7 +117,7 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
    ![](images/storage-fuctions2-1.png)
 
-1. Volte para a sessão Bash da Cloud Shell e execute o comando abaixo para fazer o upload dos arquivos JSON para a storage account, substituindo a <CONNECTION_STRING> copiada na etapa anterior. Este passo irá demorar alguns minutos para ser concluído.
+1. Volte para a sessão Bash do Cloud Shell e execute o comando abaixo para fazer o upload dos arquivos JSON para uma conta de armazenamento, atualizando a <CONNECTION_STRING> copiada na etapa anterior. Este passo levará alguns minutos para ser concluído.
 
     ```bash 
     python upload_docs.py --conn_string "<CONNECTION_STRING>"
@@ -200,7 +200,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
       ![](images/synapse11-1.png)
    
-1. Quando o editor de fluxo de dados abrir, clique em **Adicionar fonte**. Uma nova janela será aberta na parte inferior da tela. Selecione **+ Novo** na linha **Conjunto de dados** deixando as outras opções como padrão.
+1. Quando o editor de fluxo de dados abrir, clique em **Adicionar fonte**. Uma nova janela será aberta na parte inferior da tela. Selecione **+ Novo** na linha **Conjunto de Dados** deixando as outras opções como padrão.
 
       ![](images/synapse12-1.png)
 
@@ -212,7 +212,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
       ![](images/synapse14-1-1.png)
 
-1. Selecione o Linked Service com o nome **openailinkedservice (1)** que acabamos de configurar nas etapas acima. Você precisará selecionar a **File path** para escolher o diretório onde nossos arquivos JSON estão armazenados. Deve ser algo semelhante a **workshop-data / cleansed_documents (2)**. Clique no botão **OK (3)** para fechar a janela.
+1. Selecione o Linked Service com o nome **openailinkedservice (1)** que acabamos de configurar nas etapas acima. Você precisará selecionar a **Caminho do arquivo** para escolher o diretório onde nossos arquivos JSON estão armazenados. Deve ser algo semelhante a **workshop-data / cleansed_documents (2)**. Clique no botão **OK (3)** para fechar a janela.
 
       ![](images/synapse15-1.png)
    
@@ -317,12 +317,12 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
 3. Para consultar os novos dados, navegue até o menu do lado esquerdo e escolha **Develop (1)**. Clique no **SQL Script (2)** existente e substitua o conteúdo pelo **SQL Code (3)** abaixo. Em seguida, selecione **openaisql (4)** pool **Run (5)**. 
 
-     ```SQL 
+    ```SQL 
     SELECT sentiment, count(*) as "Sum of Sentiment"
     FROM [dbo].[cs_detail]
     GROUP BY sentiment
     ORDER BY count(*) desc     
-     ```
+    ```
 
    - Os resultados da sua consulta, se você estiver usando os arquivos carregados como parte deste repositório ou do workshop, você verá **Results (6)** semelhantes aos abaixo.
 

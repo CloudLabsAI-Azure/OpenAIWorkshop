@@ -4,11 +4,11 @@
 
    ![](./images/welcome-1.png)
      
-2. Selecione **Apps** na navegação à esquerda e clique em **Import canvas app**. 
+2. Selecione **aplicações** na navegação à esquerda e clique em **Importar aplicações de tela**. 
 
     ![](./images/powerapps-import-1.png)
 
-3. Na página **Import package**, clique em **Upload**.
+3. Na página **Pacote de importação**, clique em **Carregar**.
 
     ![](./images/upload-importpackage-1.png)
 
@@ -16,7 +16,7 @@
 
      ![](./images/openai-play.png)
 
-5. Uma vez que o arquivo zip é carregado, no **Review Package Content** para **OpenAI Playground**, clique no ícone de configuração em **Actions**.
+5. Uma vez que o arquivo zip é carregado, no **Review Package Content** para **OpenAI Playground**, clique no ícone de configuração em **ACTION**.
 
      ![](./images/review-package-content.png)
 
@@ -30,7 +30,7 @@
 
    ![](./images/import-openai-package.png)
 
-9. Quando a importação estiver concluída, clique em **Apps (1)**, clique em `...` **(2)** ao lado de **OpenAI Playground**, e clique em **Edit (3)**.
+9. Quando a importação estiver concluída, clique em **Aplicações (1)**, clique em `...` **(2)** ao lado de **OpenAI Playground**, e clique em **Editar (3)**.
 
       ![](./images/powerapps-apps-edit-1.png)
 
@@ -40,15 +40,15 @@
 
       ![](./images/powerapps-apps-view-1.png)
 
-11. Para voltar atrás, clique em **Back (1)**, depois clique em **Leave (2)**.
+11. Para voltar atrás, clique em **Anterior (1)**, depois clique em **Sair (2)**.
 
       ![](./images/powerapps-apps-exit-1.png)
 
-12. Em seguida, no tabulador **Flows (1)**, selecione **Openaisummarization (2)**, depois clique em `...` **(3)** e **Turn on (4)** seu flow.
+12. Em seguida, no tabulador **Fluxos (1)**, selecione **Openaisummarization (2)**, depois clique em `...` **(3)** e **Ligar (4)** seu flow.
 
       ![](./images/flow-on-1.png)
 
-13. Clique em **Edit** para Openaisummarization.
+13. Clique em **Editar** para Openaisummarization.
 
       ![](./images/flow-edit-1.png)
 
@@ -56,11 +56,11 @@
 
       ![](./images/update-values-1.png)
    
-15. Na página **Apps (1)**, selecione a applicação **OpenAI Playground** para executar o aplicativo clicando no botão **Play (2)**.
+15. Na página **Aplicações (1)**, selecione a applicação **OpenAI Playground** para executar o aplicativo clicando no botão **Jogar (2)**.
 
      ![](./images/canves-play.png)
 
-16. Se você receber um pop-up pedindo para iniciar uma avaliação gratuita, clique em **Star a Free Trial**, em seguida, em **You need a Power Apps license to use this app** selecione **Start a 30-day trial**. Escolha a sua região no menu e clique no botão **Get started** aguarde 2-3 minutos. Pode demorar a iniciar a versão experimental.
+16. Se você receber um pop-up solicitando para iniciar uma avaliação gratuita, clique em **Star a Free Trial**, em seguida, em **You need a Power Apps License to use this app** selecione **Start a 30- teste diário**. Escolha sua região no menu e clique no botão **Começar** aguarde 2-3 minutos. Você pode atrasar o início da versão experimental.
     
 17. No **Canvas**, clique no botão **Summary** **(1)** e verifique o **auto-filled text** **(2)**. Em seguida, clique no botão **Submit** **(3)** para obter o **Summary** **(4)**.
 
