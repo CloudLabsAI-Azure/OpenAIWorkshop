@@ -21,7 +21,6 @@ Controla a aleatoriedade: a redução resulta em menos finalizações aleatória
 **max_tokens**
 ```
 À medida que a temperatura se aproxima de zero, o modelo tornar-se-á determinista e repetitivo.
-
 ```
 
 **top_p***
