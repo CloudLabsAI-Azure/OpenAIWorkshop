@@ -10,7 +10,7 @@ Esse cenário permite o uso do OpenAI para resumir e analisar os logs de chamada
     - [Tarefa 2. Configurar o Synapse Workspace](#Tarefa-2-Configurar-o-Synapse-Workspace)
         - [a. Lançar o Azure Cloud Shell](#A-Lançar-o-Azure-Cloud-Shell)
         - [b. No Cloud Shell execute os seguintes comandos:](#b-Carregar-arquivos-para-a-storage-account)
-        - [c. Criar tabela SQL de destino](#A-Criar-tabela-SQL-de-destinoe)
+        - [c. Criar tabela SQL de destino](#A-Criar-tabela-SQL-de-destino)
         - [d. Criar a Origem e Destino em Linked Services](#B-Criar-a-Origem-e-Destino-em-Linked-Services)
         - [e. Criar Fluxo de dados em Synapse](#C-Criar-Fluxo-de-dados-em-Synapse)
         - [f. Criar um Pipeline em Synapse](#D-Criar-um-Pipeline-em-Synapse)
