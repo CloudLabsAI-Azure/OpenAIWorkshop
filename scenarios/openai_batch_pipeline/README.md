@@ -5,19 +5,16 @@
 Esse cenário permite o uso do OpenAI para resumir e analisar os logs de chamadas de atendimento ao cliente para a empresa fictícia - Contoso. Os dados são inseridos numa blob storage account e, em seguida, processados por uma Azure Function. Baseado no texto do log das chamadas, a Azure Function retornará o sentimento do cliente, o produto sobre o qual a conversa foi abordada, o tópico da chamada, bem como um resumo da chamada. Esses resultados são gravados em um local separado em blob storage. A partir daí, o Synapse Analytics é utilizado para extrair os dados e para criar uma tabela que pode ser consultada para obter mais informações.
 
 # Índice
-- [Usar Open AI para Inserir dados em Bulk, Executar Operações Inteligentes, e Analisar Dados com Synapse](#build-an-open-ai-pipeline-to-ingest-batch-data-perform-intelligent-operations-and-analyze-in-synapse)
-- [Sumário](#summary)
-- [Índice](#table-of-contents)
 - [Diagrama de Arquitetura](#Diagrama-de-Arquitetura)
     - [Tarefa 1. Inserir Dados no Storage criado no passo 1](#Tarefa-1-Inserir-Dados-em-Storage-account)
     - [Tarefa 2. Configurar o Synapse Workspace](#Tarefa-2-Configurar-o-Synapse-Workspace)
         - [a. Lançar o Azure Cloud Shell](#A-Lançar-o-Azure-Cloud-Shell)
         - [b. No Cloud Shell execute os seguintes comandos:](#b-Carregar-arquivos-para-a-storage-account)
-        - [c. Criar tabela SQL de destino](#c-Criar-tabela-SQL-de-destinoe)
-        - [d. Criar a Origem e Destino em Linked Services](#d-Criar-a-Origem-e-Destino-em-Linked-Services)
-        - [e. Criar Fluxo de dados em Synapse](#e-Criar-Fluxo-de-dados-em-Synapse)
-        - [f. Criar um Pipeline em Synapse](#f-Criar-um-Pipeline-em-Synapse)
-        - [g. Executar um Pipeline em Synapse](#g-Executar-um-Pipeline-em-Synapse)
+        - [c. Criar tabela SQL de destino](#A-Criar-tabela-SQL-de-destinoe)
+        - [d. Criar a Origem e Destino em Linked Services](#B-Criar-a-Origem-e-Destino-em-Linked-Services)
+        - [e. Criar Fluxo de dados em Synapse](#C-Criar-Fluxo-de-dados-em-Synapse)
+        - [f. Criar um Pipeline em Synapse](#D-Criar-um-Pipeline-em-Synapse)
+        - [g. Executar um Pipeline em Synapse](#E-Executar-um-Pipeline-em-Synapse)
     - [Tarefa 3. Resultados da Consulta na Nossa Tabela SQL ](#Task-3-Resultados-da-Consulta-na-Nossa-Tabela-SQL)
 
 # Diagrama de Arquitetura
