@@ -38,17 +38,17 @@
 
     ![](images/18-10-24(11).png)
 
-1. Em Gerenciamento de Recursos, selecione **Chaves e Endpoint (1)** e clique em **Mostrar Chaves (2)**. Copie **Chave 1 (3)** e **Ponto final (4)** e substitua **AZURE_OPENAI_API_KEY** e **AZURE_OPENAI_ENDPOINT** pela sua chave de API e URL do Endpoint no script.
+1. Em Gerenciamento de Recursos, selecione **Chaves e Ponto de extremidade (1)** e clique em **Mostrar as Chaves (2)**. Copie **Chave 1 (3)** e **Ponto de extremidade (4)** e substitua **AZURE_OPENAI_API_KEY** e **AZURE_OPENAI_ENDPOINT** pela sua chave de API e URL do Endpoint no script.
 
    ![](images/18-10-24(12).png)
      
     > **Note:** Se você encontrar o erro "Módulo Openai não encontrado", digite `%` antes de **pip install** na célula Instalar OpenAI e execute o notebook novamente.
 
-1. Para **2. Escolha um modelo** e substitua o valor do **modelo** de **text-curie-001** para **demomodel**.
+1. Para **2. Choose a Model** e substitua o valor do **model** de **text-curie-001** para **demomodel**.
 
     ![](images/choosemodel.png)
 
-1. Em **temperatura**, substitua o valor **motor** de **text-curie-001** para **demomodel**.
+1. Em **temperature**, substitua o valor **motor** de **text-curie-001** para **demomodel**.
 
      ![](images/temp.png)
 
