@@ -10,13 +10,11 @@
      
      ![](images/open-workspace-1.png)
     
-1. Clique em **Desenvolver (1)**, depois clique em **+ (2)** e selecione **Importar**.
+1. Clique em **Desenvolver (1)**, depois clique em **+ (2)** e selecione **Importar (3)**.
 
     ![](images/import-note-1.png)
 
 1. Navegue até o local `C:\labfile\OpenAIWorkshop\scenarios\powerapp_and_python\python` e selecione `OpenAI_notebook.ipynb` e clique em **Abrir**.
-
-     ![](images/notebook.png)
 
 1. Selecione **openaisparkpool** no menu suspenso de **Anexar a**.
 
@@ -26,13 +24,13 @@
 
      ![](images/run.png)
 
-1. Em **1. Instalar OpenAI**, clique no botão **Executar** ao lado das primeiras células e clique em **parar sessão**. Aguarde até que os **pools Apache Spark** passem para o estado de parada. 
+1. Em **1. Install OpenAI**, clique no botão **Executar** ao lado das primeiras células e clique em **parar sessão**. Aguarde até que os **pools Apache Spark** passem para o estado de parada. 
 
      ![](images/run-python1.png)
 
       > **Note**: Pode ser necessário reiniciar o kernel para usar os pacotes atualizados
 
-1. Em **2. Importe bibliotecas auxiliares e instancie as credenciais** e substitua **AZURE_OPENAI_API_KEY** e **AZURE_OPENAI_ENDPOINT** pela sua chave de API e URL do endpoint.
+1. Em **2. Import helper libraries and instantiate credentials** e substitua **AZURE_OPENAI_API_KEY** e **AZURE_OPENAI_ENDPOINT** pela sua chave de API e URL do endpoint.
 
      ![](images/key-endpoint.png)
    
