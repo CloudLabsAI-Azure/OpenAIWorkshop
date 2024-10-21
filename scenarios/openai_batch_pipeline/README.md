@@ -12,7 +12,7 @@ Esse cenário permite o uso do OpenAI para resumir e analisar os logs de chamada
         - [b. No Cloud Shell execute os seguintes comandos:](#b-Carregar-arquivos-para-a-storage-account)
         - [c. Criar tabela SQL de destino](#A-Criar-tabela-SQL-de-destino)
         - [d. Criar a Origem e Destino em Linked Services](#B-Criar-a-Origem-e-Destino-em-Linked-Services)
-        - [e. Criar Fluxo de dados em Synapse](#C-Criar-Fluxo-de-dados-em-Synapse)
+        - [e. Criar Fluxo de dados em Synapse](#C-Criar-fluxo-de-dados-Synapse)
         - [f. Criar um Pipeline em Synapse](#D-Criar-um-Pipeline-em-Synapse)
         - [g. Executar um Pipeline em Synapse](#E-Executar-um-Pipeline-em-Synapse)
     - [Tarefa 3. Resultados da Consulta na Nossa Tabela SQL ](#Task-3-Resultados-da-Consulta-na-Nossa-Tabela-SQL)
@@ -188,7 +188,7 @@ Em seguida, precisaremos criar dois linked services: um para nossa origem (os ar
 
       ![](images/publish-linked-1.png)
    
-### **C. Create Synapse Data Flow**
+### **C. Criar fluxo de dados Synapse**
 
 Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** para inserir os nossos dados JSON e gravá-los em nosso banco de dados SQL. Para este workshop, este será um fluxo de dados muito simples que insere os dados, renomeia algumas colunas e os grava de volta na tabela de destino.
 
