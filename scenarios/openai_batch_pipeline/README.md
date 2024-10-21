@@ -10,7 +10,7 @@ Esse cenário permite o uso do OpenAI para resumir e analisar os logs de chamada
 - [Índice](#table-of-contents)
 - [Diagrama de Arquitetura](#architecture-diagram)
 - [Implantação](#deployment)
-    - [Tarefa 1. Inserir Dados no Storage criado no passo 1](#step-1-Ingest-Data-to-Storage-account)
+    - [Tarefa 1. Inserir Dados no Storage criado no passo 1](#Tarefa-1-Inserir-Dados-em-Storage-account)
     - [Tarefa 2. Configurar o Synapse Workspace](#step-3-set-up-synapse-workspace)
         - [a. Lançar o Azure Cloud Shell](#a-launch-azure-cloud-shell)
         - [b. No Cloud Shell execute os seguintes comandos:](#b-in-the-cloud-shell-run-the-below-commands)
