@@ -158,7 +158,7 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
     )
     ```
     
-   ![](images/openai-6-1.png)
+    ![](images/openai-6-1.png)
     
 1. Em seguida, clique em **Publicar** para publicar o script SQL.
 
@@ -317,13 +317,13 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
 3. Para consultar os novos dados, navegue até o menu do lado esquerdo e escolha **Develop (1)**. Clique no **SQL Script (2)** existente e substitua o conteúdo pelo **SQL Code (3)** abaixo. Em seguida, selecione **openaisql (4)** pool **Run (5)**. 
 
-    ```SQL 
-    SELECT sentiment, count(*) as "Sum of Sentiment"
-    FROM [dbo].[cs_detail]
-    GROUP BY sentiment
-    ORDER BY count(*) desc     
-    ```
-
+     ```SQL 
+     SELECT sentiment, count(*) as "Sum of Sentiment"
+     FROM [dbo].[cs_detail]
+     GROUP BY sentiment
+     ORDER BY count(*) desc     
+     ```
+     
    - Os resultados da sua consulta, se você estiver usando os arquivos carregados como parte deste repositório ou do workshop, você verá **Results (6)** semelhantes aos abaixo.
 
         ![](images/lastpic.png)
