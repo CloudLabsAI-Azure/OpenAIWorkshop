@@ -103,7 +103,6 @@ La arquitectura para este laboratorio involucra varios componentes clave:
 
     ![](media/openai-1.png "Grupos de recursos")
    
-
 Este laboratorio práctico tiene como objetivo capacitar a los participantes en el aprovechamiento de las tecnologías OpenAI dentro de los entornos de Azure, que abarca la ingesta de datos, el desarrollo de aplicaciones, prompt engineering, la optimización de modelos y los conceptos teóricos de IA para un aprendizaje y una aplicación integrales.
 
 ## Contacto de Soporte
@@ -111,7 +110,7 @@ Este laboratorio práctico tiene como objetivo capacitar a los participantes en 
 El equipo de soporte de CloudLabs está disponible las 24 horas del día, los 7 días de la semana, los 365 días del año, por correo electrónico y chat en vivo para garantizar una asistencia sin inconvenientes en cualquier momento. Ofrecemos canales de soporte dedicados, diseñados específicamente tanto para estudiantes como para instructores, garantizando que todas sus necesidades sean atendidas de forma rápida y eficiente.
 
 Contactos de Soporte para Estudiantes:
-- Soporte por Correo Electrónico: labs-support@spektrasystems.com
+- Soporte por Correo Electrónico: cloudlabs-support@spektrasystems.com
 - Soporte por Chat En Vivo: https://cloudlabs.ai/labs-support
 
 Ahora, haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
