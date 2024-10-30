@@ -183,7 +183,7 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
 1. No [Portal de Azure](https://portal.azure.com), navegue até ao synapse workspace **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** no resource group **openai-<inject key="DeploymentID" enableCopy="false"/>**. Na aba **Visão geral**, clique em **Abrir** para iniciar o Synapse workspace.
 
-      ![](images/openai-5-1.png)
+      ![](images/image(9).png)
 
 1. Clique na seção **Develop (1)** no Synapse Studio, clique em **+ (2)** faça login no topo esquerdo e selecione **SQL script (3)**. Isso abrirá uma nova janela com um editor de script SQL.
 
