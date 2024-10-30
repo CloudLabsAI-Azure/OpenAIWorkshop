@@ -124,9 +124,55 @@ Los registros de llamadas se cargan en una ubicación designada en el almacenami
 
 ## Tarea 2: Configurar un área de trabajo de Synapse
 
-### **A. Crear la Tabla SQL de Destino** 
+### **A. Cree un espacio de trabajo de Synape y un grupo de SQL**
 
-1. En el [Portal de Azure](https://portal.azure.com), navegue hasta el área de trabajo de Synapse **asaworkspace<inject key="DeploymentID" enableCopy="false"/>** del grupo de recursos **openai-<inject key="DeploymentID" enableCopy="false"/>**. En la pestaña **Información general**, haga clic en **Abrir** para iniciar el espacio de trabajo de Synapse.
+1. En Azure Portal, busque **Synapse** y seleccione **Azure Synapse Analytics**.
+
+   ![](images/image(1).png)
+
+2. En la página **Azure Synapse Analytics**, haga clic en **+ Crear**.
+3. Se le dirigirá a la página **Crear Synapse Analytics** donde configurará el espacio de trabajo de Synapse.
+4. En la pestaña Conceptos básicos, proporcione los siguientes detalles:
+
+   - **Suscripción**: utilice **Suscripción existente(1)**.
+   - **Grupo de recursos**: utilice **openai-<inject key="DeploymentID" enableCopy="false"></inject>(2)**
+   - **Nombre del espacio de trabajo**: **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>(3)**
+   - **Región**: seleccione la región predeterminada (4)
+   - **Seleccione Data Lake Storage Gen2**: seleccione **De la suscripción(5)**
+   - **Nombre de cuenta**: **asadatalake<inject key="DeploymentID" enableCopy="false"></inject>(6)**
+   - **Nombre del sistema de archivos**: **defaultfs(7)**
+   - Haga clic en **Siguiente: Seguridad>(8)**
+
+     ![](images/image(2).png)
+
+5. En la pestaña **Seguridad**, asegúrese de que el método de autenticación esté configurado en **Usar autenticación local y de ID de Microsoft Entra** y haga clic en **Siguiente: Networkikng**
+
+   ![](images/image(3).png)
+
+6. En la pestaña de redes, asegúrese de que Red virtual administrada esté **Desactivada(1)** y **Permitir conexiones desde todas las direcciones IP(2)** esté marcada y luego haga clic en **Revisar + Crear** y **Crear*. * para implementar el recurso.
+
+   ![](images/image(4).png)
+
+7. Una vez implementado el recurso, haga clic en **Ir al grupo de recursos**
+8. Navegue hasta el espacio de trabajo de Synapse que ha creado, seleccione **Grupos SQL(1)** en el panel izquierdo en Grupos de análisis y haga clic en **+ Nuevo(2)**.
+
+   ![](images/image(6).png)
+
+9. En la pestaña Conceptos básicos de Nuevo grupo de SQL dedicado, proporcione los siguientes detalles:
+
+    - **Nombre del grupo de SQL dedicado**: **openaisql01**
+    - **Nivel de rendimiento**: Reducirlo a **DW100c**
+    - Haga clic en **Siguiente: Configuraciones adicionales**
+
+      ![](images/image(7).png)
+
+10. Haga clic en **Revisar + crear** y espere a que se complete la implementación.
+
+    ![](images/image(8).png) 
+
+### **B. Crear la Tabla SQL de Destino** 
+
+1. En el [Portal de Azure](https://portal.azure.com), navegue hasta el área de trabajo de Synapse **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** del grupo de recursos **openai-<inject key="DeploymentID" enableCopy="false"/>**. En la pestaña **Información general**, haga clic en **Abrir** para iniciar el espacio de trabajo de Synapse.
 
       ![](images/openai-5.png)
 
@@ -134,7 +180,7 @@ Los registros de llamadas se cargan en una ubicación designada en el almacenami
 
       ![](images/synapse3.png)
 
-1. Copie y pegue el siguiente script en el editor **(1)**, luego cambie el valor **Conectar a** seleccionando **openaisql (2)** del menú desplegable, y en **Usar base de datos**, asegúrese de que **openaisql (3)** esté seleccionado, y haga clic en el botón **Ejecutar (4)** en la esquina superior izquierda, tal como se muestra en la siguiente imagen. Termine este paso presionando **Publicar todo (5)** justo encima del botón **Ejecutar** para publicar nuestro trabajo hasta el momento.
+1. Copie y pegue el siguiente script en el editor **(1)**, luego cambie el valor **Conectar a** seleccionando **openaisql01(2)** del menú desplegable, y en **Usar base de datos**, asegúrese de que **openaisql01(3)** esté seleccionado, y haga clic en el botón **Ejecutar (4)** en la esquina superior izquierda, tal como se muestra en la siguiente imagen. Termine este paso presionando **Publicar todo (5)** justo encima del botón **Ejecutar** para publicar nuestro trabajo hasta el momento.
 
     ```SQL 
     CREATE TABLE [dbo].[cs_detail]
@@ -153,7 +199,7 @@ Los registros de llamadas se cargan en una ubicación designada en el almacenami
 
       ![](images/publish-sqlscript.png)
 
-### **B. Crear Servicios Vinculados de Origen y Destino**
+### **C. Crear Servicios Vinculados de Origen y Destino**
 
 A continuación, necesitaremos crear dos servicios vinculados: uno para nuestra fuente (los archivos JSON en el Data Lake) y otro para la base de datos SQL Synapse que alberga la tabla que creamos en el paso anterior.
 
@@ -181,7 +227,7 @@ A continuación, necesitaremos crear dos servicios vinculados: uno para nuestra 
 
       ![](images/publish-linked.png)
    
-### **C. Crear Flujo de Datos en Synapse**
+### **D. Crear Flujo de Datos en Synapse**
 
 Mientras todavía estamos dentro de Synapse Studio, ahora necesitaremos crear un **flujo de datos** para ingerir nuestros datos JSON y escribirlos en nuestra base de datos SQL. Para este taller, será un flujo de datos muy simple que ingiere los datos, cambia el nombre de algunas columnas y vuelve a escribir la información en la tabla de destino.
 
@@ -268,7 +314,7 @@ Mientras todavía estamos dentro de Synapse Studio, ahora necesitaremos crear un
 
       ![](images/completed-dataflow.png)
 
-### **D. Crear Pipeline de Synapse**
+### **E. Crear Pipeline de Synapse**
 
 1. Una vez que hayamos creado nuestro **Flujo de datos**, necesitaremos configurar un **Pipeline** para alojarlo. Para crear un **Pipeline**, navegue hasta la barra de menú de la izquierda y elija la opción **Integrar (1)**. Luego haga clic en **+ (2)** en la parte superior del menú Integrar para **Agregar un nuevo recurso** y elija **Canalización (3)**.
 
@@ -285,7 +331,7 @@ Luego expanda la sección **Ensayo (3)** en la parte inferior de la configuraci�
 
 4. Luego, haga clic en **Publicar todo** para publicar sus cambios y guardar su progreso.
 
-### **E. Activar el Pipeline de Synapse**
+### **F. Activar el Pipeline de Synapse**
 
 1. Una vez que haya publicado con éxito su trabajo, debemos activar nuestro canal. Para hacer esto, justo debajo de las pestañas en la parte superior de Synapse Studio, hay un ícono de *rayo* que dice **Agregar desencadenador (1)**. Haga clic en él para agregar un activador y seleccione **Desencadenar ahora (2)** para comenzar una ejecución del pipeline; luego, cuando se abra la ventana, haga clic en **OK**.
 
