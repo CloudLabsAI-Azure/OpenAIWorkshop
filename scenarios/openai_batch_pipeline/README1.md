@@ -132,9 +132,56 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
 ## Tarefa 2: Configurar o Synapse Workspace
 
-### **A. Criar tabela SQL de destino**
+### **A. Criar espaço de trabalho Synape e pool SQL**
 
-1. No [Portal de Azure](https://portal.azure.com), navegue até ao synapse workspace **asaworkspace<inject key="DeploymentID" enableCopy="false"/>** no resource group **openai-<inject key="DeploymentID" enableCopy="false"/>**. Na aba **Visão geral**, clique em **Abrir** para iniciar o Synapse workspace.
+1. No portal do Azure, procure **Synapse** e selecione **Azure Synapse Analytics**.
+
+   ![](images/image(9).png)
+
+2. 2. Na página **Azure Synapse Analytics**, clique em **+ Criar**.
+3. Você será direcionado para a página **Criar Synapse Analytics**, onde configurará o espaço de trabalho do synapse.
+4. Na guia Básico forneça os seguintes detalhes:
+
+   - **Assinatura**: Use **Assinatura Existente(1)**.
+   - **Grupo de recursos**: use **openai-<inject key="DeploymentID" enableCopy="false"></inject>(2)**
+   - **Nome do espaço de trabalho**: **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>(3)**
+   - **Região**: Selecione a região padrão(4)
+   - **Selecione Data Lake Storage Gen2**: Selecione **Da assinatura(5)**
+   - **Nome da conta**: **asadatalake<inject key="DeploymentID" enableCopy="false"></inject>(6)**
+   - **Nome do sistema de arquivos** : **defaultfs(7)**
+   - Clique em **Próximo: Segurança>(8)**
+  
+     ![](images/image(10).png)
+
+5. Na guia **Segurança**, certifique-se de que o método de autenticação esteja definido como **Usar autenticação local e Microsoft Entra ID** e clique em **Próximo: Networkikng**
+
+   ![](images/image(11).png)
+
+6. Na guia rede, certifique-se de que a rede virtual gerenciada esteja **Desativada(1)** e **Permitir conexões de todos os endereços IP(2)** esteja marcada e clique em **Revisar + Criar** e **Criar* * para implantar o recurso.
+
+   ![](images/image(12).png)
+
+7. Depois que o recurso for implantado, clique em **Ir para o grupo de recursos**
+   
+8. Navegue até o espaço de trabalho de sinapse que você criou, selecione **SQL Pools(1)** no painel esquerdo em pools de análise e clique em **+ Novo(2)**.
+
+   ![](images/image(13).png)
+
+9. Na guia Básico do novo pool de SQL dedicado, forneça os seguintes detalhes:
+
+    - **Nome do pool SQL dedicado** : **openaisql01**
+    - **Nível de desempenho**: Reduza para **DW100c**
+    - Clique em **Próximo: Configurações adicionais**
+
+      ![](images/image(14).png)
+
+10. Clique em **Revisar + criar** e aguarde a conclusão da implantação.
+
+    ![](images/image(15).png) 
+
+### **B. Criar tabela SQL de destino**
+
+1. No [Portal de Azure](https://portal.azure.com), navegue até ao synapse workspace **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** no resource group **openai-<inject key="DeploymentID" enableCopy="false"/>**. Na aba **Visão geral**, clique em **Abrir** para iniciar o Synapse workspace.
 
       ![](images/openai-5-1.png)
 
@@ -142,7 +189,7 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
       ![](images/synapse3-1.png)
 
-1. Copie e cole o seguinte script no editor **(1)**, em seguida, altere o valor **Conectar-se com** selecionando **openaisql (2)** a partir da lista suspensa, e para **Usar banco de dados**, confirme que **openaisql (3)** está selecionado, e clique no botão **Executar (4)** no canto superior esquerdo, como mostra a imagem abaixo. Conclua esta etapa pressionando **Publicar tudo (5)** logo acima do botão **Correr** para publicar nosso trabalho até agora.
+1. Copie e cole o seguinte script no editor **(1)**, em seguida, altere o valor **Conectar-se com** selecionando **openaisql01(2)** a partir da lista suspensa, e para **Usar banco de dados**, confirme que **openaisql01(3)** está selecionado, e clique no botão **Executar (4)** no canto superior esquerdo, como mostra a imagem abaixo. Conclua esta etapa pressionando **Publicar tudo (5)** logo acima do botão **Correr** para publicar nosso trabalho até agora.
 
     ```SQL 
     CREATE TABLE [dbo].[cs_detail]
@@ -161,7 +208,7 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
       ![](images/publish-sqlscript-1.png)
 
-### **B. Criar a Origem e Destino em Linked Services**
+### **C. Criar a Origem e Destino em Linked Services**
 
 Em seguida, precisaremos criar dois linked services: um para nossa origem (os arquivos JSON no Data Lake) e outro para o Banco de Dados SQL Synapse que contem a tabela que criamos na etapa anterior.
 
@@ -189,7 +236,7 @@ Em seguida, precisaremos criar dois linked services: um para nossa origem (os ar
 
       ![](images/publish-linked-1.png)
    
-### **C. Criar fluxo de dados Synapse**
+### **D. Criar fluxo de dados Synapse**
 
 Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** para inserir os nossos dados JSON e gravá-los em nosso banco de dados SQL. Para este workshop, este será um fluxo de dados muito simples que insere os dados, renomeia algumas colunas e os grava de volta na tabela de destino.
 
@@ -276,7 +323,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
       ![](images/completed-dataflow.png)
 
-### **D. Criar um Pipeline em Synapse**
+### **E. Criar um Pipeline em Synapse**
 
 1. Depois de criarmos o nosso **Data flow**, precisaremos configurar um **Pipeline** para alojar o Data Flow. Para criar um **Pipeline**,  navegue até a barra de menu à esquerda e escolha a opção **Integrate (1)**. Em seguida, clique no botão **+ (2)** a parte superior do menu Integrate para **Adicionar um novo recurso** e escolha **Pipeline (3)**.
 
@@ -292,7 +339,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
 4. Em seguida, clique em **Publicar tudo** para publicar as alterações efetuadas e salvar o seu progresso.
 
-### **E. Executar um Pipeline em Synapse**
+### **F. Executar um Pipeline em Synapse**
 
 1. Depois de publicar com sucesso o seu trabalho, precisamos iniciar o nosso pipeline. Para fazer isso, logo abaixo dos separadores na parte superior do Studio, há um ícone de *raio* que diz **Adicionar gatilho (1)**. Clique para adicionar um trigger e selecione **Disparar agora (2)** para iniciar uma execução de pipeline e, quando a janela abrir, clique em **OK**.
 
