@@ -136,9 +136,9 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
 1. No portal do Azure, procure **Synapse** e selecione **Azure Synapse Analytics**.
 
-   ![](images/image(9).png)
+   ![](images/image01.png)
 
-2. 2. Na página **Azure Synapse Analytics**, clique em **+ Criar**.
+2. Na página **Azure Synapse Analytics**, clique em **+ Criar**.
 3. Você será direcionado para a página **Criar Synapse Analytics**, onde configurará o espaço de trabalho do synapse.
 4. Na guia Básico forneça os seguintes detalhes:
 
