@@ -124,7 +124,7 @@ Los registros de llamadas se cargan en una ubicación designada en el almacenami
 
 ## Tarea 2: Configurar un área de trabajo de Synapse
 
-### **A. Cree un espacio de trabajo de Synape y un grupo de SQL**
+### **A. Configurar un área de trabajo de Synapse**
 
 1. En Azure Portal, busque **Synapse** y seleccione **Azure Synapse Analytics**.
 
