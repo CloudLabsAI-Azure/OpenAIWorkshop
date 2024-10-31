@@ -181,6 +181,7 @@ Los registros de llamadas se cargan en una ubicación designada en el almacenami
     - **Tamaño de nodo**: **Pequeño (4vCores/32GB)**
     - **Escala automática**: **Deshabilitado**
     - **Número de nodos** : **3**
+      
       ![](images/image(08).png)
 
 ### **B. Crear la Tabla SQL de Destino** 
