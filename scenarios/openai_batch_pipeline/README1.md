@@ -156,7 +156,7 @@ Los registros de llamadas se cargan en una ubicación designada en el almacenami
 7. Una vez implementado el recurso, haga clic en **Ir al grupo de recursos**
 8. Navegue hasta el espacio de trabajo de Synapse que ha creado, seleccione **Grupos SQL(1)** en el panel izquierdo en Grupos de análisis y haga clic en **+ Nuevo(2)**.
 
-   ![](images/image(6).png)
+   ![](images/image(04).png)
 
 9. En la pestaña Conceptos básicos de Nuevo grupo de SQL dedicado, proporcione los siguientes detalles:
 
@@ -164,11 +164,11 @@ Los registros de llamadas se cargan en una ubicación designada en el almacenami
     - **Nivel de rendimiento**: Reducirlo a **DW100c**
     - Haga clic en **Siguiente: Configuraciones adicionales**
 
-      ![](images/image(7).png)
+      ![](images/image(05).png)
 
 10. Haga clic en **Revisar + crear** y espere a que se complete la implementación.
 
-    ![](images/image(8).png) 
+    ![](images/image(06).png) 
 
 ### **B. Crear la Tabla SQL de Destino** 
 
