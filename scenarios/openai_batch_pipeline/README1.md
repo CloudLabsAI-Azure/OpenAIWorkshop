@@ -166,7 +166,7 @@ Los registros de llamadas se cargan en una ubicación designada en el almacenami
 
       ![](images/image(05).png)
 
-10. Haga clic en **Revisar + crear** y espere a que se complete la implementación.
+10. Haga clic en **Revisar + crear**, luego en **Crear** y espere a que se complete la implementación..
 
     ![](images/image(06).png)
 
