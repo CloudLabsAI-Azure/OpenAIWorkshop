@@ -132,7 +132,7 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
 ## Tarefa 2: Configurar o Synapse Workspace
 
-### **A. Criar espaço de trabalho Synape e pool SQL**
+### **A. Configurar o Synapse Workspace**
 
 1. No portal do Azure, procure **Synapse** e selecione **Azure Synapse Analytics**.
 
@@ -177,7 +177,21 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
 10. Clique em **Revisar + criar** e aguarde a conclusão da implantação.
 
-    ![](images/image(15).png) 
+    ![](images/image(15).png)
+
+11. Agora navegue de volta para o synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>, selecione **Apache Spark pools** no painel esquerdo em Analytics pools e clique em **+ New**.
+
+    ![](images/image(21).png)
+
+12. Na página Novo pool do Apache Spark, forneça os detalhes a seguir e clique em **Revisar + Criar** e em **Criar** na guia Revisar + Criar para criar o pool do Apache Spark.
+
+    - **Nome do pool Apache Spark**: **openaisparkpool**
+    - **Computação isolada**: **Desativado**
+    - **Tamanho do nó**: **Pequeno (4vCores/32GB)**
+    - **Escala automática**: **Desativado**
+    - **Número de nós**: **3**
+   
+      ![](images/image(22).png)
 
 ### **B. Criar tabela SQL de destino**
 
