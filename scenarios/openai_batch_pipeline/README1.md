@@ -143,7 +143,7 @@ Los registros de llamadas se cargan en una ubicación designada en el almacenami
    - **Nombre del sistema de archivos**: **defaultfs(7)**
    - Haga clic en **Siguiente: Seguridad>(8)**
 
-     ![](images/image(2).png)
+     ![](images/image(03).png)
 
 5. En la pestaña **Seguridad**, asegúrese de que el método de autenticación esté configurado en **Usar autenticación local y de ID de Microsoft Entra** y haga clic en **Siguiente: Networkikng**
 
