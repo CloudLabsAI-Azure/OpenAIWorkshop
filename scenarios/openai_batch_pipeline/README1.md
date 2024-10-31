@@ -175,7 +175,7 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
       ![](images/image(14).png)
 
-10. Clique em **Revisar + criar** e aguarde a conclusão da implantação.
+10. Clique em **Revisar + criar** e depois em **Criar** e aguarde a conclusão da implantação.
 
     ![](images/image(15).png)
 
