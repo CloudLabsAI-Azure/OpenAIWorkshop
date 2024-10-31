@@ -168,13 +168,26 @@ Los registros de llamadas se cargan en una ubicación designada en el almacenami
 
 10. Haga clic en **Revisar + crear** y espere a que se complete la implementación.
 
-    ![](images/image(06).png) 
+    ![](images/image(06).png)
+
+11. Ahora regrese al espacio de trabajo de synapse<inject key="DeploymentID" enableCopy="false"></inject>, seleccione **Grupos de Apache Spark** en el panel izquierdo debajo de Grupos de análisis y haga clic en **+ Nuevo**.
+
+    ![](images/image(07).png)
+
+12. En la página Nuevo grupo de Apache Spark, proporcione los siguientes detalles y haga clic en **Revisar + Crear** y luego en **Crear** en la pestaña Revisar + Crear para crear el grupo de Apache Spark.
+
+    - **Nombre del grupo de Apache Spark**: **openaisparkpool**
+    - **Cómputo aislado**: **Deshabilitado**
+    - **Tamaño de nodo**: **Pequeño (4vCores/32GB)**
+    - **Escala automática**: **Deshabilitado**
+    - **Número de nodos** : **3**
+      ![](images/image(08).png)
 
 ### **B. Crear la Tabla SQL de Destino** 
 
 1. En el [Portal de Azure](https://portal.azure.com), navegue hasta el área de trabajo de Synapse **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** del grupo de recursos **openai-<inject key="DeploymentID" enableCopy="false"/>**. En la pestaña **Información general**, haga clic en **Abrir** para iniciar el espacio de trabajo de Synapse.
 
-      ![](images/openai-5.png)
+      ![](images/image(10).png)
 
 1. Haga clic en la sección **Desarrollar (1)** de Synapse Studio, haga clic en el signo **+ (2)** en la parte superior izquierda y seleccione **Script SQL (3)**. Esto abrirá una nueva ventana con un editor de script SQL. 
 
