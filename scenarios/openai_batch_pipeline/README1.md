@@ -242,7 +242,7 @@ Em seguida, precisaremos criar dois linked services: um para nossa origem (os ar
 
       ![](images/synapse8-1.png)
 
-1. Na janela *New linked service* que se abre, preencha um nome para o target linked service como **synapselinkedservice** **(1)**. Selecione a **Assinatura do Azure (2)**  na qual você tem trabalhado. Selecione **asaworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para **Nome do servidor** e **openaisql (4)** como o **Nome do banco de dados**. Certifique-se de alterar o **Tipo de autenticação** para **Identidade gerenciada atribuída pelo sistema (5)**, depois clique em **Testar conexão (6)** e clique em **Criar (7)**.
+1. Na janela *New linked service* que se abre, preencha um nome para o target linked service como **synapselinkedservice** **(1)**. Selecione a **Assinatura do Azure (2)**  na qual você tem trabalhado. Selecione **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para **Nome do servidor** e **openaisql01 (4)** como o **Nome do banco de dados**. Certifique-se de alterar o **Tipo de autenticação** para **Identidade gerenciada atribuída pelo sistema (5)**, depois clique em **Testar conexão (6)** e clique em **Criar (7)**.
 
       ![](images/synapse-1_1.png)
 
