@@ -4,17 +4,17 @@
 
       ![](images/p2-1.png)
 
-1. Na janela **Azure Synapse Analytics** selecione **asaworkspace<inject key="DeploymentID" enableCopy="false"/>**.   
+1. Na janela **Azure Synapse Analytics** selecione **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>**.   
 
 1. Na lâmina **Visão geral** na seção **Começando**, clique em **Abrir** para abrir o Synapse Studio.
      
-     ![](images/open-workspace-1.png)
+     ![](../openai_batch_pipeline/images/image(9).png)
     
 1. Clique em **Desenvolver (1)**, depois clique em **+ (2)** e selecione **Importar (3)**.
 
     ![](images/import-note-1.png)
 
-1. Navegue até o local `C:\labfile\OpenAIWorkshop\scenarios\powerapp_and_python\python` e selecione `OpenAI_notebook.ipynb` e clique em **Abrir**.
+1. Navegue até o local `C:\labfile\OpenAIWorkshop-main\scenarios\powerapp_and_python\python` e selecione `OpenAI_notebook.ipynb` e clique em **Abrir**.
 
 1. Selecione **openaisparkpool** no menu suspenso de **Anexar a**.
 
