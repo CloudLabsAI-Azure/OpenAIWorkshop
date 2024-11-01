@@ -128,7 +128,7 @@ Os registros de chamadas são enviados para blob storage. Este envio aciona um A
 
    ![](images/batch_file_upload-1.png)
 
-   <validation step="611472e6-8445-4bf8-8c3d-8fae9fdb9fe5" />
+   <validation step="ef9a8088-8af2-426f-9672-70c0b0c227b5" />
 
 ## Tarefa 2: Configurar o Synapse Workspace
 
@@ -363,7 +363,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
       ![](images/pipeline-run-1-1.png)
 
-      <validation step="5655b8a2-1369-4aa6-a8bb-38969fd6c516" />    
+      <validation step="3e716f01-6da8-431e-aa81-4041b9054091" />    
 
 ## Task 3: Resultados da Consulta na Nossa Tabela SQL
 
