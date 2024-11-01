@@ -8,13 +8,13 @@
 
 1. En la hoja **Información general** de la sección **Introducción**, haga clic en **Abrir** para abrir Synapse Studio.
      
-     ![](images/open-workspace.png)
+     ![](../openai_batch_pipeline/images/image(10).png)
     
 1. Haga clic en **Desarrollar (1)**, luego haga clic en **+ (2)** y seleccione **Importar**.
 
     ![](images/import-note.png)
 
-1. Navegue a la ubicación `C:\labfile\OpenAIWorkshop\scenarios\powerapp_and_python\python` y seleccione `OpenAI_notebook.ipynb`, luego haga clic en **Abrir**.
+1. Navegue a la ubicación `C:\labfile\OpenAIWorkshop-main\scenarios\powerapp_and_python\python` y seleccione `OpenAI_notebook.ipynb`, luego haga clic en **Abrir**.
 
      ![](images/notebook.png)
 
