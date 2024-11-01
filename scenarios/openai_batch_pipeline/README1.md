@@ -120,7 +120,7 @@ Los registros de llamadas se cargan en una ubicación designada en el almacenami
 
    ![](images/batch_file_upload.png)
 
-   <validation step="611472e6-8445-4bf8-8c3d-8fae9fdb9fe5" />
+   <validation step="ef9a8088-8af2-426f-9672-70c0b0c227b5" />
 
 ## Tarea 2: Configurar un área de trabajo de Synapse
 
@@ -355,7 +355,7 @@ Luego expanda la sección **Ensayo (3)** en la parte inferior de la configuraci�
 
       ![](images/pipeline-run-1.png)
 
-      <validation step="5655b8a2-1369-4aa6-a8bb-38969fd6c516" />
+      <validation step="3e716f01-6da8-431e-aa81-4041b9054091" />
 
 ## Tarea 3: Consultar Resultados en Nuestra Tabla SQL
 
