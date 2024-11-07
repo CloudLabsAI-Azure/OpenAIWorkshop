@@ -9,7 +9,7 @@ Cuando trabaje con prompts, interactuará con el LLM directamente o a través de
 
 La recomendación general es modificar uno, no ambos parámetros a la vez.
 
-### Modelo text-davinci-003
+### Modelo gpt-35-turbo-instruct
 
 **temperature**
 ```
