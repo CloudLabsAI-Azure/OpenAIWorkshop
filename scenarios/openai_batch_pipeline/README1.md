@@ -357,7 +357,7 @@ Luego expanda la sección **Ensayo (3)** en la parte inferior de la configuraci�
 
       ![](images/pipline-succeeded.png)
 
-2. Ahora que los datos están en la tabla de destino, están disponibles para su uso ejecutando consultas SQL en ellos o conectando PowerBI y creando visualizaciones. La Azure Function también se está ejecutando, así que intente cargar algunos de los archivos de expedientes en la carpeta generate_documents localizada en su contenedor y observe cómo la función los procesa y crea un nuevo archivo en el archivo cleansed_documents.
+2. Ahora que los datos están en la tabla de destino, están disponibles para su uso ejecutando consultas SQL en ellos o conectando PowerBI y creando visualizaciones. Cargue algunos de los archivos de transcripción en la carpeta generate_documents en su contenedor y vea cómo crea un nuevo archivo en el archivo cleansed_documents.
 
 3. Para consultar los nuevos datos, navegue hasta el menú del lado izquierdo y elija **Desarrollar (1)**. Haga clic en el **Script SQL (2)** existente y reemplace el contenido con el **Código SQL (3)** mostrado a continuación. Luego seleccione el grupo **openaisql (4)** y haga clic en **Ejecutar (5)**.
 
@@ -374,6 +374,6 @@ Luego expanda la sección **Ensayo (3)** en la parte inferior de la configuraci�
 
 ## Resumen
 
-Este escenario permite el uso de OpenAI para resumir y analizar los registros de llamadas de servicio al cliente de la empresa ficticia Contoso. Los datos se ingestan a una cuenta de almacenamiento de blobs y luego se procesan mediante una Azure Functions, la cual devolverá el sentimiento del cliente, la oferta de productos sobre la que se trató la conversación y el tema de la llamada, así como un resumen de la misma. Estos resultados se escriben en una ubicación designada y separada en el almacenamiento de blobs. A partir de ahí, se utiliza Synapse Analytics para extraer los datos recién depurados y crear una tabla que se puede consultar para obtener más información.
+En esta práctica de laboratorio, incorporó datos a la cuenta de almacenamiento, configuró Synapse Workspace y generó resultados de consulta en nuestra tabla SQL.
 
 ### Ha completado el laboratorio con éxito.
