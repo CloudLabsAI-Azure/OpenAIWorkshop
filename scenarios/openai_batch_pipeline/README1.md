@@ -18,12 +18,6 @@ Esse cenário permite o uso do OpenAI para resumir e analisar os logs de chamada
         - [g. Executar um Pipeline em Synapse](#E-Executar-um-Pipeline-em-Synapse)
     - [Tarefa 3. Resultados da Consulta na Nossa Tabela SQL ](#Task-3-Resultados-da-Consulta-na-Nossa-Tabela-SQL)
 
-# Diagrama de Arquitetura
-
-   ![](images/batcharch.png)
-
-Os registros de chamadas são enviados para blob storage. Este envio aciona um Azure Functions, que usa o [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/) para a sumarização, análise de sentimento, identificar o produto discutido na conversa, o tópico da chamada, bem como um resumo da chamada. Esses resultados são escritos novamente em blob storage. A partir daí, o Synapse Analytics é utilizado para importar os novos dados e criar uma tabela que pode ser consultada para obter mais Informações.
-
 ## Tarefa 1: Inserir Dados em Storage account
 
 ### A. Lançar o Azure Cloud Shell
@@ -371,7 +365,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
       ![](images/pipline-succeeded-1.png)
 
-2. Agora que os dados estão na tabela de destino, eles estão disponíveis para uso executando consultas SQL em relação a eles ou conectando o PowerBI e criando visualizações. A Azure Function também está em execução, portanto, tente carregar alguns dos arquivos de transcrição para a pasta generated_documents em seu container e veja como a função a processa e cria um novo arquivo na pasta cleansed_documents.
+2. Agora que os dados estão na tabela de destino, eles estão disponíveis para uso executando consultas SQL ou conectando o PowerBI e criando visualizações. Faça upload de alguns dos arquivos de transcrição para a pasta generate_documents em seu contêiner e veja como ele cria um novo arquivo no arquivo Cleaned_documents.
 
 3. Para consultar os novos dados, navegue até o menu do lado esquerdo e escolha **Develop (1)**. Clique no **SQL Script (2)** existente e substitua o conteúdo pelo **SQL Code (3)** abaixo. Em seguida, selecione **openaisql (4)** pool **Run (5)**. 
 
@@ -388,6 +382,6 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
 ## Resumo
 
-Este cenário permite a utilização do OpenAI para resumir e analisar os registos de chamadas de atendimento ao cliente da empresa fictícia Contoso. Os dados são ingeridos numa conta de armazenamento de blobs e depois processados ​​por uma função do Azure. A Função Azure irá devolver o sentimento do cliente, o produto sobre o qual a conversa foi oferecida, o tema da chamada, bem como um resumo da chamada. Estes resultados são gravados num local designado separado no armazenamento de blobs. A partir daí, o Synapse Analytics é utilizado para extrair os dados recém-limpos para criar uma tabela que pode ser consultada para obter mais insights.
+Neste laboratório, você ingeriu dados para a conta de armazenamento, configurou o Synapse Workspace e produziu resultados de consulta em nossa tabela SQL.
 
 ### Concluiu o laboratório com sucesso
