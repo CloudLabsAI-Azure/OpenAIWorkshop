@@ -10,7 +10,7 @@ Em suma, quanto menor a temperatura, mais determinísticos são os resultados, n
 
 A recomendação geral é alterar um, não ambos.
 
-### text-davinci-003 model
+### gpt-35-turbo-instruct model
 
 **temperatura**
 ```
