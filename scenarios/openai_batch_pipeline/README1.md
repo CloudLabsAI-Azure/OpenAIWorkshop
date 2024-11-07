@@ -12,12 +12,6 @@ Será capaz de completar las siguientes tareas:
 - Tarea 2: Configurar un área de trabajo de Synapse
 - Tarea 3: Consultar Resultados en Nuestra Tabla SQL
 
-# Diagrama de Arquitectura
-
-   ![](images/batcharch.png)
-
-Los registros de llamadas se cargan en una ubicación designada en el almacenamiento de blobs. Esta carga activará la Azure Function, la cual utiliza [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/) para la creación de resúmenes, el análisis de sentimientos, la oferta de producto sobre la que versaba la conversación, el tema de la llamada y un resumen de la llamada. Estos resultados se escriben en una ubicación designada separada en el almacenamiento de blobs. A partir de ahí, se utiliza Synapse Analytics para extraer los datos recién depurados y crear una tabla que pueda consultarse para obtener más información. 
-
 ## Tarea 1: Ingesta de Datos en la Cuenta de Almacenamiento
 
 ### A. Iniciar Azure Cloud Shell
