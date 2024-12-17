@@ -122,7 +122,7 @@ You will be able to complete the following tasks:
 
    ![](images/pro4.png)
 
-<validation step="ef9a8088-8af2-426f-9672-70c0b0c227b5" />
+<validation step="ba1414df-0ab1-44cc-99d3-5a8dba82b094" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -366,7 +366,7 @@ Then expand the **Staging (3)** section at the bottom of the settings and utiliz
 
       ![](images/pipeline-run-1.png)
 
-<validation step="3e716f01-6da8-431e-aa81-4041b9054091" />
+<validation step="d8979ed3-91f3-486d-a6ea-82919ab75270" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
