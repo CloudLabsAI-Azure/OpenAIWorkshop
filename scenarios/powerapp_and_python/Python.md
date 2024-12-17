@@ -78,7 +78,7 @@ In this lab, participants will develop an application using OpenAI's APIs and Py
 
     ![](images/publish-1.png)
 
-<validation step="f943c5b3-b07a-4779-bc2f-9e13ee01378a" />
+<validation step="0e2997b4-8f0b-402c-b732-ab7c6d095253" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
