@@ -65,7 +65,7 @@ Será capaz de completar las siguientes tareas:
     
     > **Nota:** Presione la tecla de flecha hacia abajo para leer u omitir el acuerdo de licencia.
 
-1. Escriba **yes** y presione **enter** para aceptar el acuerdo, y luego presione Enter para instalar en la ruta predeterminada. 
+1. Escriba **yes** y presione **Enter** para aceptar el acuerdo, y luego presione **Enter** para instalar en la ruta predeterminada. 
 
    ![](images/cloudshell-accept.png)
 
@@ -98,7 +98,7 @@ Será capaz de completar las siguientes tareas:
     
 1. Cambie a la hoja **Claves de acceso (1)** y seleccione **Mostrar (2)**, el cual está al lado del valor de Cadena de conexión. Seleccione el botón copiar para la primera **cadena de conexión (3)**. Pegue el valor en un editor de texto, como Notepad.exe, a fin de poderlo consultar más adelante. 
 
-   ![](images/storage-fuctions2.png)
+   ![](images/E1T1.BS9.png)
 
 1. Vuelva a la sesión de bash de Cloud Shell y ejecute el siguiente comando para cargar los archivos JSON en la cuenta de almacenamiento reemplazando <CONNECTION_STRING> por el valor que copió en el paso anterior. Esto tardará unos minutos en completarse.
 
