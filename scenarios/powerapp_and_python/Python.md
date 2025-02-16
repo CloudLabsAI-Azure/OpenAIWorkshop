@@ -44,7 +44,14 @@
 
    ![](images/p22.png)
      
-    > **Nota:** Si encuentra un error "Openai module not found", ingrese `%` antes de **pip install** en la celda Install OpenAI y vuelva a ejecutar el cuaderno.
+
+    > **Nota:** Si aparece el error "No se encontró el módulo OpenAI", siga estos pasos:
+
+    -  Agregue * junto a 0.* para iniciar la instalación del último módulo OpenAI.
+
+    - Ejecute la celda "Instalar OpenAI". Una vez que se complete la instalación, vuelva a ejecutar el portátil.
+
+      ![](images/pip-install.png)
 
 1. Para **2. Choose a Model** reemplace el valor **model** de **text-curie-001** a **demomodel**.
 
