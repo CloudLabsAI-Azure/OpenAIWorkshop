@@ -376,4 +376,4 @@ Luego expanda la sección **Ensayo (3)** en la parte inferior de la configuraci�
 
 En esta práctica de laboratorio, incorporó datos a la cuenta de almacenamiento, configuró Synapse Workspace y generó resultados de consulta en nuestra tabla SQL.
 
-### Ha completado el laboratorio con éxito.
+### Ha completado con éxito la práctica de laboratorio. Haga clic en **Siguiente >>** para continuar con el siguiente ejercicio.
