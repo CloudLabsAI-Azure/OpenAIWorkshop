@@ -81,4 +81,13 @@
 
     ![](images/publish-1.png)
 
-   <validation step="f943c5b3-b07a-4779-bc2f-9e13ee01378a" />
+> Felicitaciones por completar la tarea! Ahora es el momento de validarlo. Aquí están los pasos:
+
+> - Si recibe un mensaje de éxito, puede continuar con la siguiente tarea.
+> - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
+> - Si necesita ayuda, contáctenos en Cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudarte.
+  
+ <validation step="f943c5b3-b07a-4779-bc2f-9e13ee01378a" />
+
+
+### Ha completado con éxito la práctica de laboratorio. Haga clic en **Siguiente >>** para continuar con el siguiente ejercicio.
