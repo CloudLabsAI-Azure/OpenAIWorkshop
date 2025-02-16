@@ -24,7 +24,7 @@ Será capaz de completar las siguientes tareas:
 
 3. En el panel Introducción, seleccione **Montar cuenta de almacenamiento (1)**, seleccione su **suscripción de Cuenta de Almacenamiento (2)** del menú desplegable y haga clic en **Aplicar (3)**. 
 
-   ![](images/10-06-2024(1).png)
+   ![](images/10-06-2024-01.png)
 
 4. En el panel **Montar cuenta de almacenamiento**, elija **Seleccionar cuenta de almacenamiento existente (1)** y haga clic en **Siguiente (2)**.
 
