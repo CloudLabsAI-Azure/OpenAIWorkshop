@@ -2,7 +2,7 @@
 
 1. Busque y seleccione **Azure Synapse Analytics** en el Portal de Azure.
 
-      ![](images/p2.png)
+      ![](images/synapse-1.png)
 
 1. En la ventana **Azure Synapse Analytics** seleccione **asaworkspace<inject key="DeploymentID" enableCopy="false"/>**.   
 
