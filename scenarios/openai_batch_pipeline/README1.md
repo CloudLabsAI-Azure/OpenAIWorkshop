@@ -18,13 +18,13 @@ Será capaz de completar las siguientes tareas:
 
 1. En el [Portal de Azure](https://portal.azure.com?azure-portal=true), seleccione el botón **[>_]** (*Cloud Shell*) ubicado en la parte superior de la página a la derecha de la caja de de búsqueda. Se abrirá un panel de Cloud Shell en la parte inferior del portal. 
 
-    ![](images/E2I1S1.png)
+     ![](images/cli-1.png)
 
 2. La primera vez que abra Cloud Shell, es posible que se le solicite que elija el tipo de Shell que desea usar (*Bash* o *PowerShell*). Seleccione **Bash**. Si no ve esta opción, omita el paso.
 
 3. En el panel Introducción, seleccione **Montar cuenta de almacenamiento (1)**, seleccione su **suscripción de Cuenta de Almacenamiento (2)** del menú desplegable y haga clic en **Aplicar (3)**. 
 
-   ![](images/10-06-2024(1).png)
+   ![](images/10-06-2024-01.png)
 
 4. En el panel **Montar cuenta de almacenamiento**, elija **Seleccionar cuenta de almacenamiento existente (1)** y haga clic en **Siguiente (2)**.
 
@@ -229,7 +229,7 @@ A continuación, necesitaremos crear dos servicios vinculados: uno para nuestra 
 
 1. En la ventana *Nuevo servicio vinculado* que se abre, ingrese **synapselinkedservice** **(1)** para el nombre de su servicio vinculado de destino. Seleccione la **suscripción de Azure (2)** con la cual ha estado trabajando. Seleccione **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para el **Nombre del servidor** y utilice **openaisql01 (4)** para el **Nombre de la base de datos**. Asegúrese de cambiar el **Tipo de autenticación** a **Identidad Administrada Asignada por el Sistema (5)**, luego desplácese hacia abajo y seleccione la opción **Heredado (6)**, luego haga clic en **Probar conexión (7)** y haga clic en **Crear (8)**. 
 
-      ![](images/synapse-1e.png)
+    ![](images/new-openai-pro-feb-5-1.png)
 
 1. Una vez que haya creado los dos servicios vinculados, asegúrese de presionar el botón **Publicar todo** en la parte superior para publicar nuestro trabajo. Finalice la creación de los servicios vinculados y haga clic en **Publicar**.
 
@@ -376,4 +376,4 @@ Luego expanda la sección **Ensayo (3)** en la parte inferior de la configuraci�
 
 En esta práctica de laboratorio, incorporó datos a la cuenta de almacenamiento, configuró Synapse Workspace y generó resultados de consulta en nuestra tabla SQL.
 
-### Ha completado el laboratorio con éxito.
+### Ha completado con éxito la práctica de laboratorio. Haga clic en **Siguiente >>** para continuar con el siguiente ejercicio.

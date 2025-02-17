@@ -2,7 +2,7 @@
 
 1. Busque y seleccione **Azure Synapse Analytics** en el Portal de Azure.
 
-      ![](images/p2.png)
+      ![](images/synapse-1.png)
 
 1. En la ventana **Azure Synapse Analytics** seleccione **asaworkspace<inject key="DeploymentID" enableCopy="false"/>**.   
 
@@ -38,13 +38,20 @@
    
 1. Desde el Portal de Azure, navegue hasta el grupo de recursos  **openaicustom-<inject key="DeploymentID" enableCopy="false"/>** y seleccione el recurso Azure OpenAI **asaworkspace<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![](images/Ex4b-S7.1.png)
+    ![](images/Ex4b-S7.1-2.png)
 
 1. En Administración de Recursos, seleccione **Claves y punto de conexión (1)** y haga clic en **Mostrar claves (2)**. Copie la **Clave 1 (3)** y el **Punto de conexión (4)** y reemplace **AZURE_OPENAI_API_KEY** y **AZURE_OPENAI_ENDPOINT** con su clave de API y la URL del punto de conexión en el script.
 
-   ![](images/p22.png)
+   ![](images/p22-1-1.png)
      
-    > **Nota:** Si encuentra un error "Openai module not found", ingrese `%` antes de **pip install** en la celda Install OpenAI y vuelva a ejecutar el cuaderno.
+
+    > **Nota:** Si aparece el error "No se encontró el módulo OpenAI", siga estos pasos:
+
+    -  Agregue * junto a 0.* para iniciar la instalación del último módulo OpenAI.
+
+    - Ejecute la celda "Instalar OpenAI". Una vez que se complete la instalación, vuelva a ejecutar el portátil.
+
+      ![](images/pip-install.png)
 
 1. Para **2. Choose a Model** reemplace el valor **model** de **text-curie-001** a **demomodel**.
 
@@ -74,4 +81,13 @@
 
     ![](images/publish-1.png)
 
-   <validation step="f943c5b3-b07a-4779-bc2f-9e13ee01378a" />
+> Felicitaciones por completar la tarea! Ahora es el momento de validarlo. Aquí están los pasos:
+
+> - Si recibe un mensaje de éxito, puede continuar con la siguiente tarea.
+> - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
+> - Si necesita ayuda, contáctenos en Cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudarte.
+  
+ <validation step="f943c5b3-b07a-4779-bc2f-9e13ee01378a" />
+
+
+### Ha completado con éxito la práctica de laboratorio. Haga clic en **Siguiente >>** para continuar con el siguiente ejercicio.
