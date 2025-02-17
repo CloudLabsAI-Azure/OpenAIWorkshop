@@ -38,11 +38,11 @@
    
 1. Desde el Portal de Azure, navegue hasta el grupo de recursos  **openaicustom-<inject key="DeploymentID" enableCopy="false"/>** y seleccione el recurso Azure OpenAI **asaworkspace<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![](images/Ex4b-S7.1.png)
+    ![](images/Ex4b-S7.1-2.png)
 
 1. En Administración de Recursos, seleccione **Claves y punto de conexión (1)** y haga clic en **Mostrar claves (2)**. Copie la **Clave 1 (3)** y el **Punto de conexión (4)** y reemplace **AZURE_OPENAI_API_KEY** y **AZURE_OPENAI_ENDPOINT** con su clave de API y la URL del punto de conexión en el script.
 
-   ![](images/p22.png)
+   ![](images/p22-1-1.png)
      
 
     > **Nota:** Si aparece el error "No se encontró el módulo OpenAI", siga estos pasos:
