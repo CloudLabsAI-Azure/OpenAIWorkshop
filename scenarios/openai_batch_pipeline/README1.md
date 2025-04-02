@@ -236,9 +236,11 @@ Em seguida, precisaremos criar dois linked services: um para nossa origem (os ar
 
       ![](images/synapse8-1.png)
 
-1. Na janela *New linked service* que se abre, preencha um nome para o target linked service como **synapselinkedservice** **(1)**. Selecione a **Assinatura do Azure (2)**  na qual você tem trabalhado. Selecione **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para **Nome do servidor** e **openaisql01 (4)** como o **Nome do banco de dados**. Certifique-se de alterar o **Tipo de autenticação** para **Identidade gerenciada atribuída pelo sistema (5)**, depois clique em **Testar conexão (6)** e clique em **Criar (7)**.
+1. Na janela *New linked service* que se abre, preencha um nome para o target linked service como **synapselinkedservice(1)**
+**Versao: 1.0(2)**. Selecione a **Assinatura do Azure (3)**  na qual você tem trabalhado. Selecione **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (4)** para **Nome do servidor** e **openaisql01 (5)** como o **Nome do banco de dados**. Certifique-se de alterar o **Tipo de autenticação** para **Identidade gerenciada atribuída pelo sistema (6)**, depois clique em **Testar conexão (7)** e clique em **Criar (8)**.
 
-      ![](images/synapse-1_1.png)
+      ![](images/new-portuguese.png)
+      ![](images/new-por-1.png)
 
 1. Depois de criar os dois linked services, certifique-se de pressionar o botão **Publicar tudo** na parte superior para publicar o nosso trabalho. Finalize a criação dos linked services e clique em **Publicar**.
 
@@ -302,7 +304,8 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
       - Na janela Editar linked service que é aberta, selecione o método de seleção do Azure como **From Azure subscription** **(1)**. Selecione a **Assinatura do Azure (2)** para a qual você tem trabalhado. Selecione **asaworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para **Nome do servidor** e **openaisql (4)** como o **Nome do banco de dados**, clique em **Testar conexão (5)** e clique em **Salvar (6)**.
 
-           ![](images/p19-1.png)
+           ![](images/new-portuguese-1.png)
+           ![](images/new-por-10-1-1.png)
 
 1. Em seguida, precisaremos ir para o separador **Configurações (1)** e ajustar o **Nome do esquema** e **Nome da tabela**. Se você utilizou o script fornecido anteriormente para criar a tabela de destino, o nome do esquema é **dbo (1)** e o nome da tabela é **cs_detail (2)**.
 
