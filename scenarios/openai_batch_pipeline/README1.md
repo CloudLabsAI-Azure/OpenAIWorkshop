@@ -43,13 +43,13 @@ Esse cenário permite o uso do OpenAI para resumir e analisar os logs de chamada
     - **Subscrição**: Default- Escolha a única assinatura existente atribuída para este laboratório. **(1)**.
     - **Grupo de recursos**: Selecione **Usar existente** **(2)**
       - openai-<inject key="DeploymentID" enableCopy="false"></inject>
-    - **Conta de armazenamento**: Selecione **Usar existente** **(3)**
+    - **Nome da conta de armazenamento**: Selecione **Usar existente** **(3)**
       - openaistorage<inject key="DeploymentID" enableCopy="false"></inject>
     - **Compartilhamento de arquivos**: Criar um novo compartilhamento de arquivo **(4)**
 
       ![](images/10-06-2024(3)-1.png)
 
-1. Introduzir o nome do compartilhamento de arquivos **(Novo) blob (1)**, e selecione **Selecione (2)**.
+1. Introduzir o nome do compartilhamento de arquivos **(Novo) blob (1)**, e selecione **Selecionar (2)**.
 
     ![](images/10-06-2024(4)-1.png)
 
