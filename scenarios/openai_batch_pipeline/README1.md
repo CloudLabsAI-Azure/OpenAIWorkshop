@@ -388,7 +388,12 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
       ![](images/pipeline-run-1-2.png)
 
-      <validation step="3e716f01-6da8-431e-aa81-4041b9054091" />    
+> **Parabéns** pela conclusão da tarefa! Agora é hora de validá-la. Aqui estão os passos:
+> - Se receber uma mensagem de sucesso, você pode prosseguir para a próxima tarefa.
+> - Caso contrário, leia atentamente a mensagem de erro e repita o passo, seguindo as instruções do guia do laboratório.
+> - Se precisar de ajuda, entre em contato conosco pelo e-mail cloudlabs-support@spektrasystems.com. Estamos disponíveis 24 horas por dia, 7 dias por semana, para ajudar.
+
+<validation step="3e716f01-6da8-431e-aa81-4041b9054091" />    
 
 ## Task 3: Resultados da Consulta na Nossa Tabela SQL
 
