@@ -1,67 +1,93 @@
 # Exercício 2: Crie uma aplicação Open AI com Power Apps
 
-1. Navegue até https://make.powerapps.com/. Em **Welcome to Power Apps**, selecione o seu **Country/Region (1)** e clique em **Get Started (2)**. 
+### Duração estimada: 90 minutos
 
-   ![](./images/welcome-1.png)
+Este laboratório se concentra na criação de um aplicativo utilizando os recursos do OpenAI integrados ao Microsoft Power Apps. Os participantes aprenderão a construir um aplicativo funcional que utiliza IA para tarefas como compreensão de linguagem natural, análise de dados ou interação com o cliente dentro da estrutura do Power Apps.
+
+1. Abra uma nova aba e acesse https://make.powerapps.com/. Em **Bem-vindo ao Power Apps**, selecione seu **País/Região (1)** e clique em **Começar (2)**. 
+
+   ![](./images/welcome-Portuguese.png)
      
-2. Selecione **Aplicações** na navegação à esquerda e clique em **Importar aplicações de tela**. 
+2. Selecione **Aplicações (1)** na navegação à esquerda, clique no menu suspenso **Importar Aplicaçõao (2)** e selecione **A partir do pacote (.zip) (3)**.
 
-    ![](./images/powerapps-import-1.png)
+    ![](./images/powerapps-import-2.png)
 
-3. Na página **Pacote de importação**, clique em **Carregar**.
+3. Na página **Importar pacote**, clique em **Carregar**.
 
-    ![](./images/upload-importpackage-1.png)
+    ![](./images/upload-importpackage-2.png)
 
-4. Navegue até `C:\labfile\OpenAIWorkshop-main\OpenAIWorkshop-main\scenarios\powerapp_and_python\powerapp` Selecione a pasta  **OpenAI-Playground_20230302010547.zip** e clique em **Open**.
+4. Navegue até `C:\labfile\OpenAIWorkshop-main\scenarios\powerapp_and_python\powerapp` Selecione a pasta **OpenAI-Playground_20230302010547.zip (1)** e clique em **Abrir (2)**.
 
-5. Uma vez que o arquivo zip é carregado, no **Review Package Content** para **OpenAI Playground**, clique no ícone de configuração em **ACTION**.
+    ![](./images/openai-play-1.png)
 
-     ![](./images/review-package-content.png)
+5. Depois que o arquivo zip for carregado, em **Revisar conteúdo do pacote** para **OpenAI Playground**, clique no ícone de configuração em **Ação**.
 
-6. No painel **Import setup**, selecione **Create as new (1)** na lista suspensa para **Setup** e clique em **Save (2)**.
+     ![](./images/review-package-content-1.png)
 
-      ![](./images/import-setup-1.png)
+6. No painel **Importar Configuração **, selecione **Criar como novo (1)** no menu suspenso de **Configuração** e clique em **Guardar (2)**.
 
-7. Repita os passos 5 e 6 para **Openaisummarization**.
+      ![](./images/import-setup-2.png)
 
-8. Em seguida, clique em **Import** para importar o pacote para o ambiente PowerApps.
+7. Repita as etapas 5 e 6 para **Openaisummarization**.
 
-   ![](./images/import-openai-package.png)
+8. Em seguida, clique em **Importar** para importar o pacote para o ambiente PowerApps.
 
-9. Quando a importação estiver concluída, clique em **Aplicações (1)**, clique em `...` **(2)** ao lado de **OpenAI Playground**, e clique em **Editar (3)**.
+   ![](./images/import-openai-package-1.png)
 
-      ![](./images/powerapps-apps-edit-1.png)
+9. Quando a importação estiver concluída, clique em **Aplicações (1)**, clique em `⋮` **(2)** ao lado de **OpenAI Playground**, e clique em **Editar (3)**.
+
+      ![](./images/powerapps-apps-edit-2.png)
 
    >**Nota**: Se você não conseguir ver a opção **OpenAI Playground**, aguarde 5 minutos e, enquanto isso, tente atualizar a página.
 
 10. Você observará que ele importou o aplicativo de tela do Power Apps e o Power Automate Flow para o espaço de trabalho.
 
-      ![](./images/powerapps-apps-view-1.png)
+      ![](./images/powerapps-apps-view-2.png)
+
+      >**Nota:** se você vir **Bem-vindo ao Power Apps Studio**, clique no botão **Ignorar**.   
 
 11. Para voltar atrás, clique em **Anterior (1)**, depois clique em **Sair (2)**.
 
-      ![](./images/powerapps-apps-exit-1.png)
+      ![](./images/powerapps-apps-exit-2.png)
 
 12. Em seguida, no tabulador **Fluxos (1)**, selecione **Openaisummarization (2)**, depois clique em `...` **(3)** e **Ligar (4)** seu flow.
 
-      ![](./images/flow-on-1.png)
+      ![](./images/flow-on-2.png)
+
+      >**Nota:** se você vir **Bem-vindo ao Power Automate**, clique no botão **Começar**.
 
 13. Clique em **Editar** para Openaisummarization.
 
-      ![](./images/flow-edit-1.png)
+      ![](./images/flow-edit-2.png)
 
 14. Edite o passo HTTP do Power Automate Flow atualizando **https://your-resource-name.openai.azure.com/** com **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(1)**, **deployment-id** com **<inject key="openaimodulename" enableCopy="true"/>** **(2)**, **api-version** com **2023-09-15-preview** **(3)**, **YOUR_API_KEY** com **<inject key="OpenAIKey" enableCopy="true"/>** **(4)**, e clique em **Save** **(5)**.
 
-      ![](./images/update-values-1.png)
+      ![](./images/update-values-2.png)
    
 15. Na página **Aplicações (1)**, selecione a applicação **OpenAI Playground** para executar o aplicativo clicando no botão **Jogar (2)**.
 
-     ![](./images/canves-play.png)
+     ![](./images/canves-play-1.png)
 
-16. Se você receber um pop-up solicitando para iniciar uma avaliação gratuita, clique em **Star a Free Trial**, em seguida, em **You need a Power Apps License to use this app** selecione **Start a 30- teste diário**. Escolha sua região no menu e clique no botão **Começar** aguarde 2-3 minutos. Você pode atrasar o início da versão experimental.
+16. Se você receber um pop-up solicitando o início de um teste gratuito, clique em **Iniciar um teste gratuito**.
+
+      ![](./images/start-free-trial.png)
+
+17. Em seguida, na janela **você precisa de uma licença do Power Apps para usar este aplicativo**, selecione **Iniciar um teste de 30 dias**.
+
+      ![](./images/start-30-days-trial.png)
+
+18. Selecione sua **região (1)** no menu suspenso e clique no botão **Iniciar minha avaliação (2)**. Aguarde de 2 a 3 minutos, pois o teste pode demorar para iniciar.
+
+      ![](./images/start-my-review.png)
     
-17. No **Canvas**, clique no botão **Summary** **(1)** e verifique o **auto-filled text** **(2)**. Em seguida, clique no botão **Submit** **(3)** para obter o **Summary** **(4)**.
+19. No **Canvas**, clique no botão **Summary** **(1)** e verifique o **auto-filled text** **(2)**. Em seguida, clique no botão **Submit** **(3)** para obter o **Summary** **(4)**.
 
      ![](./images/canves-output.png)
 
     > **Nota**: Você pode tentar as outras opções disponíveis no portal, ou seja, **SQL**, **ClassifyText**, **Parse**, e **Classify**.
+
+## Resumo
+
+Neste laboratório, você integrou com sucesso as APIs OpenAI ao Power Apps para habilitar funcionalidades como processamento de linguagem natural, análise de sentimentos ou recomendações personalizadas, além de criar um aplicativo.
+
+### Você concluiu o laboratório com sucesso. Clique em **Avançar >>** para prosseguir para o próximo exercício.
