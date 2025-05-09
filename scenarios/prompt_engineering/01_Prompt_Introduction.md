@@ -1,6 +1,8 @@
-# Ejercicio 4a: Introducción a Prompt Engineering y Azure OpenAI Studio
+# Ejercicio 4a: Introducción a la Ingeniería de Prompts y al portal de Azure AI Foundry
 
-En este ejercicio, explorará el concepto de ingeniería de prompts y aprenderá a crear prompt efectivos para modelos de IA. Obtendrá experiencia práctica con Azure OpenAI Playground, experimentará con diferentes tipos de prompts y comprenderá sus elementos y sugerencias de diseño.
+### Duración estimada: 90 minutos
+
+En este laboratorio, explorará el concepto de ingeniería de prompts y aprenderá a crear prompts efectivos para modelos de IA. Adquirirá experiencia práctica con Azure OpenAI Playground, experimentando con diferentes tipos de prompts y comprendiendo sus elementos y consejos de diseño.
 
 ## Temas
 
@@ -35,26 +37,21 @@ Sigamos adelante y lancemos el Azure OpenAI Playground para aprender sobre ingen
 
 1. En el **Portal de Azure**, busque **OpenAI** y seleccione **Azure OpenAI**.
 
-   ![](../natural_language_query/images/openai8.png)
+   ![](../natural_language_query/images/2025-05-09_1.png)
 
 1. En la hoja **Azure AI services | Azure OpenAI**, seleccione **openai-<inject key="DeploymentID" enableCopy="false"/>**
 
 1. En el panel de recursos Azure OpenAI, haga clic en **Ir a Azure OpenAI Studio** para navegar a **Azure AI Studio**.
 
-   ![](../natural_language_query/images/openai11-1.png)
+   ![](../natural_language_query/images/2025-05-09_2.png)
 
-1. En **Azure AI Studio**, haga clic en **Chat** debajo de **Área de juegos** en el menú de la izquierda.
+1. En **Azure AI Foundry | Azure OpenAI Service**, haga clic en **Chat** en la sección **Playgrounds** del menú de la izquierda.
 
-    ![](../powerapp_and_python/images/chat-demo1.png)
+    ![](../natural_language_query/images/2025-05-09_3.png)
 
-1. En la sección **Chat**, elija **Default** **(1)** debajo de Usar una plantilla de mensaje del sistema. Luego, realice cualquier consulta desde la **Sesión de Chat** **(2)** para obtener la respuesta de openai. 
-
-   > **Nota**: Haga clic en **Continuar** en **¿Desea actualizar el mensaje del sistema?** cuando se le solicite.
-   ![](/scenarios/media/E2S5.png)
-   
-   > **Nota**: Es posible que el chat no responda con el resultado exacto que se muestra en las capturas de pantalla. A continuación se muestran ejemplos de lo que probablemente verá en este ejercicio, pero la respuesta puede variar.
+1. En la sección **Chat (1)**, realice cualquier consulta de la **sesión de chat** **(2)** para obtener la respuesta de openai.
  
-    ![](../powerapp_and_python/images/prompt.png)
+    ![](../natural_language_query/images/2025-05-09_4.png)
 
 ---
 ## Ejemplos de Prompts Básicos
@@ -362,4 +359,6 @@ Le pido disculpas por tener dificultades para acceder a su cuenta. Por favor hag
 Algunos de los ejemplos anteriores se adoptaron del artículo [Mejores prácticas para ingeniería de prompts con API OpenAI](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api) y la  
 [Guía de Ingeniería de Prompts para Democratizar la Investigación, la Educación y las Tecnologías de la Inteligencia Artificial](https://github.com/dair-ai/Prompt-Engineering-Guide)
 
-**Resumen:** En este ejercicio, aprendió a crear poderosos prompts para modelos de IA examinando la idea de ingeniería de prompts en esta tarea. Con Azure OpenAI Playground, adquirió experiencia práctica al experimentar con varios tipos de prompts y comprender sus componentes y consejos de diseño.
+## Resumen 
+
+En este ejercicio, aprendió a crear poderosos prompts para modelos de IA examinando la idea de ingeniería de prompts en esta tarea. Con Azure OpenAI Playground, adquirió experiencia práctica al experimentar con varios tipos de prompts y comprender sus componentes y consejos de diseño.
