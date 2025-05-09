@@ -1,4 +1,8 @@
-# Exercício 4B: Conceitos Avançados (Apenas leitura)
+# Exercício 4B: Conceitos Avançados (Somente Leitura)
+
+### Duração estimada: 30 minutos
+
+Este laboratório oferece conhecimento teórico aprofundado e conhecimento prático avançado relacionado ao OpenAI e suas aplicações. Abrange a introdução à engenharia de promoção, seus casos de uso e vários tipos de prompts que podem ser implementados para alcançar os resultados desejados.
 
 ## Tópicos
 
@@ -11,11 +15,11 @@
 
 ## Introdução
 
-Até este ponto, você experimentou o poder e a flexibilidade dos prompts. Ajustar prompts para obter os resultados desejados é a ideia por trás da Prompt Engineering.
+Neste ponto, você já experimentou o poder e a flexibilidade dos prompts. Ajustar prompts para obter os resultados desejados é a ideia por trás da engenharia de prompts.
 
-Vamos agora abordar alguns tópicos mais avançados para ajustar os nossos outputs sem introduzir o fine-tuning dos nossos modelos GPT.
+Agora, abordaremos alguns tópicos mais avançados para ajustar nossas saídas sem introduzir o ajuste fino de nossos modelos GPT.
 
-Vamos dar um exemplo simples de classificação:
+Vejamos um exemplo simples de classificação:
 
 *Prompt:*
 ```
@@ -29,13 +33,13 @@ Text: I think this movie was terrible. What a waste of time.
 Negative
 ```
 
-O resultado parece estar correto, mas poderíamos melhorá-lo fornecendo mais informações ao modelo se quiséssemos uma classificação mais granular. Vamos fazer isso por meio de um prompt Zero-Shot.
+A saída parece estar correta, mas poderíamos melhorá-la fornecendo mais informações ao modelo se quiséssemos uma classificação mais granular. Vamos fazer isso por meio de um prompt de Zero-Shot.
 
 ---
 
-## Zero-Shot Prompts
+## Prompts de Tiro Zero
 
-Os LLMs GPT são treinados em quantidades tão grandes de dados que são capazes de compreender instruções complexas para levar ao output desejado na maioria dos casos. Isso é chamado de prompt 'Zero-Shot'.
+Os LLMs do GPT são treinados com quantidades de dados tão grandes que, na maioria dos casos, são capazes de compreender instruções complexas para levar à saída desejada. Isso é chamado de prompt de Tiro Zero.
 
 Poderíamos refinar o exemplo abaixo sendo mais descritivos sobre nossas instruções.
 
@@ -51,15 +55,15 @@ Text: I think this movie was terrible. What a waste of time.
 Very Negative
 ```
 
-Isso é chamado de Zero-Shot. Uma instrução precisa leva ao output desejado sem quaisquer exemplos.
+Isso se chama Zero-Shot. Uma instrução precisa leva à saída desejada sem nenhum exemplo.
 
 ---
 
-## One-Shot Prompts
+## Prompts de Uma Disparada
 
-Por vezes, pode ser mais fácil fornecer um exemplo do modelo para aprender. Isso é chamado de prompt 'One-Shot'.
+Às vezes, pode ser mais fácil fornecer um exemplo do modelo para aprender. Isso é chamado de prompt de "Uma Disparada".
 
-Primeiro, vamos fazer um prompt Zero Shot.
+Primeiro, vamos fazer um prompt de Disparada Zero.
 
 *Prompt:*
 ```
@@ -73,9 +77,9 @@ University: UCLA
 City: Los Angeles, California
 ```
 
-Digamos que você queria ter um output específico para esse prompt. Você pode fornecer um exemplo para o modelo aprender.
+Digamos que você queira ter uma saída específica para este prompt. Você pode fornecer um exemplo do modelo para aprender.
 
-Aqui está um prompt One-Shot que leva ao mesmo output.
+Aqui está um Prompt Único que leva à mesma saída.
 
 *Prompt:*
 ```
@@ -110,13 +114,13 @@ City: Los Angeles, CA, USA
 
 ---
 
-## Few-Shot Prompts
+## Prompts de Poucas Tentativas
 
-Os prompts Few-Shot permitem que você forneça vários exemplos ao modelo para aprender. Isso é útil quando você deseja ajustar o output saída para cenários mais complexos, onde o output pode variar com base na entrada. Também pode ser uma maneira mais simples de definir uma tarefa do que fornecer instruções detalhadas em linguagem natural do que você espera.
+Os prompts de poucas tentativas permitem que você forneça vários exemplos do modelo para aprendizado. Isso é útil quando você deseja ajustar a saída para cenários mais complexos, onde a saída pode variar com base na entrada. Também pode ser uma maneira mais simples de definir uma tarefa do que fornecer instruções detalhadas e em linguagem natural sobre o que você espera.
 
-Aqui está um exemplo de extração de entidade que é adequado para prompts few-shot.
+Aqui está um exemplo de extração de entidade que é adequado para prompts de poucas tentativas.
 
-Vamos tentar primeiro com um prompt Zero-Shot.
+Vamos tentar primeiro com um prompt de Zero Tentativas.
 
 *Prompt:*
 ```
@@ -204,8 +208,8 @@ JSON:
 ```
 Agora podemos ver que o modelo entende claramente que queremos extrair apenas três entidades do texto e nada mais.
 
----
+## Resumo
 
-[Secção Anterior (Cenários de exemplo)](./02_Sample_Scenarios/01_Text_Summarization.md)
+Neste laboratório, você adquiriu conhecimento teórico aprofundado e conhecimento prático avançado relacionado ao OpenAI e a vários tipos de métodos de engenharia de prompt.
 
-[Próxima Secção (Fine Tuning)](./04_Fine_Tuning.md)
+### Você concluiu o laboratório com sucesso. Clique em **Avançar >>** para prosseguir para o próximo exercício.
