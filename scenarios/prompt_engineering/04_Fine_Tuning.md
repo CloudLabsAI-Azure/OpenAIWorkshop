@@ -27,9 +27,9 @@ O ajuste fino pode melhorar o desempenho e reduzir significativamente as taxas d
 Os dados de treinamento para o ajuste fino de modelos OpenAI são pares de prompts de entrada e saídas desejadas que refletem a tarefa ou domínio específico para o qual você deseja personalizar o modelo. Por exemplo, se você quiser ajustar um modelo para gerar avaliações de produtos, seus dados de treinamento podem ser assim:
 
 ```
-{"prompt": "Avaliação: Comprei este laptop para minhas aulas online e ele funciona muito bem.", "completion": "Avaliação: 5 estrelas"}
-{"prompt": "Avaliação: A duração da bateria é péssima e a tela é muito pequena.", "completion": "Avaliação: 2 estrelas"}
-{"prompt": "Avaliação: Isto é uma farsa. O produto nunca chegou e o vendedor não respondeu.", "completion": "Avaliação: 1 estrela"}
+{"prompt": "Review: I bought this laptop for my online classes and it works great.", "completion": "Rating: 5 stars"}
+{"prompt": "Review: The battery life is terrible and the screen is too small.", "completion": "Rating: 2 stars"}
+{"prompt": "Review: This is a scam. The product never arrived and the seller did not respond.", "completion": "Rating: 1 star"}
 ```
 
 Você pode usar o OpenAI CLI ou o Studio para preparar, validar e formatar seus dados de treinamento em um arquivo JSON que pode ser usado para ajustes finos.
