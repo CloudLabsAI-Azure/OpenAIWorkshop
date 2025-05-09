@@ -1,24 +1,19 @@
 
-# Exercício 1: Usar Open AI para Inserir dados em Bulk, Executar Operações Inteligentes, e Analisar Dados com Synapse
+# Exercício 1: Construir um Pipeline de IA Aberto para Ingerir Dados em Lote, Executar Operações Inteligentes e Analisar no Synapse
 
-### Sumário
+### Duração Estimada: 120 minutos
 
-Esse cenário permite o uso do OpenAI para resumir e analisar os logs de chamadas de atendimento ao cliente para a empresa fictícia - Contoso. Os dados são inseridos numa blob storage account e, em seguida, processados por uma Azure Function. Baseado no texto do log das chamadas, a Azure Function retornará o sentimento do cliente, o produto sobre o qual a conversa foi abordada, o tópico da chamada, bem como um resumo da chamada. Esses resultados são gravados em um local separado em blob storage. A partir daí, o Synapse Analytics é utilizado para extrair os dados e para criar uma tabela que pode ser consultada para obter mais informações.
+Este laboratório tem como objetivo demonstrar como integrar os recursos do OpenAI ao Azure Synapse Analytics para processar dados em lote, executar operações inteligentes como processamento de linguagem natural ou análise preditiva e analisar os resultados de forma eficiente no ambiente Synapse.
 
-# Índice
-- [Diagrama de Arquitetura](#Diagrama-de-Arquitetura)
-    - [Tarefa 1. Inserir Dados no Storage criado no passo 1](#Tarefa-1-Inserir-Dados-em-Storage-account)
-    - [Tarefa 2. Configurar o Synapse Workspace](#Tarefa-2-Configurar-o-Synapse-Workspace)
-        - [a. Lançar o Azure Cloud Shell](#A-Lançar-o-Azure-Cloud-Shell)
-        - [b. No Cloud Shell execute os seguintes comandos:](#b-Carregar-arquivos-para-a-storage-account)
-        - [c. Criar tabela SQL de destino](#A-Criar-tabela-SQL-de-destino)
-        - [d. Criar a Origem e Destino em Linked Services](#B-Criar-a-Origem-e-Destino-em-Linked-Services)
-        - [e. Criar Fluxo de dados em Synapse](#C-Criar-fluxo-de-dados-Synapse)
-        - [f. Criar um Pipeline em Synapse](#D-Criar-um-Pipeline-em-Synapse)
-        - [g. Executar um Pipeline em Synapse](#E-Executar-um-Pipeline-em-Synapse)
-    - [Tarefa 3. Resultados da Consulta na Nossa Tabela SQL ](#Task-3-Resultados-da-Consulta-na-Nossa-Tabela-SQL)
+## Objetivos do Laboratório
 
-## Tarefa 1: Inserir Dados em Storage account
+Você poderá concluir as seguintes tarefas:
+
+- Tarefa 1: Ingerir dados na conta de armazenamento
+- Tarefa 2: Configurar o Synapse Workspace
+- Tarefa 3: Consultar os resultados em nossa tabela SQL
+
+## Tarefa 1: Ingerir dados na conta de armazenamento
 
 ### A. Lançar o Azure Cloud Shell
 
@@ -395,7 +390,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
 <validation step="3e716f01-6da8-431e-aa81-4041b9054091" />    
 
-## Task 3: Resultados da Consulta na Nossa Tabela SQL
+## Tarefa 3: Resultados da consulta em nossa tabela SQL
 
 1. Certifique-se de que o status de execução do pipeline tenha **Bem-sucedido**.
 
@@ -420,4 +415,4 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
 Neste laboratório, você ingeriu dados para a conta de armazenamento, configurou o Synapse Workspace e produziu resultados de consulta em nossa tabela SQL.
 
-### Concluiu o laboratório com sucesso
+### Você concluiu o laboratório com sucesso. Clique em **Avançar >>** para prosseguir para o próximo exercício.
