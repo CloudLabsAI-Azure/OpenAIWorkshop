@@ -1,12 +1,16 @@
-# Exercício 4D: Visão geral básica dos hiperparâmetros do serviço OpenAI do Azure (Apenas leitura)
+# Exercício 4D: Visão geral básica dos hiperparâmetros do Serviço Azure OpenAI (somente leitura)
+
+### Duração estimada: 15 minutos
+
+Este laboratório fornece conhecimentos básicos sobre hiperparâmetros no contexto do Serviço Azure OpenAI. Os participantes entendem como os hiperparâmetros influenciam o treinamento e o desempenho do modelo e aprendem técnicas básicas para ajustar esses parâmetros e obter melhores resultados.
+
 ## Nota rápida sobre o ajuste de hiperparâmetros
 
-Ao trabalhar com prompts, você estará interagindo com o LLM por meio de uma API ou diretamente. Você pode configurar alguns parâmetros para obter resultados diferentes para seus prompts.
+Ao trabalhar com prompts, você interagirá com o LLM por meio de uma API ou diretamente. Você pode configurar alguns parâmetros para obter resultados diferentes para seus prompts.
 
-**Temperatura** - 
-Em suma, quanto menor a temperatura, mais determinísticos são os resultados, no sentido de que o próximo token mais provável é sempre escolhido. O aumento das temperaturas pode levar a uma maior aleatoriedade, incentivando outputs mais diversificados ou criativos. Estamos essencialmente aumentando os pesos dos outros tokens possíveis. Em termos de aplicação, podemos querer usar uma temperatura mais baixa para algo como QA baseado em fatos para incentivar respostas mais factuais e concisas. Para a geração de poemas ou outras tarefas criativas, pode ser benéfico aumentar a temperatura.
+**Temperatura** - Em resumo, quanto menor a temperatura, mais determinísticos são os resultados, no sentido de que o próximo token com maior probabilidade é sempre escolhido. Temperaturas mais altas podem levar a mais aleatoriedade, incentivando resultados mais diversos ou criativos. Estamos essencialmente aumentando os pesos dos outros tokens possíveis. Em termos de aplicação, podemos querer usar uma temperatura mais baixa para algo como QA baseado em fatos para incentivar respostas mais factuais e concisas. Para geração de poemas ou outras tarefas criativas, pode ser benéfico aumentar a temperatura.
 
-**Top_p** - Da mesma forma, com top_p, uma técnica de amostragem com temperatura chamada amostragem de núcleo, você pode controlar o quão determinístico o modelo é na geração de uma resposta. Se você está procurando respostas exatas e factuais, mantenha isso baixo. Se procura respostas mais diversificadas, aumente para um valor mais elevado.
+**Top_p** - Da mesma forma, com top_p, uma técnica de amostragem com temperatura chamada amostragem de núcleo, você pode controlar o quão determinístico o modelo é na geração de uma resposta. Se você busca respostas exatas e factuais, mantenha esse valor baixo. Se você busca respostas mais diversas, aumente para um valor mais alto.
 
 A recomendação geral é alterar um, não ambos.
 
@@ -53,3 +57,7 @@ Os candidatos não utilizados ainda incorrerão em custos de uso, portanto, use 
 Faça com que as respostas parem em um ponto desejado, como o final de uma frase ou lista.
 Especifique até quatro sequências em que o modelo deixará de gerar mais tokens numa resposta. O texto gerado não conterá a sequência de parada.
 ```
+
+## Resumo
+
+Neste laboratório, você adquiriu conhecimento sobre os hiperparâmetros do Azure OpenAI e suas funcionalidades.
