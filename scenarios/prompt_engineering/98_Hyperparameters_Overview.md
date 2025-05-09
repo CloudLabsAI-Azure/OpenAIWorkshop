@@ -1,4 +1,9 @@
-# Ejercicio 4D: Descripción Básica de los Hiperparámetros de Azure OpenAI Service (Solo Lectura)
+# Ejercicio 4D: Descripción general básica de los hiperparámetros de Azure OpenAI Service (solo lectura)
+
+### Duración estimada: 15 minutos
+
+Este laboratorio proporciona conocimientos básicos sobre hiperparámetros en el contexto de Azure OpenAI Service. Los participantes comprenderán cómo los hiperparámetros influyen en el entrenamiento y el rendimiento del modelo, y aprenderán técnicas básicas para ajustar estos parámetros y obtener mejores resultados.
+
 ## Nota Rápida sobre el ajuste de Hiperparámetros
 
 Cuando trabaje con prompts, interactuará con el LLM directamente o a través de una API. Puede configurar algunos parámetros para obtener resultados diferentes para sus prompts.
@@ -57,3 +62,8 @@ Hace que las respuestas se detengan en un punto deseado, como el final de una or
 Especifique hasta cuatro secuencias en las que el modelo dejará de generar más tokens
 en una respuesta. El texto devuelto no contendrá la secuencia de detención.
 ```
+
+
+## Resumen
+
+En este laboratorio, ha adquirido conocimientos sobre los hiperparámetros de Azure OpenAI y sus funcionalidades.

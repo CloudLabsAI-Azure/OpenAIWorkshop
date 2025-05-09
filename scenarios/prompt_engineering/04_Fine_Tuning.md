@@ -1,4 +1,8 @@
-# Ejercicio 4C: Ajuste Fino (Fine-Tuning) (Solo Lectura)
+# Ejercicio 4C: Ajuste fino (Solo lectura)
+
+### Duración estimada: 15 minutos
+
+Este laboratorio se centra en el proceso de ajuste fino de los modelos de OpenAI para mejorar su rendimiento en tareas o conjuntos de datos específicos. Los participantes aprenden a ajustar los parámetros del modelo, optimizar las estrategias de entrenamiento y evaluar las métricas de rendimiento del modelo mediante ejercicios prácticos y ejemplos.
 
 ## Temas
 
@@ -67,7 +71,6 @@ Alojar un Modelo Ajustado también tiene su costo, pero en volúmenes medianos a
 
 [Ajuste Fino en Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/fine-tuning?pivots=programming-language-studio)
 
+## Resumen
 
----
-
-[Sección Anterior (Conceptos Avanzados)](./03_Advanced_Concepts.md)
+En este laboratorio, adquirió conocimientos sobre diversos temas: qué es exactamente el ajuste fino, las diferencias entre el ajuste fino y la ingeniería de señales, y los costos operativos que deben considerarse.

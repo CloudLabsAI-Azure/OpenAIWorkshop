@@ -1,8 +1,8 @@
-# Ejercicio 1: Crear un pipeline de Open AI para Ingerir Datos por Lotes, Realizar Operaciones Inteligentes y Analizar en Synapse
+# Ejercicio 1: Crear una canalización de OpenAI para ingerir datos por lotes, realizar operaciones inteligentes y analizar en Synapse
 
-### Duración Estimada: 90 minutos
+### Duración estimada: 120 minutos
 
-Este laboratorio tiene como objetivo demostrar cómo integrar las capacidades de OpenAI en Azure Synapse Analytics para procesar datos por lotes, realizar operaciones inteligentes como el procesamiento del lenguaje natural o el análisis predictivo, y analizar los resultados de manera eficiente dentro del entorno de Synapse.
+Este laboratorio tiene como objetivo demostrar cómo integrar las funcionalidades de OpenAI en Azure Synapse Analytics para procesar datos por lotes, realizar operaciones inteligentes como el procesamiento del lenguaje natural o el análisis predictivo, y analizar los resultados de forma eficiente en el entorno de Synapse.
 
 ## Objetivos del Laboratorio
 
@@ -49,6 +49,8 @@ Será capaz de completar las siguientes tareas:
     
     ![](images/cloudshell.png)
 
+    > **Nota**: ignore la advertencia «El ID de suscripción del recurso compartido de archivos de almacenamiento no está registrado en el espacio de nombres Microsoft.CloudShell» y continúe con la siguiente tarea.
+
 ### B. Cargar archivos a una cuenta de almacenamiento:
 
 1. Ejecute los siguientes comandos en Cloud Shell para descargar e instalar Miniconda.
@@ -64,6 +66,12 @@ Será capaz de completar las siguientes tareas:
     > **Nota:** Los siguientes comandos funcionan en Bash; asegúrese de utilizar **Bash** en Cloud Shell. 
     
     > **Nota:** Presione la tecla de flecha hacia abajo para leer u omitir el acuerdo de licencia.
+
+1. Pulse **Enter** para continuar con la instalación.
+
+   > **Nota:** Pulse la flecha hacia abajo para leer u omitir el acuerdo de licencia.
+
+   ![](images/pro1-1.png)
 
 1. Escriba **yes** y presione **Enter** para aceptar el acuerdo, y luego presione **Enter** para instalar en la ruta predeterminada. 
 
@@ -81,14 +89,14 @@ Será capaz de completar las siguientes tareas:
 1. Ejecute los siguientes comandos para crear y activar el entorno conda en Cloud Shell.
 
     ```bash 
-    git clone https://github.com/microsoft/OpenAIWorkshop.git
-    cd OpenAIWorkshop/scenarios/openai_batch_pipeline/document_generation
+    git clone https://github.com/CloudLabsAI-Azure/openaifilesworkshop.git
+    cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
     conda create -n document-creation
     conda activate document-creation
     pip install --upgrade pip
     pip install -r reqs.txt
     ```
-    > **Nota**: si recibe el error **"Conda: command not found"**, por favor cierre la sesión de Cloud Shell y abra una nueva sesión para continuar.
+    > **Nota**: Si encuentra el error "Conda: comando no encontrado", cierre su sesión actual de CloudShell, inicie una nueva sesión bash e intente ejecutar los comandos del paso 6 nuevamente.
     
 1. Presione la tecla **y** y luego presione Enter para continuar.
 
@@ -110,11 +118,20 @@ Será capaz de completar las siguientes tareas:
 
    > **Note**: Ejecute "cd OpenAIWorkshop scenarios/openai_batch_pipeline/document_generation" si no está dentro del directorio OpenAIWorkshop/scenarios/openai_batch_pipeline/document_generation.
    
-1. Una vez que haya cargado correctamente los archivos JSON en la cuenta de almacenamiento, puede navegar hasta la cuenta de almacenamiento en el Portal de Azure y verificar que los archivos se hayan cargado.
+1. Una vez que haya cargado exitosamente los archivos JSON a la cuenta de almacenamiento, navegue a **Contenedores (1)**, haga clic en **workshop-data (2)**, seleccione la carpeta **cleansed_documents (3)** y verifique que los archivos se hayan cargado.
 
-   ![](images/batch_file_upload.png)
+   ![](images/batch_file_upload-1.png)
 
-   <validation step="ef9a8088-8af2-426f-9672-70c0b0c227b5" />
+
+   ![](images/pro4-1.png)
+
+
+> **¡Felicitaciones!** por completar la tarea. Ahora es momento de validarla. Estos son los pasos:
+> - Si recibe un mensaje de éxito, puede continuar con la siguiente tarea.
+> - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso siguiendo las instrucciones de la guía del laboratorio.
+> - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com. Estamos disponibles 24/7 para ayudarle.
+
+<validation step="ef9a8088-8af2-426f-9672-70c0b0c227b5" />
 
 ## Tarea 2: Configurar un área de trabajo de Synapse
 
@@ -148,27 +165,31 @@ Será capaz de completar las siguientes tareas:
    ![](images/image(4).png)
 
 7. Una vez implementado el recurso, haga clic en **Ir al grupo de recursos**
-8. Navegue hasta el espacio de trabajo de Synapse que ha creado, seleccione **Grupos SQL(1)** en el panel izquierdo en Grupos de análisis y haga clic en **+ Nuevo(2)**.
 
-   ![](images/image(04).png)
+8. Navegue al espacio de trabajo de Synapse que ha creado, en la página **Información general (1)**, haga clic en **Abrir (2)** en Abrir Synapse Studio para navegar a Azure Synapse Studio.
 
-9. En la pestaña Conceptos básicos de Nuevo grupo de SQL dedicado, proporcione los siguientes detalles:
+   ![](images/open-synapse-studio.png)
+
+9. En Azure Synapse Studio, navegue a **Manage (1) > SQL pools (2)** y luego haga clic en **+ Nuevo (3)**.
+
+    ![](images/new-sql-pool.png)
+
+
+10. En la pestaña Conceptos básicos de Nuevo grupo de SQL dedicado, proporcione los siguientes detalles:
 
     - **Nombre del grupo de SQL dedicado**: **openaisql01**
     - **Nivel de rendimiento**: Reducirlo a **DW100c**
     - Haga clic en **Siguiente: Configuraciones adicionales**
 
-      ![](images/image(05).png)
+      ![](images/sql-pool-name.png)
 
-10. Haga clic en **Revisar + crear**, luego en **Crear** y espere a que se complete la implementación..
+11. En la página **Revisar + crear**, haga clic en **Crear** y espere a que se complete la implementación.
 
-    ![](images/image(06).png)
-
-11. Ahora regrese al espacio de trabajo de synapse<inject key="DeploymentID" enableCopy="false"></inject>, seleccione **Grupos de Apache Spark** en el panel izquierdo debajo de Grupos de análisis y haga clic en **+ Nuevo**.
+12. Ahora regrese al espacio de trabajo de synapse<inject key="DeploymentID" enableCopy="false"></inject>, seleccione **Grupos de Apache Spark** en el panel izquierdo debajo de Grupos de análisis y haga clic en **+ Nuevo**.
 
     ![](images/image(07).png)
 
-12. En la página Nuevo grupo de Apache Spark, proporcione los siguientes detalles y haga clic en **Revisar + Crear** y luego en **Crear** en la pestaña Revisar + Crear para crear el grupo de Apache Spark.
+13. En la página Nuevo grupo de Apache Spark, proporcione los siguientes detalles y haga clic en **Revisar + Crear** y luego en **Crear** en la pestaña Revisar + Crear para crear el grupo de Apache Spark.
 
     - **Nombre del grupo de Apache Spark**: **openaisparkpool**
     - **Cómputo aislado**: **Deshabilitado**
@@ -180,9 +201,9 @@ Será capaz de completar las siguientes tareas:
 
 ### **B. Crear la Tabla SQL de Destino** 
 
-1. En el [Portal de Azure](https://portal.azure.com), navegue hasta el área de trabajo de Synapse **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** del grupo de recursos **openai-<inject key="DeploymentID" enableCopy="false"/>**. En la pestaña **Información general**, haga clic en **Abrir** para iniciar el espacio de trabajo de Synapse.
+1. En el [Portal de Azure](https://portal.azure.com), navegue hasta el área de trabajo de Synapse **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** del grupo de recursos **openai-<inject key="DeploymentID" enableCopy="false"/>**. En la pestaña **Información general (1)**, haga clic en **Abrir (2)** para iniciar el espacio de trabajo de Synapse.
 
-      ![](images/image(10).png)
+      ![](images/open-synapse-studio.png)
 
 1. Haga clic en la sección **Desarrollar (1)** de Synapse Studio, haga clic en el signo **+ (2)** en la parte superior izquierda y seleccione **Script SQL (3)**. Esto abrirá una nueva ventana con un editor de script SQL. 
 
@@ -201,7 +222,7 @@ Será capaz de completar las siguientes tareas:
     )
     ```
     
-      ![](images/openai-6.png)
+      ![](images/openai-6-1.png)
     
 1. A continuación, haga clic en **Publicar** para publicar el script SQL.
 
@@ -219,9 +240,9 @@ A continuación, necesitaremos crear dos servicios vinculados: uno para nuestra 
 
       ![](images/synapse6.png)
 
-1. Proporcione el nombre para su servicio vinculado como **openailinkedservice (1)**. Cambie el **Tipo de Autenticación** a **Clave de cuenta (2)**. Luego seleccione la **suscripción (3)** en la que ha estado trabajando, finalmente, Seleccione la cuenta de almacenamiento con el nombre **openaistorage<inject key="DeploymentID" enableCopy="false"></inject>** **(4)** que creó en la plantilla inicial y donde cargó los archivos JSON, luego haga clic en **Probar conexión (5)**. Una vez que la conexión sea exitosa, haga clic en el botón azul **Crear (6)** en la parte inferior izquierda de la ventana Nuevo servicio vinculado.
+1. Indique el nombre de su servicio vinculado como **openailinkedservice (1)**. Cambie el **Tipo de autenticación** a **Clave de cuenta (2)**. A continuación, seleccione la **suscripción (3)** con la que trabaja y, por último, la cuenta de almacenamiento con el sufijo **functions (4)** que creó en la plantilla de inicio y a la que cargó los archivos JSON. A continuación, haga clic en **Probar conexión (5)**. Una vez que la conexión se haya realizado correctamente, haga clic en el botón azul **Crear (6)** en la esquina inferior izquierda de la ventana Nuevo servicio vinculado.
 
-      ![](images/img-6b.png)
+      ![](images/img-6.png)
 
 1. Haga clic en **+ Nuevo** en la esquina superior izquierda. Busque **Synapse (1)**, seleccione **Azure Synapse Analytics (2)** y haga clic en **Continuar (3)**.
 

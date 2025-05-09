@@ -1,4 +1,8 @@
-# Ejercicio 2: Crear una aplicación Open AI con Power App
+# Ejercicio 2: Crear una aplicación de OpenAI con Power App
+
+### Duración estimada: 90 minutos
+
+Este laboratorio se centra en la creación de una aplicación utilizando las funcionalidades de OpenAI integradas con Microsoft Power Apps. Los participantes aprenderán a crear una aplicación funcional que aprovecha la IA para tareas como la comprensión del lenguaje natural, el análisis de datos o la interacción con el cliente dentro del marco de Power Apps.
 
 1. Navegue a https://make.powerapps.com/. En **Bienvenido a Power Apps**, seleccione su **País/Región (1)** y haga clic en **Comenzar (2)**. 
 
@@ -60,10 +64,16 @@
 
      ![](./images/canves-play.png)
 
-16. Si aparece una ventana emergente que le solicita iniciar una prueba gratuita, haga clic en **Iniciar una prueba gratuita**, luego en la ventana **Necesita una licencia de Power Apps para usar esta aplicación**, seleccione **Iniciar una prueba de 30 días**. Elija su región del menú desplegable y haga clic en el botón **Comenzar**. Espere de 2 a 3 minutos. Es posible que tarde en iniciar la prueba.
+16. Si aparece una ventana emergente que te pide que inicies una prueba gratuita, haz clic en **Iniciar una prueba gratuita** y, a continuación, en la ventana **Necesitas una licencia de Power Apps para usar esta aplicación**, selecciona **Iniciar una prueba de 30 días**. Selecciona tu región en el menú desplegable y haz clic en el botón **Iniciar mi prueba**. Espera de 2 a 3 minutos. La prueba puede tardar en iniciarse.
     
 17. En el **Lienzo**, haga clic en el botón **Summary** **(1)** y verifique el **texto inicial** **(2)**. Luego haga clic en el botón **Submit** **(3)** para obtener el **Resumen** **(4)** deseado.
 
      ![](./images/canves-output.png)
 
     > **Nota**: Puede probar las otras opciones disponibles en el portal, es decir, **SQL**, **ClassifyText**, **Parse**, y **Classify**.
+
+## Resumen
+
+En este laboratorio, ha integrado correctamente las API de OpenAI en Power Apps para habilitar funcionalidades como el procesamiento del lenguaje natural, el análisis de sentimientos o las recomendaciones personalizadas, y ha creado una aplicación.
+
+### Ha completado el laboratorio correctamente. Haga clic en **Siguiente >>** para continuar con el siguiente ejercicio.

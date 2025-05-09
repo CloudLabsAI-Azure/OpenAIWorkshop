@@ -1,5 +1,9 @@
 # Ejercicio 4B: Conceptos Avanzados (Solo Lectura)
 
+### Duración estimada: 30 minutos
+
+Este laboratorio proporciona conocimientos teóricos y prácticos avanzados sobre OpenAI y sus aplicaciones. Abarca la introducción a la ingeniería de promociones, sus casos de uso y los diversos tipos de indicaciones que se pueden implementar para obtener los resultados deseados.
+
 ## Temas
 
   - [Introducción](#introducción)
@@ -204,8 +208,7 @@ JSON:
 ```
 Ahora podemos ver que el modelo entiende claramente que solo queremos extraer tres entidades del texto y nada más.
 
----
 
-[Sección Anterior (Escenarios de Muestra)](./02_Sample_Scenarios/01_Text_Summarization.md)
+## Resumen
 
-[Siguiente Sección (Ajuste Fino)](./04_Fine_Tuning.md)
+En este laboratorio, adquirirá conocimientos teóricos profundos y prácticos avanzados sobre OpenAI y diversos tipos de métodos de ingeniería rápida.

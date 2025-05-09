@@ -1,4 +1,8 @@
-# Ejercicio 3: Cree una Aplicación Open AI con Python
+# Ejercicio 3: Desarrollar una aplicación de IA abierta con Python
+
+### Duración estimada: 90 minutos
+
+En este laboratorio, los participantes desarrollarán una aplicación utilizando las API de OpenAI y el lenguaje de programación Python. El objetivo es demostrar cómo implementar funcionalidades de IA como la generación de lenguaje, el análisis de sentimientos o los sistemas de recomendación con Python, aprovechando los potentes modelos y herramientas de OpenAI.
 
 1. Busque y seleccione **Azure Synapse Analytics** en el Portal de Azure.
 
@@ -81,13 +85,16 @@
 
     ![](images/publish-1.png)
 
-> Felicitaciones por completar la tarea! Ahora es el momento de validarlo. Aquí están los pasos:
-
+> **¡Felicitaciones!** por completar la tarea. Ahora es momento de validarla. Estos son los pasos:
 > - Si recibe un mensaje de éxito, puede continuar con la siguiente tarea.
-> - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
-> - Si necesita ayuda, contáctenos en Cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudarte.
+> - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso siguiendo las instrucciones de la guía del laboratorio.
+> - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com. Estamos disponibles 24/7 para ayudarle.
   
- <validation step="f943c5b3-b07a-4779-bc2f-9e13ee01378a" />
+<validation step="f943c5b3-b07a-4779-bc2f-9e13ee01378a" />
 
+
+## Resumen
+
+En este laboratorio, desarrollarás con éxito una aplicación implementando funcionalidades de IA como generación de lenguaje, análisis de sentimientos o sistemas de recomendación con Python, aprovechando los potentes modelos y herramientas de OpenAI.
 
 ### Ha completado con éxito la práctica de laboratorio. Haga clic en **Siguiente >>** para continuar con el siguiente ejercicio.

@@ -1,4 +1,8 @@
-# Ejercicio 4E: Glosario (solo lectura)
+# Ejercicio 4E: Glosario (Solo lectura)
+
+### Duración estimada: 15 minutos
+
+Los Modelos de Lenguaje Grande (LLM) de Azure OpenAI, como GPT-4, destacan en tareas de lenguaje natural al generar texto coherente. La ingeniería de indicaciones optimiza las indicaciones de entrada para influir eficazmente en las salidas del modelo y obtener las respuestas deseadas.
 
 *modelo de lenguaje (LM)*
 ```
@@ -40,3 +44,9 @@ y modelos de lenguaje grande (LLMs).
 El token es una abstracción definida por reglas externas para identificar la unidad de procesamiento en una tarea de NLP.
 Un token puede ser una palabra, parte de una palabra o simplemente caracteres como los signos de puntuación. (por ejemplo, 'abc', 'abc.', 'st', etc.)
 ```
+
+## Resumen
+
+En este laboratorio, se familiarizará con los modelos de lenguaje grande (LLM) de OpenAI, el procesamiento del lenguaje natural (PLN), las indicaciones, la ingeniería de indicaciones y los tokens.
+
+### Ha completado con éxito la práctica de laboratorio.
