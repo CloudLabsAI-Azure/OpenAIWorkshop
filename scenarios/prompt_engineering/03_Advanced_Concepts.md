@@ -211,5 +211,3 @@ Agora podemos ver que o modelo entende claramente que queremos extrair apenas tr
 ## Resumo
 
 Neste laboratório, você adquiriu conhecimento teórico aprofundado e conhecimento prático avançado relacionado ao OpenAI e a vários tipos de métodos de engenharia de prompt.
-
-### Você concluiu o laboratório com sucesso. Clique em **Avançar >>** para prosseguir para o próximo exercício.
