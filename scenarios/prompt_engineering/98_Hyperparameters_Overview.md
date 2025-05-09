@@ -18,44 +18,49 @@ A recomendação geral é alterar um, não ambos.
 
 **temperatura**
 ```
-Controla a aleatoriedade: a redução resulta em menos finalizações aleatórias. 
-À medida que a temperatura se aproxima de zero, o modelo tornar-se-á determinista e repetitivo.
+Controls randomness: Lowering results in fewer random completions. 
+As the temperature approaches zero, the model will become deterministic and repetitive.
 ```
 
 **max_tokens**
 ```
-À medida que a temperatura se aproxima de zero, o modelo tornar-se-á determinista e repetitivo.
+Set a limit on the number of tokens to generate in a response. 
+The system supports a maximum of 2048 tokens shared between a given prompt and response completion. 
+(One token is roughly 4 characters for typical English text.)
 ```
 
 **top_p***
 ```
-Controle quais tokens o modelo considerará ao gerar uma resposta por meio de amostragem de núcleo. 
-Definir isso como 0,9 considerará os 90% mais prováveis de todos os tokens possíveis. 
-Isso evitará o uso de tokens incorretos, mantendo a variedade quando o modelo tem baixa confiança nos tokens de maior pontuação.
+Control which tokens the model will consider when generating a response via nucleus sampling. 
+Setting this to 0.9 will consider the top 90% most likely of all possible tokens. 
+This will avoid using tokens that are incorrect while still maintaining variety
+when the model has low confidence in the highest-scoring tokens.
 ```
 
 **frequency_penalty**
 ```
-Reduza a chance de repetir um token proporcionalmente com base na frequência com que ele apareceu no texto até agora.
-Isso diminui a probabilidade de repetir o mesmo texto em uma resposta.
+Reduce the chance of repeating a token proportionally based on how often it has appeared in the text so far.
+This decreases the likelihood of repeating the same text in a response.
 ```
 
 **presence_penalty**
 ```
-Reduza a chance de repetir qualquer token que tenha aparecido no texto até agora. 
-Isso aumenta a probabilidade de introduzir novos tópicos em uma resposta.
+Reduce the chance of repeating any token that has appeared in the text at all so far. 
+This increases the likelihood of introducing new topics in a response.
 ```
 
 **best_of**
 ```
-Gere várias respostas e exiba apenas aquela com a melhor probabilidade total em todos os seus tokens. 
-Os candidatos não utilizados ainda incorrerão em custos de uso, portanto, use este parâmetro com cuidado e certifique-se de definir os parâmetros para o comprimento máximo de resposta e triggers finais também. Observe que o streaming só funcionará quando estiver definido como 1.
+Generate multiple responses, and display only the one with the best total probability across all its tokens. 
+The unused candidates will still incur usage costs, so use this parameter carefully and make sure to set the
+parameters for max response length and ending triggers as well. Note that streaming will only work when this is set to 1.
 ```
 
 **stop**
 ```
-Faça com que as respostas parem em um ponto desejado, como o final de uma frase ou lista.
-Especifique até quatro sequências em que o modelo deixará de gerar mais tokens numa resposta. O texto gerado não conterá a sequência de parada.
+Make responses stop at a desired point, such as the end of a sentence or list.
+Specify up to four sequences where the model will stop generating further tokens
+in a response. The returned text will not contain the stop sequence.
 ```
 
 ## Resumo
