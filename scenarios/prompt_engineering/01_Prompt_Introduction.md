@@ -359,5 +359,3 @@ Alguns dos exemplos acima foram adotados a partir do ["Best practices for prompt
 ## Resumo
 
 Neste exercício, você aprendeu como criar prompts poderosos para modelos de IA examinando a ideia de prompt engineering nesta tarefa. Usando o Azure OpenAI Playground, você ganhou experiência prática experimentando vários tipos de prompt e compreendendo seus componentes e conselhos de design.
-
-### Você concluiu o laboratório com sucesso. Clique em **Avançar >>** para prosseguir para o próximo exercício.
