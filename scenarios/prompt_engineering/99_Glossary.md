@@ -1,39 +1,53 @@
-# Exercício 4E: Glossário (Apenas leitura)
+# Exercício 4E: Glossário (somente leitura)
 
-*Modelo linguístico (language model - LM)*
-```
-Distribuição de probabilidade sobre sequências de palavras
-```
+### Duração estimada: 15 minutos
 
-*Modelo de Linguagem Grande (large language model - LLM)*
-```
-Um modelo de linguagem grande (LLM) é um tipo de modelo de aprendizagem de máquina que pode executar uma variedade de tarefas de processamento de linguagem natural (PNL), incluindo geração e classificação de texto, resposta perguntas de forma conversacional e tradução de texto de um idioma para outro.
+Os Large Language Models (LLMs) do Azure OpenAI, como o GPT-4, se destacam em tarefas de linguagem natural, gerando texto coerente. A engenharia de prompts otimiza os prompts de entrada para influenciar as saídas do modelo de forma eficaz para as respostas desejadas.
 
-O rótulo "grande" refere-se ao número de valores (parâmetros) que o modelo pode alterar autonomamente à medida que aprende.
+*language model (LM)*
+```
+A probability distribution over sequences of words
 ```
 
-*Processamento de Linguagem Natural (PNL)*
+*large language model (LLM)*
 ```
-Processamento de Linguagem Natural (NLP) é a capacidade de um programa de computador compreender a linguagem humana falada e escrita.
+A large language model (LLM) is a type of machine learning model that can perform a variety of 
+natural language processing (NLP) tasks, including generating and classifying text, answering 
+questions in a conversational manner and translating text from one language to another.
 
-A programação de PNL automatiza o processo de tradução entre computadores e seres humanos manipulando dados não estruturados (palavras) no contexto de uma tarefa específica (conversação). Um objetivo importante da PNL é ajudar o computador a compreender 
-a intenção – bem como o significado – das palavras escritas ou faladas de um ser humano.
+The label "large" refers to the number of values (parameters) the model can change autonomously as it learns.
+```
+
+*natural language processing (NLP)*
+```
+Natural language processing (NLP) is the ability of a computer program to understand spoken and written human language.
+
+NLP programming automates the translation process between computers and humans by manipulating unstructured data (words)
+in the context of a specific task (conversation). An important goal of NLP is to help the computer comprehend 
+the intent -- as well as the meaning -- of a human being's written or spoken words.
 ```
 
 *prompt*
 ```
-Um pedaço de texto que é usado para iniciar ou fornecer contexto ao modelo de AI para a gerar uma resposta ou um output. Isso pode ser uma frase de entrada, pergunta ou tópico para gerar uma resposta do modelo de linguagem.
+A piece of text that is used to initiate or provide context for the generation of output
+This could be an input sentence, question, or topic to generate a response from the language model.
 ```
 
 *prompt engineering*
 ```
-A disciplina para desenvolver e otimizar prompts para usar eficientemente modelos de linguagem (LMs)
-e grandes modelos linguísticos (LLMs).
+The discipline concerned with developing and optimizing prompts to efficiently use language models (LMs)
+and large language models (LLMs).
 ```
 
 *token(s)*
 ```
-O token é uma abstração que é definida por regras externas para identificar a unidade de processamento em uma tarefa de PNL.
-Um token pode ser uma palavra, parte de uma palavra ou apenas caracteres como pontuação. (por exemplo, «abc», «abc.», «st», etc.)
+The token is an abstraction that is defined by external rules to identify the unit of processing in an NLP task.
+A token may be a word, part of a word, or just characters like punctuation. (e.g. 'abc ', 'abc.', ' st', etc)
 ```
 
+
+## Resumo
+
+Neste laboratório, você se familiarizará com os modelos de linguagem de grande porte (LLM) do OpenAI, processamento de linguagem natural (NLP), prompt, engenharia de prompt e tokens.
+
+### Você concluiu o laboratório com sucesso.
