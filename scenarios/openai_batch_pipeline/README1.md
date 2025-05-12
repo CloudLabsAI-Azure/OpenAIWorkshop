@@ -259,10 +259,10 @@ Em seguida, precisaremos criar dois linked services: um para nossa origem (os ar
 1. Na janela *New linked service* que se abre, preencha um nome para o target linked service como **synapselinkedservice(1)**
 **Versao: 1.0(2)**. Selecione a **Assinatura do Azure (3)**  na qual você tem trabalhado. Selecione **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (4)** para **Nome do servidor** e **openaisql01 (5)** como o **Nome do banco de dados**. Certifique-se de alterar o **Tipo de autenticação** para **Identidade gerenciada atribuída pelo sistema (6)**, depois clique em **Testar conexão (7)** e clique em **Criar (8)**.
 
-      ![](images/new-portuguese.png)
 
+    ![](images/new-portuguese.png)
 
-      ![](images/new-por-1.png)
+    ![](images/new-por-1.png)
 
 1. Depois de criar os dois linked services, certifique-se de pressionar o botão **Publicar tudo** na parte superior para publicar o nosso trabalho. Finalize a criação dos linked services e clique em **Publicar**.
 
