@@ -86,19 +86,38 @@ Será capaz de completar las siguientes tareas:
     ```bash 
     export PATH=~/miniconda3/bin:$PATH
     ```
-1. Ejecute los siguientes comandos para crear y activar el entorno conda en Cloud Shell.
+1. Ejecuta los siguientes comandos uno por uno para crear y activar el entorno conda en CloudShell.
 
     ```bash 
     git clone https://github.com/CloudLabsAI-Azure/openaifilesworkshop.git
+    ```
+
+    ```bash
     cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
+    ```
+
+    ```bash
     conda create -n document-creation
+    ```
+
+    ```bash
     conda activate document-creation
+    ```
+
+    > **Nota:** Si encuentras el error **"Conda: command not found"** después de ejecutar este comando, cierra tu sesión actual de CloudShell, inicia una nueva sesión de Bash y vuelve a intentar ejecutar los comandos de este **Paso 6**.
+
+    ```bash
     pip install --upgrade pip
     pip install -r reqs.txt
     ```
-    > **Nota**: Si encuentra el error "Conda: comando no encontrado", cierre su sesión actual de CloudShell, inicie una nueva sesión bash e intente ejecutar los comandos del paso 6 nuevamente.
+
+    > **Nota:** Si encuentras errores al ejecutar los comandos pip anteriores, ejecuta los siguientes comandos:
+    >
+    >     pip install --user --upgrade pip
+    >     pip install --user -r reqs.txt
     
 1. Presione la tecla **y** y luego presione Enter para continuar.
+    > **Nota:** Continúa con el siguiente paso si no se te solicita esto.
 
 1. En el [Portal de Azure](https://portal.azure.com), navegue hasta su recurso de Cuenta de almacenamiento con el sufijo `functions` seleccionando el grupo de recursos **openai-<inject key="DeploymentID" enableCopy="false"/>** y seleccionando la Cuenta de Almacenamiento de la lista de recursos.
 
@@ -164,6 +183,9 @@ Será capaz de completar las siguientes tareas:
 
    ![](images/image(4).png)
 
+   > **Nota:** La implementación puede tardar aproximadamente 5 minutos en completarse.
+
+
 7. Una vez implementado el recurso, haga clic en **Ir al grupo de recursos**
 
 8. Navegue al espacio de trabajo de Synapse que ha creado, en la página **Información general (1)**, haga clic en **Abrir (2)** en Abrir Synapse Studio para navegar a Azure Synapse Studio.
@@ -182,6 +204,8 @@ Será capaz de completar las siguientes tareas:
     - Haga clic en **Siguiente: Configuraciones adicionales**
 
       ![](images/sql-pool-name.png)
+
+      > **Nota:** La implementación puede tardar aproximadamente 10 minutos en completarse.
 
 11. En la página **Revisar + crear**, haga clic en **Crear** y espere a que se complete la implementación.
 
