@@ -30,10 +30,6 @@ Neste laboratório, os participantes desenvolverão uma aplicação utilizando a
 
     ![](images/openai-sparkpool-1.png)
 
-1. Execute o notebook passo a passo para concluir este exercício. Clique no botão **Run** ao lado da célula.
-
-     ![](images/run.png)
-
 1. Clique no botão **▷ Run** ao lado de cada célula, passo a passo, na ordem mencionada abaixo.
 
 1. Em **1. Install OpenAI**, clique no botão **Run** ao lado da primeira célula.
