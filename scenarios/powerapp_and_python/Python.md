@@ -34,13 +34,16 @@ Neste laboratório, os participantes desenvolverão uma aplicação utilizando a
 
      ![](images/run.png)
 
-1. Em **1. Install OpenAI**, clique no botão **Executar** ao lado das primeiras células e clique em **parar sessão**. Aguarde até que os **pools Apache Spark** passem para o estado de parada. 
+1. Clique no botão **▷ Run** ao lado de cada célula, passo a passo, na ordem mencionada abaixo.
 
-     ![](images/run-python1.png)
+1. Em **1. Install OpenAI**, clique no botão **Run** ao lado da primeira célula.
 
-      > **Note**: Pode ser necessário reiniciar o kernel para usar os pacotes atualizados
+   ![](images/Ex4-RunOpenAI.png)
 
-1. Em **2. Import helper libraries and instantiate credentials** e substitua **AZURE_OPENAI_API_KEY** e **AZURE_OPENAI_ENDPOINT** pela sua chave de API e URL do endpoint.
+   > **Nota:** Se a célula **Install OpenAI** demorar mais do que o esperado e continuar em execução, clique em **Stop session**. Aguarde até que os **Apache Spark pools** mudem para o estado **Stopped**. Pode ser necessário reiniciar o kernel para utilizar os pacotes atualizados.
+    ![](images/run-python1.png)
+
+1. Em **2. Import helper libraries and instantiate credentials**, substitua **AZURE_OPENAI_API_KEY** e **AZURE_OPENAI_ENDPOINT** pela sua chave de API e URL do endpoint. Em seguida, execute esta célula após atualizar os valores necessários.
 
      ![](images/key-endpoint.png)
    
@@ -62,27 +65,27 @@ Neste laboratório, os participantes desenvolverão uma aplicação utilizando a
           ![](images/pip-install-1.png) 
 
 
-1. Para **2. Choose a Model** e substitua o valor do **model** de **text-curie-001** para **demomodel**.
+1. Em **2. Choose a Model**, substitua o valor de **model** de **text-curie-001** para **demomodel** e **execute** esta célula.
 
     ![](images/choosemodel.png)
 
-1. Em **temperature**, substitua o valor **motor** de **text-curie-001** para **demomodel**.
+1. Na célula em **temperature**, substitua o valor de **engine** de **text-curie-001** para **demomodel** e execute esta célula.
 
      ![](images/temp.png)
 
-1. Em **top_p**, substitua o valor **engine** de **text-curie-001** para **demomodel**.
+1. Na célula em **top_p**, substitua o valor de **engine** de **text-curie-001** para **demomodel** e execute esta célula.
 
      ![](images/top-p.png)
 
-1. Para **n**, substitua o valor **engine** de **text-curie-001** para **demomodel**.
+1. Na célula em **n**, substitua o valor de **engine** de **text-curie-001** para **demomodel** e execute esta célula.
 
      ![](images/n.png)
 
-1. Em **logprobs**, substitua o valor **engine** de **text-curie-001** para **demomodel**.
+1. Na célula em **logprobs**, substitua o valor de **engine** de **text-curie-001** para **demomodel** e execute esta célula.
 
      ![](images/logprobs.png)
 
-1. Depois de executar o notebook com sucesso, clique em **Publicar tudo**.
+1. Após executar todas as células do Notebook com sucesso, clique em **Publicar tudo**.
 
      ![](images/publish-1-1.png)
 
