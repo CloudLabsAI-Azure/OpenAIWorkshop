@@ -89,19 +89,38 @@ Você poderá concluir as seguintes tarefas:
     ```bash 
     export PATH=~/miniconda3/bin:$PATH
     ```
-1. Execute o seguinte comando para criar e ativar o ambiente conda na Cloudshell.
+1. Execute os comandos abaixo um por um para criar e ativar o ambiente conda no CloudShell.
 
     ```bash 
     git clone https://github.com/CloudLabsAI-Azure/openaifilesworkshop.git
+    ```
+
+    ```bash
     cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
+    ```
+
+    ```bash
     conda create -n document-creation
+    ```
+
+    ```bash
     conda activate document-creation
+    ```
+
+    > **Nota:** Se você encontrar o erro **"Conda: command not found"** após executar este comando, feche sua sessão atual do CloudShell, inicie uma nova sessão Bash e tente executar novamente os comandos deste **Passo 6**.
+
+    ```bash
     pip install --upgrade pip
     pip install -r reqs.txt
     ```
-    > **Nota**: se receber o erro **"Conda: comando não encontrado"**, feche a sessão do CloudShell e abra uma nova sessão para continuar.
+
+    > **Nota:** Se você encontrar erros ao executar os comandos pip acima, execute os comandos abaixo:
+    >
+    >     pip install --user --upgrade pip
+    >     pip install --user -r reqs.txt
     
 1. Digite **y** e pressione enter para prosseguir.
+   > **Nota:** Prossiga para o próximo passo se não for solicitado para isso.
 
 1. No [Portal do Azure](https://portal.azure.com), navegue para a Conta de Armazenamento com o sufixo `functions` selecionando o **openai-<inject key="DeploymentID" enableCopy="false"/>** grupo de recursos e selecione a conta de armazenamento da lista de recursos.
 
@@ -165,6 +184,8 @@ Você poderá concluir as seguintes tarefas:
 
    ![](images/image(12)-1.png)
 
+   > **Nota:** A implantação pode levar aproximadamente 5 minutos para ser concluída.
+
 1. Depois que o recurso for implantado, clique em **Ir para o grupo de recursos**
 
     ![](images/image(5)-1.png)
@@ -187,11 +208,11 @@ Você poderá concluir as seguintes tarefas:
 
         ![](images/sql-pool-name.png)
 
-
 1. Na página **Revisar + criar**, clique em **Criar** e aguarde a conclusão da implantação.
 
       ![](images/sql-pool-create.png)
 
+   > **Nota:** A implantação pode levar aproximadamente 10 minutos para ser concluída.
 
 1. Agora navegue de volta ao portal do Azure, **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, selecione **Apache Spark pools (1)** no painel esquerdo em Analytics pools e clique em **+ Novo (2).**
 
