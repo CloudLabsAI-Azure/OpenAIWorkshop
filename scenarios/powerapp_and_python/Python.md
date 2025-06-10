@@ -26,17 +26,16 @@ En este laboratorio, los participantes desarrollarán una aplicación utilizando
 
     ![](images/openai-sparkpool.png)
 
-1. Ejecute el cuaderno paso a paso para completar este ejercicio. Haga clic en el botón **Ejecutar** al lado de la celda.
+1. Haz clic en el botón **▷ Run** junto a cada celda, paso a paso, en el orden que se menciona a continuación.
 
-     ![](images/run.png)
+1. En **1. Install OpenAI**, haz clic en el botón **Run** junto a la primera celda.
 
-1. En **1. Install OpenAI**, haga clic en el botón **Ejecutar** junto a las primeras celdas y haga clic en **detener sesión**. Por favor espere hasta que los **grupos de Apache Spark** pasen al estado de detenido.
+    ![](images/Ex4-RunOpenAI.png)
 
-     ![](images/run-python1.png)
+    > **Nota:** Si la celda **Install OpenAI** tarda más de lo esperado y sigue en bucle, haz clic en **Stop session**. Espera hasta que los **Apache Spark pools** cambien al estado **Stopped**. Es posible que necesites reiniciar el kernel para usar los paquetes actualizados.
+      ![](images/run-python1.png)
 
-      > **Nota**: es posible que necesite reiniciar el kernel para usar los paquetes actualizados
-
-1. En **2. Import helper libraries and instantiate credentials** reemplace **AZURE_OPENAI_API_KEY** y **AZURE_OPENAI_ENDPOINT** con su clave de API y la URL del punto de conexión.
+1. En **2. Import helper libraries and instantiate credentials**, reemplaza **AZURE_OPENAI_API_KEY** y **AZURE_OPENAI_ENDPOINT** con tu clave de API y la URL de tu endpoint. Luego, ejecuta esta celda después de actualizar los valores requeridos.
 
      ![](images/key-endpoint.png)
    
@@ -48,7 +47,6 @@ En este laboratorio, los participantes desarrollarán una aplicación utilizando
 
    ![](images/p22-1-1.png)
      
-
     > **Nota:** Si aparece el error "No se encontró el módulo OpenAI", siga estos pasos:
 
     -  Agregue * junto a 0.* para iniciar la instalación del último módulo OpenAI.
@@ -57,27 +55,27 @@ En este laboratorio, los participantes desarrollarán una aplicación utilizando
 
       ![](images/pip-install.png)
 
-1. Para **2. Choose a Model** reemplace el valor **model** de **text-curie-001** a **demomodel**.
+1. Para **2. Choose a Model**, reemplaza el valor de **model** de **text-curie-001** a **demomodel** y **ejecuta** esta celda.
 
     ![](images/choosemodel.png)
 
-1. En **temperature**, reemplace el valor **engine** de **text-curie-001** a **demomodel**.
+1. Para la celda en **temperature**, reemplaza el valor de **engine** de **text-curie-001** a **demomodel**, y ejecuta esta celda.
 
      ![](images/temp.png)
 
-1. En **top_p**, reemplace el valor **engine** de **text-curie-001** a **demomodel**.
+1. Para la celda en **top_p**, reemplaza el valor de **engine** de **text-curie-001** a **demomodel**, y ejecuta esta celda.
 
      ![](images/top-p.png)
 
-1. Para **n**, reemplace el valor **engine** de **text-curie-001** a **demomodel**.
+1. Para la celda en **n**, reemplaza el valor de **engine** de **text-curie-001** a **demomodel**, y ejecuta esta celda.
 
      ![](images/n.png)
 
-1. En **logprobs**, reemplace el valor **engine** de **text-curie-001** a **demomodel**.
+1. Para la celda en **logprobs**, reemplaza el valor de **engine** de **text-curie-001** a **demomodel**, y ejecuta esta celda.
 
      ![](images/logprobs.png)
 
-1. Después de ejecutar el cuaderno correctamente, haga clic en **Publicar todo**.
+1. Después de ejecutar correctamente las celdas del Notebook, haz clic en **Publish all**.
 
      ![](images/publish.png)
 
