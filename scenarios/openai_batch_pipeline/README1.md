@@ -120,7 +120,7 @@ Você poderá concluir as seguintes tarefas:
 1. Digite **y** e pressione enter para prosseguir.
    > **Nota:** Prossiga para o próximo passo se não for solicitado para isso.
 
-1. No [Portal do Azure](https://portal.azure.com), navegue para a Conta de Armazenamento com o sufixo `functions` selecionando o **openai-<inject key="DeploymentID" enableCopy="false"/>** grupo de recursos e selecione a conta de armazenamento da lista de recursos.
+1. No [Portal do Azure](https://portal.azure.com), navegue para a Conta de Armazenamento com o sufixo `azfunctions` selecionando o **openai-<inject key="DeploymentID" enableCopy="false"/>** grupo de recursos e selecione a conta de armazenamento da lista de recursos.
 
     ![](images/storage-functions-1-1.png)
     
@@ -202,11 +202,11 @@ Você poderá concluir as seguintes tarefas:
 
 1. Na aba "Básico" do novo pool de SQL dedicado, forneça os seguintes detalhes:
 
-      - **Nome do pool de SQL dedicado: openaisql01** (1)
+      - **Nome do pool de SQL dedicado: openaisql01** **(1)**
       
-      - **Nível de desempenho:** Reduza para **DW100c** (2)
+      - **Nível de desempenho:** Reduza para **DW100c** **(2)**
       
-      - Clique em **"Examinar e Criar"** (3)
+      - Clique em **"Examinar e Criar"** **(3)**
 
         ![](images/sql-pool-name.png)
 
@@ -220,12 +220,16 @@ Você poderá concluir as seguintes tarefas:
 
     ![](images/image(21).png)
 
-1. Na página Novo pool do Apache Spark, forneça os seguintes detalhes e clique em **Revisar + Criar (6)** e, em seguida, em **Criar** na aba Revisar + Criar para criar o pool do Apache Spark.
+1. Na página Novo pool do Apache Spark, forneça os seguintes detalhes e clique em **Revisar + criar (6)**, depois clique na guia **Criar** para criar o pool do Apache Spark.
 
    - **Nome do pool do Apache Spark**: **openaisparkpool (1)**
+
    - **Computação Isolada**: **Desativado (2)**
+   
    - **Tamanho do nó**: **Pequeno (4 vCores/32 GB) (3)**
+   
    - **Escalonamento Automático**: **Desativado (4)**
+   
    - **Número de nós**: **3 (5)**
    
       ![](images/image(22)-1.png)
@@ -351,7 +355,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
            ![](images/new-por-10-1-1.png)
 
-1. Em seguida, precisaremos ir para o separador **Configurações (1)** e ajustar o **Nome do esquema** e **Nome da tabela**. Se você utilizou o script fornecido anteriormente para criar a tabela de destino, o nome do esquema é **dbo (1)** e o nome da tabela é **cs_detail (3)**.
+1. Em seguida, precisaremos ir para o separador **Configurações (1)** e ajustar o **Nome do esquema** e **Nome da tabela**. Se você utilizou o script fornecido anteriormente para criar a tabela de destino, o nome do esquema é **dbo (2)** e o nome da tabela é **cs_detail (3)**.
 
       ![](images/synapse20-1_1.png)
 
