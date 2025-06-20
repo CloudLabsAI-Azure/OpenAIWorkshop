@@ -48,11 +48,11 @@ Você poderá concluir as seguintes tarefas:
 
     ![](images/10-06-2024(4)-2.png)
 
-1.  Assim que a storage account for criada, a janela Bash será exibida, conforme mostrado na capura de tela abaixo.
+1.  Depois que a conta de armazenamento for criada, você verá a janela do Bash, conforme mostrado na captura de tela abaixo.
     
     ![](images/cloudshell.png)
 
-    >**Nota**: desconsidere o aviso `o ID de assinatura do compartilhamento de arquivo de armazenamento não está registrado no Microsoft.CloudShell Namespace` e prossiga para a próxima tarefa.
+    > **Observação**: desconsidere o aviso `o ID de assinatura do compartilhamento de arquivo de armazenamento não está registrado no Microsoft.CloudShell Namespace` e prossiga com a próxima tarefa.
 
 ### B. Carregar arquivos para a storage account:
 
@@ -84,11 +84,9 @@ Você poderá concluir as seguintes tarefas:
 
     ![](images/E2T1PBS3.png)
 
-1. Execute o seguinte comando para armazenar o caminho de instalação do miniconda em uma variável.
+    > **Observação:** Após a instalação do ambiente conda, você poderá ver a mensagem de saída como esta.
+    > ![](images/conda-installed.png)
 
-    ```bash 
-    export PATH=~/miniconda3/bin:$PATH
-    ```
 1. Execute os comandos abaixo um por um para criar e ativar o ambiente conda no CloudShell.
 
     ```bash 
@@ -138,7 +136,11 @@ Você poderá concluir as seguintes tarefas:
 
    ![](images/batch_file_upload2.png)
 
-   > **Nota**: Execute "cd OpenAIWorkshop scenarios/openai_batch_pipeline/document_generation" se não estiver na pasta OpenAIWorkshop/scenarios/openai_batch_pipeline/document_generation.
+   > **Observação**: Certifique-se de estar no diretório **openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation** antes de executar o comando. Se você ainda não estiver neste diretório, use o seguinte comando para navegar até ele:
+   >```bash
+   >cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
+   >```   
+   > Quando estiver no diretório correto, você pode executar o comando necessário.
 
 1. Depois de carregar com sucesso os arquivos JSON na conta de armazenamento, navegue até **Contêineres (1)**, clique em **workshop-data (2)**, selecione a pasta **cleansed_documents (3)** e verifique se os arquivos foram carregados.
 
