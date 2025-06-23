@@ -48,11 +48,11 @@ Você poderá concluir as seguintes tarefas:
 
     ![](images/10-06-2024(4)-2.png)
 
-1.  Assim que a storage account for criada, a janela Bash será exibida, conforme mostrado na capura de tela abaixo.
+1.  Depois que a conta de armazenamento for criada, você verá a janela do Bash, conforme mostrado na captura de tela abaixo.
     
     ![](images/cloudshell.png)
 
-    >**Nota**: desconsidere o aviso `o ID de assinatura do compartilhamento de arquivo de armazenamento não está registrado no Microsoft.CloudShell Namespace` e prossiga para a próxima tarefa.
+    > **Observação**: desconsidere o aviso `o ID de assinatura do compartilhamento de arquivo de armazenamento não está registrado no Microsoft.CloudShell Namespace` e prossiga com a próxima tarefa.
 
 ### B. Carregar arquivos para a storage account:
 
@@ -84,11 +84,9 @@ Você poderá concluir as seguintes tarefas:
 
     ![](images/E2T1PBS3.png)
 
-1. Execute o seguinte comando para armazenar o caminho de instalação do miniconda em uma variável.
+    > **Observação:** Após a instalação do ambiente conda, você poderá ver a mensagem de saída como esta.
+    > ![](images/conda-installed.png)
 
-    ```bash 
-    export PATH=~/miniconda3/bin:$PATH
-    ```
 1. Execute os comandos abaixo um por um para criar e ativar o ambiente conda no CloudShell.
 
     ```bash 
@@ -122,7 +120,7 @@ Você poderá concluir as seguintes tarefas:
 1. Digite **y** e pressione enter para prosseguir.
    > **Nota:** Prossiga para o próximo passo se não for solicitado para isso.
 
-1. No [Portal do Azure](https://portal.azure.com), navegue para a Conta de Armazenamento com o sufixo `functions` selecionando o **openai-<inject key="DeploymentID" enableCopy="false"/>** grupo de recursos e selecione a conta de armazenamento da lista de recursos.
+1. No [Portal do Azure](https://portal.azure.com), navegue para a Conta de Armazenamento com o sufixo `azfunctions` selecionando o **openai-<inject key="DeploymentID" enableCopy="false"/>** grupo de recursos e selecione a conta de armazenamento da lista de recursos.
 
     ![](images/storage-functions-1-1.png)
     
@@ -138,7 +136,11 @@ Você poderá concluir as seguintes tarefas:
 
    ![](images/batch_file_upload2.png)
 
-   > **Nota**: Execute "cd OpenAIWorkshop scenarios/openai_batch_pipeline/document_generation" se não estiver na pasta OpenAIWorkshop/scenarios/openai_batch_pipeline/document_generation.
+   > **Observação**: Certifique-se de estar no diretório **openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation** antes de executar o comando. Se você ainda não estiver neste diretório, use o seguinte comando para navegar até ele:
+   >```bash
+   >cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
+   >```   
+   > Quando estiver no diretório correto, você pode executar o comando necessário.
 
 1. Depois de carregar com sucesso os arquivos JSON na conta de armazenamento, navegue até **Contêineres (1)**, clique em **workshop-data (2)**, selecione a pasta **cleansed_documents (3)** e verifique se os arquivos foram carregados.
 
@@ -200,11 +202,11 @@ Você poderá concluir as seguintes tarefas:
 
 1. Na aba "Básico" do novo pool de SQL dedicado, forneça os seguintes detalhes:
 
-      - **Nome do pool de SQL dedicado: openaisql01** (1)
+      - **Nome do pool de SQL dedicado: openaisql01** **(1)**
       
-      - **Nível de desempenho:** Reduza para **DW100c** (2)
+      - **Nível de desempenho:** Reduza para **DW100c** **(2)**
       
-      - Clique em **"Examinar e Criar"** (3)
+      - Clique em **"Examinar e Criar"** **(3)**
 
         ![](images/sql-pool-name.png)
 
@@ -218,12 +220,16 @@ Você poderá concluir as seguintes tarefas:
 
     ![](images/image(21).png)
 
-1. Na página Novo pool do Apache Spark, forneça os seguintes detalhes e clique em **Revisar + Criar (6)** e, em seguida, em **Criar** na aba Revisar + Criar para criar o pool do Apache Spark.
+1. Na página Novo pool do Apache Spark, forneça os seguintes detalhes e clique em **Revisar + criar (6)**, depois clique na guia **Criar** para criar o pool do Apache Spark.
 
    - **Nome do pool do Apache Spark**: **openaisparkpool (1)**
+
    - **Computação Isolada**: **Desativado (2)**
+   
    - **Tamanho do nó**: **Pequeno (4 vCores/32 GB) (3)**
+   
    - **Escalonamento Automático**: **Desativado (4)**
+   
    - **Número de nós**: **3 (5)**
    
       ![](images/image(22)-1.png)
@@ -349,7 +355,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
            ![](images/new-por-10-1-1.png)
 
-1. Em seguida, precisaremos ir para o separador **Configurações (1)** e ajustar o **Nome do esquema** e **Nome da tabela**. Se você utilizou o script fornecido anteriormente para criar a tabela de destino, o nome do esquema é **dbo (1)** e o nome da tabela é **cs_detail (3)**.
+1. Em seguida, precisaremos ir para o separador **Configurações (1)** e ajustar o **Nome do esquema** e **Nome da tabela**. Se você utilizou o script fornecido anteriormente para criar a tabela de destino, o nome do esquema é **dbo (2)** e o nome da tabela é **cs_detail (3)**.
 
       ![](images/synapse20-1_1.png)
 
