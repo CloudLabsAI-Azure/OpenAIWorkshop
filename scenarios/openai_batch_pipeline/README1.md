@@ -22,6 +22,8 @@ Será capaz de completar las siguientes tareas:
 
 2. La primera vez que abra Cloud Shell, es posible que se le solicite que elija el tipo de Shell que desea usar (*Bash* o *PowerShell*). Seleccione **Bash**. Si no ve esta opción, omita el paso.
 
+    ![](images/select-bash.png)
+
 3. En el panel Introducción, seleccione **Montar cuenta de almacenamiento (1)**, seleccione su **suscripción de Cuenta de Almacenamiento (2)** del menú desplegable y haga clic en **Aplicar (3)**. 
 
    ![](images/10-06-2024-01.png)
@@ -41,7 +43,7 @@ Será capaz de completar las siguientes tareas:
 
       ![](images/10-06-2024(3).png)
 
-1. Establezca el nombre del recurso compartido de archivos como **blob (1)**, y haga clic en **Seleccionar (2)**.
+1. Ingrese el nombre del recurso compartido de archivos como **blob (1)**, seleccione **Aceptar** y haga clic en **Seleccionar (2)**.
 
     ![](images/10-06-2024(4).png)
 
@@ -49,7 +51,7 @@ Será capaz de completar las siguientes tareas:
     
     ![](images/cloudshell.png)
 
-    > **Nota**: ignore la advertencia «El ID de suscripción del recurso compartido de archivos de almacenamiento no está registrado en el espacio de nombres Microsoft.CloudShell» y continúe con la siguiente tarea.
+    > **Nota**: ignore la advertencia `El ID de suscripción del recurso compartido de archivos de almacenamiento no está registrado en el espacio de nombres Microsoft.CloudShell` y continúe con la siguiente tarea.
 
 ### B. Cargar archivos a una cuenta de almacenamiento:
 
@@ -67,7 +69,7 @@ Será capaz de completar las siguientes tareas:
     
     > **Nota:** Presione la tecla de flecha hacia abajo para leer u omitir el acuerdo de licencia.
 
-1. Pulse **Enter** para continuar con la instalación.
+1. Pulse `Enter` para continuar con la instalación.
 
    > **Nota:** Pulse la flecha hacia abajo para leer u omitir el acuerdo de licencia.
 
@@ -81,11 +83,9 @@ Será capaz de completar las siguientes tareas:
 
     ![](images/E2T1PBS3.png)
 
-1. Ejecute el siguiente comando para almacenar la ruta de instalación de miniconda en la variable.
+    > **Nota:** Una vez instalado el entorno conda, podrás ver un mensaje de salida como este.
+    >  ![](images/conda-installed.png)    
 
-    ```bash 
-    export PATH=~/miniconda3/bin:$PATH
-    ```
 1. Ejecuta los siguientes comandos uno por uno para crear y activar el entorno conda en CloudShell.
 
     ```bash 
@@ -119,7 +119,7 @@ Será capaz de completar las siguientes tareas:
 1. Presione la tecla **y** y luego presione Enter para continuar.
     > **Nota:** Continúa con el siguiente paso si no se te solicita esto.
 
-1. En el [Portal de Azure](https://portal.azure.com), navegue hasta su recurso de Cuenta de almacenamiento con el sufijo `functions` seleccionando el grupo de recursos **openai-<inject key="DeploymentID" enableCopy="false"/>** y seleccionando la Cuenta de Almacenamiento de la lista de recursos.
+1. En el [portal de Azure](https://portal.azure.com), navegue hasta el grupo de recursos **openai-<inject key="DeploymentID" enableCopy="false"/>** y luego seleccione su cuenta de almacenamiento con el sufijo `azfunctions` de la lista de recursos.
 
     ![](images/storage-functions.png)
     
@@ -135,7 +135,11 @@ Será capaz de completar las siguientes tareas:
 
    ![](images/batch_file_upload2.png)
 
-   > **Note**: Ejecute "cd OpenAIWorkshop scenarios/openai_batch_pipeline/document_generation" si no está dentro del directorio OpenAIWorkshop/scenarios/openai_batch_pipeline/document_generation.
+   > **Nota**: Asegúrese de estar en el directorio **openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation** antes de ejecutar el comando. Si aún no está en este directorio, use el siguiente comando para acceder a él:
+   >```bash
+   >cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
+   >```   
+   > Una vez que esté en el directorio correcto, puede ejecutar el comando requerido.
    
 1. Una vez que haya cargado exitosamente los archivos JSON a la cuenta de almacenamiento, navegue a **Contenedores (1)**, haga clic en **workshop-data (2)**, seleccione la carpeta **cleansed_documents (3)** y verifique que los archivos se hayan cargado.
 
@@ -161,6 +165,9 @@ Será capaz de completar las siguientes tareas:
    ![](images/image(1).png)
 
 2. En la página **Azure Synapse Analytics**, haga clic en **+ Crear**.
+
+   ![](images/create-synapse.png)
+
 3. Se le dirigirá a la página **Crear Synapse Analytics** donde configurará el espacio de trabajo de Synapse.
 4. En la pestaña Conceptos básicos, proporcione los siguientes detalles:
 
@@ -179,7 +186,7 @@ Será capaz de completar las siguientes tareas:
 
    ![](images/image(3).png)
 
-6. En la pestaña de redes, asegúrese de que Red virtual administrada esté **Desactivada(1)** y **Permitir conexiones desde todas las direcciones IP(2)** esté marcada y luego haga clic en **Revisar + Crear** y **Crear*. * para implementar el recurso.
+6. En la pestaña de redes, asegúrese de que la opción Red virtual administrada esté **Deshabilitar (1)** y que la opción **Permitir conexiones desde todas las direcciones IP (2)** esté marcada, luego haga clic en **Revisar + crear** y **Crear** para implementar el recurso.
 
    ![](images/image(4).png)
 
@@ -196,7 +203,6 @@ Será capaz de completar las siguientes tareas:
 
     ![](images/new-sql-pool.png)
 
-
 10. En la pestaña Conceptos básicos de Nuevo grupo de SQL dedicado, proporcione los siguientes detalles:
 
     - **Nombre del grupo de SQL dedicado**: **openaisql01**
@@ -205,21 +211,27 @@ Será capaz de completar las siguientes tareas:
 
       ![](images/sql-pool-name.png)
 
-      > **Nota:** La implementación puede tardar aproximadamente 10 minutos en completarse.
-
 11. En la página **Revisar + crear**, haga clic en **Crear** y espere a que se complete la implementación.
+
+    ![](images/sql-pool-create.png)
+
+    > **Nota**: La implementación puede tardar aproximadamente 10 minutos en completarse.    
 
 12. Ahora regrese al espacio de trabajo de synapse<inject key="DeploymentID" enableCopy="false"></inject>, seleccione **Grupos de Apache Spark** en el panel izquierdo debajo de Grupos de análisis y haga clic en **+ Nuevo**.
 
     ![](images/image(07).png)
 
-13. En la página Nuevo grupo de Apache Spark, proporcione los siguientes detalles y haga clic en **Revisar + Crear** y luego en **Crear** en la pestaña Revisar + Crear para crear el grupo de Apache Spark.
+13. En la página Nuevo grupo de Apache Spark, proporcione los siguientes detalles y haga clic en **Revisar + crear (6)**, luego haga clic en la pestaña **Crear** para crear el grupo de Apache Spark.
 
-    - **Nombre del grupo de Apache Spark**: **openaisparkpool**
-    - **Cómputo aislado**: **Deshabilitado**
-    - **Tamaño de nodo**: **Pequeño (4vCores/32GB)**
-    - **Escala automática**: **Deshabilitado**
-    - **Número de nodos** : **3**
+    - **Nombre del grupo de Apache Spark**: **openaisparkpool (1)**
+
+    - **Cómputo aislado**: **Deshabilitado (2)**
+
+    - **Tamaño de nodo**: **Pequeño (4vCores/32GB) (3)**
+
+    - **Escala automática**: **Deshabilitado (4)**
+
+    - **Número de nodos** : **3 (5)**
       
       ![](images/image(08).png)
 
@@ -227,7 +239,7 @@ Será capaz de completar las siguientes tareas:
 
 1. En el [Portal de Azure](https://portal.azure.com), navegue hasta el área de trabajo de Synapse **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** del grupo de recursos **openai-<inject key="DeploymentID" enableCopy="false"/>**. En la pestaña **Información general (1)**, haga clic en **Abrir (2)** para iniciar el espacio de trabajo de Synapse.
 
-      ![](images/open-synapse-studio.png)
+      ![](images/image(9).png)
 
 1. Haga clic en la sección **Desarrollar (1)** de Synapse Studio, haga clic en el signo **+ (2)** en la parte superior izquierda y seleccione **Script SQL (3)**. Esto abrirá una nueva ventana con un editor de script SQL. 
 
@@ -274,7 +286,7 @@ A continuación, necesitaremos crear dos servicios vinculados: uno para nuestra 
 
 1. En la ventana *Nuevo servicio vinculado* que se abre, ingrese **synapselinkedservice** **(1)** para el nombre de su servicio vinculado de destino. Seleccione la **suscripción de Azure (2)** con la cual ha estado trabajando. Seleccione **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para el **Nombre del servidor** y utilice **openaisql01 (4)** para el **Nombre de la base de datos**. Asegúrese de cambiar el **Tipo de autenticación** a **Identidad Administrada Asignada por el Sistema (5)**, luego desplácese hacia abajo y seleccione la opción **Heredado (6)**, luego haga clic en **Probar conexión (7)** y haga clic en **Crear (8)**. 
 
-    ![](images/new-openai-pro-feb-5-1.png)
+    ![](images/new-openai-pro-jun-19.png)
 
 1. Una vez que haya creado los dos servicios vinculados, asegúrese de presionar el botón **Publicar todo** en la parte superior para publicar nuestro trabajo. Finalice la creación de los servicios vinculados y haga clic en **Publicar**.
 
@@ -336,11 +348,11 @@ Mientras todavía estamos dentro de Synapse Studio, ahora necesitaremos crear un
 
            ![](images/p18.png)    
 
-           - En la ventana Editar servicio vinculado que se abre, seleccione el método de selección de Azure como **Desde la suscripción de Azure** **(1)**. Seleccione la **suscripción de Azure (2)** con la cual ha estado trabajando. Seleccione **asaworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para el **Nombre de servidor** y **openaisql (4)** como el **Nombre de la base de datos**, luego haga clic en **Probar conexión (5)** y finalice haciendo clic en **Guardar (6)**.
+      - En la ventana Editar servicio vinculado que se abre, seleccione el método de selección de Azure como **Desde la suscripción de Azure** **(1)**. Seleccione la **suscripción de Azure (2)** con la cual ha estado trabajando. Seleccione **asaworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para el **Nombre de servidor** y **openaisql (4)** como el **Nombre de la base de datos**, luego haga clic en **Probar conexión (5)** y finalice haciendo clic en **Guardar (6)**.
 
-                ![](images/p19.png)
+          ![](images/p19.png)
 
-1. Luego tendremos que dirigirnos a la pestaña **Configuración (1)** y ajustar el **Nombre del esquema** y el **Nombre de la tabla**. Si utilizó el script proporcionado anteriormente para crear la tabla de destino, el nombre del esquema es **dbo (1)** y el nombre de la tabla es **cs_detail (2)**.
+1. Luego tendremos que dirigirnos a la pestaña **Configuración (1)** y ajustar el **Nombre del esquema** y el **Nombre de la tabla**. Si utilizó el script proporcionado anteriormente para crear la tabla de destino, el nombre del esquema es **dbo (2)** y el nombre de la tabla es **cs_detail (3)**.
 
       ![](images/synapse20.png)
 
@@ -394,7 +406,12 @@ Luego expanda la sección **Ensayo (3)** en la parte inferior de la configuraci�
 
       ![](images/pipeline-run-1.png)
 
-      <validation step="3e716f01-6da8-431e-aa81-4041b9054091" />
+> **¡Felicitaciones!** por completar la tarea. Ahora es momento de validarla. Estos son los pasos:
+> - Si recibe un mensaje de éxito, puede continuar con la siguiente tarea.
+> - De lo contrario, lea atentamente el mensaje de error y vuelva a intentar el paso siguiendo las instrucciones de la guía del laboratorio.
+> - Si necesita ayuda, contáctenos en cloudlabs-support@spektrasystems.com. Estamos disponibles 24/7 para ayudarle.
+
+<validation step="3e716f01-6da8-431e-aa81-4041b9054091" />
 
 ## Tarea 3: Consultar Resultados en Nuestra Tabla SQL
 

@@ -1,6 +1,6 @@
-# Use Azure Open AI como un Profesional para crear potentes Aplicaciones de IA
+# Utilice Azure Open AI como un profesional para crear potentes aplicaciones de IA
 
-### Duración Total Estimada: 6 horas
+### Duración total estimada: 8 horas
 
 ## Descripción General
 
@@ -59,17 +59,44 @@ La arquitectura para este laboratorio involucra varios componentes clave:
 - **Microsoft Power Apps:** Una plataforma de código bajo que permite a los usuarios crear aplicaciones empresariales personalizadas sin amplios conocimientos de programación.
 - **Prompt Engineering:** Implica la elaboración de prompts o consultas específicas para obtener las respuestas deseadas de los modelos de IA, influyendo en el resultado y el comportamiento de los sistemas de IA.
 
-## Getting Started with the Lab
+## Introducción al laboratorio
 
-1. Una vez que se haya aprovisionado el ambiente, se cargarán una máquina virtual (JumpVM) y una guía de laboratorio en su navegador. Utilice esta máquina virtual durante todo el taller para realizar el laboratorio. Puede ver el número en la parte inferior de la guía de laboratorio para cambiar a los diferentes ejercicios de la guía de laboratorio.
+¡Bienvenido a tu taller "Usa Azure Open AI como un profesional para crear potentes aplicaciones de IA!". Hemos preparado un entorno perfecto para que explores y aprendas sobre los servicios de Azure. Empecemos por aprovechar al máximo esta experiencia:
+
+## Accediendo a su entorno de laboratorio
+
+Una vez que esté listo para comenzar, su máquina virtual y la guía de laboratorio estarán a su disposición en su navegador web.
+
 
    ![](media/img-1.png "Ambiente de Laboratorio")
 
-1. Para obtener los detalles del ambiente de laboratorio, puede seleccionar la pestaña **Detalles del Ambiente**. Además, las credenciales también se enviarán por correo electrónico a su dirección de correo electrónico registrada. También puede abrir la Guía de Laboratorio en una ventana separada y completa seleccionando **Ventana Dividida** en la esquina superior derecha. Además, puede iniciar, detener y reiniciar máquinas virtuales desde la pestaña **Recursos**.
+### Máquina Virtual y Guía de Laboratorio
+
+Tu máquina virtual es tu herramienta principal durante el taller. La guía de laboratorio es tu hoja de ruta hacia el éxito.
+
+## Explorando los recursos de su laboratorio
+
+Para comprender mejor los recursos y credenciales de su laboratorio, diríjase a la pestaña **Entorno**.
 
    ![](media/img-2.png "Ambiente de Laboratorio")
- 
-    > Verá el valor de DeploymentID en la pestaña **Detalles del Ambiente**, úselo donde vea SUFFIX o DeploymentID en los pasos del laboratorio.
+
+## Uso de la función de ventana dividida
+
+Para mayor comodidad, puede abrir la guía de laboratorio en una ventana separada seleccionando el botón **Ventana dividida** en la esquina superior derecha.
+
+   ![](media/labguide-1-1.png)
+
+## Administra tu máquina virtual
+
+Puedes iniciar, detener o reiniciar tu máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Tu experiencia está en tus manos!
+
+  ![](media/res-1.png)
+
+## Guía de laboratorio: Acercar/Alejar
+
+Para ajustar el nivel de zoom de la página del entorno, haga clic en el icono **A↕ : 100%**, ubicado junto al temporizador en el entorno de laboratorio.
+
+   ![](media/zoom-feature.png)
 
 ## Iniciar Sesión en el Portal de Azure
 
@@ -77,7 +104,7 @@ La arquitectura para este laboratorio involucra varios componentes clave:
 
    ![](media/img-3.png "Ambiente de Laboratorio")
 
-1. En la página de Bienvenida a Microsoft Edge, seleccione **Comenzar sin sus datos** y, en la página de ayuda para importar datos de navegación de Google, seleccione el botón **Continuar sin estos datos** y proceda a seleccionar **Confirmar y comenzar a navegar** en la página siguiente.
+1. En la página Bienvenido a Microsoft Edge, seleccione **Comenzar sin sus datos** y, en la página de ayuda para importar datos de navegación de Google, seleccione el botón **Continuar sin estos datos** y proceda a seleccionar **Confirmar y comenzar a navegar** en la página siguiente.
    
 1. En la pestaña **Iniciar sesión en Microsoft Azure** verá la pantalla de inicio de sesión, en ella ingrese el siguiente correo electrónico/nombre de usuario y luego haga clic en **Siguiente**.
    * Correo electrónico/Nombre de usuario: <inject key="AzureAdUserEmail"></inject>
@@ -89,7 +116,9 @@ La arquitectura para este laboratorio involucra varios componentes clave:
    
      ![](media/image8.png "Ingrese Contraseña")
      
-1. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en No
+1. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**
+
+   ![](media/stay-signed-in.png)
 
 1. Si ve la ventana emergente **¡Tiene recomendaciones gratuitas de Azure Advisor!**, cierre la ventana para continuar con el laboratorio.
 
@@ -114,5 +143,7 @@ Contactos de Soporte para Estudiantes:
 - Soporte por Chat En Vivo: https://cloudlabs.ai/labs-support
 
 Ahora, haga clic en **Siguiente** en la esquina inferior derecha para pasar a la página siguiente.
+
+   ![](media/next-page.png)
 
 ### ¡¡Feliz Aprendizaje!!

@@ -12,9 +12,9 @@ En este laboratorio, los participantes desarrollarán una aplicación utilizando
 
 1. En la hoja **Información general** de la sección **Introducción**, haga clic en **Abrir** para abrir Synapse Studio.
      
-     ![](../openai_batch_pipeline/images/image(10).png)
+     ![](../openai_batch_pipeline/images/image(9).png)
     
-1. Haga clic en **Desarrollar (1)**, luego haga clic en **+ (2)** y seleccione **Importar**.
+1. Haga clic en **Desarrollar (1)**, luego haga clic en **+ (2)** y seleccione **Importar (3)**.
 
     ![](images/import-note.png)
 

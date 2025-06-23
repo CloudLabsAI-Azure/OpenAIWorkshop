@@ -8,9 +8,9 @@ Este laboratorio se centra en la creación de una aplicación utilizando las fun
 
    ![](./images/welcome-1.png)
     
-2. Seleccione **Aplicaciones** en el panel de navegación de la izquierda y haga clic en **Importar aplicación de lienzo**. 
+2. Seleccione **Aplicaciones (1)** en la navegación izquierda, haga clic en el menú desplegable **Importar aplicación (2)** y seleccione **Desde paquete (.zip) (3)**. 
 
-    ![](./images/powerapps-import.png)
+    ![](./images/powerapps-import-01.png)
 
 3. En la página **Importar paquete**, haga clic en **Cargar**
 
