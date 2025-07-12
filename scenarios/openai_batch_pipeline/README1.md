@@ -87,7 +87,7 @@ You will be able to complete the following tasks:
 1. Run the below commands one by one to create and activate the conda environment in Cloudshell.
 
     ```bash 
-    git clone https://github.com/microsoft/OpenAIWorkshop.git
+    git clone https://github.com/CloudLabsAI-Azure/OpenAIWorkshop.git
     cd OpenAIWorkshop/scenarios/openai_batch_pipeline/document_generation
     conda create -n document-creation
     conda activate document-creation
