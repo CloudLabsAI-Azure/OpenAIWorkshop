@@ -61,7 +61,7 @@ La arquitectura para este laboratorio involucra varios componentes clave:
 
 ## Introducción al laboratorio
 
-¡Bienvenido a tu taller "Usa Azure Open AI como un profesional para crear potentes aplicaciones de IA!". Hemos preparado un entorno perfecto para que explores y aprendas sobre los servicios de Azure. Empecemos por aprovechar al máximo esta experiencia:
+¡Bienvenido a su taller "¡Usa Azure Open AI como un profesional para crear potentes aplicaciones de IA!". Hemos preparado un entorno perfecto para que explore y aprenda sobre los servicios de Azure. Empecemos por aprovechar al máximo esta experiencia:
 
 ## Accediendo a su entorno de laboratorio
 
@@ -72,11 +72,11 @@ Una vez que esté listo para comenzar, su máquina virtual y la guía de laborat
 
 ### Máquina Virtual y Guía de Laboratorio
 
-Tu máquina virtual es tu herramienta principal durante el taller. La guía de laboratorio es tu hoja de ruta hacia el éxito.
+Su máquina virtual es su herramienta principal durante el taller. La guía de laboratorio es su hoja de ruta hacia el éxito.
 
 ## Explorando los recursos de su laboratorio
 
-Para comprender mejor los recursos y credenciales de su laboratorio, diríjase a la pestaña **Entorno**.
+Para comprender mejor los recursos y credenciales de su laboratorio, diríjase a la pestaña **Ambiente**.
 
    ![](media/img-2.png "Ambiente de Laboratorio")
 
@@ -86,9 +86,9 @@ Para mayor comodidad, puede abrir la guía de laboratorio en una ventana separad
 
    ![](media/labguide-1-1.png)
 
-## Administra tu máquina virtual
+## Administre su máquina virtual
 
-Puedes iniciar, detener o reiniciar tu máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Tu experiencia está en tus manos!
+Puede **iniciar, detener o reiniciar (2)** su máquina virtual según sea necesario desde la pestaña **Recursos (1)**. ¡Su experiencia está en sus manos!
 
   ![](media/res-1.png)
 
@@ -98,15 +98,13 @@ Para ajustar el nivel de zoom de la página del entorno, haga clic en el icono *
 
    ![](media/zoom-feature.png)
 
-## Iniciar Sesión en el Portal de Azure
+## Comience en el Portal de Azure
 
-1. En JumpVM, haga clic en el acceso directo del Portal de Azure del navegador Microsoft Edge que se encuentra en el escritorio.
+1. En LabVM, haga clic en el acceso directo **Azure Portal** del navegador Microsoft Edge que se encuentra en el escritorio.
 
    ![](media/img-3.png "Ambiente de Laboratorio")
-
-1. En la página Bienvenido a Microsoft Edge, seleccione **Comenzar sin sus datos** y, en la página de ayuda para importar datos de navegación de Google, seleccione el botón **Continuar sin estos datos** y proceda a seleccionar **Confirmar y comenzar a navegar** en la página siguiente.
    
-1. En la pestaña **Iniciar sesión en Microsoft Azure** verá la pantalla de inicio de sesión, en ella ingrese el siguiente correo electrónico/nombre de usuario y luego haga clic en **Siguiente**.
+1. En la pestaña **Iniciar sesión en Microsoft Azure** verá la pantalla de inicio de sesión. Ingrese el siguiente correo electrónico/nombre de usuario y luego haga clic en **Siguiente**.
    * Correo electrónico/Nombre de usuario: <inject key="AzureAdUserEmail"></inject>
    
      ![](media/image7.png "Ingrese Correo Electrónico")
@@ -116,13 +114,13 @@ Para ajustar el nivel de zoom de la página del entorno, haga clic en el icono *
    
      ![](media/image8.png "Ingrese Contraseña")
      
-1. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**
+1. Si ve la ventana emergente **¿Quiere mantener la sesión iniciada?**, haga clic en **No**
 
    ![](media/stay-signed-in.png)
 
-1. Si ve la ventana emergente **¡Tiene recomendaciones gratuitas de Azure Advisor!**, cierre la ventana para continuar con el laboratorio.
-
 1. Si aparece una ventana emergente **Bienvenido a Microsoft Azure**, haga clic en **Cancelar** para omitir la visita guiada.
+
+   ![](media/Azure-cancel-tour.png)
 
 1. Ahora verá el Panel del portal de Azure; haga clic en **Grupos de recursos** en el panel Navegar para ver los grupos de recursos.
 

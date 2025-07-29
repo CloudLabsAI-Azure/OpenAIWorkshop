@@ -2,7 +2,7 @@
 
 ### Duración estimada: 30 minutos
 
-Este laboratorio proporciona conocimientos teóricos y prácticos avanzados sobre OpenAI y sus aplicaciones. Abarca la introducción a la ingeniería de promociones, sus casos de uso y los diversos tipos de indicaciones que se pueden implementar para obtener los resultados deseados.
+Este ejercicio proporciona conocimientos teóricos y prácticos avanzados relacionados con OpenAI y sus aplicaciones. Cubre la introducción a la ingeniería de prompts y sus casos de uso, así como los diversos tipos de prompts que se pueden implementar para obtener los resultados deseados.
 
 ## Temas
 
@@ -11,7 +11,6 @@ Este laboratorio proporciona conocimientos teóricos y prácticos avanzados sobr
   - [Prompts One-Shot](#prompts-one-shot)
   - [Prompts Few-Shot](#prompts-few-shot)
 
----
 
 ## Introducción
 
@@ -208,7 +207,10 @@ JSON:
 ```
 Ahora podemos ver que el modelo entiende claramente que solo queremos extraer tres entidades del texto y nada más.
 
-
 ## Resumen
 
-En este laboratorio, adquirirá conocimientos teóricos profundos y prácticos avanzados sobre OpenAI y diversos tipos de métodos de ingeniería rápida.
+En este ejercicio, has obtenido conocimientos teóricos profundos y prácticos avanzados relacionados con OpenAI y varios tipos de métodos de ingeniería de prompts.
+
+### Haga clic en Siguiente >> para continuar con el siguiente ejercicio.
+
+![](../natural_language_query/images/next-page.png)

@@ -1,8 +1,9 @@
 # Ejercicio 4C: Ajuste fino (Solo lectura)
 
-### Duración estimada: 15 minutos
+### Duración estimada: 25 minutos
 
-Este laboratorio se centra en el proceso de ajuste fino de los modelos de OpenAI para mejorar su rendimiento en tareas o conjuntos de datos específicos. Los participantes aprenden a ajustar los parámetros del modelo, optimizar las estrategias de entrenamiento y evaluar las métricas de rendimiento del modelo mediante ejercicios prácticos y ejemplos.
+Este ejercicio se centra en el proceso de ajuste fino de los modelos de OpenAI para mejorar su rendimiento en tareas o conjuntos de datos específicos. Los participantes aprenden a ajustar los parámetros del modelo, optimizar las estrategias de entrenamiento y evaluar las métricas de rendimiento del modelo mediante ejercicios prácticos y ejemplos.
+
 
 ## Temas
 
@@ -10,8 +11,8 @@ Este laboratorio se centra en el proceso de ajuste fino de los modelos de OpenAI
   - [¿Cuándo consideraría Ajuste Fino frente a la Ingeniería de Prompts?](#cuándo-consideraría-ajuste-fino-frente-a-la-ingeniería-de-prompts)
   - [Consideraciones de Costos de Operación](#consideraciones-de-costos-de-operación)
 
----
-## Qué es el Ajuste Fino
+
+## ¿Qué es el Ajuste Fino?
 
 El ajuste fino (fine-tuning) es el proceso de personalizar un modelo de IA existente para una tarea o dominio específico mediante el uso de datos adicionales. OpenAI ofrece ajuste fino para sus modelos de lenguaje, tales como GPT-3, el cual puede generar textos en lenguaje natural para diversos fines.
 
@@ -21,7 +22,7 @@ Para ajustar un modelo OpenAI, los usuarios deben preparar sus propios datos de 
 
 El ajuste fino puede mejorar el rendimiento y reducir significativamente las tasas de error de los modelos OpenAI.
 
----
+
 ## Datos de Entrenamiento en Ajuste Fino
 
 Los datos de entrenamiento para ajustar los modelos OpenAI son pares de mensajes de entrada y resultados deseados que reflejan la tarea o dominio específico para el que desea personalizar el modelo. Por ejemplo, si desea ajustar un modelo para generar reseñas de productos, sus datos de entrenamiento podrían verse así:
@@ -32,12 +33,12 @@ Los datos de entrenamiento para ajustar los modelos OpenAI son pares de mensajes
 {"prompt": "Reseña: Esto es una estafa. El producto nunca llegó y el vendedor no respondió.", "completion": "Calificación: 1 estrella"}
 ```
 
-Puede utilizar la CLI de OpenAI CLI u OpenAI Studio para preparar, validar y formatear sus datos de entrenamiento en un archivo JSON que se puede utilizar para ajustar un modelo.
+Puede utilizar la CLI de OpenAI o OpenAI Studio para preparar, validar y formatear sus datos de entrenamiento en un archivo JSON que se puede utilizar para ajustar un modelo.
 
 **NOTA IMPORTANTE**:
 Es importante tener en cuenta que para esperar mejores resultados que utilizar ingeniería de prompts, necesitará tener un conjunto de datos grande y de alta calidad que sea relevante para su tarea o dominio, generalmente unos cientos de ejemplos de alta calidad.
 
----
+
 ## Cuándo consideraría Ajuste Fino frente a la Ingeniería de Prompts
 
 El ajuste fino es una herramienta poderosa que se puede utilizar para personalizar modelos OpenAI para tareas o dominios específicos. Sin embargo, no siempre es necesario ajustar un modelo para obtener los resultados deseados.
@@ -56,7 +57,6 @@ Podría considerar la ingeniería de prompts cuando tenga un conjunto de datos l
 
 **NOTA IMPORTANTE**: Ambos métodos requieren algo de prueba y error, pero el ajuste fino generalmente requiere más tiempo y recursos que la ingeniería de prompts, y no siempre es necesario ajustar un modelo para obtener los resultados deseados. Por lo tanto, es preferible comenzar con una ingeniería de prompts y únicamente considerar el ajuste de un modelo si no puede obtener los resultados deseados.
 
----
 
 ## Consideraciones de Costos de Operación
 
@@ -64,7 +64,7 @@ La Ingeniería de Prompts podría ser menos rentable si necesita proporcionar un
 
 Alojar un Modelo Ajustado también tiene su costo, pero en volúmenes medianos a altos, ese costo sería prácticamente irrelevante, por lo que la eficiencia de costos operativos podría ser un factor impulsor de Ajuste Fino.
 
----
+
 ## Referencias
 
 [Ajuste Fino de OpenAI](https://platform.openai.com/docs/guides/fine-tuning)
@@ -73,4 +73,8 @@ Alojar un Modelo Ajustado también tiene su costo, pero en volúmenes medianos a
 
 ## Resumen
 
-En este laboratorio, adquirió conocimientos sobre diversos temas: qué es exactamente el ajuste fino, las diferencias entre el ajuste fino y la ingeniería de señales, y los costos operativos que deben considerarse.
+En este ejercicio, ha obtenido conocimientos sobre varios temas acerca de qué es exactamente el ajuste fino, las diferencias entre el ajuste fino y la ingeniería de prompts, y sus costos operativos que deben considerarse.
+
+### Haga clic en Siguiente >> para continuar con el siguiente ejercicio.
+
+ ![](../natural_language_query/images/next-page.png)

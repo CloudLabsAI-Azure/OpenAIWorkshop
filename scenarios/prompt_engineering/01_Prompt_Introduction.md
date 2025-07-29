@@ -2,7 +2,7 @@
 
 ### Duración estimada: 90 minutos
 
-En este laboratorio, explorará el concepto de ingeniería de prompts y aprenderá a crear prompts efectivos para modelos de IA. Adquirirá experiencia práctica con Azure OpenAI Playground, experimentando con diferentes tipos de prompts y comprendiendo sus elementos y consejos de diseño.
+En este ejercicio, explorará el concepto de ingeniería de prompts y aprenderá a crear prompts efectivos para modelos de IA. Adquirirá experiencia práctica con Azure OpenAI Playground, experimentando con diferentes tipos de prompts y comprendiendo sus elementos y consejos de diseño.
 
 ## Temas
 
@@ -25,38 +25,43 @@ Una forma de pensar en un prompt es como un fragmento de texto que se utiliza pa
 ## Qué es ingeniería de prompts
 La Ingeniería de Prompts es una [disciplina relativamente nueva](https://www.businessinsider.com/prompt-engineering-ai-chatgpt-jobs-explained-2023-3) para desarrollar y optimizar prompts para utilizar eficientemente modelos de lenguaje (LMs) en una amplia variedad de aplicaciones empresariales. Las habilidades de Ingeniería de Prompts ayudan a comprender mejor las capacidades y limitaciones de los modelos de lenguaje grandes (LLMs) y refinar las finalizaciones (salidas) de los LLMs. La Ingeniería de Prompts se utiliza para mejorar la capacidad de los LLMs en una amplia gama de tareas comunes y complejas, tales como como la respuesta a preguntas y el razonamiento aritmético. Los desarrolladores utilizan la ingeniería de prompts para diseñar técnicas de avisos sólidas y efectivas que interactúen con los LLMs y otras herramientas.
 
-Esta guía cubre los conceptos básicos de prompts estándares para brindar una idea aproximada de cómo interactuar e instruir a los LLMs que se encuentran en [el Playground de Azure OpenAI Studio](https://oai.azure.com/portal/playground). 
+Esta guía cubre los conceptos básicos de prompts estándares para brindar una idea aproximada de cómo interactuar e instruir a los LLMs que se encuentran en [el portal del área de juegos de Azure AI Foundry](https://oai.azure.com/portal/playground). 
 
 ### Probando Ingeniería de Prompts con Azure OpenAI Playground
-Azure OpenAI Studio proporciona acceso a recursos de aprendizaje y la implementación, experimentación, personalización y administración de los modelos. Chat Playground dentro de Azure OpenAI Studio se basa en una interfaz de conversación de entrada y mensaje de salida. Puede inicializar la sesión con un mensaje del sistema para configurar el contexto del chat.
+El portal de Azure AI Foundry proporciona acceso a recursos de aprendizaje y la implementación, experimentación, personalización y administración de los modelos. El área de juegos de Chat dentro de Azure AI Foundry se basa en una interfaz de conversación de entrada y mensaje de salida. Puede inicializar la sesión con un mensaje del sistema para configurar el contexto del chat.
 
-En el Chat playground, puede agregar ejemplos few-shot. El término few-shot se refiere a proporcionar algunos ejemplos para ayudar al modelo a aprender lo que debe hacer. Se puede pensar en ello en contraste con zero-shot, que se refiere a no proporcionar ejemplos.
+El área de juegos de Chat puede agregar ejemplos few-shot. El término few-shot se refiere a proporcionar algunos ejemplos para ayudar al modelo a aprender lo que debe hacer. Se puede pensar en ello en contraste con zero-shot, que se refiere a no proporcionar ejemplos.
 
 En la configuración del Asistente, puede proporcionar algunos ejemplos few-shot de cuál puede ser la entrada del usuario y cuál debería ser la respuesta del asistente. El asistente intenta imitar las respuestas que incluye aquí con respecto al tono, las reglas y el formato que haya definido en el mensaje de su sistema.
-Sigamos adelante y lancemos el Azure OpenAI Playground para aprender sobre ingeniería de prompts.
+Sigamos adelante y lancemos el área de juegos de Azure AI Foundry para aprender sobre ingeniería de prompts.
 
 1. En el **Portal de Azure**, busque **OpenAI** y seleccione **Azure OpenAI**.
 
-   ![](../natural_language_query/images/2025-05-09_1.png)
+   ![](../natural_language_query/images/E4S1.png)
 
-1. En la hoja **Azure AI services | Azure OpenAI**, seleccione **openai-<inject key="DeploymentID" enableCopy="false"/>**
+1. En la hoja **AI Foundry | Azure OpenAI**, seleccione **openai-<inject key="DeploymentID" enableCopy="false"/>**
 
-1. En el panel de recursos Azure OpenAI, haga clic en **Ir a Azure OpenAI Studio** para navegar a **Azure AI Studio**.
+   ![](../natural_language_query/images/E4S2.png)
 
-   ![](../natural_language_query/images/2025-05-09_2.png)
+1. En el panel de recursos Azure OpenAI, haga clic en **Ir al portal de Azure AI Foundry** para navegar al **portal de Azure AI Foundry**.
 
-1. En **Azure AI Foundry | Azure OpenAI Service**, haga clic en **Chat** en la sección **Playgrounds** del menú de la izquierda.
+   ![](../natural_language_query/images/E4S3.png)
 
-    ![](../natural_language_query/images/2025-05-09_3.png)
+1. En el servicio **Azure AI Foundry | Azure OpenAI**, haga clic en **Chat** en la sección **Patios de juegos** del menú de la izquierda.
+
+    ![](../natural_language_query/images/E4S4.png)
 
 1. En la sección **Chat (1)**, realice cualquier consulta de la **sesión de chat** **(2)** para obtener la respuesta de openai.
  
-    ![](../natural_language_query/images/2025-05-09_4.png)
+    ![](../natural_language_query/images/E4S5.png)
+
+   > **Nota:** Es posible que el chat no responda con el resultado exacto que se muestra en las capturas de pantalla. A continuación, se muestran ejemplos de lo que probablemente verá en este ejercicio, pero la respuesta puede variar.
+
 
 ---
 ## Ejemplos de Prompts Básicos
 
-> **Nota:** Siéntase libre de ingresar cualquier cosa que aparezca en la casilla `Prompt:` en un modelo `text-davinci-003` en el [Playground de Azure OpenAI Studio](https://oai.azure.com/portal/playground) para seguir estos ejemplos de prompt. Tenga en cuenta que puede recibir resultados diferentes a los que aparecen en el cuadro `Salida:`, dada la naturaleza de los modelos generativos.
+> **Nota:** Siéntase libre de ingresar cualquier cosa que aparezca en la casilla `Prompt:` en un modelo `gpt-35-turbo-instruct` en el [portal de área de juegos de Azure AI Foundry](https://oai.azure.com/portal/playground) para seguir estos ejemplos de prompt. Tenga en cuenta que puede recibir resultados diferentes a los que aparecen en el cuadro `Salida:`, dada la naturaleza de los modelos generativos.
 
 Puede lograr mucho con los prompts, pero la calidad de los resultados depende de la cantidad de información que proporcione en el prompt sin necesidad de ser demasiado descriptivo. Un prompt puede contener información como instrucciones o preguntas. Como aprenderemos más adelante con prompts más avanzados, también podemos proporcionar ejemplos de resultados requeridos, así como contexto para nuestras instrucciones.
 
@@ -72,7 +77,7 @@ GPT-3 es
  Es un modelo de lenguaje a gran escala que utiliza técnicas de aprendizaje profundo para generar texto similar al humano. GPT-3 utiliza una
  arquitectura basada en transformadores para generar texto con contexto.
 ```
-> **Nota:** La `Salida` en nuestro ejemplo termina abruptamente porque nuestra variable **Longitud máxima (tokens)** está establecida en `=60`. **Longitud máxima (tokens)** establece un límite en la cantidad de tokens que se generarán en una respuesta. El modelo `text_davinci-003` admite un máximo de 2048 tokens compartidos entre un prompt determinado y la finalización de respuesta. (Un token tiene aproximadamente 4 caracteres para un texto típico en inglés).
+> **Nota:** La `Salida` en nuestro ejemplo termina abruptamente porque nuestra variable **Longitud máxima (tokens)** está establecida en `=60`. **Longitud máxima (tokens)** establece un límite en la cantidad de tokens que se generarán en una respuesta. El modelo `gpt-35-turbo-instruct` admite un máximo de 4000 tokens compartidos entre un prompt determinado y la finalización de respuesta. (Un token tiene aproximadamente 4 caracteres para un texto típico en inglés).
 
 La `Salida:` es una serie de cadenas de texto que tienen sentido dado el contexto proporcionado por nuestro mensaje de `"GPT3-3 es"`. Sin embargo, el resultado puede ser no deseado o inesperado según nuestro caso de uso. ¿Cómo podemos refinar o diseñar nuestro prompt para lograr el resultado deseado?
 
@@ -89,6 +94,7 @@ GPT-3 es tan inteligente que puede contar un chiste sin un remate.
 ```
 
 ¿Nuestras instrucciones mejoraron la salida? Es cierto que este no es el chiste más divertido jamás contado. Y a diferencia de los problemas de aprendizaje supervisado, no existe una métrica de error o pérdida fácil de comparar entre los dos resultados. Veamos exactamente lo que le pedimos al modelo que generara y lo que recibimos:
+
 | Requisito | ¿La Salida Cumple con el Requisito? | 
 |-------------|--------|
 | Comienza con las palabras, "GPT-3 es" | Sí, la `Salida:` comenzó con las palabras "GPT-3 es" |
@@ -208,25 +214,23 @@ No todos los componentes son necesarios para un prompt y el formato depende de l
 
 Hay muchos parámetros que puede ajustar para cambiar el rendimiento de tu modelo:
 
+- **Parámetros** - Parámetros personalizados que alteran las respuestas del modelo. Al comenzar, recomendamos usar los valores predeterminados para la mayoría de los parámetros.
+
+- **Mensajes pasados incluidos:** Seleccione la cantidad de mensajes pasados que se incluirán en cada nueva solicitud de API. Esto ayuda a contextualizar el modelo para las nuevas consultas de usuario. Si se establece este número en 10, se incluirán 5 consultas de usuario y 5 respuestas del sistema.
+
 - **Temperatura** - Controla la aleatoriedad. Bajar la temperatura significa que el modelo produce respuestas más repetitivas y deterministas. El aumento de la temperatura da como resultado respuestas más inesperadas o creativas. Intente ajustar la temperatura o P superior, pero no ambos a la vez.
 
-- **Longitud máxima (tokens)** - Establece un límite en la cantidad de tokens por respuesta del modelo. La API admite un máximo de 4000 tokens compartidos entre el mensaje (incluido el mensaje del sistema, los ejemplos, el historial de mensajes y la consulta del usuario) y la respuesta del modelo. Un token tiene aproximadamente cuatro caracteres para un texto típico en inglés.
+- **Longitud máxima (tokens)** - Establece un límite en la cantidad de tokens por respuesta del modelo. La API de los modelos más recientes admite un máximo de 128 000 tokens compartidos entre el prompt (incluido el mensaje del sistema, los ejemplos, el historial de mensajes y la consulta del usuario) y la respuesta del modelo. Un token tiene aproximadamente cuatro caracteres para un texto típico en inglés.
 
-- **Secuencia de detención** - Hace que las respuestas se detengan en un punto deseado, como el final de una oración o lista. Especifique hasta cuatro secuencias en las que el modelo dejará de generar más tokens en una respuesta. El texto devuelto no contendrá la secuencia de detención.
+- **P superior (Top P)** - Similar a la temperatura, esto controla la aleatoriedad pero utiliza un método diferente. Reducir P superior disminuye la selección de tokens del modelo a los tokens más probables. El aumento de P superior permite al modelo elegir entre tokens con alta y baja probabilidad. Intente ajustar la temperatura o P superior, pero no ambos al mismo tiempo. 
 
-- **Probabilidades máximas (P superior, Top P)** - similar a la temperatura, esto controla la aleatoriedad pero utiliza un método diferente. Reducir P superior disminuye la selección de tokens del modelo a los tokens más probables. El aumento de P superior permite al modelo elegir entre tokens con alta y baja probabilidad. Intente ajustar la temperatura o P superior, pero no ambos al mismo tiempo. 
+- **Secuencias de parada:** Las secuencias de parada hacen que el modelo finalice su respuesta en el punto deseado. La respuesta del modelo finaliza antes de la secuencia especificada, por lo que no contendrá el texto de la secuencia de parada. Para GPT-35-Turbo, usar <|im_end|> garantiza que la respuesta del modelo no genere una consulta de usuario posterior. Se pueden incluir hasta cuatro secuencias de parada.
 
 - **Penalización de frecuencia** - Reduce la posibilidad de repetir un token proporcionalmente según la frecuencia con la que ha aparecido en el texto hasta el momento. Esto disminuye la probabilidad de repetir exactamente el mismo texto en una respuesta.
 
 - **Penalización de presencia** - Reduce la posibilidad de repetir cualquier token que haya aparecido en el texto hasta el momento. Esto aumenta la probabilidad de introducir nuevos temas en una respuesta.
 
-- **Texto previo a la respuesta** - Inserta texto después de la entrada del usuario y antes de la respuesta del modelo. Esto puede ayudar a preparar al modelo para una respuesta.
-
-- **Texto posterior a la respuesta** - Inserte texto después de la respuesta generada por el modelo para fomentar la participación adicional del usuario, como cuando se modela una conversación.
-
-- **Respuesta máxima** - Establece un límite en la cantidad de tokens por respuesta del modelo. La API admite un máximo de 4000 tokens compartidos entre el mensaje (incluido el mensaje del sistema, los ejemplos, el historial de mensajes y la consulta del usuario) y la respuesta del modelo. Un token tiene aproximadamente cuatro caracteres para un texto típico en inglés.
-
-El recuento de tokens actual se puede ver desde el Chat Playground. Dado que las llamadas API tienen un precio por token y es posible establecer un límite máximo de tokens de respuesta, deberá estar atento al recuento de tokens actual para asegurar que la conversación entrante no exceda el recuento máximo de tokens de respuesta.
+El recuento de tokens actual se puede ver desde el Chat Playground. Dado que las llamadas a la API tienen un precio por token y es posible establecer un límite máximo de tokens de respuesta, deberá estar atento al recuento de tokens actual para asegurar que la conversación entrante no exceda el recuento máximo de tokens de respuesta.
 
 ## Consejos Generales para Diseñar Prompts
 
@@ -292,7 +296,7 @@ Por favor haga una tabla que resuma las frutas de Goocrux.
 
 ### Evite la Imprecisión
 
-Teniendo en cuenta los consejos anteriores sobre cómo ser detallado y mejorar el formato, es fácil caer en la trampa de querer ser demasiado inteligente con los prompts y crear descripciones potencialmente imprecisas. A menudo es mejor ser específico y directo. Al modelo no le importa que usted sea explícito en sus instrucciones; ¡no puedes ofenderlo! La analogía aquí es muy similar a la comunicación efectiva: cuanto más directa, más efectivamente se transmite el mensaje.
+Teniendo en cuenta los consejos anteriores sobre cómo ser detallado y mejorar el formato, es fácil caer en la trampa de querer ser demasiado inteligente con los prompts y crear descripciones potencialmente imprecisas. A menudo es mejor ser específico y directo. Al modelo no le importa que usted sea explícito en sus instrucciones; ¡no puede ofenderlo! La analogía aquí es muy similar a la comunicación efectiva: cuanto más directa, más efectivamente se transmite el mensaje.
 
 Por ejemplo, es posible que le interese aprender el concepto de ingeniería de prompts. Podría intentar algo como:
 
@@ -356,9 +360,13 @@ Agente de Soporte de TI:
 Le pido disculpas por tener dificultades para acceder a su cuenta. Por favor haga clic en el enlace "¿Olvidó su contraseña?" en la página de inicio de sesión y siga las instrucciones en pantalla para restablecer su contraseña y acceder a su cuenta.
 ```
 
-Algunos de los ejemplos anteriores se adoptaron del artículo [Mejores prácticas para ingeniería de prompts con API OpenAI](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api) y la  
+Algunos de los ejemplos anteriores se adaptaron del artículo [Mejores prácticas para ingeniería de prompts con ña API de OpenAI](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api) y la  
 [Guía de Ingeniería de Prompts para Democratizar la Investigación, la Educación y las Tecnologías de la Inteligencia Artificial](https://github.com/dair-ai/Prompt-Engineering-Guide)
 
 ## Resumen 
 
 En este ejercicio, aprendió a crear poderosos prompts para modelos de IA examinando la idea de ingeniería de prompts en esta tarea. Con Azure OpenAI Playground, adquirió experiencia práctica al experimentar con varios tipos de prompts y comprender sus componentes y consejos de diseño.
+
+### Ha completado el ejercicio correctamente. Haga clic en **Siguiente >>** para continuar con el siguiente ejercicio.
+
+![](../natural_language_query/images/next-page.png)
