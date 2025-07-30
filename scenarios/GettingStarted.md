@@ -1,6 +1,6 @@
 # Use o Azure Open AI como um profissional para criar aplicativos de IA poderosos
 
-### Duração estimada: 8 horas
+### Duração estimada: 8 Horas
 
 ## Visão geral
 
@@ -65,7 +65,7 @@ Bem-vindo ao Workshop "Use o Azure Open AI como um profissional para criar aplic
 
 Quando estiver pronto para começar, sua máquina virtual e o guia de laboratório estarão ao seu alcance no seu navegador.
 
-   ![](media/18-10-24(1).png "Lab Environment")
+   ![](media/30-7-25-g1.png "Lab Environment")
 
 ### Máquina Virtual e Guia de Laboratório
 
@@ -75,7 +75,7 @@ Sua máquina virtual é sua força motriz durante todo o workshop. O guia de lab
 
 Para entender melhor os recursos e credenciais do seu laboratório, navegue até a aba **Ambiente**.
 
-   ![](media/lab-environment.png "Lab Environment")
+   ![](media/30-7-25-g2.png "Lab Environment")
 
 ## Utilizando o Recurso de Janela Dividida
 
@@ -85,7 +85,7 @@ Para sua conveniência, você pode abrir o guia do laboratório em uma janela se
 
 ## Gerenciando sua Máquina Virtual
 
-Sinta-se à vontade para iniciar, parar ou reiniciar sua máquina virtual conforme necessário na aba **Recursos**. Sua experiência está em suas mãos!
+Sinta-se à vontade para **iniciar, parar** ou **reiniciar** sua máquina virtual conforme necessário na aba **Recursos**. Sua experiência está em suas mãos!
 
    ![](media/res-1.png)
 
@@ -97,9 +97,9 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 
 
 ## Efetue login no Portal do Azure
 
-1. Na JumpVM, clique no atalho do portal do Azure na área de trabalho.
+1. Na JumpVM, clique no atalho do **Azure Portal** na área de trabalho.
 
-   ![](media/img-3.png "Lab Environment")
+   ![](media/30-7-25-g6.png)
 
 1. Na página Bem-vindo ao Microsoft Edge, selecione **Iniciar sem seus dados** e, na página de ajuda para importar dados de navegação do Google, selecione o botão **Continuar sem estes dados** e prossiga para selecionar **Confirmar e começar a navegar** na próxima página.
 
@@ -119,9 +119,9 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 
 
    ![](media/stay-signed-in.png "Lab Environment")
 
-1. Se você vir o pop-up **Você tem recomendações gratuitas do Azure Advisor!**, feche a janela para continuar o laboratório.
-
 1. Se uma janela pop-up **Bem-vindo ao Microsoft Azure** aparecer, clique em **Cancelar** para pular o tour.
+
+    ![](media/30-7-25-g3.png)
    
 1. Agora você verá o Painel do Portal do Azure. Clique em **Grupos de recursos** no painel Navegar para ver os grupos de recursos.
 
@@ -129,7 +129,7 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 
 
 1. Confirme se você possui grupos de recursos presentes, conforme mostrado na captura de tela abaixo. Os últimos seis dígitos do nome do grupo de recursos são exclusivos para cada usuário.  
 
-   ![](media/18-10-24(7).png "Lab Environment")
+   ![](media/30-7-25-g4.png)
    
 Este laboratório prático tem como objetivo capacitar os participantes a aproveitar as tecnologias OpenAI em ambientes do Azure, abrangendo ingestão de dados, desenvolvimento de aplicativos, engenharia de prompt, otimização de modelos e conceitos teóricos de IA para aprendizado e aplicação abrangentes.
 
@@ -141,8 +141,8 @@ Contatos de Suporte ao Aluno:
 - Suporte por e-mail: cloudlabs-support@spektrasystems.com
 - Suporte por chat ao vivo: https://cloudlabs.ai/labs-support
 
-Agora, clique em **Avançar** no canto inferior direito para avançar para a próxima página.
+Agora, clique em **Próximo** no canto inferior direito para passar para a próxima página.
 
-![](media/next-page.png)
+ ![](media/30-7-25-g5.png)
 
 ### Feliz aprendizado!!
