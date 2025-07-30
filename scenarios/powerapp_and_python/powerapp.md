@@ -1,12 +1,12 @@
 # Exercício 2: Crie uma aplicação Open AI com Power Apps
 
-### Duração estimada: 90 minutos
+### Duração estimada: 90 Minutos
 
 Este laboratório se concentra na criação de um aplicativo utilizando os recursos do OpenAI integrados ao Microsoft Power Apps. Os participantes aprenderão a construir um aplicativo funcional que utiliza IA para tarefas como compreensão de linguagem natural, análise de dados ou interação com o cliente dentro da estrutura do Power Apps.
 
 1. Abra uma nova aba e acesse https://make.powerapps.com/. Em **Bem-vindo ao Power Apps**, selecione seu **País/Região (1)** e clique em **Começar (2)**. 
 
-   ![](./images/welcome-Portuguese.png)
+   ![](./images/30-7-25-l2-1.png)
      
 2. Selecione **Aplicações (1)** na navegação à esquerda, clique no menu suspenso **Importar Aplicaçõao (2)** e selecione **A partir do pacote (.zip) (3)**.
 
@@ -32,7 +32,7 @@ Este laboratório se concentra na criação de um aplicativo utilizando os recur
 
 8. Em seguida, clique em **Importar** para importar o pacote para o ambiente PowerApps.
 
-   ![](./images/import-openai-package-1.png)
+     ![](./images/30-7-25-l2-2.png)
 
 9. Quando a importação estiver concluída, clique em **Aplicações (1)**, clique em `⋮` **(2)** ao lado de **OpenAI Playground**, e clique em **Editar (3)**.
 
@@ -52,7 +52,7 @@ Este laboratório se concentra na criação de um aplicativo utilizando os recur
 
 12. Em seguida, no tabulador **Fluxos (1)**, selecione **Openaisummarization (2)**, depois clique em `...` **(3)** e **Ligar (4)** seu flow.
 
-      ![](./images/flow-on-2.png)
+      ![](./images/30-7-25-l2-3.png)
 
       >**Nota:** se você vir **Bem-vindo ao Power Automate**, clique no botão **Começar**.
 
@@ -60,9 +60,14 @@ Este laboratório se concentra na criação de um aplicativo utilizando os recur
 
       ![](./images/flow-edit-2.png)
 
-14. Edite o passo HTTP do Power Automate Flow atualizando **https://your-resource-name.openai.azure.com/** com **<inject key="OpenAIEndpoint" enableCopy="true"/>** **(1)**, **deployment-id** com **<inject key="openaimodulename" enableCopy="true"/>** **(2)**, **api-version** com **2023-09-15-preview** **(3)**, **YOUR_API_KEY** com **<inject key="OpenAIKey" enableCopy="true"/>** **(4)**, e clique em **Save** **(5)**.
+14. Na etapa HTTP do fluxo, atualize o seguinte:
 
-      ![](./images/update-values-2.png)
+      - Substitua `https://your-resource-name.openai.azure.com/` with **<inject key="OpenAIEndpoint" enableCopy="true"/> (1)**
+      - Substitua `deployment-id` por **<inject key="openaimodulename" enableCopy="true"/> (2)**
+      - Substitua `api-version` por **2023-09-15-preview (3)**
+      - Substitua `YOUR_API_KEY` por **<inject key="OpenAIKey" enableCopy="true"/> (4)** Em seguida, clique em **Salvar (5)**.
+        
+         ![](./images/update-values-2.png)
    
 15. Na página **Aplicações (1)**, selecione a applicação **OpenAI Playground** para executar o aplicativo clicando no botão **Jogar (2)**.
 
@@ -70,7 +75,7 @@ Este laboratório se concentra na criação de um aplicativo utilizando os recur
 
 16. Se você receber um pop-up solicitando o início de um teste gratuito, clique em **Iniciar um teste gratuito**.
 
-      ![](./images/start-free-trial.png)
+      ![](./images/30-7-25-l2-4.png)
 
 17. Em seguida, na janela **você precisa de uma licença do Power Apps para usar este aplicativo**, selecione **Iniciar um teste de 30 dias**.
 
@@ -82,7 +87,7 @@ Este laboratório se concentra na criação de um aplicativo utilizando os recur
     
 19. No **Canvas**, clique no botão **Summary** **(1)** e verifique o **auto-filled text** **(2)**. Em seguida, clique no botão **Submit** **(3)** para obter o **Summary** **(4)**.
 
-     ![](./images/canves-output.png)
+     ![](./images/30-7-25-l2-5.png)
 
     > **Nota**: Você pode tentar as outras opções disponíveis no portal, ou seja, **SQL**, **ClassifyText**, **Parse**, e **Classify**.
 
@@ -90,4 +95,5 @@ Este laboratório se concentra na criação de um aplicativo utilizando os recur
 
 Neste laboratório, você integrou com sucesso as APIs OpenAI ao Power Apps para habilitar funcionalidades como processamento de linguagem natural, análise de sentimentos ou recomendações personalizadas, além de criar um aplicativo.
 
-### Você concluiu o laboratório com sucesso. Clique em **Avançar >>** para prosseguir para o próximo exercício.
+### Você concluiu o laboratório com sucesso. Clique em Próximo >> para prosseguir com o próximo exercício.
+ ![](./images/30-7-25-g5.png)
