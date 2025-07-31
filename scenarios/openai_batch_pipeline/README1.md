@@ -83,7 +83,8 @@ Você poderá concluir as seguintes tarefas:
     ![](images/E2T1PBS3.png)
 
     > **Observação:** Após a instalação do ambiente conda, você poderá ver a mensagem de saída como esta.
-    > ![](images/conda-installed.png)
+
+      ![](images/conda-installed.png)
 
 1. Execute os comandos abaixo um por um para criar e ativar o ambiente conda no CloudShell.
 
