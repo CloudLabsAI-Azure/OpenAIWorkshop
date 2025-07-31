@@ -2,9 +2,9 @@
 
 ### Duração estimada: 90 Minutos
 
-Este laboratório se concentra na criação de um aplicativo utilizando os recursos do OpenAI integrados ao Microsoft Power Apps. Os participantes aprenderão a construir um aplicativo funcional que utiliza IA para tarefas como compreensão de linguagem natural, análise de dados ou interação com o cliente dentro da estrutura do Power Apps.
+Este exercício se concentra na criação de um aplicativo utilizando os recursos do OpenAI integrados ao Microsoft Power Apps. Os participantes aprenderão a construir um aplicativo funcional que utiliza IA para tarefas como compreensão de linguagem natural, análise de dados ou interação com o cliente dentro da estrutura do Power Apps.
 
-1. Abra uma nova aba e acesse https://make.powerapps.com/. Em **Bem-vindo ao Power Apps**, selecione seu **País/Região (1)** e clique em **Começar (2)**. 
+1. Abra uma nova aba e acesse [Power Apps](https://make.powerapps.com/). Em **Bem-vindo ao Power Apps**, selecione seu **País/Região (1)** e clique em **Começar (2)**. 
 
    ![](./images/30-7-25-l2-1.png)
      
@@ -85,15 +85,16 @@ Este laboratório se concentra na criação de um aplicativo utilizando os recur
 
       ![](./images/start-my-review.png)
     
-19. No **Canvas**, clique no botão **Summary** **(1)** e verifique o **auto-filled text** **(2)**. Em seguida, clique no botão **Submit** **(3)** para obter o **Summary** **(4)**.
+19. No aplicativo de tela, clique no botão **Resumo (1)**, verifique o **texto preenchido automaticamente (2)** e clique em **Enviar (3)** para exibir o **Resumo (4)** gerado.
 
      ![](./images/30-7-25-l2-5.png)
 
-    > **Nota**: Você pode tentar as outras opções disponíveis no portal, ou seja, **SQL**, **ClassifyText**, **Parse**, e **Classify**.
+    > **Nota:** Você também pode explorar outras opções disponíveis, como **SQL, ClassifyText, Parse** e **Classify**.
 
 ## Resumo
 
-Neste laboratório, você integrou com sucesso as APIs OpenAI ao Power Apps para habilitar funcionalidades como processamento de linguagem natural, análise de sentimentos ou recomendações personalizadas, além de criar um aplicativo.
+Neste exercício, você integrou com êxito as APIs do OpenAI ao Power Apps para implementar recursos como processamento de linguagem, resumo e automação inteligente usando um fluxo do Power App e do Power Automate.
 
-### Você concluiu o laboratório com sucesso. Clique em Próximo >> para prosseguir com o próximo exercício.
+### Você concluiu o exercício com sucesso. Clique em Próximo >> para prosseguir com o próximo exercício.
+ 
  ![](./images/30-7-25-g5.png)
