@@ -297,7 +297,7 @@ Em seguida, precisaremos criar dois linked services: um para nossa origem (os ar
 
       ![](images/30-7-25-l1-21.png)
 
-      ![](images/30-7-25-l1-22.png)
+      ![](images/30-7-25-l1-22-new.png)
 
 1. Depois de criar os dois linked services, certifique-se de pressionar o botão **Publicar tudo** na parte superior para publicar o nosso trabalho. Finalize a criação dos linked services e clique em **Publicar**.
 
