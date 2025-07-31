@@ -1,8 +1,8 @@
 # Exercício 4B: Conceitos Avançados (Somente Leitura)
 
-### Duração estimada: 30 minutos
+### Duração estimada: 30 Minutos
 
-Este laboratório oferece conhecimento teórico aprofundado e conhecimento prático avançado relacionado ao OpenAI e suas aplicações. Abrange a introdução à engenharia de promoção, seus casos de uso e vários tipos de prompts que podem ser implementados para alcançar os resultados desejados.
+Este exercício oferece conhecimento teórico aprofundado e conhecimento prático avançado relacionado ao OpenAI e suas aplicações. Abrange a introdução à engenharia de promoção, seus casos de uso e vários tipos de prompts que podem ser implementados para alcançar os resultados desejados.
 
 ## Tópicos
 
@@ -210,4 +210,8 @@ Agora podemos ver que o modelo entende claramente que queremos extrair apenas tr
 
 ## Resumo
 
-Neste laboratório, você adquiriu conhecimento teórico aprofundado e conhecimento prático avançado relacionado ao OpenAI e a vários tipos de métodos de engenharia de prompt.
+Neste exercício, você adquiriu conhecimento teórico aprofundado e conhecimento prático avançado relacionado ao OpenAI e a vários tipos de métodos de engenharia de prompt.
+
+### Clique em Próximo >> para prosseguir com o próximo exercício.
+
+![](../natural_language_query/images/30-7-25-g5.png)

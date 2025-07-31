@@ -1,6 +1,6 @@
 # Exercício 4E: Glossário (somente leitura)
 
-### Duração estimada: 15 minutos
+### Duração estimada: 20 Minutos
 
 Os Large Language Models (LLMs) do Azure OpenAI, como o GPT-4, se destacam em tarefas de linguagem natural, gerando texto coerente. A engenharia de prompts otimiza os prompts de entrada para influenciar as saídas do modelo de forma eficaz para as respostas desejadas.
 
@@ -45,9 +45,8 @@ The token is an abstraction that is defined by external rules to identify the un
 A token may be a word, part of a word, or just characters like punctuation. (e.g. 'abc ', 'abc.', ' st', etc)
 ```
 
-
 ## Resumo
 
-Neste laboratório, você se familiarizará com os modelos de linguagem de grande porte (LLM) do OpenAI, processamento de linguagem natural (NLP), prompt, engenharia de prompt e tokens.
+Neste exercício, você se familiarizará com os modelos de linguagem de grande porte (LLM) do OpenAI, processamento de linguagem natural (NLP), prompt, engenharia de prompt e tokens.
 
-### Você concluiu o laboratório com sucesso.
+### Você concluiu com sucesso o Laboratório Prático.

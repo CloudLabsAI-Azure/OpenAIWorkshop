@@ -1,6 +1,6 @@
 # Exercício 4C: Ajuste Fino (Somente Leitura)
 
-### Duração Estimada: 15 minutos
+### Duração Estimada: 25 Minutos
 
 Este laboratório se concentra no processo de ajuste fino de modelos OpenAI para melhorar seu desempenho em tarefas ou conjuntos de dados específicos. Os participantes aprendem como ajustar parâmetros do modelo, otimizar estratégias de treinamento e avaliar métricas de desempenho do modelo por meio de exercícios práticos e exemplos.
 
@@ -29,12 +29,12 @@ Os dados de treinamento para o ajuste fino de modelos OpenAI são pares de promp
 ```
 {"prompt": "Review: I bought this laptop for my online classes and it works great.", "completion": "Rating: 5 stars"}
 {"prompt": "Review: The battery life is terrible and the screen is too small.", "completion": "Rating: 2 stars"}
-{"prompt": "Review: This is a scam. The product never arrived and the seller did not respond.", "completion": "Rating: 1 star"}
+{"prompt": "Review: This is a scam. The product never arrived, and the seller did not respond.", "completion": "Rating: 1 star"}
 ```
 
 Você pode usar o OpenAI CLI ou o Studio para preparar, validar e formatar seus dados de treinamento em um arquivo JSON que pode ser usado para ajustes finos.
 
-**NOTA IMPORTANTE**:
+**NOTA IMPORTANTE:**
 É importante observar que, para esperar resultados melhores do que usar a engenharia de prompts, você precisará de um conjunto de dados amplo e de alta qualidade, relevante para sua tarefa ou domínio, geralmente algumas centenas de exemplos de alta qualidade.
 
 ---
@@ -54,7 +54,7 @@ Você pode considerar o ajuste fino quando tiver um conjunto de dados amplo e de
 
 Você pode considerar a engenharia rápida quando tiver um conjunto de dados limitado ou inexistente e quiser aproveitar o conhecimento e os recursos existentes de um modelo geral, fazendo as perguntas certas ou fornecendo o contexto correto.
 
-**NOTA IMPORTANTE**: Ambos os métodos exigem tentativa e erro, mas o ajuste fino geralmente consome mais tempo e recursos do que a engenharia rápida, e nem sempre é necessário ajustar um modelo para obter os resultados desejados. Portanto, é preferível começar com a engenharia rápida e considerar o ajuste fino somente se você não conseguir obter os resultados desejados.
+**NOTA IMPORTANTE:** Ambos os métodos exigem tentativa e erro, mas o ajuste fino geralmente consome mais tempo e recursos do que a engenharia rápida, e nem sempre é necessário ajustar um modelo para obter os resultados desejados. Portanto, é preferível começar com a engenharia rápida e considerar o ajuste fino somente se você não conseguir obter os resultados desejados.
 
 ---
 ## Considerações sobre Custo Operacional
@@ -71,4 +71,8 @@ Hospedar um modelo com Ajuste Fino também tem seu custo, mas em volumes médios
 
 ## Resumo
 
-Neste laboratório, você adquiriu conhecimento sobre vários tópicos sobre o que exatamente é ajuste fino, as diferenças entre ajuste fino e engenharia de prompts e os custos operacionais a serem considerados.
+Neste exercício, você adquiriu conhecimento sobre vários tópicos sobre o que exatamente é ajuste fino, as diferenças entre ajuste fino e engenharia de prompts e os custos operacionais a serem considerados.
+
+### Clique em **Próximo >>** para prosseguir com o próximo exercício.
+
+![](../natural_language_query/images/30-7-25-g5.png)
