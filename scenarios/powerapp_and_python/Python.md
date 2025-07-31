@@ -2,7 +2,7 @@
 
 ### Duração estimada: 90 Minutos
 
-Neste laboratório, os participantes desenvolverão uma aplicação utilizando as APIs da OpenAI e a linguagem de programação Python. O objetivo é demonstrar como implementar funcionalidades de IA, como geração de linguagem, análise de sentimentos ou sistemas de recomendação, utilizando Python, aproveitando os poderosos modelos e ferramentas da OpenAI.
+Neste Exercício, os participantes desenvolverão uma aplicação utilizando as APIs da OpenAI e a linguagem de programação Python. O objetivo é demonstrar como implementar funcionalidades de IA, como geração de linguagem, análise de sentimentos ou sistemas de recomendação, utilizando Python, aproveitando os poderosos modelos e ferramentas da OpenAI.
 
 1. Retorne ao **Portal do Azure**. Pesquise **Azure Synapse Analytics (1)** e selecione **Azure Synapse Analytics (2)** no portal do Azure.
 
@@ -64,7 +64,6 @@ Neste laboratório, os participantes desenvolverão uma aplicação utilizando a
 
           ![](images/pip-install-1.png) 
 
-
 1. Em **2. Choose a Model**, substitua o valor de **model** de **text-curie-001** para **demomodel** e **execute** esta célula.
 
     ![](images/choosemodel.png)
@@ -104,7 +103,8 @@ Neste laboratório, os participantes desenvolverão uma aplicação utilizando a
 
 ## Resumo
 
-Neste laboratório, você desenvolveu com sucesso uma aplicação implementando funcionalidades de IA, como geração de linguagem, análise de sentimentos ou sistemas de recomendação usando Python, aproveitando os poderosos modelos e ferramentas do OpenAI.
+Neste exercício, você desenvolveu com sucesso uma aplicação implementando funcionalidades de IA, como geração de linguagem, análise de sentimentos ou sistemas de recomendação usando Python, aproveitando os poderosos modelos e ferramentas do OpenAI.
 
-### Você concluiu o laboratório com sucesso. Clique em **Próximo >>** para prosseguir com o próximo exercício.
+### Você concluiu o exercício com sucesso. Clique em **Próximo >>** para prosseguir com o próximo exercício.
+ 
  ![](images/30-7-25-g5.png)
