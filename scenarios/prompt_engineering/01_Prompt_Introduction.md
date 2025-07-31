@@ -2,7 +2,7 @@
 
 ### Duração estimada: 90 minutos
 
-Neste laboratório, você explorará o conceito de engenharia de prompts, aprendendo a criar prompts eficazes para modelos de IA. Você terá experiência prática com o Azure OpenAI Playground, experimentando diferentes tipos de prompts e entendendo seus elementos e dicas de design.
+Neste exercício, você explorará o conceito de engenharia de prompts, aprendendo a criar prompts eficazes para modelos de IA. Você terá experiência prática com o Azure OpenAI Playground, experimentando diferentes tipos de prompts e entendendo seus elementos e dicas de design.
 
 ## Topics
 
@@ -18,7 +18,7 @@ Neste laboratório, você explorará o conceito de engenharia de prompts, aprend
 ## O que é um prompt?
 ![image](https://www.closerscopy.com/img/blinking-cursor-v2.gif)
 
-Todos nós vimos o cursor piscando. Esperando ansiosamente por nós para agir, denotando a nossa chance de fornecer informações ...
+Todos nós vimos o cursor piscando, esperando ansiosamente por nós para agir, denotando nossa chance de fornecer informações ...
 
 Uma forma de pensar em um prompt é como um pedaço de texto que é usado para iniciar ou fornecer contexto para a geração de output, principalmente linguagem natural em nossos casos de uso, pelo modelo de linguagem. Isto pode ser uma frase de entrada, pergunta ou tópico para gerar uma resposta do modelo de linguagem.
 
@@ -37,13 +37,15 @@ Vamos agora iniciar o playground do Azure OpenAI para aprender mais sobre Prompt
 
 1. No **Portal de Azure**, pesquise por **OpenAI** e selecione **OpenAI**.
 
-   ![](../natural_language_query/images/18-10-24(13).png)
+   ![](../natural_language_query/images/30-7-35-l4-1.png)
 
 1. Na janela **Azure AI services | Azure OpenAI**, selecione **openai-<inject key="DeploymentID" enableCopy="false"/>**
 
+    ![](../natural_language_query/images/30-7-35-l4-2.png)
+
 1. No painel de recursos do Azure OpenAI, clique em **Ir para o Portal do Azure AI Foundry** para navegar até o **portal do Azure AI Foundry**.
 
-   ![](../natural_language_query/images/2025-05-09(1).png)
+   ![](../natural_language_query/images/30-7-35-l4-3.png)
 
 1. No **Azure AI Foundry | Azure OpenAI Service**, clique em **Chat** em Play **Playgrounds** no menu à esquerda.
 
@@ -51,7 +53,7 @@ Vamos agora iniciar o playground do Azure OpenAI para aprender mais sobre Prompt
 
 1. Na seção **Chat (1)**, faça qualquer consulta da **sessão de bate-papo** **(2)** para obter a resposta do openai.
  
-    ![](../natural_language_query/images/2025-05-09(3).png)
+    ![](../natural_language_query/images/30-7-35-l4-4.png)
 
 ---
 ## Exemplos de prompt básicos
@@ -192,13 +194,13 @@ Few-shot Prompts permitem a aprendizagem em contexto, que é a capacidade dos mo
 
 Um prompt pode conter qualquer um dos seguintes componentes:
 
-- **Instruction** - uma tarefa ou instrução específica que você deseja que o modelo execute
+- **Instruction:** uma tarefa ou instrução específica que você deseja que o modelo execute
 
-- **Context** - pode envolver informações externas ou contexto adicional que pode orientar o modelo para melhores respostas
+- **Context:** pode envolver informações externas ou contexto adicional que pode orientar o modelo para melhores respostas
 
-- **Input Data** - é a entrada ou pergunta para a qual estamos interessados em encontrar uma resposta
+- **Input Data:** é a entrada ou pergunta para a qual estamos interessados em encontrar uma resposta
 
-- **Output Indicator** - Indica o tipo ou formato do output.
+- **Output Indicator:** Indica o tipo ou formato do output.
 
 Nem todos os componentes são necessários para um prompt, e o formato depende da tarefa em questão. Abordaremos exemplos mais concretos nos nossos próximos guias.
 
@@ -208,28 +210,27 @@ Nem todos os componentes são necessários para um prompt, e o formato depende d
 
 Há muitos parâmetros que você pode ajustar para alterar o desempenho do seu modelo:
 
-- **Temperature** - Controla a aleatoriedade. A redução da temperatura significa que o modelo produz respostas mais repetitivas e determinísticas. O aumento da temperatura resulta em respostas mais inesperadas ou criativas. Tente ajustar a temperatura ou Top P, mas não ambos.
+- **Temperature:** Controla a aleatoriedade. A redução da temperatura significa que o modelo produz respostas mais repetitivas e determinísticas. O aumento da temperatura resulta em respostas mais inesperadas ou criativas. Tente ajustar a temperatura ou Top P, mas não ambos.
 
-- **Max length (tokens)e** - Defina um limite para o número de tokens por resposta do modelo. A API suporta um máximo de 4000 tokens compartilhados entre o prompt (incluindo mensagem do sistema, exemplos, histórico de mensagens e consulta do usuário) e a resposta do modelo. Um token tem aproximadamente quatro caracteres para o texto típico em inglês.
+- **Max length (tokens)e:** Defina um limite para o número de tokens por resposta do modelo. A API suporta um máximo de 4000 tokens compartilhados entre o prompt (incluindo mensagem do sistema, exemplos, histórico de mensagens e consulta do usuário) e a resposta do modelo. Um token tem aproximadamente quatro caracteres para o texto típico em inglês.
 
-- **Stop sequence** - Faça com que as respostas parem em um ponto desejado, como o final de uma frase ou lista. Especifique até quatro sequências em que o modelo deixará de gerar mais tokens em uma resposta. O texto retornado não conterá a stop sequence.
+- **Stop sequence:**  Faça com que as respostas parem em um ponto desejado, como o final de uma frase ou lista. Especifique até quatro sequências em que o modelo deixará de gerar mais tokens em uma resposta. O texto retornado não conterá a stop sequence.
 
-- **Top probabilities (Top P)e** - Semelhante à temperatura, este controla a aleatoriedade, mas usa um método diferente. A redução do Top P reduz a seleção de tokens do modelo para tokens mais prováveis. O aumento do Top P permite que o modelo escolha entre tokens com alta e baixa probabilidade. Tente ajustar a temperatura ou Top P, mas não ambos.
+- **Top probabilities (Top P)e:** Semelhante à temperatura, este controla a aleatoriedade, mas usa um método diferente. A redução do Top P reduz a seleção de tokens do modelo para tokens mais prováveis. O aumento do Top P permite que o modelo escolha entre tokens com alta e baixa probabilidade. Tente ajustar a temperatura ou Top P, mas não ambos.
 
-- **Frequency penaltye** - Reduz a chance de repetir um token proporcionalmente com base na frequência com que ele apareceu no texto até agora. Isso diminui a probabilidade de repetir exatamente o mesmo texto em uma resposta.
+- **Frequency penaltye:** Reduz a chance de repetir um token proporcionalmente com base na frequência com que ele apareceu no texto até agora. Isso diminui a probabilidade de repetir exatamente o mesmo texto em uma resposta.
 
-- **Presence penaltye** - Reduza a chance de repetir qualquer token que tenha aparecido no texto até agora. Isso aumenta a probabilidade de introduzir novos tópicos em uma resposta.
+- **Presence penaltye:** Reduza a chance de repetir qualquer token que tenha aparecido no texto até agora. Isso aumenta a probabilidade de introduzir novos tópicos em uma resposta.
 
-- **Pre-response text** - Insira texto após a entrada do usuário e antes da resposta do modelo. Isso pode ajudar a preparar o modelo para uma resposta.
+- **Pre-response text:** Insira texto após a entrada do usuário e antes da resposta do modelo. Isso pode ajudar a preparar o modelo para uma resposta.
 
-- **Post-response text** - Insira texto após a resposta gerada pelo modelo para incentivar a entrada do usuário, como ao modelar uma conversa.
+- **Post-response text:** Insira texto após a resposta gerada pelo modelo para incentivar a entrada do usuário, como ao modelar uma conversa.
 
-- **Max response** - Defina um limite para o número de tokens por resposta do modelo. A API suporta um máximo de 4000 tokens compartilhados entre o prompt (incluindo mensagem do sistema, exemplos, histórico de mensagens e consulta do usuário) e a resposta do modelo. Um token tem aproximadamente quatro caracteres para o texto típico em inglês.
+- **Max response:** Defina um limite para o número de tokens por resposta do modelo. A API suporta um máximo de 4000 tokens compartilhados entre o prompt (incluindo mensagem do sistema, exemplos, histórico de mensagens e consulta do usuário) e a resposta do modelo. Um token tem aproximadamente quatro caracteres para o texto típico em inglês.
 
 A contagem de tokens atual pode ser visualizada no Chat playground. Como as chamadas de API são cobradas por token e é possível definir um limite máximo de token de resposta, convém ficar de olho na contagem atual de tokens para garantir que a conversa não exceda a contagem máxima de tokens de resposta
 
 ## Dicas gerais para criar prompts
-
 
 Aqui estão algumas dicas que você deve ter em mente ao projetar seus prompts:
 
@@ -238,7 +239,7 @@ Ao começar a criar prompts, você deve ter em mente que é um processo iterativ
 
 Você pode começar com prompts simples e continuar adicionando mais elementos e contexto à medida que busca melhores resultados. Versionar seu prompt ao longo do caminho é vital por esse motivo. Ao lermos o guia, você verá muitos exemplos em que a especificidade, a simplicidade e a consistência geralmente lhe darão melhores resultados. Comece com um prompt fixo e passe para prompts gerados mais dinamicamente à medida que refina seus resultados.
 
-### A A Instrução
+### A Instrução
 Você pode projetar prompts eficazes para várias tarefas simples usando comandos para instruir o modelo sobre o que deseja alcançar, como "Escrever", "Classificar", "Resumir", "Traduzir", "Ordenar", "Criar", "Fazer", etc.
 
 Tenha em mente que você também precisa experimentar muito para ver o que funciona melhor. Experimente instruções diferentes com palavras-chave, contexto e dados diferentes e veja o que funciona melhor para o seu caso de uso e tarefa específicos. Normalmente, quanto mais específico e relevante for o contexto para a tarefa que você está tentando executar, melhor. 
@@ -341,7 +342,7 @@ Aqui está um prompt melhor:
 
 *Prompt:*
 ```
-The following is an exchange between an IT support agent and a customer. The customer is locked out of their account. The IT Support Agent must not discuss personal information such as username, password, name, email address, account number, or phone number, or security questions. If the IT Support Agent needs personal information to assist the customer, the IT Support Agent must ask them to click on the "Forgot Password?" link on the sign-on page and follow the on-screen instructions.
+The following is an exchange between an IT support agent and a customer. The customer is locked out of their account. The IT Support Agent must not discuss personal information such as username, password, name, email address, account number, phone number, or security questions. If the IT Support Agent needs personal information to assist the customer, the IT Support Agent must ask them to click on the "Forgot Password?" link on the sign-on page and follow the on-screen instructions.
 
 Customer: I cannot log into my account.
 IT Support Agent:
@@ -359,3 +360,6 @@ Alguns dos exemplos acima foram adotados a partir do ["Best practices for prompt
 ## Resumo
 
 Neste exercício, você aprendeu como criar prompts poderosos para modelos de IA examinando a ideia de prompt engineering nesta tarefa. Usando o Azure OpenAI Playground, você ganhou experiência prática experimentando vários tipos de prompt e compreendendo seus componentes e conselhos de design.
+
+### Você concluiu o laboratório com sucesso. Clique em **Próximo >>** para prosseguir com o próximo exercício.
+![](../natural_language_query/images/30-7-35-g5.png)
