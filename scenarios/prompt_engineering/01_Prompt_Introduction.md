@@ -1,6 +1,6 @@
 # Exercício 4a: Introdução à Engenharia de Prompts e Azure OpenAI Studio
 
-### Duração estimada: 90 minutos
+### Duração estimada: 90 Minutos
 
 Neste exercício, você explorará o conceito de engenharia de prompts, aprendendo a criar prompts eficazes para modelos de IA. Você terá experiência prática com o Azure OpenAI Playground, experimentando diferentes tipos de prompts e entendendo seus elementos e dicas de design.
 
@@ -37,15 +37,15 @@ Vamos agora iniciar o playground do Azure OpenAI para aprender mais sobre Prompt
 
 1. No **Portal de Azure**, pesquise por **OpenAI** e selecione **OpenAI**.
 
-   ![](../natural_language_query/images/30-7-35-l4-1.png)
+   ![](../natural_language_query/images/30-7-25-l4-1.png)
 
 1. Na janela **Azure AI services | Azure OpenAI**, selecione **openai-<inject key="DeploymentID" enableCopy="false"/>**
 
-    ![](../natural_language_query/images/30-7-35-l4-2.png)
+    ![](../natural_language_query/images/30-7-25-l4-2.png)
 
 1. No painel de recursos do Azure OpenAI, clique em **Ir para o Portal do Azure AI Foundry** para navegar até o **portal do Azure AI Foundry**.
 
-   ![](../natural_language_query/images/30-7-35-l4-3.png)
+   ![](../natural_language_query/images/30-7-25-l4-3.png)
 
 1. No **Azure AI Foundry | Azure OpenAI Service**, clique em **Chat** em Play **Playgrounds** no menu à esquerda.
 
@@ -53,7 +53,7 @@ Vamos agora iniciar o playground do Azure OpenAI para aprender mais sobre Prompt
 
 1. Na seção **Chat (1)**, faça qualquer consulta da **sessão de bate-papo** **(2)** para obter a resposta do openai.
  
-    ![](../natural_language_query/images/30-7-35-l4-4.png)
+    ![](../natural_language_query/images/30-7-25-l4-4.png)
 
 ---
 ## Exemplos de prompt básicos
@@ -168,7 +168,7 @@ What a horrible show! //
 Negative
 ```
 or
-*Prompt*
+*Prompt:*
 ```
 The following is a list of companies and the categories they fall into
 
@@ -362,4 +362,4 @@ Alguns dos exemplos acima foram adotados a partir do ["Best practices for prompt
 Neste exercício, você aprendeu como criar prompts poderosos para modelos de IA examinando a ideia de prompt engineering nesta tarefa. Usando o Azure OpenAI Playground, você ganhou experiência prática experimentando vários tipos de prompt e compreendendo seus componentes e conselhos de design.
 
 ### Você concluiu o laboratório com sucesso. Clique em **Próximo >>** para prosseguir com o próximo exercício.
-![](../natural_language_query/images/30-7-35-g5.png)
+![](../natural_language_query/images/30-7-25-g5.png)
