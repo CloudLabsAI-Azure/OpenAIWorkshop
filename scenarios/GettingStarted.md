@@ -93,7 +93,7 @@ Sinta-se à vontade para **iniciar, parar** ou **reiniciar** sua máquina virtua
 
 Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 100%** localizado ao lado do cronômetro no ambiente do laboratório.
 
-   ![](media/zoom-feature.png)
+   ![](media/30-7-25-g9.png)
 
 ## Efetue login no Portal do Azure
 
@@ -101,19 +101,17 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 
 
    ![](media/30-7-25-g6.png)
 
-1. Na página Bem-vindo ao Microsoft Edge, selecione **Iniciar sem seus dados** e, na página de ajuda para importar dados de navegação do Google, selecione o botão **Continuar sem estes dados** e prossiga para selecionar **Confirmar e começar a navegar** na próxima página.
-
 1. Na aba **Entrar no Microsoft Azure**, você verá uma tela de login. Insira o seguinte e-mail/nome de usuário e clique em **Avançar**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    
-     ![](media/20-06-25(1).png "Lab Environment")
+     ![](media/30-7-25-g7.png)
      
 1. Agora digite a seguinte senha e clique em **Entrar**.
 
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-     ![](media/20-06-25(2).png "Lab Environment")
+     ![](media/30-7-25-g8.png)
      
 1. Se você vir a janela pop-up **Permanecer conectado?**, clique em **Não**
 
