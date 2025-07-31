@@ -3,7 +3,7 @@
 
 ### Duração Estimada: 120 Minutos
 
-Este laboratório tem como objetivo demonstrar como integrar os recursos do OpenAI ao Azure Synapse Analytics para processar dados em lote, executar operações inteligentes como processamento de linguagem natural ou análise preditiva e analisar os resultados de forma eficiente no ambiente Synapse.
+Este exercício tem como objetivo demonstrar como integrar os recursos do OpenAI ao Azure Synapse Analytics para processar dados em lote, executar operações inteligentes como processamento de linguagem natural ou análise preditiva e analisar os resultados de forma eficiente no ambiente Synapse.
 
 ## Objetivos do Laboratório
 
@@ -35,12 +35,12 @@ Você poderá concluir as seguintes tarefas:
 
 1. No painel **Configurações avançadas**, introduza os seguintes detalhes:
 
-    - **Subscrição**: Default- Escolha a única assinatura existente atribuída para este laboratório. **(1)**.
-    - **Grupo de recursos**: Selecione **Usar existente** **(2)**
+    - **Subscrição:** Default- Escolha a única assinatura existente atribuída para este laboratório. **(1)**.
+    - **Grupo de recursos:** Selecione **Usar existente** **(2)**
       - openai-<inject key="DeploymentID" enableCopy="false"></inject>
-    - **Nome da conta de armazenamento**: Selecione **Usar existente** **(3)**
+    - **Nome da conta de armazenamento:** Selecione **Usar existente** **(3)**
       - openaistorage<inject key="DeploymentID" enableCopy="false"></inject>
-    - **Compartilhamento de arquivos**: Criar um novo compartilhamento de arquivo **(4)**
+    - **Compartilhamento de arquivos:** Criar um novo compartilhamento de arquivo **(4)**
 
       ![](images/30-7-25-l1-5.png)
 
@@ -52,7 +52,7 @@ Você poderá concluir as seguintes tarefas:
     
     ![](images/30-7-25-l1-7.png)
 
-    > **Observação**: desconsidere o aviso `o ID de assinatura do compartilhamento de arquivo de armazenamento não está registrado no Microsoft.CloudShell Namespace` e prossiga com a próxima tarefa.
+    > **Observação:** desconsidere o aviso `o ID de assinatura do compartilhamento de arquivo de armazenamento não está registrado no Microsoft.CloudShell Namespace` e prossiga com a próxima tarefa.
 
 ### B. Carregar arquivos para a storage account:
 
@@ -142,7 +142,7 @@ Você poderá concluir as seguintes tarefas:
 
    ![](images/batch_file_upload2.png)
 
-   > **Observação**: Certifique-se de estar no diretório **openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation** antes de executar o comando. Se você ainda não estiver neste diretório, use o seguinte comando para navegar até ele:
+   > **Observação:** Certifique-se de estar no diretório **openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation** antes de executar o comando. Se você ainda não estiver neste diretório, use o seguinte comando para navegar até ele:
    >```bash
    >cd openaifilesworkshop/scenarios/openai_batch_pipeline/document_generation
    >```   
@@ -177,13 +177,13 @@ Você poderá concluir as seguintes tarefas:
 
 1. Na guia Básico forneça os seguintes detalhes:
 
-   - **Assinatura**: Use **Assinatura Existente(1)**.
-   - **Grupo de recursos**: use **openai-<inject key="DeploymentID" enableCopy="false"></inject>(2)**
-   - **Nome do espaço de trabalho**: **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>(3)**
-   - **Região**: Selecione a região padrão(4)
-   - **Selecione Data Lake Storage Gen2**: Selecione **Da assinatura(5)**
-   - **Nome da conta**: **asadatalake<inject key="DeploymentID" enableCopy="false"></inject>(6)**
-   - **Nome do sistema de arquivos**: **defaultfs(7)**
+   - **Assinatura:** Use **Assinatura Existente(1)**.
+   - **Grupo de recursos:** use **openai-<inject key="DeploymentID" enableCopy="false"></inject>(2)**
+   - **Nome do espaço de trabalho:** **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>(3)**
+   - **Região:** Selecione a região padrão(4)
+   - **Selecione Data Lake Storage Gen2:** Selecione **Da assinatura(5)**
+   - **Nome da conta:** **asadatalake<inject key="DeploymentID" enableCopy="false"></inject>(6)**
+   - **Nome do sistema de arquivos:** **defaultfs(7)**
    - Clique em **Seguinte: Segurança>(8)**
   
      ![](images/30-7-25-l1-14.png)
@@ -232,15 +232,15 @@ Você poderá concluir as seguintes tarefas:
 
 1. Na página Novo pool do Apache Spark, forneça os seguintes detalhes e clique em **Revisar + criar (6)**, depois clique na guia **Criar** para criar o pool do Apache Spark.
 
-   - **Nome do pool do Apache Spark**: **openaisparkpool (1)**
+   - **Nome do pool do Apache Spark:** **openaisparkpool (1)**
 
-   - **Computação Isolada**: **Desativado (2)**
+   - **Computação Isolada:** **Desativado (2)**
    
-   - **Tamanho do nó**: **Pequeno (4 vCores/32 GB) (3)**
+   - **Tamanho do nó:** **Pequeno (4 vCores/32 GB) (3)**
    
-   - **Escalonamento Automático**: **Desativado (4)**
+   - **Escalonamento Automático:** **Desativado (4)**
    
-   - **Número de nós**: **3 (5)**
+   - **Número de nós:** **3 (5)**
    
       ![](images/image(22)-1.png)
 
@@ -339,7 +339,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
     
       ![](images/dataflow-datapreview-1_1.png)
 
-      >**Nota**: Se não conseguir visualizar os dados no separador Data Preview, clique no botão Atualizar até os dados aparecerem.
+      >**Nota:** Se não conseguir visualizar os dados no separador Data Preview, clique no botão Atualizar até os dados aparecerem.
    
 1. Em seguida, podemos adicionar no nosso bloco **Selecione** e fazer nossas pequenas alterações antes de gravar os dados na tabela Synapse SQL. Para começar, clique no pequeno sinal **+ (1)** ao lado do nosso bloco de ingestão e escolha a opção **Selecione (2)**.
 
@@ -353,7 +353,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
    ![](images/30-7-25-l1-27.png)
 
-      > **Nota**: Se a conexão de teste demorar mais de 3 a 4 minutos, siga as etapas abaixo.
+      > **Nota:** Se a conexão de teste demorar mais de 3 a 4 minutos, siga as etapas abaixo.
 
       - Clique em **Edit**.
 
@@ -375,8 +375,8 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
 1. Para corrigir isso, vamos usar nosso bloco **Select (1)** para alterar os nomes da seguinte forma para obter os valores de saída esperados:
 
-     - **Summary**: `interaction_summary` **(2)**
-     - **CustomerSentiment**: `sentiment` **(3)**
+     - **Summary:** `interaction_summary` **(2)**
+     - **CustomerSentiment:** `sentiment` **(3)**
 
           ![](images/select-1.png)
     
@@ -448,7 +448,8 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
 ## Resumo
 
-Neste laboratório, você ingeriu dados para a conta de armazenamento, configurou o Synapse Workspace e produziu resultados de consulta em nossa tabela SQL.
+Neste exercício, você ingeriu dados para a conta de armazenamento, configurou o Synapse Workspace e produziu resultados de consulta em nossa tabela SQL.
 
-### Você concluiu o laboratório com sucesso. Clique em **Próximo >>** para prosseguir com o próximo exercício.
+### Você concluiu o exercício com sucesso. Clique em **Próximo >>** para prosseguir com o próximo exercício.
+
 ![](images/30-7-25-g5.png)
