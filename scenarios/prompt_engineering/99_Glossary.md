@@ -50,3 +50,14 @@ A token may be a word, part of a word, or just characters like punctuation. (e.g
 In this exercise, you are familiarized with OpenAI large language models (LLM), natural language processing (NLP), prompt, prompt engineering and tokens.
 
 ### You have successfully completed the Hands-on Lab.
+
+Congratulations on completing the **Use Azure OpenAI like a Pro to Build Powerful AI Applications** Hands-on lab! By actively engaging with this lab, you gained practical experience in integrating Azure OpenAI into business workflows, particularly using Synapse pipelines, Power Apps, and Python. Here’s an overview of the core skills you’ve developed:
+
+  - **Pipeline Creation in Synapse:** You now understand how to orchestrate data and AI operations using Azure Synapse, enabling robust and scalable workflows for AI-driven applications.
+
+  - **Application Development with Power Apps & Python:** You practiced building user-friendly applications that leverage AI models via Power Apps for rapid deployment and Python for deeper customization and automation.
+
+  - **Prompt Engineering, Fine-Tuning & Hyperparameter Tuning:** The lab introduced you to crucial concepts required to optimize AI behaviors, tailor models to specific use cases, and enhance the effectiveness of Azure OpenAI solutions.
+    
+  - **Real-World Application:** Collectively, these modules form a solid foundation for deploying Azure OpenAI solutions to solve business problems, from automating tasks to creating intelligent applications.
+ 
