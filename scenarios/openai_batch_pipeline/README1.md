@@ -83,7 +83,8 @@ Você poderá concluir as seguintes tarefas:
     ![](images/E2T1PBS3.png)
 
     > **Observação:** Após a instalação do ambiente conda, você poderá ver a mensagem de saída como esta.
-    > ![](images/conda-installed.png)
+
+     ![](images/conda-installed.png)
 
 1. Execute os comandos abaixo um por um para criar e ativar o ambiente conda no CloudShell.
 
@@ -416,7 +417,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
     
 2. Para ver a execução do pipeline, navegue até o lado esquerdo da tela e escolha a opção **Monitor (1)**. Em seguida, selecione a opção **Pipeline runs (2)** na seção **Integration**. Em seguida, você verá a execução do pipeline que você acionou na seção **Triggered (3)** como **pipeline 1 (4)**.  Este pipeline deve levar aproximadamente 4 minutos (se você estiver usando os dados carregados para o workshop).
 
-      ![](images/pipeline-run-1-2.png)
+      ![](images/30-7-25-l1-28-new.png)
 
 > **Parabéns** pela conclusão da tarefa! Agora é hora de validá-la. Aqui estão os passos:
 > - Se receber uma mensagem de sucesso, você pode prosseguir para a próxima tarefa.

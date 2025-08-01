@@ -61,13 +61,13 @@ Este exercício se concentra na criação de um aplicativo utilizando os recurso
       ![](./images/flow-edit-2.png)
 
 14. Na etapa HTTP do fluxo, atualize o seguinte:
-
-      - Substitua `https://your-resource-name.openai.azure.com/` with **<inject key="OpenAIEndpoint" enableCopy="true"/> (1)**
-      - Substitua `deployment-id` por **<inject key="openaimodulename" enableCopy="true"/> (2)**
-      - Substitua `api-version` por **2023-09-15-preview (3)**
-      - Substitua `YOUR_API_KEY` por **<inject key="OpenAIKey" enableCopy="true"/> (4)** Em seguida, clique em **Salvar (5)**.
+     
+     - Substitua `https://your-resource-name.openai.azure.com/` with **<inject key="OpenAIEndpoint" enableCopy="true"/> (1)**
+     - Substitua `deployment-id` por **<inject key="openaimodulename" enableCopy="true"/> (2)**
+     - Substitua `api-version` por **2023-09-15-preview (3)**
+     - Substitua `YOUR_API_KEY` por **<inject key="OpenAIKey" enableCopy="true"/> (4)** Em seguida, clique em **Salvar (5)**.
         
-         ![](./images/update-values-2.png)
+       ![](./images/update-values-2.png)
    
 15. Na página **Aplicações (1)**, selecione a applicação **OpenAI Playground** para executar o aplicativo clicando no botão **Jogar (2)**.
 
