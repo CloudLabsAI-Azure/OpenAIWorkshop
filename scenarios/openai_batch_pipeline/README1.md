@@ -14,6 +14,8 @@ Será capaz de completar las siguientes tareas:
 
 ## Tarea 1: Ingesta de Datos en la Cuenta de Almacenamiento
 
+Esta tarea se centra en la ingesta de datos en una cuenta de Azure Storage. Implica cargar o transferir conjuntos de datos al almacenamiento en la nube de forma estructurada y segura. Los datos almacenados se utilizarán para su posterior procesamiento y análisis en el pipeline de IA.
+
 ### A. Iniciar Azure Cloud Shell
 
 1. En el [Portal de Azure](https://portal.azure.com?azure-portal=true), seleccione el botón **[>_]** (*Cloud Shell*) ubicado en la parte superior de la página a la derecha de la caja de de búsqueda. Se abrirá un panel de Cloud Shell en la parte inferior del portal. 
@@ -172,6 +174,8 @@ Será capaz de completar las siguientes tareas:
 <validation step="ef9a8088-8af2-426f-9672-70c0b0c227b5" />
 
 ## Tarea 2: Configurar un área de trabajo de Synapse
+
+Esta tarea implica configurar un área de trabajo de Azure Synapse para facilitar la integración, el análisis y la creación de pipelines de datos. Incluye la configuración de los recursos necesarios, la vinculación de cuentas de almacenamiento y la preparación del entorno del área de trabajo para ejecutar flujos de trabajo de datos y operaciones de IA.
 
 ### **A. Configurar un área de trabajo de Synapse**
 
@@ -448,6 +452,8 @@ Siguiendo en Synapse Studio, ahora se creará un **flujo de datos** para ingerir
 <validation step="3e716f01-6da8-431e-aa81-4041b9054091" />
 
 ## Tarea 3: Consultar Resultados en Nuestra Tabla SQL
+
+Esta tarea se centra en consultar los datos almacenados en una tabla SQL de Azure Synapse. Implica escribir y ejecutar consultas SQL para recuperar, filtrar y analizar los datos ingeridos para su posterior procesamiento o validación.
 
 1. Asegúrese de que el estado de ejecución de su pipeline sea **Exitoso**.
 

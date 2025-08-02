@@ -50,3 +50,13 @@ Un token puede ser una palabra, parte de una palabra o simplemente caracteres co
 En este ejercicio, se ha familiarizado con los modelos de lenguaje grande (LLM) de OpenAI, el procesamiento de lenguaje natural (NLP), los prompts, la ingeniería de prompts y los tokens.
 
 ### Ha completado exitosamente el Laboratorio Práctico.
+
+¡Felicitaciones por completar el laboratorio práctico **Utilice Azure OpenAI como un profesional para crear potentes aplicaciones de IA**! Gracias a su participación activa en este laboratorio, adquirió experiencia práctica en la integración de Azure OpenAI en flujos de trabajo empresariales, en particular con los pipelines de Synapse, Power Apps y Python. Aquí tiene un resumen de las habilidades clave que ha desarrollado:
+
+- **Creación de pipelines en Synapse**: Ahora comprende cómo orquestar datos y operaciones de IA con Azure Synapse, lo que permite flujos de trabajo robustos y escalables para aplicaciones basadas en IA.
+
+- **Desarrollo de aplicaciones con Power Apps y Python**: Practicó la creación de aplicaciones intuitivas que aprovechan los modelos de IA mediante Power Apps para una implementación rápida y Python para una mayor personalización y automatización.
+
+- **Ingeniería de prompts, ajuste fino y ajuste de hiperparámetros**: El laboratorio le presentó conceptos cruciales necesarios para optimizar el comportamiento de la IA, adaptar los modelos a casos de uso específicos y mejorar la eficacia de las soluciones de Azure OpenAI.
+
+- **Aplicación en el mundo real:** En conjunto, estos módulos forman una base sólida para implementar soluciones de Azure OpenAI para resolver problemas comerciales, desde la automatización de tareas hasta la creación de aplicaciones inteligentes.
