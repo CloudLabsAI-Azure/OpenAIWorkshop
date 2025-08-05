@@ -68,7 +68,7 @@ La arquitectura para este laboratorio involucra varios componentes clave:
 Una vez que esté listo para comenzar, su máquina virtual y la guía de laboratorio estarán a su disposición en su navegador web.
 
 
-   ![](media/img-1.png "Ambiente de Laboratorio")
+   ![](media/137.png "Ambiente de Laboratorio")
 
 ### Máquina Virtual y Guía de Laboratorio
 
@@ -96,13 +96,13 @@ Puede **iniciar, detener o reiniciar (2)** su máquina virtual según sea necesa
 
 Para ajustar el nivel de zoom de la página del entorno, haga clic en el icono **A↕ : 100%**, ubicado junto al temporizador en el entorno de laboratorio.
 
-   ![](media/zoom-feature.png)
+   ![](media/136.png)
 
 ## Comience en el Portal de Azure
 
 1. En LabVM, haga clic en el acceso directo **Azure Portal** del navegador Microsoft Edge que se encuentra en el escritorio.
 
-   ![](media/img-3.png "Ambiente de Laboratorio")
+   ![](media/135.png "Ambiente de Laboratorio")
    
 1. En la pestaña **Iniciar sesión en Microsoft Azure** verá la pantalla de inicio de sesión. Ingrese el siguiente correo electrónico/nombre de usuario y luego haga clic en **Siguiente**.
    * Correo electrónico/Nombre de usuario: <inject key="AzureAdUserEmail"></inject>
@@ -120,7 +120,7 @@ Para ajustar el nivel de zoom de la página del entorno, haga clic en el icono *
 
 1. Si aparece una ventana emergente **Bienvenido a Microsoft Azure**, haga clic en **Cancelar** para omitir la visita guiada.
 
-   ![](media/Azure-cancel-tour.png)
+   ![](media/134.png)
 
 1. Ahora verá el Panel del portal de Azure; haga clic en **Grupos de recursos** en el panel Navegar para ver los grupos de recursos.
 
