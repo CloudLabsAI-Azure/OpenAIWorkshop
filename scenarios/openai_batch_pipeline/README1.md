@@ -131,7 +131,7 @@ Você poderá concluir as seguintes tarefas:
 
     ![](images/30-7-25-l1-10.png)
     
-1. Navegue até a folha **Teclas de acesso (1)** localizada na seção **Segurança + rede**. Em seguida, selecione **Mostrar (2)** para revelar o valor da cadeia de conexão. Em seguida, clique no botão de cópia ao lado da primeira **cadeia de conexão (3)**. Por fim, cole o valor copiado em um editor de texto, como o Bloco de Notas, para referência posterior.
+1. Navegue até a folha **Chaves de acesso (1)** localizada na seção **Segurança + rede**. Em seguida, selecione **Mostrar (2)** para revelar o valor da cadeia de conexão. Em seguida, clique no botão de cópia ao lado da primeira **cadeia de conexão (3)**. Por fim, cole o valor copiado em um editor de texto, como o Bloco de Notas, para referência posterior.
 
    ![](images/30-7-25-l1-11.png)
 
@@ -153,7 +153,7 @@ Você poderá concluir as seguintes tarefas:
 
    ![](images/batch_file_upload-1-1.png)
 
-   ![](images/pro4-1.png)
+   ![](images/200.png)
 
 > **Parabéns** pela conclusão da tarefa! Agora é hora de validá-la. Aqui estão os passos:
 > - Se receber uma mensagem de sucesso, você pode prosseguir para a próxima tarefa.
@@ -201,11 +201,11 @@ Você poderá concluir as seguintes tarefas:
 
 1. Depois que o recurso for implantado, clique em **Ir para o grupo de recursos**
 
-    ![](images/image(5)-1.png)
+    ![](images/201.png)
 
 1. Navegue até o espaço de trabalho do Synapse que você criou, na página **Visão geral (1)**, clique em **Abrir (2)** em Abrir Synapse Studio para navegar até o Azure Synapse Studio.
 
-   ![](images/open-synapse-studio-1.png)
+   ![](images/202.png)
 
 1. No Azure Synapse Studio, navegue até **Manage (1) > SQL pools (2)** e clique em **+Novo (3)**
 
@@ -229,7 +229,7 @@ Você poderá concluir as seguintes tarefas:
 
 1. Agora navegue de volta ao portal do Azure, **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, selecione **Apache Spark pools (1)** no painel esquerdo em Analytics pools e clique em **+ Novo (2).**
 
-     ![](images/30-7-25-l1-16.png)
+     ![](images/203.png)
 
 1. Na página Novo pool do Apache Spark, forneça os seguintes detalhes e clique em **Revisar + criar (6)**, depois clique na guia **Criar** para criar o pool do Apache Spark.
 
@@ -243,7 +243,7 @@ Você poderá concluir as seguintes tarefas:
    
    - **Número de nós:** **3 (5)**
    
-      ![](images/image(22)-1.png)
+      ![](images/204.png)
 
 ### **B. Criar tabela SQL de destino**
 
@@ -280,7 +280,7 @@ Em seguida, precisaremos criar dois linked services: um para nossa origem (os ar
 
 1. Clique novamente na seção **Manage (1)** do Synapse Studio e clique na opção **Linked services (2)** na seção **External connections**. Em seguida, clique em **+ Novo (3)** no canto superior esquerdo.
 
-      ![](images/30-7-25-l1-18.png)
+      ![](images/206.png)
    
 1. Somece criando os linked services para a nossa fonte de dados, usando os arquivos JSON alojados no armazenamento ADLS Gen2 que criamos com nosso modelo inicial. Na barra de pesquisa que é aberta depois de clicar em Novo, procure **blob (1)**, selecione **Armazenamento de Blobs do Azure (2)** conforme descrito abaixo e clique em **Continuar (3)**.
 
@@ -310,7 +310,7 @@ Ainda dentro do Synapse Studio, agora precisaremos criar um **Fluxo de dados** p
 
 1. Primeiro, vamos querer voltar para o separador **Develop (1)**, selecionar **+ (2)**, e depois **Fluxo de dados (3)**.
 
-      ![](images/synapse11-1_1.png)
+      ![](images/205.png)
    
 1. Quando o editor de fluxo de dados abrir, clique em **Adicionar fonte**. Uma nova janela será aberta na parte inferior da tela. Selecione **+ Novo** na linha **Conjunto de Dados** deixando as outras opções como padrão.
 

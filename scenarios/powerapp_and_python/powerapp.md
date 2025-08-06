@@ -10,7 +10,7 @@ Este exercício se concentra na criação de um aplicativo utilizando os recurso
      
 2. Selecione **Aplicações (1)** na navegação à esquerda, clique no menu suspenso **Importar Aplicaçõao (2)** e selecione **A partir do pacote (.zip) (3)**.
 
-    ![](./images/powerapps-import-2.png)
+    ![](./images/207.png)
 
 3. Na página **Importar pacote**, clique em **Carregar**.
 
