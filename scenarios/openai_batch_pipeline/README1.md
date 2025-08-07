@@ -359,21 +359,21 @@ Ainda no Synapse Studio, vamos agora criar um **Fluxo de dados** para inserir os
 
       > **Nota:** Se a conexão de teste demorar mais de 3 a 4 minutos, siga os passos abaixo.
 
-      - Clique em **Edit**. Continuar auiiiii
-
+      - Clique em **Edit**.
+        
            ![](images/p18.png)    
 
-      - Na janela Editar linked service que é aberta, selecione o método de seleção do Azure como **From Azure subscription** **(1)**. Selecione a **Assinatura do Azure (2)** para a qual você tem trabalhado. Selecione **asaworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para **Nome do servidor** e **openaisql (4)** como o **Nome do banco de dados**, clique em **Testar conexão (5)** e clique em **Salvar (6)**.
+      - Na janela Editar linked service que se abre, selecione o método de seleção de conta como **From Azure subscription** **(1)**. Selecione a **Subscrição do Azure (2)** para a qual você tem trabalhado. Selecione **asaworkspace<inject key="DeploymentID" enableCopy="false"/> (3)** para **Nome do servidor** e **openaisql (4)** como o **Nome do Banco de Dados**, clique em **Testar conexão (5)** e clique em **Salvar (6)**.
 
            ![](images/new-portuguese-1.png)
 
            ![](images/new-por-10-1-1.png)
 
-1. Em seguida, precisaremos ir para o separador **Configurações (1)** e ajustar o **Nome do esquema** e **Nome da tabela**. Se você utilizou o script fornecido anteriormente para criar a tabela de destino, o nome do esquema é **dbo (2)** e o nome da tabela é **cs_detail (3)**.
+1. Em seguida, precisaremos ir para a aba **Configurações (1)** e ajustar o **Nome do esquema** e **Nome da tabela**. Se você utilizou o script fornecido anteriormente para criar a tabela de destino, o nome do esquema é **dbo (2)** e o nome da tabela é **cs_detail (3)**.
 
       ![](images/synapse20-1_1.png)
 
-1. Antes de terminarmos nosso trabalho sobre o data flow, devemos visualizar nossos dados. A pré-visualização dos nossos dados revela que só temos 3 colunas quando esperamos um total de 5. Perdemos as nossas colunas Summary e Sentiment.
+1. Antes de finalizarmos nosso trabalho no fluxo de dados, devemos pré-visualizar nossos dados. A pré-visualização de nossos dados revela que temos apenas 3 colunas, quando esperamos um total de 5. Perdemos nossas colunas Summary e Sentiment.
 
       ![](images/data-preview.png)
 
@@ -384,60 +384,62 @@ Ainda no Synapse Studio, vamos agora criar um **Fluxo de dados** para inserir os
 
           ![](images/select-1.png)
     
-1. Retornando ao bloco **Sink (1)** por baixo de **Pré-visualização de dados (2)** clique **Atualizar (3)**, vamos agora ver as 5 colunas que são esperadas.
+1. Retorne para o bloco **Sink (1)**, vá para a aba **Pré-visualização de dados (2)** e clique **Atualizar (3)**, para verificar se todas as 5 colunas aparecem corretamente.
 
       ![](images/refresh-sink-1_3.png)
 
-1. Depois de revisar os dados e estar satisfeito que todas as colunas foram mapeadas com êxito (você deve ter 5 colunas no total, todas mostrando dados em um formato tipo string), podemos selecionar **Publish all** na parte superior para salvar nossa configuração atual. Uma janela será aberta no lado direito da tela; pressione o botão azul **Publish** na parte inferior esquerda para salvar suas alterações.
+1. Depois de revisar os dados e estar satisfeito que todas as colunas foram mapeadas com êxito (você deve ter 5 colunas no total, todas mostrando dados em um formato tipo string), podemos clicar em **Publish all** na parte superior para salvar nossa configuração atual. No painel de confirmação que se abre, clique no botão azul **Publish** para salvar sua configuração.
 
       ![](images/publish-dataflow.png)
 
-1. O seu Data flow concluído e salvo terá a seguinte aparência:
+1. Seu fluxo de dados concluído e salvo deve se assemelhar à estrutura mostrada abaixo.
 
       ![](images/completed-dataflow.png)
 
-### **E. Criar um Pipeline em Synapse**
+### **E. Criar um Pipeline no Synapse**
 
-1. Depois de criarmos o nosso **Data flow**, precisaremos configurar um **Pipeline** para alojar o Data Flow. Para criar um **Pipeline**,  navegue até a barra de menu à esquerda e escolha a opção **Integrate (1)**. Em seguida, clique no botão **+ (2)** a parte superior do menu Integrate para **Adicionar um novo recurso** e escolha **Pipeline (3)**.
+1. Após criar o **Fluxo de dados**,  o próximo passo é configurar um **Pipeline** para contê-lo. Para criar um **Pipeline**,  navegue até a barra de menu à esquerda e escolha a opção **Integrate (1)**. Em seguida, clique no botão **+ (2)** a parte superior do menu Integrar para **Adicionar um novo recurso** e escolha **Pipeline (3)**.
 
       ![](images/30-7-25-l1-28.png)
 
-2. Em seguida, precisamos adicionar um **Fluxo de dados** ao nosso Pipeline. Com o novo separador **Pipeline tab (1)** aberto, vá para a seção **Atividades** e procure por `data` **(2)** e selecione a atividade **Fluxo de dados (3)** e **arrastar e soltar (4)** no seu Pipeline.
+2. A seguir, precisamos adicionar um **Fluxo de dados** ao nosso Pipeline. Com sua nova **aba Pipeline (1)** aberta, vá para a seção **Atividades** e procure por `data` **(2)** e selecione a atividade **Fluxo de dados (3)** e **arraste e solte (4)** em seu Pipeline.
 
       ![](images/data-drag-1-2.png)
 
-3. No separador **Configurações (1)** do **Fluxo de dados**, selecione o menu **Fluxo de dados (2)** e selecione o nome do fluxo de dados criado na etapa anterior. Em seguida, expanda a seção **Encenação (3)** na parte inferior das configurações e utilize o menu suspenso para o **Serviço vinculado de preparação**. Escolha o linked service que você criou **openailinkedservice (4)** para garantir a **Testar conexão (5)**. Em seguida, defina uma **Pasta de armazenamento de preparação** na parte inferior e digite **workshop-data/Staging** **(6)**.
+3. Na aba **Configurações (1)** do **Fluxo de dados**, use o menu suspenso **Fluxo de dados (2)** para selecionar o fluxo que você criou anteriormente. Expanda a seção **Preparando (3)** na parte inferior das configurações e utilize o menu suspenso para o **Preparo do serviço vinculado**. Escolha o linked service que você criou **openailinkedservice (4)** para garantir a **Testar conexão (5)**. Em seguida, defina uma **Pasta de armazenamento de preparação** na parte inferior e digite **workshop-data/Staging** **(6)**.
 
       ![](images/staging-1-1_2.png)
 
 4. Em seguida, clique em **Publicar tudo** para publicar as alterações efetuadas e salvar o seu progresso.
 
-### **F. Executar um Pipeline em Synapse**
+### **F. Executar um Pipeline no Synapse**
 
-1. Depois de publicar com sucesso o seu trabalho, precisamos iniciar o nosso pipeline. Para fazer isso, logo abaixo dos separadores na parte superior do Studio, há um ícone de *raio* que diz **Adicionar gatilho (1)**. Clique para adicionar um trigger e selecione **Disparar agora (2)** para iniciar uma execução de pipeline e, quando a janela abrir, clique em **OK**.
+1.  Uma vez que o pipeline esteja publicado, você pode dispará-lo clicando no ícone de *raio*  **Adicionar gatilho (1)**. Clique para adicionar um trigger e selecione **Disparar agora (2)** para iniciar uma execução de pipeline e, quando a janela abrir, clique em **OK**.
 
       ![](images/trigger-1-2.png)
     
-2. Para ver a execução do pipeline, navegue até o lado esquerdo da tela e escolha a opção **Monitor (1)**. Em seguida, selecione a opção **Pipeline runs (2)** na seção **Integration**. Em seguida, você verá a execução do pipeline que você acionou na seção **Triggered (3)** como **pipeline 1 (4)**.  Este pipeline deve levar aproximadamente 4 minutos (se você estiver usando os dados carregados para o workshop).
+5. Para ver a execução do pipeline, navegue até o lado esquerdo da tela e escolha a opção **Monitor (1)**. Em seguida, selecione a opção **Pipeline runs (2)** na seção **Integration**. Em seguida, você verá a execução do pipeline que você acionou na seção **Disparado (3)** como **pipeline 1 (4)**.  Este pipeline deve levar aproximadamente 4 minutos (se você estiver usando os dados carregados para o workshop).
 
       ![](images/30-7-25-l1-28-new.png)
 
-> **Parabéns** pela conclusão da tarefa! Agora é hora de validá-la. Aqui estão os passos:
+> **Parabéns** por completa a tarefa! Agora, é hora de validá-la. Aqui estão os passos:
 > - Se receber uma mensagem de sucesso, você pode prosseguir para a próxima tarefa.
 > - Caso contrário, leia atentamente a mensagem de erro e repita o passo, seguindo as instruções do guia do laboratório.
 > - Se precisar de ajuda, entre em contato conosco pelo e-mail cloudlabs-support@spektrasystems.com. Estamos disponíveis 24 horas por dia, 7 dias por semana, para ajudar.
 
 <validation step="3e716f01-6da8-431e-aa81-4041b9054091" />    
 
-## Tarefa 3: Resultados da consulta em nossa tabela SQL
+## Tarefa 3: Consulta dos Resultados na tabela SQL
 
-1. Certifique-se de que o status de execução do pipeline tenha **Bem-sucedido**.
+Esta tarefa foca na consulta de dados armazenados em uma tabela SQL dentro do Azure Synapse. Isso envolve escrever e executar consultas SQL para recuperar, filtrar e analisar os dados ingeridos, com o objetivo de realizar processamentos adicionais ou validações.
+
+1. Certifique-se de que o status de execução do pipeline foi **Bem-sucedido**.
 
       ![](images/pipline-succeeded-1-1.png)
 
-2. Agora que os dados estão na tabela de destino, eles estão disponíveis para uso executando consultas SQL ou conectando o PowerBI e criando visualizações. Faça upload de alguns dos arquivos de transcrição para a pasta generate_documents em seu contêiner e veja como ele cria um novo arquivo no arquivo Cleaned_documents.
+2. Agora que os dados estão na tabela de destino, você pode começar a consultá-los ou conectá-los ao Power BI para visualização. Para explorar os resultados, envie os arquivos de transcrição para a pasta generated_documents. Você verá novos arquivos, agora limpos, sendo gerados na pasta cleansed_documents.
 
-3. Para consultar os novos dados, navegue até o menu do lado esquerdo e escolha **Develop (1)**. Clique no **SQL Script (2)** existente e substitua o conteúdo pelo **SQL Code (3)** abaixo. Em seguida, selecione **openaisql (4)** pool **Run (5)**. 
+3. Para consultar os novos dados, navegue até o menu do lado esquerdo e escolha **Develop (1)**. Clique no **SQL Script (2)** existente e substitua o conteúdo pelo **código SQL (3)** abaixo. Em seguida, selecione **openaisql (4)** como o pool SQL e clique em **Run (5)**. 
 
      ```SQL 
      SELECT sentiment, count(*) as "Sum of Sentiment"
@@ -452,7 +454,7 @@ Ainda no Synapse Studio, vamos agora criar um **Fluxo de dados** para inserir os
 
 ## Resumo
 
-Neste exercício, você ingeriu dados para a conta de armazenamento, configurou o Synapse Workspace e produziu resultados de consulta em nossa tabela SQL.
+Neste exercício, você ingeriu dados com sucesso em uma conta de armazenamento, criou um workspace do Synapse, construiu um pipeline e um fluxo de dados, e consultou os resultados em uma tabela SQL.
 
 ### Você concluiu o exercício com sucesso. Clique em **Próximo >>** para prosseguir com o próximo exercício.
 
