@@ -29,7 +29,7 @@ Explore e compreenda os exercícios de somente leitura para obter conhecimento a
 
 1. **Visão Geral Básica dos Hiperparâmetros do Serviço Azure OpenAI (Somente Leitura):** Obtenha uma compreensão fundamental dos hiperparâmetros no Serviço Azure OpenAI e seu impacto no treinamento e desempenho do modelo. Os participantes adquirirão conhecimento sobre os hiperparâmetros no Serviço Azure OpenAI, cruciais para a configuração e otimização de modelos.
 
-1. **Glossário (somente leitura):** Acesse definições e explicações de termos e conceitos-chave essenciais para a compreensão do OpenAI e do Serviço Azure OpenAI. Os participantes se familiarizarão com as terminologias-chave de IA e do Azure, aprimorando sua compreensão dos conceitos e tecnologias relacionados.
+1. **Glossário (Somente leitura):** Acesse definições e explicações de termos e conceitos-chave essenciais para a compreensão do OpenAI e do Serviço Azure OpenAI. Os participantes se familiarizarão com as terminologias-chave de IA e do Azure, aprimorando sua compreensão dos conceitos e tecnologias relacionados.
 
 ## Pré-requisitos
 
