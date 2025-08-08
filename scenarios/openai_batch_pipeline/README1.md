@@ -297,7 +297,7 @@ A seguir, precisaremos criar dois serviços vinculados (linked services): um par
 
       ![](images/synapse8-1-1.png)
 
-1. Na janela *Novo Serviço Vinculado* que se abre, preencha o nome com **synapselinkedservice(1)**, **Versão: 1.0(2)**. Selecione a **Assinatura do Azure (3)**  na qual você tem trabalhado. Selecione **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (4)** para **Nome do servidor** e **openaisql01 (5)** como o **Nome do Banco de Dados**. Certifique-se de alterar o **Tipo de autenticação** para **Identidade gerenciada atribuída pelo sistema (6)**, depois clique em **Testar conexão (7)** e clique em **Criar (8)**.
+1. Na janela Novo Serviço Vinculado que se abre, preencha o nome com **synapselinkedservice(1)**, **Versão: 1.0(2)**. Selecione a **Assinatura do Azure (3)**  na qual você tem trabalhado. Selecione **synapseworkspace<inject key="DeploymentID" enableCopy="false"/> (4)** para **Nome do servidor** e **openaisql01 (5)** como o **Nome do Banco de Dados**. Certifique-se de alterar o **Tipo de autenticação** para **Identidade gerenciada atribuída pelo sistema (6)**, depois clique em **Testar conexão (7)** e clique em **Criar (8)**.
 
       ![](images/30-7-25-l1-21.png)
 
