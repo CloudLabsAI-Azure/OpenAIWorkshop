@@ -1,34 +1,35 @@
-# Use o Azure Open AI como um profissional para criar aplicativos de IA poderosos
+# Use o Azure OpenAI como um Profissional para Criar Aplicações de IA Poderosas
+
 
 ### Duração estimada: 8 Horas
 
 ## Visão geral
 
-Estes laboratórios práticos oferecem treinamento abrangente sobre a integração dos recursos do OpenAI em diversos aplicativos e ambientes. Eles abrangem a construção de pipelines no Azure Synapse para processamento de dados em lote e operações inteligentes, a criação de aplicativos com Power Apps e Python que utilizam as APIs do OpenAI para tarefas como processamento de linguagem natural e análise de dados, e a exploração de tópicos avançados, como engenharia de prompts e ajuste fino de modelos usando o Azure OpenAI Studio. As seções somente leitura oferecem insights teóricos sobre conceitos avançados, técnicas de ajuste fino, hiperparâmetros no Serviço Azure OpenAI e um glossário para a compreensão dos principais termos e conceitos. Juntos, esses laboratórios visam equipar os participantes com as habilidades práticas e o conhecimento teórico necessários para utilizar efetivamente as tecnologias OpenAI em diferentes plataformas e aplicativos.
+Estes laboratórios práticos oferecem um treinamento abrangente sobre a integração das capacidades do OpenAI em diversas aplicações e ambientes. Eles abordam a construção de pipelines no Azure Synapse para processamento de dados em lote e operações inteligentes, a criação de aplicativos com Power Apps e Python que utilizam as APIs do OpenAI para tarefas como processamento de linguagem natural e análise de dados, e a exploração de tópicos avançados como engenharia de prompt e o ajuste fino de modelos usando o Azure AI Foundry. As seções de somente leitura oferecem insights teóricos sobre conceitos avançados, técnicas de ajuste fino, hiperparâmetros no Serviço Azure OpenAI e um glossário para a compreensão de termos e conceitos-chave. Em conjunto, estes laboratórios visam proporcionar aos participantes as habilidades práticas e o conhecimento teórico necessários para utilizar eficazmente as tecnologias OpenAI em diferentes plataformas e aplicações.
 
 ## Objetivo
 
-Este laboratório foi desenvolvido para equipar os participantes com experiência prática no uso do Azure OpenAI para criar aplicativos de IA avançados. Ao concluir este laboratório, os participantes aprenderão a:
+Este laboratório foi projetado para fornecer aos participantes experiência prática no uso do Azure OpenAI para construir aplicações de IA poderosas. Ao concluir este laboratório, os participantes aprenderão a:
 
-1. **Construir um Pipeline Open AI para Ingerir Dados em Lote, Executar Operações Inteligentes e Analisar no Synapse:** Desenvolver um pipeline para integrar o OpenAI para ingestão de dados em lote, operações inteligentes e análise no Azure Synapse. Os participantes criarão um pipeline robusto para processar e analisar dados em lote com os recursos do OpenAI integrados ao Azure Synapse.
+1. **Construir um Pipeline Open AI para Ingerir Dados em Lote, Executar Operações Inteligentes e Analisar no Synapse:** Desenvolver um pipeline para integrar o OpenAI para ingestão de dados em lote, operações inteligentes e análise no Azure Synapse. Os participantes criarão um pipeline robusto para processar e analisar dados em lote com os recursos do OpenAI integrados ao Azure Synapse Analytics.
 
-1. **Construir um aplicativo Open AI com o Power App:** Criar um aplicativo usando o Power Apps que integre os recursos do OpenAI para tarefas como compreensão de linguagem natural ou processamento de dados. Os participantes desenvolverão um aplicativo de negócios funcional usando os recursos do OpenAI no Microsoft Power Apps, aprimorando a interação e a automação do usuário.
+1. **Construir um aplicativo Open AI com Power Apps:** Criar uma aplicação usando o Power Apps que integra as capacidades do OpenAI para tarefas como compreensão de linguagem natural ou processamento de dados. Os participantes desenvolverão uma aplicação de negócios funcional utilizando recursos do OpenAI no Microsoft Power Apps, aprimorando a interação com o usuário e a automação.
 
-1. **Construir um aplicativo Open AI com Python:** Criar aplicativos usando Python para aproveitar as APIs do OpenAI para tarefas como geração de linguagem, análise de sentimentos ou sistemas de recomendação. Os participantes construirão uma aplicação personalizada utilizando APIs Python e OpenAI para geração e análise avançadas de texto.
+1. **Construir um aplicativo Open AI com Python:** Criar aplicações usando Python para aproveitar as APIs do OpenAI em tarefas como geração de linguagem, análise de sentimento ou sistemas de recomendação. Os participantes construirão uma aplicação customizada utilizando Python e as APIs do OpenAI para geração e análise de texto avançadas.
 
-1. **Introdução à Engenharia de Prompts e ao Azure OpenAI Studio:** Aprenda técnicas para criar prompts eficazes e utilize o Azure OpenAI Studio para desenvolver e implantar modelos de IA. Os participantes aprenderão como otimizar as respostas de modelos de IA por meio de engenharia de prompts eficaz e utilizarão o Azure OpenAI Studio para o desenvolvimento de modelos.
+1. **Introdução à Engenharia de Prompts e ao Azure AI Foundry:** Aprenda técnicas para elaborar prompts eficazes e utilizar o Azure AI Foundry para desenvolver e implantar modelos de IA. Os participantes aprenderão como otimizar as respostas de modelos de IA por meio de engenharia de prompts eficaz e utilizarão o Azure AI Foundry para o desenvolvimento de modelos.
 
 ## Explorar
 
-Explore e entenda os exercícios somente leitura para obter conhecimento adicional sobre os conceitos do Azure OpenAI:
+Explore e compreenda os exercícios de somente leitura para obter conhecimento adicional sobre os conceitos do Azure OpenAI:
 
-1. **Conceitos Avançados (Somente Leitura):** Explore conhecimento teórico avançado e aplicações práticas relacionadas às tecnologias OpenAI e suas implementações. Os participantes obterão insights teóricos sobre conceitos avançados de IA, enriquecendo sua compreensão das tecnologias de IA.
+1. **Conceitos Avançados (Somente Leitura):** Explore conhecimentos teóricos avançados e aplicações práticas relacionadas às tecnologias OpenAI e suas implementações. Os participantes obterão insights teóricos sobre conceitos avançados de IA, enriquecendo sua compreensão das tecnologias de IA.
 
-1. **Ajuste Fino (Somente Leitura):** Entenda e pratique o ajuste fino de modelos OpenAI para melhorar o desempenho em tarefas ou conjuntos de dados específicos. Os participantes entenderão os princípios e técnicas de ajuste fino de modelos de IA para melhorar o desempenho em tarefas específicas.
+1. **Ajuste Fino (Somente Leitura):** Entenda e pratique o ajuste fino de modelos OpenAI para melhorar o desempenho em tarefas ou conjuntos de dados (datasets) específicos. Os participantes compreenderão os princípios e as técnicas de ajuste fino de modelos de IA para melhorar o desempenho em tarefas específicas.
 
-1. **Visão Geral Básica dos Hiperparâmetros do Serviço Azure OpenAI (Somente Leitura):** Obtenha uma compreensão fundamental dos hiperparâmetros no Serviço Azure OpenAI e seu impacto no treinamento e desempenho do modelo. Os participantes adquirirão conhecimento sobre hiperparâmetros no Serviço Azure OpenAI, cruciais para a configuração e otimização do modelo.
+1. **Visão Geral Básica dos Hiperparâmetros do Serviço Azure OpenAI (Somente Leitura):** Obtenha uma compreensão fundamental dos hiperparâmetros no Serviço Azure OpenAI e seu impacto no treinamento e desempenho do modelo. Os participantes adquirirão conhecimento sobre os hiperparâmetros no Serviço Azure OpenAI, cruciais para a configuração e otimização de modelos.
 
-1. **Glossário (somente leitura):** Acesse definições e explicações de termos e conceitos essenciais para a compreensão do OpenAI e do Azure OpenAI Service. Os participantes se familiarizarão com as principais terminologias de IA e do Azure, aprimorando sua compreensão de conceitos e tecnologias relacionados.
+1. **Glossário (somente leitura):** Acesse definições e explicações de termos e conceitos-chave essenciais para a compreensão do OpenAI e do Serviço Azure OpenAI. Os participantes se familiarizarão com as terminologias-chave de IA e do Azure, aprimorando sua compreensão dos conceitos e tecnologias relacionados.
 
 ## Pré-requisitos
 
@@ -36,12 +37,12 @@ Os participantes devem ter:
 
 - Proficiência na linguagem de programação Python, incluindo bibliotecas como Pandas para manipulação de dados e Flask para desenvolvimento de aplicações web.
 - Experiência com Microsoft Power Apps ou plataformas low-code similares para desenvolvimento de aplicações e integração de APIs.
-- Conhecimento básico de conceitos de machine learning, como treinamento de modelos, fluxos de trabalho de implantação e APIs RESTful.
-- Conhecimento de conceitos de IA, como processamento de linguagem natural, ajuste fino de modelos e otimização de hiperparâmetros.
+- Compreensão básica de conceitos de machine learning, como treinamento de modelos, fluxos de trabalho de implantação (deployment workflows) e APIs RESTful.
+- Compreensão de conceitos de IA, como processamento de linguagem natural, ajuste fino de modelos e otimização de hiperparâmetros.
 
 ## Arquitetura
 
-Estes laboratórios utilizam o Azure Synapse para integração de dados e pipelines de análise, o Power Apps para desenvolvimento intuitivo de aplicações OpenAI, o Python para soluções orientadas por IA usando APIs OpenAI e o Azure OpenAI Studio para desenvolvimento de modelos com engenharia rápida. Os módulos somente leitura abrangem conceitos avançados de IA, ajuste fino, hiperparâmetros e um glossário, fornecendo conhecimento básico. Os participantes adquirem habilidades práticas para utilizar o OpenAI de forma eficaz em diversas aplicações em ambientes Azure.
+Estes laboratórios utilizam o Azure Synapse Analytics para pipelines de integração e análise de dados, o Power Apps para o desenvolvimento intuitivo de aplicações com OpenAI, Python para soluções orientadas por IA usando as APIs do OpenAI, e o Azure AI Foundry para o desenvolvimento de modelos com engenharia de prompt. Os módulos de somente leitura cobrem conceitos avançados de IA, ajuste fino, hiperparâmetros e um glossário, fornecendo conhecimento fundamental. Os participantes adquirem habilidades práticas para alavancar o OpenAI de forma eficaz em várias aplicações dentro dos ambientes do Azure.
 
 ## Diagrama de Arquitetura
 
@@ -52,28 +53,28 @@ Estes laboratórios utilizam o Azure Synapse para integração de dados e pipeli
 A arquitetura deste laboratório envolve vários componentes principais:
 
 - **Conta de Armazenamento:** Fornece uma solução de armazenamento em nuvem segura e escalável para armazenar objetos de dados, como arquivos, blobs e dados não estruturados.
-- **Synapse Workspace:** O Azure Synapse Analytics é um serviço de análise integrado que combina recursos de big data e data warehouse. O workspace permite a colaboração perfeita entre engenheiros de dados, cientistas de dados e analistas.
+- **Synapse Workspace:** O Azure Synapse Analytics é um serviço de análise integrado que combina recursos de big data e data warehousing. O workspace permite a colaboração perfeita entre engenheiros de dados, cientistas de dados e analistas.
 - **Azure Open AI Service:** Fornece acesso aos poderosos modelos de IA do OpenAI por meio do Azure, permitindo a integração com aplicativos para processamento de linguagem natural, geração de texto e muito mais.
-- **Microsoft Power Apps:** Uma plataforma de baixo código que permite aos usuários criar aplicativos de negócios personalizados sem amplo conhecimento de codificação.
-- **Engenharia de Prompts:** Envolve a criação de prompts ou consultas específicas para obter as respostas desejadas dos modelos de IA, influenciando a saída e o comportamento dos sistemas de IA.
+- **Microsoft Power Apps:** Uma plataforma *low-code* que permite aos usuários criar aplicações de negócios personalizadas sem conhecimento extensivo de programação.
+- **Engenharia de Prompts:** Envolve a criação de prompts ou consultas específicas para obter as respostas desejadas dos modelos de IA, influenciando a resultado e o comportamento dos sistemas de IA.
 
 ## Começando com o laboratório
 
-Bem-vindo ao Workshop "Use o Azure Open AI como um profissional para criar aplicativos de IA poderosos"! Preparamos um ambiente perfeito para você explorar e aprender sobre os serviços do Azure. Vamos começar aproveitando ao máximo essa experiência:
+Bem-vindo ao Workshop "Use o Azure OpenAI como um Profissional para Criar Aplicações de IA Poderosas"! Preparamos um ambiente perfeito para você possa explorar e aprender sobre os serviços do Azure. Vamos começar aproveitando ao máximo essa experiência:
 
-## Acessando seu ambiente de laboratório
+## Acessando o ambiente do seu laboratório
 
-Quando estiver pronto para começar, sua máquina virtual e o guia de laboratório estarão ao seu alcance no seu navegador.
+Quando estiver pronto para começar, sua máquina virtual e o guia de laboratório estarão ao seu alcance no seu navegador web.
 
    ![](media/30-7-25-g1.png "Lab Environment")
 
 ### Máquina Virtual e Guia de Laboratório
 
-Sua máquina virtual é sua força motriz durante todo o workshop. O guia de laboratório é o seu roteiro para o sucesso.
+Sua máquina virtual é sua principal ferramenta de trabalho durante todo o workshop. O guia do laboratório é o seu roteiro para o sucesso.
 
 ## Explorando os Recursos do Seu Laboratório
 
-Para entender melhor os recursos e credenciais do seu laboratório, navegue até a aba **Ambiente**.
+Para entender melhor os recursos e as credenciais do seu laboratório, navegue até a aba **Ambiente**.
 
    ![](media/30-7-25-g2.png "Lab Environment")
 
@@ -89,31 +90,31 @@ Sinta-se à vontade para **iniciar, parar** ou **reiniciar** sua máquina virtua
 
    ![](media/res-1.png)
 
-## Guia de Laboratório Ampliar/Reduzir
+## Ampliar/Reduzir no Guia do Laboratório
 
 Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 100%** localizado ao lado do cronômetro no ambiente do laboratório.
 
    ![](media/30-7-25-g9.png)
 
-## Efetue login no Portal do Azure
+## Vamos Começar com o Portal do Azure
 
-1. Na JumpVM, clique no atalho do **Azure Portal** na área de trabalho.
+1. Na LabVM (Máquina Virtual do Laboratório), clique no atalho do **Azure Portal** na área de trabalho.
 
    ![](media/30-7-25-g6.png)
 
 1. Na aba **Entrar no Microsoft Azure**, você verá uma tela de login. Insira o seguinte e-mail/nome de usuário e clique em **Avançar**.
 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   * E-mail/Nome do Usuário: <inject key="AzureAdUserEmail"></inject>
    
      ![](media/30-7-25-g7.png)
      
-1. Agora digite a seguinte senha e clique em **Entrar**.
+1. Agora, digite a seguinte senha e clique em **Entrar**.
 
-   * Password: <inject key="AzureAdUserPassword"></inject>
+   * Inserir a Senha: <inject key="AzureAdUserPassword"></inject>
    
      ![](media/30-7-25-g8.png)
      
-1. Se você vir a janela pop-up **Permanecer conectado?**, clique em **Não**
+1. Se aparecer o pop-up **Continuar conectado?**, clique em **Não**
 
    ![](media/stay-signed-in.png "Lab Environment")
 
@@ -121,7 +122,7 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 
 
     ![](media/30-7-25-g3.png)
    
-1. Agora você verá o Painel do Portal do Azure. Clique em **Grupos de recursos** no painel Navegar para ver os grupos de recursos.
+1. Agora você verá o Dashboard do Portal do Azure. Clique em **Grupos de recursos** no painel de Navegação para ver os grupos de recursos.
 
    ![](media/18-10-24(6).png "Lab Environment")
 
@@ -143,4 +144,4 @@ Agora, clique em **Próximo** no canto inferior direito para passar para a próx
 
  ![](media/30-7-25-g5.png)
 
-### Feliz aprendizado!!
+### Bons Estudos!!

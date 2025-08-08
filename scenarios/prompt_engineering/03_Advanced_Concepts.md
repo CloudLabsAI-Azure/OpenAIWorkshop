@@ -2,215 +2,214 @@
 
 ### Duração estimada: 30 Minutos
 
-Este exercício oferece conhecimento teórico aprofundado e conhecimento prático avançado relacionado ao OpenAI e suas aplicações. Abrange a introdução à engenharia de promoção, seus casos de uso e vários tipos de prompts que podem ser implementados para alcançar os resultados desejados.
+Este exercício fornece conhecimento teórico aprofundado e prático avançado relacionado à OpenAI e suas aplicações. Ele aborda a introdução à engenharia de prompt, seus casos de uso e os vários tipos de prompts que podem ser implementados para obter os resultados desejados.
 
 ## Tópicos
 
   - [Introdução](#introduction)
-  - [Zero-Shot Prompts](#zero-shot-prompts)
-  - [One-Shot Prompts](#one-shot-prompts)
-  - [Few-Shot Prompts](#few-shot-prompts)
+  - [Prompts Zero-Shot](#zero-shot-prompts)
+  - [Prompts One-Shot](#one-shot-prompts)
+  - [Prompts Few-Shot](#few-shot-prompts)
 
 ---
 
 ## Introdução
 
-Neste ponto, você já experimentou o poder e a flexibilidade dos prompts. Ajustar prompts para obter os resultados desejados é a ideia por trás da engenharia de prompts.
+Neste ponto, você já experimentou o poder e a flexibilidade dos prompts. Ajustar os prompts para obter os resultados desejados é a ideia por trás da engenharia de prompt.
 
-Agora, abordaremos alguns tópicos mais avançados para ajustar nossas saídas sem introduzir o ajuste fino de nossos modelos GPT.
+Agora, abordaremos alguns tópicos mais avançados para aprimorar nossas saídas sem a necessidade de realizar o ajuste fino (fine-tuning) de nossos modelos GPT.
 
 Vejamos um exemplo simples de classificação:
 
 *Prompt:*
 ```
-Classify the sentiment of the text below.
+Classifique o sentimento do texto abaixo.
 
-Text: I think this movie was terrible. What a waste of time.
+Texto: Eu achei este filme terrível. Que perda de tempo.
 ```
 
-*Output:*
+*Saída:*
 ```
-Negative
+Negativo
 ```
 
-A saída parece estar correta, mas poderíamos melhorá-la fornecendo mais informações ao modelo se quiséssemos uma classificação mais granular. Vamos fazer isso por meio de um prompt de Zero-Shot.
+A saída parece correta, mas poderíamos melhorá-la fornecendo mais informações ao modelo se quiséssemos uma classificação mais granular. Vamos fazer isso por meio de um prompt *Zero-Shot*.
 
 ---
 
-## Prompts de Tiro Zero
+## Prompts Zero-Shot
 
-Os LLMs do GPT são treinados com quantidades de dados tão grandes que, na maioria dos casos, são capazes de compreender instruções complexas para levar à saída desejada. Isso é chamado de prompt de Tiro Zero.
+Os LLMs GPT são treinados com volumes de dados tão grandes que, na maioria dos casos, são capazes de compreender instruções complexas para chegar ao resultado desejado. Isso é chamado de prompt *Zero-Shot*.
 
-Poderíamos refinar o exemplo abaixo sendo mais descritivos sobre nossas instruções.
+Poderíamos refinar o exemplo abaixo sendo mais descritivos em nossas instruções.
 
 *Prompt:*
 ```
-Classify the sentiment of the text below into very negative, negative, neutral, positive, and very positive.
+Classifique o sentimento do texto abaixo em muito negativo, negativo, neutro, positivo e muito positivo.
 
-Text: I think this movie was terrible. What a waste of time.
+Texto: Eu achei este filme terrível. Que perda de tempo.
 ```
 
-*Output:*
+*Saída:*
 ```
-Very Negative
+Muito Negativo
 ```
 
-Isso se chama Zero-Shot. Uma instrução precisa leva à saída desejada sem nenhum exemplo.
+Isso é chamado de *Zero-Shot*. Uma instrução precisa leva ao resultado desejado sem a necessidade de exemplos.
 
 ---
 
-## Prompts de Uma Disparada
+## Prompts One-Shot
 
-Às vezes, pode ser mais fácil fornecer um exemplo do modelo para aprender. Isso é chamado de prompt de "Uma Disparada".
+Às vezes, pode ser mais fácil fornecer um exemplo para o modelo aprender. Isso é chamado de prompt *One-Shot*.
 
-Primeiro, vamos fazer um prompt de Disparada Zero.
-
-*Prompt:*
-```
-Tell me in which city a university is located.
-
-University: UCLA
-```
-
-*Output:*
-```
-City: Los Angeles, California
-```
-
-Digamos que você queira ter uma saída específica para este prompt. Você pode fornecer um exemplo do modelo para aprender.
-
-Aqui está um Prompt Único que leva à mesma saída.
+Primeiro, vamos fazer um prompt *Zero-Shot*.
 
 *Prompt:*
 ```
-Tell me in which city a university is located.
+Diga-me em que cidade uma universidade está localizada.
 
-University: UCLA
-City: Los Angeles, CA, USA
-
-University: MIT
+Universidade: UCLA
 ```
 
-*Output:*
+*Saída:*
 ```
-City: Cambridge, MA, USA
+Cidade: Los Angeles, California
 ```
 
-Observe que você também poderia ter usado o prompt Zero-Shot para este exemplo. Mas os prompts One-Shot são mais flexíveis e podem ser usados para ajustar o modelo às suas necessidades.
+Digamos que você quisesse uma saída específica para este prompt. Você poderia fornecer um exemplo para o modelo aprender.
 
-Aqui está um equivalente de prompt Zero-Shot.
+Aqui está um Prompt *One-Shot* que leva ao mesmo resultado.
 
 *Prompt:*
 ```
-Tell me in which city a university is located. Provide the city name, state code and country, comma separated as one line.
+Diga-me em que cidade uma universidade está localizada.
 
-University: UCLA
+Universidade: UCLA
+Cidade: Los Angeles, CA, USA
+
+Universidade: MIT
 ```
 
-*Output:*
+*Saída:*
 ```
-City: Los Angeles, CA, USA
+Cidade: Cambridge, MA, USA
 ```
 
+Note que você também poderia ter usado o prompt *Zero-Shot* para este exemplo. Mas os prompts One-Shot são mais flexíveis e podem ser usados para ajustar o modelo às suas necessidades.
+
+Aqui está um Prompt *Zero-Shot* equivalente.
+
+*Prompt:*
+```
+Diga-me em que cidade uma universidade está localizada. Forneça o nome da cidade, o código do estado e o país, separados por vírgula em uma única linha.
+
+Universidade: UCLA
+```
+
+*Saída:*
+```
+Cidade: Los Angeles, CA, USA
+```
 ---
 
-## Prompts de Poucas Tentativas
+## Prompts Few-Shot
 
-Os prompts de poucas tentativas permitem que você forneça vários exemplos do modelo para aprendizado. Isso é útil quando você deseja ajustar a saída para cenários mais complexos, onde a saída pode variar com base na entrada. Também pode ser uma maneira mais simples de definir uma tarefa do que fornecer instruções detalhadas e em linguagem natural sobre o que você espera.
+Prompts *Few-shot* permitem que você forneça múltiplos exemplos para o modelo aprender. Isso é útil quando você deseja ajustar a saída para cenários mais complexos, onde o resultado pode variar com base na entrada. Também pode ser uma maneira mais simples de definir uma tarefa do que fornecer instruções detalhadas em linguagem natural sobre o que você espera.
 
-Aqui está um exemplo de extração de entidade que é adequado para prompts de poucas tentativas.
+Aqui está um exemplo de extração de entidades que se adapta bem a prompts *few-shot*.
 
-Vamos tentar primeiro com um prompt de Zero Tentativas.
+Vamos tentar primeiro com um prompt *Zero-Shot*.
 
 *Prompt:*
 ```
-Generate a JSON document that provides the name, position, and company from the text below.
+Gere um documento JSON que forneça o nome, a posição e a empresa a partir do texto abaixo.
 
-Text: Fred is a serial entrepreneur. Co-founder and CEO of Platform.sh, he previously co-founded Commerce Guys, a leading Drupal e-commerce provider. His mission is to guarantee that as we continue on an ambitious journey to profoundly transform how cloud computing is used and perceived, we keep our feet well on the ground, continuing the rapid growth we have enjoyed up until now.
+Texto: Fred é um empreendedor em série. Co-fundador e CEO da Platform.sh, ele anteriormente co-fundou a Commerce Guys, um dos principais provedores de comércio eletrônico Drupal. Sua missão é garantir que, enquanto continuamos em uma jornada ambiciosa para transformar profundamente a forma como a computação em nuvem é usada e percebida, mantenhamos os pés no chão, continuando o rápido crescimento que desfrutamos até agora.
 ```
 
-*Output:*
+*Saída:*
 ```
 {
-  "Name": "Fred",
-  "Position": "Co-founder and CEO",
-  "Company": "Platform.sh, Commerce Guys"
+  "Nome": "Fred",
+  "Cargo": "Cofundador e CEO",
+  "Companhia": "Platform.sh, Commerce Guys"
 }
 ```
 
-Não é exatamente o que esperamos (apenas 'Platform.sh' deve estar no campo 'Company'), e pode ser difícil expressar isso em um prompt Zero-Shot. 
+Não é exatamente o que esperávamos (apenas 'Platform.sh' deveria aparecer em 'Companhia'), e pode ser difícil expressar isso em um prompt *Zero-Shot*.
 
-Vamos tentar um prompt Few-Shot. Note que vamos deixar cair as instruções e apenas fornecer a saída desejada.
+Vamos tentar um prompt *Few-Shot*. Note que vamos omitir as instruções e apenas fornecer a saída desejada.
 
 *Prompt:*
 ```
-Text: Fred is a serial entrepreneur. Co-founder and CEO of Platform.sh, he previously co-founded Commerce Guys, a leading Drupal e-commerce provider. His mission is to guarantee that as we continue on an ambitious journey to profoundly transform how cloud computing is used and perceived, we keep our feet well on the ground, continuing the rapid growth we have enjoyed up until now.
+Texto: Fred é um empreendedor em série. Co-fundador e CEO da Platform.sh, ele anteriormente co-fundou a Commerce Guys, um dos principais provedores de comércio eletrônico Drupal. Sua missão é garantir que, enquanto seguimos em uma jornada ambiciosa para transformar profundamente a forma como a computação em nuvem é usada e percebida, mantenhamos os pés no chão, continuando o rápido crescimento que temos desfrutado até agora.
 
 JSON:
 {
-  "Name": "Fred",
-  "Position": "Co-founder and CEO",
-  "Company": "Platform.sh"
+  "Nome": "Fred",
+  "Posição": "Cofundador e CEO",
+  "Companhia": "Platform.sh"
 }
 
-Text: Microsoft (the word being a portmanteau of "microcomputer software") was founded by Bill Gates on April 4, 1975, to develop and sell BASIC interpreters for the Altair 8800. Steve Ballmer replaced Gates as CEO in 2000 and later envisioned a "devices and services" strategy.
+Texto: A Microsoft (nome que é uma junção das palavras "microcomputer" e "software") foi fundada por Bill Gates em 4 de abril de 1975, para desenvolver e vender interpretadores BASIC para o Altair 8800. Steve Ballmer substituiu Gates como CEO em 2000 e, posteriormente, idealizou uma estratégia de "dispositivos e serviços.
 
 JSON:
 ```
 
-*Output:*
+*Saída:*
 ```
 {
-  "Name": "Microsoft",
-  "Founder": "Bill Gates",
-  "Founded": "April 4, 1975",
+  "Nome": "Microsoft",
+  "Fundador": "Bill Gates",
+  "Fundação": "April 4, 1975",
   "CEO": "Steve Ballmer",
-  "Strategy": "Devices and Services"
+  "Estratégia": "Dispositivos e Serviços"
 }
 ```
 
-Observe que o output não é o que queremos aqui, mas não houve exemplos suficientes para entender se o objetivo é extrair entidades-chave ou apenas determinadas entidades.
+Note que a saída aqui não é o que queremos, mas não houve exemplos suficientes para entender se o objetivo é extrair entidades-chave ou apenas certas entidades.
 
-Usando few-shots esclarecerão isso.
+Um prompt com mais alguns exemplos esclarecerá isso.
 
 *Prompt:*
 ```
-Text: Fred is a serial entrepreneur. Co-founder and CEO of Platform.sh, he previously co-founded Commerce Guys, a leading Drupal e-commerce provider. His mission is to guarantee that as we continue on an ambitious journey to profoundly transform how cloud computing is used and perceived, we keep our feet well on the ground, continuing the rapid growth we have enjoyed up until now.
+Texto: Fred é um empreendedor em série. Cofundador e CEO da Platform.sh, ele cofundou anteriormente a Commerce Guys, uma das principais provedoras de e-commerce em Drupal. Sua missão é garantir que, à medida que continuamos nossa jornada ambiciosa para transformar profundamente a forma como a computação em nuvem é usada e percebida, mantenhamos os pés bem firmes no chão, dando continuidade ao rápido crescimento que tivemos até agora.
 
 JSON:
 {
-  "Name": "Fred",
-  "Position": "Co-founder and CEO",
-  "Company": "Platform.sh"
+  "Nome": "Fred",
+  "Posição": "Cofundador e CEO",
+  "Companhia": "Platform.sh"
 }
 
-Text: Microsoft (the word being a portmanteau of "microcomputer software") was founded by Bill Gates on April 4, 1975, to develop and sell BASIC interpreters for the Altair 8800. Steve Ballmer replaced Gates as CEO in 2000 and later envisioned a "devices and services" strategy.
+Texto: A Microsoft, cujo nome é uma junção das palavras "microcomputador" e "software", foi fundada por Bill Gates em 4 de abril de 1975 para desenvolver e vender interpretadores BASIC para o Altair 8800. Steve Ballmer substituiu Gates como CEO em 2000 e, mais tarde, idealizou a estratégia de "dispositivos e serviços.
 
 JSON:
 {
-  "Name": "Bill Gates",
-  "Position": "Co-founder and CEO",
-  "Company": "Microsoft"
+  "Nome": "Bill Gates",
+  "Posição": "Cofundador e CEO",
+  "Companhia": "Microsoft"
 }
 
-Text: Franck Riboud was born on November 7, 1955, in Lyon. He is the son of Antoine Riboud, the previous CEO, who transformed the former European glassmaker BSN Group into a leading player in the food industry. He is the CEO of Danone.
+Texto: Franck Riboud nasceu em 7 de novembro de 1955, em Lyon. Ele é filho de Antoine Riboud, o CEO anterior, que transformou a antiga fabricante europeia de vidros Grupo BSN em um dos principais players do setor de alimentos. Ele é o CEO da Danone.
 
 JSON:
 ```
 
-*Output:*
+*Saída:*
 ```
 {
-  "Name": "Franck Riboud",
-  "Position": "CEO",
-  "Company": "Danone"
+  "Nome": "Franck Riboud",
+  "Posição": "CEO",
+  "Companhia": "Danone"
 }
 ```
-Agora podemos ver que o modelo entende claramente que queremos extrair apenas três entidades do texto e nada mais.
+Agora podemos ver que o modelo compreende claramente que queremos extrair apenas três entidades do texto e nada mais.
 
 ## Resumo
 
-Neste exercício, você adquiriu conhecimento teórico aprofundado e conhecimento prático avançado relacionado ao OpenAI e a vários tipos de métodos de engenharia de prompt.
+Neste exercício, você adquiriu conhecimento teórico aprofundado e prático avançado relacionado à OpenAI e a vários métodos de engenharia de prompt.
 
 ### Clique em Próximo >> para prosseguir com o próximo exercício.
 
