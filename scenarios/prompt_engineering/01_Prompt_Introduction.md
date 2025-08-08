@@ -1,4 +1,4 @@
-# Exercício 4a: Introdução à Engenharia de Prompt e ao portal Azure AI Foundry
+# Exercício 4a: Introdução à Engenharia de Prompt e ao Azure AI Foundry
 
 ### Duração estimada: 90 Minutos
 
