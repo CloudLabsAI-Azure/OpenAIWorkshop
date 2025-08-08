@@ -6,15 +6,15 @@ Este ejercicio se centra en la creación de una aplicación utilizando las funci
 
 1. Abra una nueva pestaña y navegue a [Power Apps](https://make.powerapps.com/). En la página **Bienvenido a Power Apps**, seleccione su **País/Región (1)** y haga clic en **Comenzar (2)**. 
 
-   ![](./images/welcome-1.png)
+   ![](./images/98.png)
     
 2. Seleccione **Aplicaciones (1)** en el panel de navegación izquierda, haga clic en el menú desplegable **Importar aplicación (2)** y seleccione **Desde paquete (.zip) (3)**. 
 
-    ![](./images/E2S2.png)
+    ![](./images/99.png)
 
 3. En la página **Importar paquete**, haga clic en **Cargar**
 
-    ![](./images/E2S3.png)
+    ![](./images/100.png)
 
 4. Navegue a `C:\labfile\OpenAIWorkshop-main\scenarios\powerapp_and_python\powerapp`. Seleccione la carpeta **OpenAI-Playground_20230302010547.zip (1)** y haga clic en **Abrir (2)**.
 
@@ -22,7 +22,7 @@ Este ejercicio se centra en la creación de una aplicación utilizando las funci
 
 5. Una vez cargado el archivo zip, en **Revisar el contenido del Paquete** para **OpenAI Playground**, haga clic en el icono de configuración debajo de **Acción**.
 
-     ![](./images/E2S5.png)
+     ![](./images/101.png)
 
 6. En el panel **Importar configuración**, seleccione **Crear como nueva (1)** del menú desplegable de **Configuración** y haga clic en **Guardar (2)**.
 
@@ -32,33 +32,33 @@ Este ejercicio se centra en la creación de una aplicación utilizando las funci
 
 8. A continuación, haga clic en **Importar** para importar el paquete al entorno de PowerApps.
 
-   ![](./images/E2S8.png)
+   ![](./images/102.png)
 
 9. Una vez que se complete la importación, vaya a **Aplicaciones (1)**, luego haga clic en el ícono `⋮` **(2)** junto a **OpenAI Playground** y seleccione **Editar (3)**.
 
-      ![](./images/E2S9.png)
+      ![](./images/103.png)
 
    >**Nota**: Si no puede ver la opción **OpenAI Playground**, por favor espere 5 minutos y, mientras tanto, intente actualizar la página.
 
 10. Observará que se han importado la aplicación de lienzo Power App y Power Automate Flow al espacio de trabajo.
 
-      ![](./images/E2S10.png)
+      ![](./images/104.png)
 
     > **Nota:** Si aparece el mensaje **Bienvenido a Power Apps Studio**, haga clic en **Omitir**.
 
 11. Para navegar hacia atrás, haga clic en **Atrás (1)**, luego haga clic en **Salir (2)**.
 
-      ![](./images/E2S11.png)
+      ![](./images/105.png)
 
 12. En la pestaña **Flujos (1)**, seleccione el botón de opción junto a **Openaisummarization (2)**, luego haga clic en `...` **(3)** y seleccione **Activar (4)**.
 
-      ![](./images/E2S12.png)
+      ![](./images/106.png)
 
       >**Nota:** Si aparece el mensaje **Bienvenido a Power Automate**, haga clic en **Comenzar**.
 
 13. Haga clic en **Editar** para el flujo **Openaisummarization**.
 
-      ![](./images/E2S13.png)
+      ![](./images/107.png)
 
 14. En el paso HTTP del flujo, actualice lo siguiente:
 
@@ -68,7 +68,7 @@ Este ejercicio se centra en la creación de una aplicación utilizando las funci
     - Reemplace `YOUR_API_KEY` con **<inject key="OpenAIKey" enableCopy="true"/> (4)**
       Luego, haga clic en **Guardar**.    
 
-      ![](./images/E2S14.png)
+      ![](./images/108.png)
    
 15. En la página **Aplicaciones (1)**, seleccione el botón de opción junto a la aplicación **OpenAI Playground** y haga clic en el botón **Play (2)** para ejecutarla.
 
@@ -88,4 +88,4 @@ En este ejercicio, ha integrado correctamente las APIs de OpenAI con Power Apps 
 
 ### Ha completado el ejercicio correctamente. Haga clic en **Siguiente >>** para continuar con el siguiente ejercicio.
 
-![](./images/next-page.png)
+![](./images/109.png)

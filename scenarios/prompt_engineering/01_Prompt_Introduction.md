@@ -35,25 +35,25 @@ El área de juegos de Chat puede agregar ejemplos few-shot. El término few-shot
 En la configuración del Asistente, puede proporcionar algunos ejemplos few-shot de cuál puede ser la entrada del usuario y cuál debería ser la respuesta del asistente. El asistente intenta imitar las respuestas que incluye aquí con respecto al tono, las reglas y el formato que haya definido en el mensaje de su sistema.
 Sigamos adelante y lancemos el área de juegos de Azure AI Foundry para aprender sobre ingeniería de prompts.
 
-1. En el **Portal de Azure**, busque **OpenAI** y seleccione **Azure OpenAI**.
+1. En el **Portal de Azure**, busque **OpenAI (1)** y seleccione **Azure OpenAI (2)**.
 
-   ![](../natural_language_query/images/E4S1.png)
+   ![](../natural_language_query/images/129.png)
 
 1. En la hoja **AI Foundry | Azure OpenAI**, seleccione **openai-<inject key="DeploymentID" enableCopy="false"/>**
 
-   ![](../natural_language_query/images/E4S2.png)
+   ![](../natural_language_query/images/130.png)
 
 1. En el panel de recursos Azure OpenAI, haga clic en **Ir al portal de Azure AI Foundry** para navegar al **portal de Azure AI Foundry**.
 
-   ![](../natural_language_query/images/E4S3.png)
+   ![](../natural_language_query/images/131.png)
 
 1. En el servicio **Azure AI Foundry | Azure OpenAI**, haga clic en **Chat** en la sección **Patios de juegos** del menú de la izquierda.
 
-    ![](../natural_language_query/images/E4S4.png)
+    ![](../natural_language_query/images/132.png)
 
 1. En la sección **Chat (1)**, realice cualquier consulta de la **sesión de chat** **(2)** para obtener la respuesta de openai.
  
-    ![](../natural_language_query/images/E4S5.png)
+    ![](../natural_language_query/images/133.png)
 
    > **Nota:** Es posible que el chat no responda con el resultado exacto que se muestra en las capturas de pantalla. A continuación, se muestran ejemplos de lo que probablemente verá en este ejercicio, pero la respuesta puede variar.
 
