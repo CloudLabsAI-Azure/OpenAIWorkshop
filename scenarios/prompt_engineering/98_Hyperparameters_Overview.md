@@ -1,4 +1,4 @@
-# Exercício 4D: Visão geral básica dos hiperparâmetros do Serviço Azure OpenAI (Somente Leitura)
+# Exercício 4D: Visão Geral Básica dos Hiperparâmetros do Serviço Azure OpenAI (Somente Leitura)
 
 ### Duração estimada: 20 Minutos
 
