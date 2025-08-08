@@ -1,52 +1,63 @@
-# Exercício 4E: Glossário (somente leitura)
+# Exercício 4E: Glossário (Somente Leitura)
 
 ### Duração estimada: 20 Minutos
 
-Os Large Language Models (LLMs) do Azure OpenAI, como o GPT-4, se destacam em tarefas de linguagem natural, gerando texto coerente. A engenharia de prompts otimiza os prompts de entrada para influenciar as saídas do modelo de forma eficaz para as respostas desejadas.
+Modelos de Linguagem Grandes (LLMs) do Azure OpenAI, como o GPT-4, se destacam em tarefas de linguagem natural ao gerar textos coerentes. A engenharia de prompt otimiza os prompts de entrada para influenciar efetivamente as saídas do modelo e obter as respostas desejadas.
 
-*language model (LM)*
+*Modelo de Linguagem (LM)*
 ```
-A probability distribution over sequences of words
-```
-
-*large language model (LLM)*
-```
-A large language model (LLM) is a type of machine learning model that can perform a variety of 
-natural language processing (NLP) tasks, including generating and classifying text, answering 
-questions in a conversational manner and translating text from one language to another.
-
-The label "large" refers to the number of values (parameters) the model can change autonomously as it learns.
+Uma distribuição de probabilidade sobre sequências de palavras.
 ```
 
-*natural language processing (NLP)*
+*Modelo de Linguagem Grande (LLM)*
 ```
-Natural language processing (NLP) is the ability of a computer program to understand spoken and written human language.
+Um modelo de linguagem grande (LLM) é um tipo de modelo de aprendizado de máquina que pode realizar uma variedade de tarefas de processamento de linguagem natural (NLP), incluindo gerar e classificar textos, responder a perguntas de forma conversacional e traduzir textos de um idioma para outro.
 
-NLP programming automates the translation process between computers and humans by manipulating unstructured data (words)
-in the context of a specific task (conversation). An important goal of NLP is to help the computer comprehend 
-the intent -- as well as the meaning -- of a human being's written or spoken words.
+O rótulo "grande" refere-se ao número de valores (parâmetros) que o modelo pode alterar autonomamente à medida que aprende.
 ```
 
-*prompt*
+*Processamento de Linguagem Natural (NLP)*
 ```
-A piece of text that is used to initiate or provide context for the generation of output
-This could be an input sentence, question, or topic to generate a response from the language model.
+Processamento de linguagem natural (NLP) é a capacidade de um programa de computador de entender a linguagem humana, tanto falada quanto escrita.
+
+A programação com NLP automatiza o processo de tradução entre computadores e humanos, manipulando dados não estruturados (palavras) no contexto de uma tarefa específica (conversação). Um objetivo importante da NLP é ajudar o computador a compreender a intenção — bem como o significado — das palavras escritas ou faladas de um ser humano.
 ```
 
-*prompt engineering*
+*Prompt*
 ```
-The discipline concerned with developing and optimizing prompts to efficiently use language models (LMs)
-and large language models (LLMs).
+Um trecho de texto usado para iniciar ou fornecer contexto para a geração de uma saída. Pode ser uma frase de entrada, pergunta ou tópico para gerar uma resposta do modelo de linguagem.
 ```
 
-*token(s)*
+*Engenharia de Prompt*
 ```
-The token is an abstraction that is defined by external rules to identify the unit of processing in an NLP task.
-A token may be a word, part of a word, or just characters like punctuation. (e.g. 'abc ', 'abc.', ' st', etc)
+A disciplina que se dedica a desenvolver e otimizar prompts para usar eficientemente modelos de linguagem (LMs) e modelos de linguagem grandes (LLMs).
+```
+
+*Token(s)*
+```
+O token é uma abstração definida por regras externas para identificar a unidade de processamento em uma tarefa de NLP. Um token pode ser uma palavra, parte de uma palavra ou apenas caracteres, como pontuação (por exemplo: abc , abc.,  st, etc.).
 ```
 
 ## Resumo
 
-Neste exercício, você se familiarizará com os modelos de linguagem de grande porte (LLM) do OpenAI, processamento de linguagem natural (NLP), prompt, engenharia de prompt e tokens.
+Neste exercício, você se familiarizou com modelos de linguagem grandes (LLM) da OpenAI, processamento de linguagem natural (NLP), prompt, engenharia de prompt e tokens.
 
 ### Você concluiu com sucesso o Laboratório Prático.
+
+Parabéns por concluir o laboratório prático **Use o Azure OpenAI como um Profissional para Criar Aplicativos de IA Poderosos**! Ao participar ativamente deste laboratório, você ganhou experiência prática na integração do Azure OpenAI em fluxos de trabalho de negócios, especialmente usando pipelines do Synapse, Power Apps e Python. Aqui está uma visão geral das principais habilidades que você desenvolveu:
+
+- **Criação de Pipelines no Synapse:** Agora você entende como orquestrar operações de dados e IA usando o Azure Synapse, permitindo fluxos de trabalho robustos e escaláveis para aplicações orientadas por IA.
+
+- **Desenvolvimento de Aplicações com Power Apps & Python:** Você praticou a criação de aplicações amigáveis que utilizam modelos de IA por meio do Power Apps para implementação rápida e do Python para personalização e automação mais aprofundadas.
+
+- **Engenharia de Prompt, Fine-Tuning e Ajuste de Hiperparâmetros:** O laboratório apresentou conceitos cruciais para otimizar os comportamentos da IA, adaptar modelos a casos de uso específicos e aumentar a eficácia das soluções do Azure OpenAI.
+
+- **Aplicação no Mundo Real:** Coletivamente, esses módulos formam uma base sólida para implantar soluções do Azure OpenAI para resolver problemas de negócios, desde a automação de tarefas até a criação de aplicações inteligentes.
+
+
+
+
+
+
+
+
