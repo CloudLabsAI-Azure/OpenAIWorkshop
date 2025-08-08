@@ -10,7 +10,7 @@ Este exercício foca na criação de um aplicativo utilizando as capacidades do 
      
 2. Selecione **Aplicativos (1)** no painel de navegação esquerdo, clique no menu suspenso **Importar Aplicativo (2)** e selecione **Do pacote (.zip) (3)**.
 
-    ![](./images/powerapps-import-2.png)
+    ![](./images/207.png)
 
 3. Na página **Importar pacote**, clique em **Upload**.
 

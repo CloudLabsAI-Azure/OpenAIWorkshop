@@ -132,7 +132,7 @@ Esta tarefa foca na ingestão de dados em uma Conta de Armazenamento do Azure (A
 1. Navegue até o grupo de recursos **openai-<inject key="DeploymentID" enableCopy="false"/>** e, em seguida, selecione sua Conta de Armazenamento com o sufixo azfunctions na lista de recursos.
 
     ![](images/30-7-25-l1-10.png)
-    
+
 1. No menu lateral esquerdo, localize na seção **Segurança + rede** a opção **Chaves de acesso (1)**. Em seguida, selecione **Mostrar (2)** para revelar o valor da cadeia de conexão. Agora, clique no botão de cópia ao lado da primeira **cadeia de conexão (3)**. Por fim, cole o valor copiado em um editor de texto, como o Bloco de Notas, para referência posterior.
 
    ![](images/30-7-25-l1-11.png)
@@ -156,7 +156,7 @@ Esta tarefa foca na ingestão de dados em uma Conta de Armazenamento do Azure (A
 
    ![](images/batch_file_upload-1-1.png)
 
-   ![](images/pro4-1.png)
+   ![](images/200.png)
 
 > **Parabéns** por completar a tarefa! Agora, é hora de validá-la. Aqui estão os passos:
 > - Se receber uma mensagem de sucesso, você pode prosseguir para a próxima tarefa.
@@ -206,11 +206,11 @@ Esta tarefa envolve a configuração de um Workspace do Azure Synapse para permi
 
 1. Assim que o recurso for implantado, clique em **Ir para o grupo de recursos**.
 
-    ![](images/image(5)-1.png)
+    ![](images/201.png)
 
 1. Navegue até o espaço de trabalho do Synapse que você criou, na página **Visão geral (1)**, clique em **Abrir (2)** em Abrir Synapse Studio para navegar até o Azure Synapse Studio.
 
-   ![](images/open-synapse-studio-1.png)
+   ![](images/202.png)
 
 1. No Azure Synapse Studio, navegue até **Manage (1) > SQL pools (2)** e clique em **+Novo (3)**
 
@@ -234,7 +234,7 @@ Esta tarefa envolve a configuração de um Workspace do Azure Synapse para permi
 
 1. Agora navegue de volta ao portal do Azure, em **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, na seção **Pools de análise**, selecione **Pools do Apache Spark(1)** e clique em **+ Novo (2).**
 
-     ![](images/30-7-25-l1-16.png)
+     ![](images/203.png)
 
 1. Na página Novo pool do Apache Spark, forneça os seguintes dados e clique em **Examinar + criar (6)**, depois clique na guia **Criar** para criar o pool do Apache Spark.
 
@@ -246,7 +246,7 @@ Esta tarefa envolve a configuração de um Workspace do Azure Synapse para permi
    
    - **Número de nós:** **3 (4)**
    
-      ![](images/image(22)-1.png)
+      ![](images/204.png)
 
 ### **B. Criar tabela SQL de Destino**
 
@@ -283,7 +283,7 @@ A seguir, precisaremos criar dois serviços vinculados (linked services): um par
 
 1. Clique novamente na seção **Manage (1)** do Synapse Studio e clique na opção **Linked services (2)** na seção **External connections**. Em seguida, clique em **+ Novo (3)** no canto superior esquerdo.
 
-      ![](images/30-7-25-l1-18.png)
+      ![](images/206.png)
    
 1. Comece criando o serviço vinculado para a fonte de dados — os arquivos JSON armazenados na conta de armazenamento ADLS Gen2 criada com o modelo inicial. Na barra de pesquisa que é aberta depois de clicar em Novo, procure **blob (1)**, selecione **Armazenamento de Blob do Azure (2)** conforme descrito abaixo e clique em **Continuar (3)**.
 
@@ -313,7 +313,7 @@ Ainda no Synapse Studio, vamos agora criar um **Fluxo de dados** para inserir os
 
 1. Retorne para a aba **Develop (1)**, clique no ícone **+ (2)**, e selecione **Fluxo de dados (3)**.
 
-      ![](images/synapse11-1_1.png)
+      ![](images/205.png)
    
 1. Assim que o editor do fluxo de dados abrir, clique em **Adicionar Origem**. Uma nova janela será aberta na parte inferior da tela. Selecione **+ Novo** na linha **Conjunto de Dados** deixando as outras opções como padrão.
 
