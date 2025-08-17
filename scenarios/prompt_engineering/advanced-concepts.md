@@ -204,4 +204,4 @@ JSON:
 }
 ```
 
-## You have successfully completed the lab.
+## You have successfully completed the lab, click on **Next** to continue.
