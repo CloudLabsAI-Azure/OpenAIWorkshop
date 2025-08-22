@@ -2,7 +2,7 @@
 
 ### Duração estimada: 20 Minutos
 
-Este exercício fornece conhecimento fundamental sobre hiperparâmetros no contexto do Serviço OpenAI do Azure. Os participantes entenderão como os hiperparâmetros influenciam o treinamento e o desempenho do modelo, e aprenderão técnicas básicas para ajustar esses parâmetros para alcançar melhores resultados.
+Este exercício fornece conhecimento fundamental sobre hiperparâmetros no contexto do Serviço Azure OpenAI. Os participantes entenderão como os hiperparâmetros influenciam o treinamento e o desempenho do modelo, e aprenderão técnicas básicas para ajustar esses parâmetros para alcançar melhores resultados.
 
 ## Nota rápida sobre o ajuste de hiperparâmetros
 
@@ -53,7 +53,7 @@ Faz com que as respostas parem em um ponto desejado, como o final de uma frase o
 
 ## Resumo
 
-Neste exercício, você aprendeu sobre os hiperparâmetros do Serviço OpenAI do Azure e suas funcionalidades.
+Neste exercício, você aprendeu sobre os hiperparâmetros do Serviço Azure OpenAI e suas funcionalidades.
 
 ### Clique em Próximo >> para prosseguir com o próximo exercício.
 
