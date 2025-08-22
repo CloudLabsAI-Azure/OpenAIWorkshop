@@ -67,7 +67,7 @@ Hospedar um modelo de ajuste fino também tem seu custo, mas para volumes médio
 
 [Ajuste Fino do OpenAI](https://platform.openai.com/docs/guides/fine-tuning)
 
-[Ajuste Fino no Serviço OpenAI do Azure](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/fine-tuning?pivots=programming-language-studio)
+[Ajuste Fino no Serviço Azure OpenAI](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/fine-tuning?pivots=programming-language-studio)
 
 ## Resumo
 
