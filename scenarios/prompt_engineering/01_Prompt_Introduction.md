@@ -36,7 +36,7 @@ Na configuração do Assistente, você pode fornecer exemplos *few-shot* de qual
 
 Vamos em frente e iniciar o playground do Azure AI Foundry para aprender sobre engenharia de prompt.
 
-1. No **Portal de Azure**, pesquise por **OpenAI do Azure** e selecione **OpenAI do Azure**.
+1. No **Portal de Azure**, pesquise por **Azure OpenAI** e selecione **Azure OpenAI**.
 
    ![](../natural_language_query/images/30-7-25-l4-1.png)
 
@@ -44,11 +44,11 @@ Vamos em frente e iniciar o playground do Azure AI Foundry para aprender sobre e
 
     ![](../natural_language_query/images/30-7-25-l4-2.png)
 
-1. No painel de recursos do OpenAI do Azure, clique em **Go to Azure AI Foundry portal** o que o levará para o **portal do Azure AI Foundry**.
+1. No painel de recursos do Azure OpenAI, clique em **Go to Azure AI Foundry portal** o que o levará para o **portal do Azure AI Foundry**.
 
    ![](../natural_language_query/images/30-7-25-l4-3.png)
 
-1. No **Azure AI Foundry | Serviço OpenAI do Azure**, clique em **Chat** em **Playgrounds** no menu à esquerda.
+1. No **Azure AI Foundry | Serviço Azure OpenAI**, clique em **Chat** em **Playgrounds** no menu à esquerda.
 
     ![](../natural_language_query/images/2025-05-09(2).png)
 
