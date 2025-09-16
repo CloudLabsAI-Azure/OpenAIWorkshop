@@ -215,15 +215,17 @@ This task involves setting up an Azure Synapse Workspace to enable data integrat
 
    ![](images/image(5).png)
 
-8. On the **Overview (1)** page of the Synapse workspace you created, click on **Open (2)** under **Open Synapse Studio** to launch Azure Synapse Studio.
+8. Select the synapse workspace
+
+9. On the **Overview (1)** page of the Synapse workspace you created, click on **Open (2)** under **Open Synapse Studio** to launch Azure Synapse Studio.
    
    ![](images/E1T2AS8.png)
 
-9. In Azure Synapse Studio, go to the **Manage (1)** section, select **SQL pools (2)**, and then click on **+ New (3)** to create a new SQL pool.
+10. In Azure Synapse Studio, go to the **Manage (1)** section, select **SQL pools (2)**, and then click on **+ New (3)** to create a new SQL pool.
 
     ![](images/E1T2AS9.png)
 
-10. On the **Basics** tab of the New dedicated SQL pool, provide the following details:
+11. On the **Basics** tab of the New dedicated SQL pool, provide the following details:
 
     - Dedicated SQL pool name: **openaisql01**
 
@@ -233,17 +235,17 @@ This task involves setting up an Azure Synapse Workspace to enable data integrat
    
       ![](images/E1T2AS10.png)
       
-11. On **Review + create** page, click on **Create** and wait for the deployment to complete.
+12. On **Review + create** page, click on **Create** and wait for the deployment to complete.
 
     ![](images/E1T2AS11.png)
 
     > **Note:** The deployment might take approximately 10 minutes to complete.
 
-12. Now navigate back to **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from the left pane under **Analytics pools**, and click on **+ New (2)** to create a new Spark pool.
+13. Now navigate back to **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from the left pane under **Analytics pools**, and click on **+ New (2)** to create a new Spark pool.
 
     ![](images/E1T2AS12.png)  
 
-13. On the **New Apache Spark pool** page, provide the following details and click on **Review + create (6)**, then click on **Create** tab to create the Apache Spark pool.
+14. On the **New Apache Spark pool** page, provide the following details and click on **Review + create (6)**, then click on **Create** tab to create the Apache Spark pool.
 
     - Apache Spark pool name: **openaisparkpool (1)**
 
