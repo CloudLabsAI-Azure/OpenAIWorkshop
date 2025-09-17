@@ -52,7 +52,7 @@ This task focuses on ingesting data into an Azure Storage Account. It involves u
 
 6. Enter the name as **blob (1)** and click **OK (2)**.
 
-    ![](images/blob1.png)
+    ![](../media/blob1.png)
 
 7. Select the **blob (1)** File share, and click on **Select (2)**.
 
@@ -213,7 +213,7 @@ This task involves setting up an Azure Synapse Workspace to enable data integrat
 
    ![](images/image(4).png)
 
-   ![](images/createsyn.png)
+   ![](../media/createsyn.png)
 
    > **Note:** The deployment might take approximately 5 minutes to complete.
    
@@ -223,7 +223,7 @@ This task involves setting up an Azure Synapse Workspace to enable data integrat
 
 8. Select the newly create **Synpase workspace**.
 
-   ![](images/synwork.png)
+   ![](../media/synwork.png)
 
 9. Select the **Overview (1)** page of the Synapse workspace you created, click on **Open (2)** under **Open Synapse Studio** to launch Azure Synapse Studio.
    
@@ -346,7 +346,7 @@ While still within Synapse Studio, we will now create a **Data flow** to ingest 
    
 1. Once the data flow editor opens, click **Add Source**. A panel will appear at the bottom. Select **+ New** on the **Dataset** row, leaving other settings as default.
 
-      ![](images/addsource.png)
+      ![](../media/addsource.png)
 
       ![](images/E1T2DS2.png)
 
@@ -368,9 +368,9 @@ While still within Synapse Studio, we will now create a **Data flow** to ingest 
 
 1. **Enable** the **Data flow debug** toggle from the top menu bar and click **OK** when the pop-up appears.
 
-      ![](images/enabledataflow.png)
+      ![](../media/enabledataflow.png)
 
-      ![](images/dataflowok.png)
+      ![](../media/dataflowok.png)
 
       >**Note:** It may take a minute or two for the debug session to initialize.
 
