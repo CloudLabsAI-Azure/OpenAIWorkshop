@@ -24,7 +24,7 @@ This Exercise focuses on creating an application using OpenAI capabilities integ
 
      ![](./images/E2S5.png)
 
-6. In the **Import setup** pane, choose **Create as new (1)** from the **Setup** dropdown and click **Save (2)**.
+6. In the **Import setup** pane, choose **Create as new (1)** from the **Setup** drop-down and click **Save (2)**.
 
       ![](./images/import-setup-1.png)
 
@@ -34,7 +34,7 @@ This Exercise focuses on creating an application using OpenAI capabilities integ
 
    ![](./images/E2S8.png)
 
-9. Once the import completes, go to **Apps (1)**, click on the `⋮ (2)` icon next to **OpenAI Playground**, and select **Edit (3)**.
+9. Once the import completes, go to **Apps (1)**, click on the **⋮ (2)** icon next to **OpenAI Playground**, and select **Edit (3)**.
 
    ![](./images/E2S9.png) 
 
@@ -46,11 +46,11 @@ This Exercise focuses on creating an application using OpenAI capabilities integ
 
     > **Note:** If prompted with **Welcome to Power Apps Studio**, click **Skip**.
 
-12. To navigate back, click on **Back (1)**, then click **Leave (2)**.
+12. To navigate back, click on **Back (1)**, then click **Leave (2)** on the pop-up.
 
       ![](./images/E2S11.png)
 
-13. On the **Flows (1)** tab, select the radio button next to **Openaisummarization (2)**, then click on `... (3)` and choose **Turn on (4)**.
+13. On the **Flows (1)** tab, select the radio button next to **Openaisummarization (2)**, then click on **... (3)** and choose **Turn on (4)**.
 
       ![](./images/E2S12.png)
 
@@ -69,14 +69,22 @@ This Exercise focuses on creating an application using OpenAI capabilities integ
       Then, click **Save**.
 
       ![](./images/E2S14.png)
+
+      ![](./images/savepa.png)
    
 15. From the **Apps (1)** page, select the radio button next to the **OpenAI Playground** app and click the **Play (2)** button to run it.
 
      ![](./images/canves-play.png)
 
-16. If prompted to start a trial, click **Start a free trial**. On the **You need a Power Apps license to use this app** window, choose your region, then click **Start my trial** and wait 2-3 minutes.
-    
-17. In the canvas app, click the **Summary (1)** button, verify the **auto-filled text (2)**, then click **Submit (3)** to view the generated **Summary (4)**.
+16. If prompted to start a trial, click **Start a free trial**. 
+
+      ![](./images/startfreetrial.png)
+
+17. Choose your **Region (1)**, then click **Start my trial** and wait 2-3 minutes.
+
+      ![](./images/rs.png)    
+
+18. In the canvas app, click the **Summary (1)** button, verify the **auto-filled text (2)**, then click **Submit (3)** to view the generated **Summary (4)**.
 
      ![](./images/E2S17.png)
 
