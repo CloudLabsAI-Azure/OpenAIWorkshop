@@ -8,7 +8,9 @@ In this Exercise, participants will develop an application using OpenAI's APIs a
 
      ![](images/azure-syn.png)
 
-2. In the **Azure Synapse Analytics** window, select **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>**. 
+1. In the **Azure Synapse Analytics** window, select **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>**. 
+
+    ![media](../media/synworkspace.png)
 
 1. On the **Overview** page of the Synapse workspace you created, click on **Open** under **Open Synapse Studio** to launch Azure Synapse Studio.
      
@@ -26,7 +28,7 @@ In this Exercise, participants will develop an application using OpenAI's APIs a
 
     ![](images/E3S6.png)
 
-1. From the **Attach to** dropdown, select **openaisparkpool**.
+1. From the **Attach to** drop-down, select **openaisparkpool**.
 
     ![](images/E3S7.png)
 

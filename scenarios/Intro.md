@@ -10,25 +10,25 @@ These hands-on labs provide comprehensive training on integrating OpenAI capabil
 
 This lab is designed to equip participants with hands-on experience in using Azure OpenAI to build powerful AI applications. By completing this lab, participants will learn to:
 
-1. **Build an Open AI Pipeline to Ingest Batch Data, Perform Intelligent Operations, and Analyze in Synapse:** Develop a pipeline to integrate OpenAI for batch data ingestion, intelligent operations, and analysis within Azure Synapse. Participants will create a robust pipeline for processing and analyzing batch data with OpenAI capabilities integrated into Azure Synapse.
+- **Build an Open AI Pipeline to Ingest Batch Data, Perform Intelligent Operations, and Analyze in Synapse:** Develop a pipeline to integrate OpenAI for batch data ingestion, intelligent operations, and analysis within Azure Synapse. Participants will create a robust pipeline for processing and analyzing batch data with OpenAI capabilities integrated into Azure Synapse.
    
-1. **Build an Open AI application with Power App:** Create an application using Power Apps that integrates OpenAI capabilities for tasks like natural language understanding or data processing. Participants will develop a functional business application using OpenAI features in Microsoft Power Apps, enhancing user interaction and automation.
+- **Build an Open AI application with Power App:** Create an application using Power Apps that integrates OpenAI capabilities for tasks like natural language understanding or data processing. Participants will develop a functional business application using OpenAI features in Microsoft Power Apps, enhancing user interaction and automation.
    
-1. **Build an Open AI application with Python:** Build applications using Python to leverage OpenAI's APIs for tasks such as language generation, sentiment analysis, or recommendation systems. Participants will construct a custom application leveraging Python and OpenAI APIs for advanced text generation and analysis.
+- **Build an Open AI application with Python:** Build applications using Python to leverage OpenAI's APIs for tasks such as language generation, sentiment analysis, or recommendation systems. Participants will construct a custom application leveraging Python and OpenAI APIs for advanced text generation and analysis.
 
-1. **Introduction to Prompt Engineering & Azure OpenAI Studio:** Learn techniques for crafting effective prompts and utilize Azure OpenAI Studio for developing and deploying AI models. Participants will learn how to optimize AI model responses through effective prompt engineering and utilize Azure OpenAI Studio for model development.
+- **Introduction to Prompt Engineering & Azure OpenAI Studio:** Learn techniques for crafting effective prompts and utilize Azure OpenAI Studio for developing and deploying AI models. Participants will learn how to optimize AI model responses through effective prompt engineering and utilize Azure OpenAI Studio for model development.
 
 ## Explore
 
 Explore and understand the read-only exercises to gain additional knowledge on Azure OpenAI concepts:
 
-1. **Advanced Concepts (Read-Only):** Explore advanced theoretical knowledge and practical applications related to OpenAI technologies and their implementations. Participants will gain theoretical insights into advanced AI concepts, enriching their understanding of AI technologies.
+- **Advanced Concepts (Read-Only):** Explore advanced theoretical knowledge and practical applications related to OpenAI technologies and their implementations. Participants will gain theoretical insights into advanced AI concepts, enriching their understanding of AI technologies.
 
-1. **Fine Tuning (Read-Only):** Understand and practice fine-tuning OpenAI models to improve performance on specific tasks or datasets. Participants will understand the principles and techniques of fine-tuning AI models to improve performance for specific tasks.
+- **Fine Tuning (Read-Only):** Understand and practice fine-tuning OpenAI models to improve performance on specific tasks or datasets. Participants will understand the principles and techniques of fine-tuning AI models to improve performance for specific tasks.
 
-1. **Basic Overview of Azure OpenAI Service Hyperparameters (Read-Only):** Gain foundational understanding of hyperparameters in Azure OpenAI Service and their impact on model training and performance. Participants will acquire knowledge about hyperparameters in Azure OpenAI Service, crucial for model configuration and optimization.
+- **Basic Overview of Azure OpenAI Service Hyperparameters (Read-Only):** Gain foundational understanding of hyperparameters in Azure OpenAI Service and their impact on model training and performance. Participants will acquire knowledge about hyperparameters in Azure OpenAI Service, crucial for model configuration and optimization.
 
-1. **Glossary (Read-Only):** Access definitions and explanations of key terms and concepts essential for understanding OpenAI and Azure OpenAI Service. Participants will familiarize themselves with key AI and Azure terminologies, enhancing their comprehension of related concepts and technologies.
+- **Glossary (Read-Only):** Access definitions and explanations of key terms and concepts essential for understanding OpenAI and Azure OpenAI Service. Participants will familiarize themselves with key AI and Azure terminologies, enhancing their comprehension of related concepts and technologies.
 
 ## Prerequisites
 
@@ -56,6 +56,8 @@ The architecture for this lab involves several key components:
 - **Azure Open AI Service:** Provides access to OpenAI's powerful AI models through Azure, enabling integration into applications for natural language processing, text generation, and more.
 - **Microsoft Power Apps:** A low-code platform that allows users to build custom business applications without extensive coding knowledge.
 - **Prompt Engineering:** Involves crafting specific prompts or queries to elicit desired responses from AI models, influencing the output and behavior of AI systems.
+- **Python:** Python is used to integrate with Azure OpenAI Service through APIs for sending prompts and processing results.
+It also helps in data handling, automation, and building AI-powered applications.
 
 ## Getting started with the lab
  
@@ -63,7 +65,7 @@ Welcome to your Use Azure Open AI like a Pro to build powerful AI Applications W
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and lab **Guide** will be right at your fingertips within your web browser.
  
    ![](media/GSS1.png "Lab Environment")
 
@@ -75,13 +77,13 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-   ![](media/GSS2.png)
+   ![](media/updtenv.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](media/labguide-1-1.png)
+   ![](media/updatedsplit.png)
  
 ## Managing Your Virtual Machine
  
@@ -128,6 +130,32 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
     ![](media/GSS9.png "Resource groups")
 
 This hands-on lab aims to empower participants in leveraging OpenAI technologies within Azure environments, spanning data ingestion, application development, prompt engineering, model optimization, and theoretical AI concepts for comprehensive learning and application.
+
+## Steps to Proceed with MFA Setup if the Ask Later Option is Not Visible
+
+1. At the **"More information required"** prompt, select **Next**.
+
+1. On the **"Keep your account secure"** page, select **Next** twice.
+
+1. **Note:** If you don’t have the Microsoft Authenticator app installed on your mobile device:
+
+   - Open **Google Play Store** (Android) or **App Store** (iOS).
+   - Search for **Microsoft Authenticator** and tap **Install**.
+   - Open the **Microsoft Authenticator** app, select **Add account**, then choose **Work or school account**.
+
+1. A **QR code** will be displayed on your computer screen.
+
+1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
+
+1. After scanning, click **Next** to proceed.
+
+1. On your phone, enter the number shown on your computer screen in the Authenticator app and select **Next**.
+       
+1. If prompted to stay signed in, you can click **No**.
+
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+ 
+1. Now, click on the **Next** from the lower right corner to move to the next page.
 
 ## Support Contact
  

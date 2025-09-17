@@ -46,15 +46,19 @@ This task focuses on ingesting data into an Azure Storage Account. It involves u
 
       - openaistorage<inject key="DeploymentID" enableCopy="false"></inject>
     
-    - **File share:** Create a new file share **(4)**
+    - **File share:** Select **Create a file share (4)**
 
-      ![](images/10-06-2024(3).png)
+      ![](../media/10-06-2024(3).png)
 
-6. Enter the file share name as **blob (1)**, select **OK**, and click on **Select (2)**.
+6. Enter the name as **blob (1)** and click **OK (2)**.
+
+    ![](../media/blob1.png)
+
+7. Select the **blob (1)** File share, and click on **Select (2)**.
 
     ![](images/10-06-2024(4).png)
 
-7.  Once the storage account is created, you will be prompted with the Bash window, as shown in the screenshot below.
+8.  Once the storage account is created, you will be prompted with the Bash window, as shown in the screenshot below.
     
     ![](images/E1T1S7.png)
 
@@ -80,7 +84,7 @@ This task focuses on ingesting data into an Azure Storage Account. It involves u
 
       ![](images/E2T1BS2.png)
 
-1. Type **yes** and hit **enter** to accept the agreement, and then hit enter to install on the default path.
+1. Type **yes** and hit **enter** to accept the agreement, and then hit **enter** to install on the default path.
 
    ![](images/pro2.png)
 
@@ -138,7 +142,7 @@ This task focuses on ingesting data into an Azure Storage Account. It involves u
 
 1. Navigate to the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group, and then select your Storage Account with the `azfunctions` suffix from the list of resources.
 
-    ![](images/E2T1BS8.png)
+    ![](../media/E2T1BS8.png)
     
 1. Navigate to the **Access keys (1)** blade located under the **Security + networking** section. Next, select **Show (2)** to reveal the connection string value. Then, click the copy button next to the first **Connection string (3)**. Finally, paste the copied value into a text editor, such as Notepad, for later reference.
 
@@ -205,9 +209,11 @@ This task involves setting up an Azure Synapse Workspace to enable data integrat
 
    ![](images/image(3).png)
 
-6. On the **Networking** tab, make sure Managed virtual network is **Disable (1)** and **Allow connections from all IP addresses (2)** is checked, then click on **Review + create** and **Create** to deploy the resource.
+6. On the **Networking** tab, make sure Managed virtual network is **Disable (1)** and **Allow connections from all IP addresses (2)** is checked, then click on **Review + create** and then click on **Create** to deploy the resource.
 
    ![](images/image(4).png)
+
+   ![](../media/createsyn.png)
 
    > **Note:** The deployment might take approximately 5 minutes to complete.
    
@@ -215,35 +221,39 @@ This task involves setting up an Azure Synapse Workspace to enable data integrat
 
    ![](images/image(5).png)
 
-8. On the **Overview (1)** page of the Synapse workspace you created, click on **Open (2)** under **Open Synapse Studio** to launch Azure Synapse Studio.
+8. Select the newly create **Synpase workspace**.
+
+   ![](../media/synwork.png)
+
+9. Select the **Overview (1)** page of the Synapse workspace you created, click on **Open (2)** under **Open Synapse Studio** to launch Azure Synapse Studio.
    
    ![](images/E1T2AS8.png)
 
-9. In Azure Synapse Studio, go to the **Manage (1)** section, select **SQL pools (2)**, and then click on **+ New (3)** to create a new SQL pool.
+10. In Azure Synapse Studio, go to the **Manage (1)** section, select **SQL pools (2)**, and then click on **+ New (3)** to create a new SQL pool.
 
     ![](images/E1T2AS9.png)
 
-10. On the **Basics** tab of the New dedicated SQL pool, provide the following details:
+11. On the **Basics** tab of the New dedicated SQL pool, provide the following details:
 
-    - Dedicated SQL pool name: **openaisql01**
+    - Dedicated SQL pool name: **openaisql01 (1)**
 
-    - Performance level: Reduce it to **DW100c**
+    - Performance level: Reduce it to **DW100c (2)**
 
-    - Click on **Review + create**.
+    - Click on **Review + create (3)**.
    
       ![](images/E1T2AS10.png)
       
-11. On **Review + create** page, click on **Create** and wait for the deployment to complete.
+12. On **Review + create** page, click on **Create** and wait for the deployment to complete.
 
     ![](images/E1T2AS11.png)
 
     > **Note:** The deployment might take approximately 10 minutes to complete.
 
-12. Now navigate back to **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from the left pane under **Analytics pools**, and click on **+ New (2)** to create a new Spark pool.
+13. Now navigate back to **synapseworkspace<inject key="DeploymentID" enableCopy="false"></inject>**, select **Apache Spark pools (1)** from the left pane under **Analytics pools**, and click on **+ New (2)** to create a new Spark pool.
 
     ![](images/E1T2AS12.png)  
 
-13. On the **New Apache Spark pool** page, provide the following details and click on **Review + create (6)**, then click on **Create** tab to create the Apache Spark pool.
+14. On the **New Apache Spark pool** page, provide the following details and click on **Review + create (6)**, then click on **Create** tab to create the Apache Spark pool.
 
     - Apache Spark pool name: **openaisparkpool (1)**
 
@@ -323,7 +333,9 @@ We'll next need to create two linked services: one for our source (the JSON file
 1. After both linked services are created, click **Publish all** at the top of Synapse Studio and then click **Publish**.
 
       ![](images/publish-linked.png)
-   
+
+      ![](images/publish1.png)
+
 ### D. Create Synapse Data Flow
 
 While still within Synapse Studio, we will now create a **Data flow** to ingest JSON data and write it to the SQL database. This data flow will ingest the data, rename some columns, and write it to the target table.
@@ -333,6 +345,8 @@ While still within Synapse Studio, we will now create a **Data flow** to ingest 
       ![](images/synapse11.png)
    
 1. Once the data flow editor opens, click **Add Source**. A panel will appear at the bottom. Select **+ New** on the **Dataset** row, leaving other settings as default.
+
+      ![](../media/addsource.png)
 
       ![](images/E1T2DS2.png)
 
@@ -344,7 +358,7 @@ While still within Synapse Studio, we will now create a **Data flow** to ingest 
 
       ![](images/synapse14-1.png)
 
-1. Select the linked service named **openailinkedservice (1)** that was created earlier. Under **File path**, choose the directory **workshop-data / cleansed\_documents (2)** where the JSON files are stored, and click **OK**.
+1. Select the linked service named **openailinkedservice (1)** that was created earlier. Under **File path**, choose the directory **workshop-data / cleansed\_documents (2)** where the JSON files are stored, and click **OK (3)**.
 
       ![](images/synapse15.png)
    
@@ -352,7 +366,11 @@ While still within Synapse Studio, we will now create a **Data flow** to ingest 
 
       ![](images/E1T2DS6.png)   
 
-1. Enable the **Data flow debug** toggle from the top menu bar and click **OK** when the pop-up appears.
+1. **Enable** the **Data flow debug** toggle from the top menu bar and click **OK** when the pop-up appears.
+
+      ![](../media/enabledataflow.png)
+
+      ![](../media/dataflowok.png)
 
       >**Note:** It may take a minute or two for the debug session to initialize.
 
@@ -395,7 +413,7 @@ While still within Synapse Studio, we will now create a **Data flow** to ingest 
 
       ![](images/synapse20.png)
 
-1. Before we finish our work on the data flow, we should preview our data. Previewing our data reveals we only have 3 columns when we are expecting a total of 5. We have lost our Summary and Sentiment columns.
+1. Before we finish our work on the data flow,click on **Data preview** to preview our data. Previewing our data reveals we only have **3 columns** when we are expecting a total of 5. We have lost our Summary and Sentiment columns.
 
       ![](images/data-preview.png)
 
@@ -472,7 +490,7 @@ This task focuses on querying data stored in a SQL table within Azure Synapse. I
      ```
     ![](images/E1T3S3.png)
    
-4. Once executed, the query will display the sentiment analysis results. If you're using the sample files, you should see output similar to the example below **(6)**.
+4. Once executed, the query will display the sentiment analysis results. If you're using the sample files, you should see output similar to the example below.
 
     ![](images/E1T3S4.png)         
 
