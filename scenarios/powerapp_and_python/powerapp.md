@@ -70,7 +70,7 @@ This Exercise focuses on creating an application using OpenAI capabilities integ
 
       ![](./images/E2S14.png)
 
-      ![](./images/savepa.png)
+      ![](../media/savepa.png)
    
 15. From the **Apps (1)** page, select the radio button next to the **OpenAI Playground** app and click the **Play (2)** button to run it.
 
@@ -78,11 +78,11 @@ This Exercise focuses on creating an application using OpenAI capabilities integ
 
 16. If prompted to start a trial, click **Start a free trial**. 
 
-      ![](./images/startfreetrial.png)
+      ![](../media/startfreetrial.png)
 
-17. Choose your **Region (1)**, then click **Start my trial** and wait 2-3 minutes.
+17. Choose your **Region (1)**, then click on **Start my trial** and wait 2-3 minutes.
 
-      ![](./images/rs.png)    
+      ![](../media/rs.png)    
 
 18. In the canvas app, click the **Summary (1)** button, verify the **auto-filled text (2)**, then click **Submit (3)** to view the generated **Summary (4)**.
 
