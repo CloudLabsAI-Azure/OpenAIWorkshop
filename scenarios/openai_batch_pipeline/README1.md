@@ -48,7 +48,7 @@ This task focuses on ingesting data into an Azure Storage Account. It involves u
     
     - **File share:** Select **Create a file share (4)**
 
-      ![](images/10-06-2024(3).png)
+      ![](../media/10-06-2024(3).png)
 
 6. Enter the name as **blob (1)** and click **OK (2)**.
 
@@ -142,7 +142,7 @@ This task focuses on ingesting data into an Azure Storage Account. It involves u
 
 1. Navigate to the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group, and then select your Storage Account with the `azfunctions` suffix from the list of resources.
 
-    ![](images/E2T1BS8.png)
+    ![](../media/E2T1BS8.png)
     
 1. Navigate to the **Access keys (1)** blade located under the **Security + networking** section. Next, select **Show (2)** to reveal the connection string value. Then, click the copy button next to the first **Connection string (3)**. Finally, paste the copied value into a text editor, such as Notepad, for later reference.
 
