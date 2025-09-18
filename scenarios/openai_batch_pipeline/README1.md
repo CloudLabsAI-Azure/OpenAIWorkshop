@@ -205,9 +205,9 @@ This task involves setting up an Azure Synapse Workspace to enable data integrat
 
      ![](images/image(2).png)
 
-5. On the **Security** tab, ensure that the Authentication method is set to **Use both local and Microsoft Entra ID authentication** and click on **Next: Networking >**.
+5. On the **Security** tab, ensure that the Authentication method is set to **Use both local and Microsoft Entra ID authentication (1)** and click on **Next: Networking > (2)**.
 
-   ![](images/image(3).png)
+   ![](../media/image(3).png)
 
 6. On the **Networking** tab, make sure Managed virtual network is **Disable (1)** and **Allow connections from all IP addresses (2)** is checked, then click on **Review + create** and then click on **Create** to deploy the resource.
 
@@ -241,7 +241,7 @@ This task involves setting up an Azure Synapse Workspace to enable data integrat
 
     - Click on **Review + create (3)**.
    
-      ![](images/E1T2AS10.png)
+      ![](../media/E1T2AS10.png)
       
 12. On **Review + create** page, click on **Create** and wait for the deployment to complete.
 
@@ -269,9 +269,9 @@ This task involves setting up an Azure Synapse Workspace to enable data integrat
    
 ### B. Create Target SQL Table
 
-1. Navigate to **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** Synapse workspace from the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group. From the **Overview** tab, click on **Open** to launch the Synapse workspace.
+1. Navigate to **synapseworkspace<inject key="DeploymentID" enableCopy="false"/>** Synapse workspace from the **openai-<inject key="DeploymentID" enableCopy="false"/>** resource group. From the **Overview (1)** tab, click on **Open (2)** to launch the Synapse workspace.
 
-      ![](images/image(9).png)
+      ![](../media/image(9).png)
 
 1. Click into the **Develop (1)** section of Synapse Studio, then click the **+ (2)** icon in the top left corner and select **SQL script (3)**. This will open a new window with the SQL script editor.
 
@@ -360,7 +360,7 @@ While still within Synapse Studio, we will now create a **Data flow** to ingest 
 
 1. Select the linked service named **openailinkedservice (1)** that was created earlier. Under **File path**, choose the directory **workshop-data / cleansed\_documents (2)** where the JSON files are stored, and click **OK (3)**.
 
-      ![](images/synapse15.png)
+      ![](../media/synapse15.png)
    
 1. Go to the **Source options (1)** panel, expand **JSON settings (2)**, and set **Document form** to **Array of documents (3)**.
 
