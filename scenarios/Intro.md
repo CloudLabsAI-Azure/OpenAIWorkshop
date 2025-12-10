@@ -4,7 +4,7 @@
 
 ## Overview
 
-These hands-on labs provide comprehensive training on integrating OpenAI capabilities into various applications and environments. They cover building pipelines in Azure Synapse for batch data processing and intelligent operations, creating applications with Power Apps and Python that leverage OpenAI's APIs for tasks like natural language processing and data analysis, and exploring advanced topics such as prompt engineering and model fine-tuning using Azure OpenAI Studio. The read-only sections offer theoretical insights into advanced concepts, fine-tuning techniques, hyperparameters in Azure OpenAI Service, and a glossary for understanding key terms and concepts. Together, these labs aim to equip participants with the practical skills and theoretical knowledge necessary to effectively utilize OpenAI technologies across different platforms and applications.
+These hands-on labs provide comprehensive training on integrating OpenAI capabilities into various applications and environments. They cover building pipelines in Azure Synapse for batch data processing and intelligent operations, creating applications with Power Apps and Python that leverage OpenAI's APIs for tasks like natural language processing and data analysis, and exploring advanced topics such as prompt engineering and model fine-tuning using Azure OpenAI Foundry. The read-only sections offer theoretical insights into advanced concepts, fine-tuning techniques, hyperparameters in Azure OpenAI Service, and a glossary for understanding key terms and concepts. Together, these labs aim to equip participants with the practical skills and theoretical knowledge necessary to effectively utilize OpenAI technologies across different platforms and applications.
 
 ## Objective
 
@@ -16,7 +16,7 @@ This lab is designed to equip participants with hands-on experience in using Azu
    
 - **Build an Open AI application with Python:** Build applications using Python to leverage OpenAI's APIs for tasks such as language generation, sentiment analysis, or recommendation systems. Participants will construct a custom application leveraging Python and OpenAI APIs for advanced text generation and analysis.
 
-- **Introduction to Prompt Engineering & Azure OpenAI Studio:** Learn techniques for crafting effective prompts and utilize Azure OpenAI Studio for developing and deploying AI models. Participants will learn how to optimize AI model responses through effective prompt engineering and utilize Azure OpenAI Studio for model development.
+- **Introduction to Prompt Engineering & Azure OpenAI Foundry (previously known as Azure OpenAI Studio):** Learn techniques for crafting effective prompts and utilize Azure OpenAI Foundry for developing and deploying AI models. Participants will learn how to optimize AI model responses through effective prompt engineering and utilize Azure OpenAI Foundry for model development.
 
 ## Explore
 
@@ -41,7 +41,7 @@ Participants should have:
 
 ## Architecture
 
-These labs utilize Azure Synapse for data integration and analytics pipelines, Power Apps for intuitive OpenAI application development, Python for AI-driven solutions using OpenAI APIs, and Azure OpenAI Studio for model development with prompt engineering. Read-only modules cover advanced AI concepts, fine-tuning, hyperparameters, and a glossary, providing foundational knowledge. Participants gain practical skills in leveraging OpenAI effectively across various applications within Azure environments.
+These labs utilize Azure Synapse for data integration and analytics pipelines, Power Apps for intuitive OpenAI application development, Python for AI-driven solutions using OpenAI APIs, and Azure OpenAI Foundry for model development with prompt engineering. Read-only modules cover advanced AI concepts, fine-tuning, hyperparameters, and a glossary, providing foundational knowledge. Participants gain practical skills in leveraging OpenAI effectively across various applications within Azure environments.
 
 ## Architecture Diagram
 
@@ -108,10 +108,10 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
    
      ![](media/image7.png "Enter Email")
      
-1. Now enter the following password and click on **Sign in**.
+1. Now enter the following Temporary Access Pass and click on **Sign in**.
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-     ![](media/image8.png "Enter Password")
+     ![](media/image8.png "Enter Temporary Access Pass")
      
 1. If you see the pop-up **Stay Signed in?**, click **No**
 
