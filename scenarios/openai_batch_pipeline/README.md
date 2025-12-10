@@ -253,6 +253,8 @@ While still within the Synapse Studio, we will now need to create a **Data flow*
 
 1. Before we finish our work on the data flow, we should preview our data. Previewing our data reveals we only have 3 columns when we are expecting a total of 5. We have lost our Summary and Sentiment columns.
 
+      > **NOTE**: If the Data preview does not load the data automatically, kindly click on "Refresh" button to refresh the Data preview table.
+
       ![](images/data-preview.png)
 
 1. To correct this, let's use our **Select (1)** tile to change the names as follows to get the expected output values:
