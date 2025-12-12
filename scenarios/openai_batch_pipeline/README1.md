@@ -135,6 +135,12 @@ This task focuses on ingesting data into an Azure Storage Account. It involves u
     pip install --user --upgrade pip
     pip install --user -r reqs.txt
     ```
+    > **Note:** If you encounter any issues during the installation, execute the commands below and restart the Cloud Shell:
+    ```
+    pip install --user packaging
+    pip install --user cryptography
+    ```
+    After restarting the Cloud Shell, navigate to the document_generation directory and re-run the pip upgrade and reqs.txt commands.
 
 1. Type **y** and hit Enter to proceed. 
     

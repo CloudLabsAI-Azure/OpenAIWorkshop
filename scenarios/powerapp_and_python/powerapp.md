@@ -64,7 +64,7 @@ This Exercise focuses on creating an application using OpenAI capabilities integ
 
     - Replace `https://your-resource-name.openai.azure.com/` with **<inject key="OpenAIEndpoint" enableCopy="true"/> (1)**
     - Replace `deployment-id` with **<inject key="openaimodulename" enableCopy="true"/> (2)**
-    - Replace `api-version` with **2023-09-15-preview (3)**
+    - Replace `api-version` with **2024-02-15-preview (3)**
     - Replace `YOUR_API_KEY` with **<inject key="OpenAIKey" enableCopy="true"/> (4)**
       Then, click **Save**.
 
