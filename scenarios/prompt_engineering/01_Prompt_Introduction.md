@@ -1,4 +1,4 @@
-# Exercise 4a: Introduction to Prompt Engineering & Azure AI Foundry portal
+# Exercise 4a: Introduction to Prompt Engineering & Microsoft Foundry portal
 
 ### Estimated Duration: 90 Minutes
 
@@ -25,15 +25,15 @@ One way to think of a prompt is as a piece of text that is used to initiate or p
 ## What is prompt engineering?
 Prompt engineering is a relatively [new discipline](https://www.businessinsider.com/prompt-engineering-ai-chatgpt-jobs-explained-2023-3) for developing and optimizing prompts to efficiently use language models (LMs) across a wide variety of business applications. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs) and refine the completions (outputs) of LLMs. Prompt engineering is used to improve the capacity of LLMs on a wide range of common and complex tasks, such as question answering and arithmetic reasoning. Developers use prompt engineering to design robust and effective prompting techniques that interface with LLMs and other tools.
 
-This guide covers the basics of standard prompts to provide a rough idea of how to interact with and instruct the LLMs found on [Azure AI Foundry portal's Playground](https://oai.azure.com/portal/playground). 
+This guide covers the basics of standard prompts to provide a rough idea of how to interact with and instruct the LLMs found on [Microsoft Foundry portal's Playground](https://oai.azure.com/portal/playground). 
 
 ###  Trying out Prompt Engineering with Azure OpenAI Playground
-The Azure AI Foundry portal provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within the Azure AI Foundry portal is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
+The Microsoft Foundry portal provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within the Microsoft Foundry portal is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
 
 In the Chat playground, you're able to add a few-shot examples. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
 
 In the Assistant setup, you can provide a few-shot examples of what the user input may be and what the assistant response should be. The assistant tries to mimic the responses you include here in tone, rules, and format you've defined in your system message.
-Let's go ahead and launch the Azure AI Foundry playground to learn about prompt engineering. 
+Let's go ahead and launch the Azure OpenAI playground from the Microsoft Foundry Portal to learn about prompt engineering. 
 
 1. In the **Azure portal**, search for **OpenAI (1)** and select **Azure OpenAI (2)**.
 
@@ -43,11 +43,11 @@ Let's go ahead and launch the Azure AI Foundry playground to learn about prompt 
 
     ![](../natural_language_query/images/E4S2.png)
 
-1. In the Azure OpenAI resource pane, click on **Go to Azure AI Foundry Portal**, which will navigate to the **Azure AI Foundry portal**.
+1. In the Azure OpenAI resource pane, click on **Go to Foundry Portal**, which will navigate to the **Microsoft Foundry portal**.
 
    ![](../natural_language_query/images/E4S3.png)
 
-1. In the **Azure AI Foundry | Azure OpenAI** service, click on **Chat** under **Playgrounds** from the left menu.
+1. In the **Microsoft Foundry | Azure OpenAI** service, click on **Chat** under **Playgrounds** from the left menu.
 
     ![](../natural_language_query/images/E4S4.png)
 
@@ -60,7 +60,7 @@ Let's go ahead and launch the Azure AI Foundry playground to learn about prompt 
 ---
 ## Basic Prompt Examples
 
-> **Note:** Please feel free to enter anything listed in the `Prompt:` box into a `gpt-35-turbo-instruct` model in the [Azure AI Foundry portal's Playground](https://oai.azure.com/portal/playground) to follow along with these prompt examples. Be aware that you may receive different outputs than what is listed in the `Output:` box, given the nature of generative models
+> **Note:** Please feel free to enter anything listed in the `Prompt:` box into a `gpt-4.1-mini` model in the [Microsoft Foundry portal's Playground](https://oai.azure.com/portal/playground) to follow along with these prompt examples. Be aware that you may receive different outputs than what is listed in the `Output:` box, given the nature of generative models
 
 You can achieve a lot with prompts, but the quality of results depends on how much information you provide in the prompt without being overly descriptive. A prompt can contain information like instructions or questions. As we will learn later with more advanced prompts, we can also supply examples of required outputs as well as context for our instructions.
 
@@ -68,35 +68,33 @@ Here is a basic example of a simple prompt:
 
 *Prompt:*
 ```
-GPT-3 is
+GPT-4 is
 ```
 *Output:*
 ```
- an autoregressive language model that was developed by OpenAI. It stands for Generative Pre-trained Transformer 3.
- It is a large-scale language model that uses deep learning techniques to generate human-like text. GPT-3 uses a
- transformer-based architecture to generate text with context
+GPT-4 is the fourth-generation large multimodal model developed by OpenAI. It is capable of understanding and generating human-like text and, in some versions, can also process images. GPT-4 improves upon previous models in terms of accuracy, context understanding, and generating coherent and contextually relevant responses. It is used in a wide range of applications including chatbots, content creation, translation, summarization, and more. If you want more detailed information or have specific questions about GPT-4, feel free to ask!
 ```
-> **Note:**  The `Output` in our example ends abruptly because our **Max length (tokens)** variable is set to `=60`. **Max Length (tokens)** sets a limit on the number of tokens to generate in a response. The `gpt-35-turbo-instruct` model supports a maximum of 4000 tokens shared between a given prompt and response completion. (One token is roughly 4 characters for typical English text.)
+> **Note:**  The `Output` in our example ends abruptly because our **Max length (tokens)** variable is set to `=60`. **Max Length (tokens)** sets a limit on the number of tokens to generate in a response. The `gpt-4.1-mini` model supports a large context window, allowing up to ~1,000,000 tokens shared between the prompt and the response completion in a single request. (One token is roughly 4 characters for typical English text.)
 
-The `Output:` is a series of strings that make sense given the context provided by our prompt of `"GPT3-3 is"`. However, the output may be unwanted or unexpected based on our use case. How can we refine, or engineer, our prompt to achieve our desired output?
+The `Output:` is a series of strings that make sense given the context provided by our prompt of `"GPT-4 is"`. However, the output may be unwanted or unexpected based on our use case. How can we refine, or engineer, our prompt to achieve our desired output?
 
 The first thing we can do is provide explicit instructions as to what we want the model to do with our previous prompt. This is what is meant by _prompt engineering_: refining the input to produce the best output from the LLM.
 
 *Prompt:*
 ```
-Tell me a joke that begins with: GPT-3 is
+Tell me a joke that begins with: GPT-4 is
 ```
 
 *Output:*
 ```
-GPT-3 is so intelligent that it can tell a joke without a punchline.
+GPT-4 is so smart, it finishes your sentences… before you even think of them!
 ```
 
 Did our instructions improve our output? Admittedly, this is not the funniest joke ever told. And unlike supervised learning problems, there is no easy error or loss metric to compare between the two outputs. Let's look at exactly what we asked the model to generate and what we received:
 
 | Requirement | Output Meets Requirement? | 
 | ------------- | -------- |
-| Begin with the words, "GPT-3 is" | Yes, the `Output:` began with the words "GPT-3 is" |
+| Begin with the words, "GPT-4 is" | Yes, the `Output:` began with the words "GPT-4 is" |
 | The output is in the form of a joke | An attempt was made |
 
 ---
@@ -234,7 +232,7 @@ The Current token count is viewable from the Chat playground. Since the API call
 Here are some tips to keep in mind while you are designing your prompts:
 
 ### Start Simple
-As you get started with designing prompts, you should keep in mind that it is an iterative process that requires experimentation to get optimal results. Using a simple playground like [Azure's OpenAI Studio's Playground](https://oai.azure.com/portal/playground) will allow you to test out ideas quickly and easily. The model won't be offended if you ask it to do very similar things over and over again!
+As you get started with designing prompts, you should keep in mind that it is an iterative process that requires experimentation to get optimal results. Using a simple playground like [Microsoft Foundry Azure OpenAI Playground](https://ai.azure.com/resource/playground) will allow you to test out ideas quickly and easily. The model won't be offended if you ask it to do very similar things over and over again!
 
 You can start with simple prompts and keep adding more elements and context as you aim for better results. Versioning your prompt along the way is vital for this reason. As we read the guide, you will see many examples where specificity, simplicity, and conciseness will often give you better results. Begin with a hardcoded prompt and move into more dynamically generated prompts as you refine your results.
 
