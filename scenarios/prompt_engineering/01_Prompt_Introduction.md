@@ -39,7 +39,7 @@ Let's go ahead and launch the Azure OpenAI playground from the Microsoft Foundry
 
    ![](../natural_language_query/images/E4S1.png)
 
-1. On **AI Foundary | Azure OpenAI** blade, select **openai-<inject key="DeploymentID" enableCopy="false"/>**
+1. On **Microsoft Foundary | Azure OpenAI** blade, select **openai-<inject key="DeploymentID" enableCopy="false"/>**
 
     ![](../natural_language_query/images/E4S2.png)
 
