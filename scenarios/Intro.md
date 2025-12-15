@@ -16,7 +16,7 @@ This lab is designed to equip participants with hands-on experience in using Azu
    
 - **Build an Open AI application with Python:** Build applications using Python to leverage OpenAI's APIs for tasks such as language generation, sentiment analysis, or recommendation systems. Participants will construct a custom application leveraging Python and OpenAI APIs for advanced text generation and analysis.
 
-- **Introduction to Prompt Engineering & Microsoft Foundry with Azure OpenAI (previously known as Azure OpenAI Studio):** Learn techniques for crafting effective prompts and utilize Azure OpenAI for developing and deploying AI models. Participants will learn how to optimize AI model responses through effective prompt engineering and utilize Azure OpenAI within Microsoft Foundry for model development.
+- **Introduction to Prompt Engineering & Foundry Portal (previously known as Azure OpenAI Studio):** Learn techniques for crafting effective prompts and utilize Azure OpenAI for developing and deploying AI models. Participants will learn how to optimize AI model responses through effective prompt engineering and utilize Azure OpenAI within Microsoft Foundry for model development.
 
 ## Explore
 
