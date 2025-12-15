@@ -62,23 +62,23 @@ In this Exercise, participants will develop an application using OpenAI's APIs a
 
           ![](images/E3S12-1.png)
 
-1. For **2. Choose a Model**, replace the **model** value from **text-curie-001** to **demomodel** and **run** this cell.
+1. For **2. Choose a Model**, replace the **model** value from **gpt-4.1-mini** to **demomodel** and **run** this cell.
 
     ![](images/E3S13.png)
 
-1. For the cell under **temperature**, replace the **engine** value from **text-curie-001** to **demomodel**, and run this cell.
+1. For the cell under **temperature**, replace the **engine** value from **gpt-4.1-mini** to **demomodel**, and run this cell.
 
      ![](images/E3S14.png)
 
-1. For the cell under **top_p**, replace the **engine** value from **text-curie-001** to **demomodel**, and run this cell.
+1. For the cell under **top_p**, replace the **engine** value from **gpt-4.1-mini** to **demomodel**, and run this cell.
 
      ![](images/E3S15.png)
 
-1. For the cell under **n**, replace the **engine** value from **text-curie-001** to **demomodel**, and run this cell.
+1. For the cell under **n**, replace the **engine** value from **gpt-4.1-mini** to **demomodel**, and run this cell.
 
      ![](images/E3S16.png)
 
-1. For the cell under **logprobs**, replace the **engine** value from **text-curie-001** to **demomodel**, and run this cell.
+1. For the cell under **logprobs**, replace the **engine** value from **gpt-4.1-mini** to **demomodel**, and run this cell.
 
      ![](images/E3S17.png)
 
