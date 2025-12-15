@@ -12,7 +12,7 @@ This exercise focuses on the process of fine-tuning OpenAI models to improve the
 
 ## What is Fine-Tuning?
 
-Fine-tuning is the process of customizing an existing AI model for a specific task or domain by using additional data. OpenAI offers fine-tuning for its language models, such as GPT-3, which can generate natural language texts for various purposes.
+Fine-tuning is the process of customizing an existing AI model for a specific task or domain by using additional data. OpenAI offers fine-tuning for its language models, such as GPT-4, which can generate natural language texts for various purposes.
 
 Fine-tuning allows users to create customized models that can produce more accurate and relevant outputs than general models.
 
